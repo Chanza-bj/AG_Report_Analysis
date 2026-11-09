@@ -183,7 +183,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <div class="kpi"><div class="lbl">Government spending, 2025</div><div class="val">K216.3bn</div><div class="sub">86% of the K250.7bn budget</div></div>
       <div class="kpi"><div class="lbl">Budget surplus, 2025</div><div class="val">K2.1bn</div><div class="sub"><span class="down">&#9660; down</span> from K30.2bn in 2022</div></div>
       <div class="kpi"><div class="lbl">Open audit questions, 2025</div><div class="val">27</div><div class="sub"><span class="up">&#9660; fewer</span> than 40 in 2022</div></div>
-      <div class="kpi"><div class="lbl">Contracts flagged</div><div class="val">32</div><div class="sub">18 not delivered or terminated</div></div>
+      <div class="kpi"><div class="lbl">Contracts flagged</div><div class="val">34</div><div class="sub">20 not delivered or terminated</div></div>
       <div class="kpi"><div class="lbl">Findings value, 2023</div><div class="val">K81.5bn</div><div class="sub">comparable years 2021-2023 only</div></div>
       <div class="kpi"><div class="lbl">Companies named</div><div class="val">450+</div><div class="sub">distinct suppliers across the reports</div></div>
       <div class="kpi"><div class="lbl">Audit opinion, 2022-2025</div><div class="val" style="color:#167a53">Unqualified</div><div class="sub">clean opinion each year; 2021 none given</div></div>
@@ -229,7 +229,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <div class="cap" style="margin:-6px 0 14px;max-width:800px">The reports name about <b>182 contracts with a stated amount</b> &mdash; roughly <b>K57.8 billion plus US$1.82 billion</b> (full list with amount, ministry and page in the <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_raw/contracts_valued_all.csv" target="_blank" rel="noopener" style="color:#1c5cab;font-weight:600">repository</a>). The <b>32 below are deep-verified</b> against their pages &mdash; supplier, value and delivery status checked.</div>
       <div class="grid two">
         <div class="card">
-          <div class="hd"><h3>Delivery status of deep-verified contracts</h3><span class="tag">32 of ~182</span></div>
+          <div class="hd"><h3>Delivery status of deep-verified contracts</h3><span class="tag">34 of ~182</span></div>
           <div class="cap">Whether delivery was shown in the records at the report's cut-off.</div>
           <div id="c_contracts" class="chart"></div>
         </div>
@@ -239,7 +239,7 @@ footer a{color:var(--blue-d);font-weight:600}
         </div>
       </div>
       <div class="card tablecard" style="margin-top:16px">
-        <div class="hd" style="padding:16px 18px 2px"><h3>Deep-verified contracts</h3><span class="tag" id="contracts_count">32 of ~182</span></div>
+        <div class="hd" style="padding:16px 18px 2px"><h3>Deep-verified contracts</h3><span class="tag" id="contracts_count">34 of ~182</span></div>
         <div class="cap" style="padding:0 18px">Who got the contract, how much, delivered or not — checked against the page. Search or filter.</div>
         <div class="toolbar">
           <input id="con_search" class="search" type="search" placeholder="Search supplier, contract or ministry... e.g. AVIC, hospital, ZTE, seed">
@@ -328,7 +328,7 @@ footer a{color:var(--blue-d);font-weight:600}
 
       <div class="card tablecard" style="margin-top:16px">
         <div class="hd" style="padding:16px 18px 2px"><h3>All named suppliers</h3><span class="tag" id="sup_count">471</span></div>
-        <div class="cap" style="padding:0 18px">Delivery status and amount are shown only where the reports give them (37 suppliers so far: 6 delivered, 11 partial, 20 not delivered). The rest are appearances in the reports.</div>
+        <div class="cap" style="padding:0 18px">Delivery status and amount are shown only where the reports give them (39 suppliers so far: 6 delivered, 12 partial, 21 not delivered). The rest are appearances in the reports.</div>
         <div class="toolbar">
           <input id="sup_search" class="search" type="search" placeholder="Search a supplier, e.g. Zamseed, AVIC, Nyiombo...">
           <div class="chips">
@@ -391,7 +391,7 @@ footer a{color:var(--blue-d);font-weight:600}
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
             <div class="flagtile"><div class="ft-v">4.1&times;</div><div class="ft-l">seed price spread, same programme</div><div class="ft-s">K30k to K126k per tonne (2022)</div></div>
             <div class="flagtile"><div class="ft-v">5</div><div class="ft-l">single-source / uncompetitive contracts</div><div class="ft-s">among the flagged contracts</div></div>
-            <div class="flagtile"><div class="ft-v">18 of 32</div><div class="ft-l">contracts not fully delivered</div><div class="ft-s">no or partial delivery at cut-off</div></div>
+            <div class="flagtile"><div class="ft-v">20 of 34</div><div class="ft-l">contracts not fully delivered</div><div class="ft-s">no or partial delivery at cut-off</div></div>
             <div class="flagtile"><div class="ft-v">K786m</div><div class="ft-l">paid for nil delivery</div><div class="ft-s">13 seed suppliers, 2022</div></div>
             <div class="flagtile"><div class="ft-v">K3.09bn</div><div class="ft-l">Health underfunding, 2025</div><div class="ft-s">15 budgeted activities dropped (in-report, indicative)</div></div>
           </div>
@@ -436,8 +436,8 @@ const paras=[['2021',52],['2022',40],['2023',28],['2024',32],['2025',27]];
 const ministries=[['Provincial offices',43],['Finance & National Planning',18],['Agriculture',17],
   ['Home Affairs & Internal Security',15],['Education',12],['Health',11],['Fisheries & Livestock',7],
   ['Community Development',6],['Lands & Natural Resources',5]];
-const contractStatus=[{name:'Not delivered / terminated',value:8,c:'#e34948'},
-  {name:'Partly delivered',value:10,c:'#eda100'},{name:'Delivered',value:3,c:'#1baf7a'},
+const contractStatus=[{name:'Not delivered / terminated',value:9,c:'#e34948'},
+  {name:'Partly delivered',value:11,c:'#eda100'},{name:'Delivered',value:3,c:'#1baf7a'},
   {name:'Status not stated',value:11,c:'#c2c8d0'}];
 const flagCounts=[['Single-source / uncompetitive',5],['Undelivered',4],['Unsupported payment',3],
   ['Overpriced / under-declared',2],['Funds not recovered',2],['Cost / interest claim',2],['Other',1]];
@@ -473,7 +473,9 @@ const contracts=[
  ['2023','Home Affairs','ZTE Zambia Service','Safe City public security network (Phase III)','US$210.0m','NA','US$178.5m loan outstanding','p68'],
  ['2025','Education','Pozzolana Engineers & Builders','Kanona ECE Hub, Serenje','K3.86m','No','abandoned site; 0 of 40 hubs','p154'],
  ['2025','Information & Media','Joshisa Electronics','Supply of 109 laptops','K3.16m','Partial','supplier premises not located','p90'],
- ['2024','Transport','Menov Trading','Pontoon rehabilitation materials','K1.87m','NA','K1.84m paid before signing','p220']
+ ['2024','Transport','Menov Trading','Pontoon rehabilitation materials','K1.87m','NA','K1.84m paid before signing','p220'],
+ ['2025','Health','NMS Infrastructure','5 district hospitals + 120 health centres (turnkey)','US$427.2m','No','contractor not mobilised after advance','p116'],
+ ['2025','Health','Zhong Ding Intl (JV Wah Kong)','King Salman 800-bed Hospital, Lusaka','US$146.5m','Partial','questionable medical equipment','p117']
 ];
 /* delivery status counts by year: [Delivered, Partial, Not delivered, Not stated] */
 const delYears=['2021','2022','2024','2025'];
@@ -574,7 +576,7 @@ mk('c_ministries').setOption({color:['#2a78d6'],textStyle:{fontFamily:FONT},
 
 /* contracts donut with pill labels */
 mk('c_contracts').setOption({textStyle:{fontFamily:FONT},
-  tooltip:{trigger:'item',...tip,formatter:p=>`${p.name}<br><b>${p.value}</b> of 32 &middot; ${p.percent}%`},
+  tooltip:{trigger:'item',...tip,formatter:p=>`${p.name}<br><b>${p.value}</b> of 34 &middot; ${p.percent}%`},
   legend:{bottom:0,left:'center',itemWidth:10,itemHeight:10,icon:'circle',textStyle:{color:INK2,fontWeight:600,fontSize:11}},
   series:[{type:'pie',radius:['52%','74%'],center:['50%','44%'],avoidLabelOverlap:true,
     itemStyle:{borderColor:'#fff',borderWidth:3},
@@ -643,7 +645,7 @@ function renderContracts(){
     const okq=!q||((r[1]+' '+r[2]+' '+r[3]+' '+r[6]).toLowerCase().includes(q));
     const okf=conFilter==='all'||r[5]===conFilter;
     return okq&&okf; });
-  document.getElementById('contracts_count').textContent=rows.length+' of 32';
+  document.getElementById('contracts_count').textContent=rows.length+' of 34';
   document.getElementById('t_contracts').innerHTML=
     '<thead><tr><th>Year</th><th>Ministry</th><th>Supplier</th><th>Contract</th><th>Value</th><th>Delivered</th><th>Flagged</th><th>Page</th></tr></thead><tbody>'+
     (rows.length?rows.map(r=>`<tr><td class="num">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td>`+
