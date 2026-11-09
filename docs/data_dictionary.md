@@ -142,6 +142,21 @@ The Auditor General's formal opinion on the Republic's consolidated financial st
 
 2021 has no formal opinion section (introduced from the 2022 report). 2022-2025 each received an **unqualified (clean)** opinion. An unqualified opinion concerns the consolidated statements overall; it does not certify every transaction, and the findings elsewhere sit below the statements' materiality threshold.
 
+## data_clean/ministry_funding_gaps.csv
+In-report funding/underfunding figures for materiality context, taken from report paragraphs that state a ministry or programme was underfunded. One row per stated gap. These are **indicative in-report figures, not full appropriations** (the complete budget is in the separate Estimates of Revenue and Expenditure).
+
+| column | meaning |
+|---|---|
+| financial_year | Report year. |
+| ministry_std | Standardised portfolio. |
+| programme | Programme named in the report. |
+| underfunding_zmw | Stated underfunding amount (ZMW). |
+| consequence | What the report says resulted. |
+| source_pdf_page | PDF page. |
+| note | Detail, including that it is indicative. |
+
+First entry: Ministry of Health, Hospital Services Programme, underfunded K3,092,482,181 (2025), 15 budgeted activities not implemented (page 114).
+
 ## data_clean/report_metadata.csv
 One row per report.
 
