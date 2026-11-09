@@ -102,6 +102,10 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
 .chip{padding:7px 12px;border:1px solid var(--line);background:var(--card);border-radius:999px;font-weight:600;font-size:12px;color:var(--ink2);cursor:pointer}
 .chip:hover{background:var(--line2)}
 .chip.active{background:#eaf1fb;border-color:#cadcf6;color:var(--blue-d)}
+.flagtile{background:#fbfcfd;border:1px solid var(--line);border-radius:11px;padding:11px 13px}
+.flagtile .ft-v{font-size:21px;font-weight:800;letter-spacing:-.01em;color:var(--blue-d)}
+.flagtile .ft-l{font-size:12.5px;font-weight:600;color:var(--ink);margin-top:2px}
+.flagtile .ft-s{font-size:11.5px;color:var(--muted);margin-top:1px}
 .scrolltable{max-height:460px;overflow:auto}
 .scrolltable th{position:sticky;top:0;z-index:1}
 
@@ -145,6 +149,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <a href="#delivery"><svg viewBox="0 0 24 24"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg> Delivered?</a>
       <a href="#suppliers"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V8l6-4 6 4v13M10 21v-4h4v4"/></svg> Suppliers</a>
       <a href="#ministries"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg> Ministries</a>
+      <a href="#opinion"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Opinion &amp; risk</a>
       <a href="#method"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> How to read</a>
     </nav>
     <div class="side-foot">
@@ -179,6 +184,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <div class="kpi"><div class="lbl">Contracts flagged</div><div class="val">19</div><div class="sub">7 not delivered or terminated</div></div>
       <div class="kpi"><div class="lbl">Findings value, 2023</div><div class="val">K81.5bn</div><div class="sub">comparable years 2021-2023 only</div></div>
       <div class="kpi"><div class="lbl">Companies named</div><div class="val">450+</div><div class="sub">distinct suppliers across the reports</div></div>
+      <div class="kpi"><div class="lbl">Audit opinion, 2022-2025</div><div class="val" style="color:#167a53">Unqualified</div><div class="sub">clean opinion each year; 2021 none given</div></div>
     </div>
 
     <!-- BUDGET -->
@@ -311,6 +317,29 @@ footer a{color:var(--blue-d);font-weight:600}
         <div class="hd"><h3>Portfolios appearing in all five reports (2021-2025)</h3><span class="tag">sections raised</span></div>
         <div class="cap">Which portfolios recur. This shows where problems repeat, not which lost the most money.</div>
         <div id="c_ministries" class="chart tall"></div>
+      </div>
+    </section>
+
+    <!-- OPINION & RISK -->
+    <section class="section" id="opinion">
+      <h2>Audit opinion &amp; red flags</h2>
+      <div class="grid two">
+        <div class="card">
+          <div class="hd"><h3>Audit opinion on the financial statements</h3><span class="tag">per year</span></div>
+          <div class="cap">The Auditor General's formal opinion on the Republic's consolidated accounts.</div>
+          <div id="opinion_rows" style="margin-top:8px"></div>
+          <div class="cap" style="margin-top:10px">An unqualified ("clean") opinion means the consolidated statements present fairly overall. It is <b>not</b> a statement that every transaction was proper: the findings elsewhere in the report sit below the materiality threshold for the statements as a whole.</div>
+        </div>
+        <div class="card">
+          <div class="hd"><h3>Procurement red-flag signals</h3><span class="tag">from the data so far</span></div>
+          <div class="cap">Early warning signs an auditor looks for. Each is a question to pursue, not a conclusion.</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+            <div class="flagtile"><div class="ft-v">4.1&times;</div><div class="ft-l">seed price spread, same programme</div><div class="ft-s">K30k to K126k per tonne (2022)</div></div>
+            <div class="flagtile"><div class="ft-v">5</div><div class="ft-l">single-source / uncompetitive contracts</div><div class="ft-s">among the flagged contracts</div></div>
+            <div class="flagtile"><div class="ft-v">8 of 19</div><div class="ft-l">contracts not fully delivered</div><div class="ft-s">no or partial delivery at cut-off</div></div>
+            <div class="flagtile"><div class="ft-v">K786m</div><div class="ft-l">paid for nil delivery</div><div class="ft-s">13 seed suppliers, 2022</div></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -556,6 +585,15 @@ document.getElementById('sup_search').addEventListener('input',e=>{supQuery=e.ta
 document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
   document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
   c.classList.add('active'); supFilter=c.dataset.f; renderAll(); }));
+
+/* audit opinion rows */
+const opinions=[['2021','No formal opinion','b-na','p —'],['2022','Unqualified (clean)','b-yes','p21'],
+ ['2023','Unqualified (clean)','b-yes','p23'],['2024','Unqualified (clean)','b-yes','p25'],
+ ['2025','Unqualified (clean)','b-yes','p22']];
+document.getElementById('opinion_rows').innerHTML=opinions.map(o=>
+  `<div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-top:1px solid var(--line2)">
+     <span style="font-weight:700">${o[0]}</span>
+     <span><span class="badge ${o[2]}">${o[1]}</span> <span class="muted" style="font-size:11px">${o[3]}</span></span></div>`).join('');
 
 /* mobile nav toggle */
 function toggleNav(force){

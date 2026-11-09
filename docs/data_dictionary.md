@@ -128,6 +128,20 @@ A broad index of company names that appear across the reports, produced by `R/04
 
 After cleaning: ~594 names, ~454 text-verified; 28 appear in more than one report. Distinct verified suppliers per report: 2021 ~188, 2022 ~98, 2023 ~57, 2024 ~108, 2025 ~32.
 
+## data_clean/audit_opinions.csv
+The Auditor General's formal opinion on the Republic's consolidated financial statements, from the "Audit Opinion on the Accounts" section of each report. One row per year.
+
+| column | meaning |
+|---|---|
+| financial_year | Financial year. |
+| opinion | Opinion type: Unqualified, Qualified, Adverse, Disclaimer, or NA. |
+| opinion_wording | The report's own phrasing ("present fairly in all material respects"). |
+| framework | Reporting framework the opinion is given against (IPSAS Cash Basis / CGAPs No. 2). |
+| source_pdf_page | PDF page of the opinion statement. |
+| note | Context. |
+
+2021 has no formal opinion section (introduced from the 2022 report). 2022-2025 each received an **unqualified (clean)** opinion. An unqualified opinion concerns the consolidated statements overall; it does not certify every transaction, and the findings elsewhere sit below the statements' materiality threshold.
+
 ## data_clean/report_metadata.csv
 One row per report.
 
