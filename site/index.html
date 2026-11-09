@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zambia Public Finance &amp; Audit Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a78d6'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EZM%3C/text%3E%3C/svg%3E">
+<meta name="color-scheme" content="light">
+<meta property="og:title" content="Zambia Public Finance & Audit Dashboard">
+<meta property="og:description" content="How Zambia collected and spent public money, 2021-2025, from the Auditor General's reports. Every figure page-cited.">
+<meta name="robots" content="index,follow">
+<meta name="description" content="How Zambia's government collected and spent public money, 2021-2025, from the Auditor General's reports. Every figure page-cited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="vendor/echarts.min.js"></script>
+<style>
+:root{
+  --blue:#2a78d6; --blue-d:#1c5cab; --blue-l:#86b6ef; --teal:#1baf7a; --orange:#eb6834;
+  --ink:#10151b; --ink2:#5b6470; --muted:#8a8f98;
+  --bg:#f6f7f9; --card:#ffffff; --line:#e9ebee; --line2:#f0f2f4;
+  --good:#1baf7a; --warn:#eda100; --bad:#e34948;
+  --radius:14px; --shadow:0 1px 2px rgba(16,21,27,.04),0 2px 8px rgba(16,21,27,.05);
+  --sidebar:252px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);
+  -webkit-font-smoothing:antialiased;font-size:14px;line-height:1.5}
+a{color:inherit;text-decoration:none}
+
+/* ---- shell ---- */
+.app{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar);flex:0 0 var(--sidebar);background:var(--card);border-right:1px solid var(--line);
+  position:sticky;top:0;height:100vh;padding:22px 16px;display:flex;flex-direction:column;gap:6px}
+.brand{display:flex;align-items:center;gap:10px;padding:4px 8px 16px;font-weight:800;font-size:15px;letter-spacing:-.01em}
+.brand .dot{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--blue),var(--teal));
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:800}
+.navlbl{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:12px 8px 4px}
+.nav a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:9px;color:var(--ink2);font-weight:500;font-size:13.5px}
+.nav a:hover{background:var(--line2);color:var(--ink)}
+.nav a.active{background:#eaf1fb;color:var(--blue-d);font-weight:600}
+.nav svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8}
+.side-foot{margin-top:auto;font-size:11.5px;color:var(--muted);padding:10px 8px;line-height:1.45}
+
+.main{flex:1;min-width:0;padding:26px 30px 50px}
+.topbar{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.topbar h1{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:0}
+.topbar p{margin:4px 0 0;color:var(--ink2);font-size:13.5px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:10px;font-weight:600;font-size:13px;
+  border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn:hover{filter:brightness(.99);box-shadow:var(--shadow)}
+
+.note{display:flex;gap:10px;align-items:flex-start;background:#fff8ec;border:1px solid #f3e3c0;color:#6b5418;
+  border-radius:12px;padding:12px 14px;margin:16px 0 22px;font-size:13px}
+.note b{color:#4a3a10}
+
+/* ---- KPI ---- */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-bottom:8px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.kpi .lbl{font-size:12px;color:var(--ink2);font-weight:600;display:flex;align-items:center;gap:7px}
+.kpi .val{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:8px 0 2px}
+.kpi .sub{font-size:12px;color:var(--muted)}
+.kpi .sub .up{color:var(--good);font-weight:600}
+.kpi .sub .down{color:var(--bad);font-weight:600}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px}
+
+/* ---- sections / cards ---- */
+.section{margin-top:30px}
+.section h2{font-size:15px;font-weight:700;letter-spacing:-.01em;margin:0 0 14px;color:var(--ink)}
+.grid{display:grid;gap:16px}
+.grid.two{grid-template-columns:1fr 1fr}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 18px 10px}
+.card .hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+.card .hd h3{font-size:14px;font-weight:700;margin:0}
+.card .hd .tag{font-size:11px;font-weight:600;color:var(--ink2);background:var(--line2);border-radius:999px;padding:3px 9px}
+.card .cap{font-size:11.5px;color:var(--muted);margin:2px 0 6px}
+.chart{width:100%;height:300px}
+.chart.tall{height:360px}
+
+/* ---- tables ---- */
+.tablecard{overflow:hidden;padding:0}
+.tablecard .hd{padding:16px 18px 6px}
+.tbwrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:12.8px}
+th,td{text-align:left;padding:10px 14px;border-top:1px solid var(--line2);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.04em;border-top:none;background:#fcfcfd;position:sticky;top:0}
+tbody tr:hover{background:#fafbfc}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+.badge{font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.b-no{background:#fdecec;color:#b42318}
+.b-part{background:#fff3e0;color:#9a6700}
+.b-yes{background:#e7f6ef;color:#167a53}
+.b-na{background:#eef0f2;color:#5b6470}
+.muted{color:var(--muted)}
+
+footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--ink2);font-size:12.5px;line-height:1.6}
+footer a{color:var(--blue-d);font-weight:600}
+
+/* mobile */
+.hamburger{display:none}
+@media(max-width:900px){
+  .grid.two{grid-template-columns:1fr}
+  .sidebar{position:fixed;left:0;top:0;z-index:50;transform:translateX(-100%);transition:.2s;box-shadow:0 10px 40px rgba(0,0,0,.2)}
+  .sidebar.open{transform:none}
+  .main{padding:18px 16px 40px}
+  .hamburger{display:inline-flex}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="dot">ZM</span> Public Audit</div>
+    <div class="navlbl">Report</div>
+    <nav class="nav">
+      <a href="#overview" class="active"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Overview</a>
+      <a href="#budget"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg> Budget &amp; surplus</a>
+      <a href="#findings"><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg> Audit findings</a>
+      <a href="#contracts"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contracts</a>
+      <a href="#ministries"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg> Ministries</a>
+      <a href="#method"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> How to read</a>
+    </nav>
+    <div class="side-foot">
+      Source: Office of the Auditor General of Zambia, Reports on the Accounts of the Republic, 2021-2025.
+      Every figure is page-cited.
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <button class="btn hamburger" onclick="document.getElementById('sidebar').classList.toggle('open')">&#9776;</button>
+        <h1 id="overview">Public Finance &amp; Audit Dashboard</h1>
+        <p>Office of the Auditor General of Zambia &middot; financial years 2021 to 2025</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="full-report.html">Full written report</a>
+        <a class="btn primary" href="https://github.com/Chanza-bj/AG_Report_Analysis" target="_blank" rel="noopener">Data &amp; code</a>
+      </div>
+    </div>
+
+    <div class="note">
+      <span>&#9888;</span>
+      <div><b>An audit finding is a question, not a proven crime.</b> It means the records did not fully add up, or an explanation was still owed when the report was written. Read these as money the government could not fully account for, not money that was stolen.</div>
+    </div>
+
+    <!-- KPIs -->
+    <div class="kpis">
+      <div class="kpi"><div class="lbl">Government spending, 2025</div><div class="val">K216.3bn</div><div class="sub">86% of the K250.7bn budget</div></div>
+      <div class="kpi"><div class="lbl">Budget surplus, 2025</div><div class="val">K2.1bn</div><div class="sub"><span class="down">&#9660; down</span> from K30.2bn in 2022</div></div>
+      <div class="kpi"><div class="lbl">Open audit questions, 2025</div><div class="val">27</div><div class="sub"><span class="up">&#9660; fewer</span> than 40 in 2022</div></div>
+      <div class="kpi"><div class="lbl">Contracts flagged</div><div class="val">19</div><div class="sub">7 not delivered or terminated</div></div>
+      <div class="kpi"><div class="lbl">Findings value, 2023</div><div class="val">K81.5bn</div><div class="sub">comparable years 2021-2023 only</div></div>
+    </div>
+
+    <!-- BUDGET -->
+    <section class="section" id="budget">
+      <h2>Budget &amp; surplus</h2>
+      <div class="grid two">
+        <div class="card">
+          <div class="hd"><h3>Planned vs actually spent</h3><span class="tag">Kwacha, billions</span></div>
+          <div class="cap">The final budget compared with actual payments. Hover for exact figures.</div>
+          <div id="c_budget" class="chart"></div>
+        </div>
+        <div class="card">
+          <div class="hd"><h3>Fiscal surplus</h3><span class="tag">Kwacha, billions</span></div>
+          <div class="cap">Money collected minus money spent each year.</div>
+          <div id="c_surplus" class="chart"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINDINGS -->
+    <section class="section" id="findings">
+      <h2>Audit findings</h2>
+      <div class="grid two">
+        <div class="card">
+          <div class="hd"><h3>Value of audit findings</h3><span class="tag">2021-2023</span></div>
+          <div class="cap">One line, unpaid tax arrears, dominates the total, so it is shown separately.</div>
+          <div id="c_findings" class="chart"></div>
+        </div>
+        <div class="card">
+          <div class="hd"><h3>Unresolved-finding sections per report</h3><span class="tag">count</span></div>
+          <div class="cap">How many sections each report raises. A count, not an amount of money.</div>
+          <div id="c_paras" class="chart"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRACTS -->
+    <section class="section" id="contracts">
+      <h2>Contracts the auditors questioned</h2>
+      <div class="grid two">
+        <div class="card">
+          <div class="hd"><h3>Delivery status of flagged contracts</h3><span class="tag">19 contracts</span></div>
+          <div class="cap">Whether delivery was shown in the records at the report's cut-off.</div>
+          <div id="c_contracts" class="chart"></div>
+        </div>
+        <div class="card tablecard">
+          <div class="hd"><h3>What the auditors flagged</h3><span class="tag">single-source / overpriced / undelivered</span></div>
+          <div class="tbwrap"><table id="t_flags"></table></div>
+        </div>
+      </div>
+      <div class="card tablecard" style="margin-top:16px">
+        <div class="hd" style="padding:16px 18px 6px"><h3>Named contracts (first set)</h3><span class="tag">who, how much, delivered?</span></div>
+        <div class="tbwrap"><table id="t_contracts"></table></div>
+      </div>
+    </section>
+
+    <!-- MINISTRIES -->
+    <section class="section" id="ministries">
+      <h2>Ministries flagged in every report</h2>
+      <div class="card">
+        <div class="hd"><h3>Portfolios appearing in all five reports (2021-2025)</h3><span class="tag">sections raised</span></div>
+        <div class="cap">Which portfolios recur. This shows where problems repeat, not which lost the most money.</div>
+        <div id="c_ministries" class="chart tall"></div>
+      </div>
+    </section>
+
+    <section class="section" id="method">
+      <h2>How to read these numbers fairly</h2>
+      <div class="card" style="padding:18px 20px">
+        <ul style="margin:0;padding-left:18px;color:var(--ink2);line-height:1.75">
+          <li><b>A finding is a question, not a verdict.</b> Say "the report records K3.56bn in unpaid obligations," not "the ministry lost it."</li>
+          <li><b>Not every year lines up.</b> The budget table is missing for 2021; a single findings total exists only for 2022 and 2023; the 2024 and 2025 reports list examples instead of one total.</li>
+          <li><b>One huge line (tax arrears) distorts the findings totals</b>, so it is shown on its own.</li>
+          <li><b>Kwacha and US dollar amounts are never added together.</b></li>
+          <li><b>The contracts list is a first set</b>, drawn from highlighted cases, not every contract in the reports.</li>
+          <li>These figures come from the published main reports only. Ministries may since have given explanations, recorded in later reports and parliamentary committees.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      Source: Office of the Auditor General of Zambia, <i>Reports on the Accounts of the Republic</i>, financial years ended 31 December 2021 to 2025. Cite any figure with the report year and page, e.g. <i>Auditor General, 2025 report, page 5</i>.<br>
+      Full data, page references, and the code behind every chart: <a href="https://github.com/Chanza-bj/AG_Report_Analysis" target="_blank" rel="noopener">github.com/Chanza-bj/AG_Report_Analysis</a> &middot; <a href="full-report.html">full written report</a>.
+    </footer>
+  </main>
+</div>
+
+<script>
+/* ---- data (mirrors the page-cited CSVs in data_clean/) ---- */
+const YRf=['2022','2023','2024','2025'];
+const planned=[175.24,178.45,231.57,250.68], spent=[133.76,156.55,189.35,216.30];
+const surplus=[30.18,19.71,2.67,2.11];
+const YRv=['2021','2022','2023'];
+const findAll=[133.25,103.52,81.46], findEx=[47.47,5.66,14.47];
+const paras=[['2021',52],['2022',40],['2023',28],['2024',32],['2025',27]];
+const ministries=[['Provincial offices',43],['Finance & National Planning',18],['Agriculture',17],
+  ['Home Affairs & Internal Security',15],['Education',12],['Health',11],['Fisheries & Livestock',7],
+  ['Community Development',6],['Lands & Natural Resources',5]];
+const contractStatus=[{name:'Not delivered / terminated',value:4,c:'#e34948'},
+  {name:'Partly delivered',value:3,c:'#eda100'},{name:'Delivered',value:3,c:'#1baf7a'},
+  {name:'Status not stated',value:9,c:'#c2c8d0'}];
+const flagCounts=[['Single-source / uncompetitive',5],['Undelivered',4],['Unsupported payment',3],
+  ['Overpriced / under-declared',2],['Funds not recovered',2],['Cost / interest claim',2],['Other',1]];
+const contracts=[
+ ['2025','Fisheries','Moses Kabwe Mwale','M&E consultancy, Beef Export Project','K330,000','No','undelivered','p10'],
+ ['2024','Transport','African Union Financial Services','Walvis Bay Port concession','not stated','NA','unsettled charges','p12'],
+ ['2024','Finance','Nyiombo Investments','Assignment of rights (2016 contract)','not stated','NA','loss of funds','p9'],
+ ['2024','Education','Alliance Procurement & Capacity Building','Consulting services to schools','K25.7m','Partial','single-source; unsupported','p11'],
+ ['2024','Health','Primetime Freight & Customs','Customs & clearing services','not stated','NA','verbal extension','p11'],
+ ['2024','Water','Four contractors','Four terminated contracts','K48.4m','No','unrecovered advance','p10'],
+ ['2024','Water','Twelve contractors','Twelve terminated contracts','not stated','No','funds not recovered','p10'],
+ ['2024','Health','Three contractors','Works already done included','not stated','NA','duplicate works','p11'],
+ ['2021','Defence','Joint Stock Company','Sukhoi business jet','US$49.4m','No','undelivered (US$7.8m paid)','p11'],
+ ['2021','Health','Accute Investments','10,000 oxygen cylinders','US$13.0m','NA','uncompetitive; no price check','p13'],
+ ['2021','Health','Contractor (unnamed)','King Salman Specialist Hospital','US$146.5m','NA','funding shortfall US$98.5m','p13'],
+ ['2021','Health','TFM','7 isolation hospitals','US$98.8m','NA','no experience; no price check','p13'],
+ ['2021','Infrastructure','Zamworth Construction','Ministry office block','US$5.4m','Partial','US$25m interest claim','p10'],
+ ['2021','Defence','Apex Supplies','Supply of Smoke Denisons','K21.1m','NA','cover bidding','p11'],
+ ['2021','Finance','Developer (unnamed)','Tax Online System (ZRA)','US$3.6m','Yes','system not utilised','p9'],
+ ['2021','Finance','Vendor (unnamed)','Zambia Chancery in Turkey','US$6.9m','NA','unsupported fees US$2.9m','p12'],
+ ['2021','Works & Supply','Seller (ex-German Embassy)','Office building purchase','US$2.5m','Yes','overpriced (valued US$1.5m)','p15'],
+ ['2021','Agriculture','Various suppliers','Farming inputs, direct bidding','US$430.3m','Partial','single-source; part-delivered','p15'],
+ ['2021','Defence','ZNS Shandong','Mukula log export to China','not stated','Yes','under-declared US$2.5m','p12']
+];
+
+/* ---- shared ECharts style ---- */
+const INK='#10151b',INK2='#5b6470',GRID='#eef0f2',FONT='Inter,system-ui,sans-serif';
+const tip={backgroundColor:'#ffffff',borderColor:'#e9ebee',borderWidth:1,
+  textStyle:{color:INK,fontFamily:FONT,fontSize:12},padding:[8,12],
+  extraCssText:'box-shadow:0 6px 24px rgba(16,21,27,.12);border-radius:10px'};
+const axisX=v=>({type:'category',data:v,axisTick:{show:false},axisLine:{lineStyle:{color:'#dfe3e8'}},
+  axisLabel:{color:INK2,fontFamily:FONT,fontWeight:600}});
+const axisYhide={type:'value',splitLine:{lineStyle:{color:GRID}},axisLabel:{show:false},axisLine:{show:false},axisTick:{show:false}};
+function barLabel(suffix){return {show:true,position:'top',color:INK,fontWeight:700,fontFamily:FONT,fontSize:11,
+  formatter:p=>p.value.toLocaleString(undefined,{maximumFractionDigits:1})+(suffix||'')}}
+function mk(id){const e=echarts.init(document.getElementById(id),null,{renderer:'svg'});
+  window.addEventListener('resize',()=>e.resize());return e}
+
+/* budget */
+mk('c_budget').setOption({color:['#86b6ef','#2a78d6'],textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'axis',...tip,valueFormatter:v=>'K'+v+'bn'},
+  legend:{top:0,left:0,itemWidth:10,itemHeight:10,icon:'circle',textStyle:{color:INK2,fontWeight:600}},
+  grid:{left:8,right:14,top:38,bottom:8,containLabel:true},
+  xAxis:axisX(YRf),yAxis:axisYhide,
+  series:[{name:'Planned',type:'bar',data:planned,itemStyle:{borderRadius:[5,5,0,0]},barWidth:'30%'},
+    {name:'Spent',type:'bar',data:spent,itemStyle:{borderRadius:[5,5,0,0]},barWidth:'30%',label:barLabel()}]});
+
+/* surplus */
+mk('c_surplus').setOption({color:['#2a78d6'],textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'axis',...tip,valueFormatter:v=>'K'+v+'bn'},
+  grid:{left:8,right:14,top:20,bottom:8,containLabel:true},
+  xAxis:axisX(YRf),yAxis:axisYhide,
+  series:[{type:'bar',data:surplus,itemStyle:{borderRadius:[5,5,0,0],color:'#2a78d6'},barWidth:'44%',label:barLabel()}]});
+
+/* findings */
+mk('c_findings').setOption({color:['#2a78d6','#1baf7a'],textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'axis',...tip,valueFormatter:v=>'K'+v+'bn'},
+  legend:{top:0,left:0,itemWidth:10,itemHeight:10,icon:'circle',textStyle:{color:INK2,fontWeight:600}},
+  grid:{left:8,right:14,top:38,bottom:8,containLabel:true},
+  xAxis:axisX(YRv),yAxis:axisYhide,
+  series:[{name:'All findings',type:'bar',data:findAll,itemStyle:{borderRadius:[5,5,0,0]},barWidth:'28%',label:barLabel()},
+    {name:'Without tax arrears',type:'bar',data:findEx,itemStyle:{borderRadius:[5,5,0,0]},barWidth:'28%'}]});
+
+/* paragraphs */
+mk('c_paras').setOption({color:['#2a78d6'],textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'axis',...tip},
+  grid:{left:8,right:14,top:20,bottom:8,containLabel:true},
+  xAxis:axisX(paras.map(d=>d[0])),yAxis:axisYhide,
+  series:[{type:'bar',data:paras.map(d=>d[1]),itemStyle:{borderRadius:[5,5,0,0],color:'#2a78d6'},barWidth:'46%',label:barLabel()}]});
+
+/* ministries (horizontal) */
+const ms=ministries.slice().reverse();
+mk('c_ministries').setOption({color:['#2a78d6'],textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'axis',...tip},
+  grid:{left:8,right:30,top:10,bottom:6,containLabel:true},
+  xAxis:{type:'value',splitLine:{lineStyle:{color:GRID}},axisLabel:{show:false},axisLine:{show:false},axisTick:{show:false}},
+  yAxis:{type:'category',data:ms.map(d=>d[0]),axisTick:{show:false},axisLine:{show:false},
+    axisLabel:{color:INK,fontWeight:600,fontFamily:FONT}},
+  series:[{type:'bar',data:ms.map(d=>d[1]),itemStyle:{borderRadius:[0,5,5,0],color:'#2a78d6'},barWidth:'62%',
+    label:{show:true,position:'right',color:INK,fontWeight:700,fontFamily:FONT,fontSize:11}}]});
+
+/* contracts donut with pill labels */
+mk('c_contracts').setOption({textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'item',...tip,formatter:p=>`${p.name}<br><b>${p.value}</b> of 19 &middot; ${p.percent}%`},
+  legend:{bottom:0,left:'center',itemWidth:10,itemHeight:10,icon:'circle',textStyle:{color:INK2,fontWeight:600,fontSize:11}},
+  series:[{type:'pie',radius:['52%','74%'],center:['50%','44%'],avoidLabelOverlap:true,
+    itemStyle:{borderColor:'#fff',borderWidth:3},
+    label:{show:true,formatter:p=>`${p.value} · ${p.percent}%`,color:INK,fontWeight:700,fontSize:11,
+      backgroundColor:'#fff',borderColor:'#e9ebee',borderWidth:1,borderRadius:7,padding:[3,7]},
+    labelLine:{length:10,length2:8,lineStyle:{color:'#c7ccd3'}},
+    data:contractStatus.map(d=>({name:d.name,value:d.value,itemStyle:{color:d.c}}))}]});
+
+/* tables */
+function badge(s){const m={'No':['b-no','Not delivered'],'Partial':['b-part','Partial'],'Yes':['b-yes','Delivered'],'NA':['b-na','Not stated']};
+  const x=m[s]||['b-na',s];return `<span class="badge ${x[0]}">${x[1]}</span>`}
+document.getElementById('t_flags').innerHTML =
+  '<thead><tr><th>What the auditors flagged</th><th>Contracts</th></tr></thead><tbody>'+
+  flagCounts.map(f=>`<tr><td>${f[0]}</td><td class="num">${f[1]}</td></tr>`).join('')+'</tbody>';
+document.getElementById('t_contracts').innerHTML =
+  '<thead><tr><th>Year</th><th>Ministry</th><th>Supplier</th><th>Contract</th><th>Value</th><th>Delivered</th><th>Flagged</th><th>Page</th></tr></thead><tbody>'+
+  contracts.map(r=>`<tr><td class="num">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td>`+
+    `<td class="num">${r[4]}</td><td>${badge(r[5])}</td><td>${r[6]}</td><td class="muted">${r[7]}</td></tr>`).join('')+'</tbody>';
+
+/* scroll-spy for sidebar */
+const links=[...document.querySelectorAll('.nav a')];
+const ids=links.map(a=>a.getAttribute('href').slice(1));
+window.addEventListener('scroll',()=>{let cur=ids[0];
+  for(const id of ids){const el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<140)cur=id}
+  links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));});
+</script>
+</body>
+</html>

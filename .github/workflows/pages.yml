@@ -28,12 +28,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Assemble site (report as landing page)
+      - name: Assemble site (dashboard as landing page, report linked)
         run: |
           mkdir -p _site
-          cp report/zambia_ag_reports_2021_2025.html _site/index.html
-          # keep the original filename available too
-          cp report/zambia_ag_reports_2021_2025.html _site/
+          cp site/index.html _site/index.html
+          cp report/zambia_ag_reports_2021_2025.html _site/full-report.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
