@@ -2,8 +2,8 @@
 
 Paste these into the repository's About panel (gear icon, top right of the repo page).
 
-## Suggested repository name
-`zambia-ag-reports`  (matches CITATION.cff; change there too if you pick another)
+## Repository name
+`AG_Report_Analysis`  (published at https://github.com/Chanza-bj/AG_Report_Analysis)
 
 ## Description (primary, 150 chars)
 Reproducible analysis of Zambia's Auditor General reports, 2021-2025: budget execution, audit-findings value, and ministry recurrence, every figure page-cited.
@@ -14,7 +14,7 @@ Reproducible analysis of Zambia's Auditor General reports, 2021-2025: budget exe
 
 ## Website field
 Point it at the published report once GitHub Pages is on, e.g.
-`https://USERNAME.github.io/zambia-ag-reports/` (serves report/zambia_ag_reports_2021_2025.html),
+`https://Chanza-bj.github.io/AG_Report_Analysis/` (serves report/zambia_ag_reports_2021_2025.html),
 or leave blank for now.
 
 ## Topics (tags)
