@@ -31,7 +31,7 @@ jobs:
       - name: Assemble site (dashboard as landing page, report linked)
         run: |
           mkdir -p _site
-          cp site/index.html _site/index.html
+          cp -r site/. _site/
           cp report/zambia_ag_reports_2021_2025.html _site/full-report.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
