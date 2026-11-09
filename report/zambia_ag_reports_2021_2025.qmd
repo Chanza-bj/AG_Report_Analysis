@@ -1,0 +1,206 @@
+---
+title: "Zambia's public finances through the Auditor General's reports, 2021 to 2025"
+subtitle: "A reproducible analysis of budget execution, audit findings, and ministry recurrence"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    code-fold: show
+    code-tools: true
+    embed-resources: true
+    theme: cosmo
+    df-print: kable
+execute:
+  warning: false
+  message: false
+knitr:
+  opts_knit:
+    root.dir: ".."
+---
+
+```{r setup}
+#| include: false
+# All paths resolve from the project root (set via root.dir above).
+library(readr); library(dplyr); library(tidyr); library(stringr)
+library(forcats); library(ggplot2); library(scales)
+theme_set(theme_minimal(base_size = 12))
+theme_update(panel.grid.minor = element_blank(), plot.title.position = "plot")
+BLUE <- "#1b4965"; LIGHT <- "#cae9ff"
+```
+
+> **How to read this report.** It records what the Office of the Auditor General published, and separates that from interpretation. Audit findings are matters the Office could not resolve by its cut-off date. They are not proof of theft or wrongdoing, and the reports state that explanations may still be pending. Every figure below is tied to the report year and the PDF page it came from.
+
+# What this covers
+
+This analysis uses the five main reports of the Office of the Auditor General of Zambia, *Report on the Accounts of the Republic*, for the financial years ended 31 December 2021 through 2025. Three questions are answered, each on the basis the reports actually support:
+
+1. **Budget execution and surplus** — how much of the budget was spent, and the fiscal balance.
+2. **The value of audit findings** — and whether it is trending up or down.
+3. **Ministry recurrence** — which portfolios are flagged most often.
+
+```{r load}
+fisc  <- read_csv("data_clean/fiscal_outturn.csv", show_col_types = FALSE)
+cats  <- read_csv("data_clean/findings_by_category_tidy.csv", show_col_types = FALSE)
+paras <- read_csv("data_clean/unresolved_paragraphs.csv", show_col_types = FALSE)
+meta  <- read_csv("data_clean/report_metadata.csv", show_col_types = FALSE)
+```
+
+# Budget execution and surplus
+
+The "Statement B – Statement of Comparison of Budget and Actual Amounts (Budget Execution)" gives, for each year, the final budget and the actual payments. It appears in the 2022 to 2025 reports. The 2021 report has no equivalent statement, so 2021 is left blank here.
+
+```{r fiscal-table}
+fisc |>
+  filter(!is.na(actual_payments)) |>
+  transmute(`Financial year` = financial_year,
+            `Final budget (K bn)` = round(final_budget_payments/1e9, 1),
+            `Actual payments (K bn)` = round(actual_payments/1e9, 1),
+            `Execution %` = round(100*actual_payments/final_budget_payments, 1),
+            `Surplus (K bn)` = round(surplus_deficit/1e9, 2),
+            `PDF page` = source_pdf_page)
+```
+
+Payments reached **86% of the final budget in 2025, up from 76% in 2022** (printed page 5 of each report). The path was not a straight line: it rose to 88% in 2023, fell to 82% in 2024, then returned to 86%.
+
+```{r chart-execution}
+#| fig-width: 7.5
+#| fig-height: 4.3
+f2 <- fisc |> filter(!is.na(actual_payments)) |>
+  mutate(exec = 100*actual_payments/final_budget_payments)
+ggplot(f2, aes(factor(financial_year), exec)) +
+  geom_col(fill = BLUE, width = 0.6) +
+  geom_text(aes(label = sprintf("%.0f%%", exec)), vjust = -0.4, size = 3.6) +
+  scale_y_continuous(limits = c(0,100), expand = expansion(mult = c(0,.08))) +
+  labs(title = "Budget execution: actual payments as a share of final budget",
+       x = NULL, y = "Percent of final budget",
+       caption = "Source: Auditor General, Statement B. 2021 not reported.")
+```
+
+The **surplus shrank from K30.2 billion in 2022 to about K2.1 billion in 2025** (actual receipts minus actual payments).
+
+```{r chart-surplus}
+#| fig-width: 7.5
+#| fig-height: 4.3
+ggplot(f2, aes(factor(financial_year), surplus_deficit/1e9)) +
+  geom_col(fill = BLUE, width = 0.6) +
+  geom_text(aes(label = comma(surplus_deficit/1e9, accuracy = 0.1)), vjust = -0.4, size = 3.6) +
+  scale_y_continuous(expand = expansion(mult = c(0,.1))) +
+  labs(title = "Reported fiscal surplus (actual receipts minus actual payments)",
+       x = NULL, y = "Kwacha (billions)",
+       caption = "Source: Auditor General, Statement B.")
+```
+
+**What this records, and what it does not.** A surplus here means revenue collected exceeded payments made in the year. It does not by itself show improved service delivery, and under-spending against budget can reflect delayed projects or financing that did not arrive, not only restraint.
+
+# The value of audit findings
+
+A standardised "Trend Analysis of Audit Findings" table, which puts a Kwacha amount against each query category, appears only in the 2022 and 2023 reports. Together they give comparable category amounts for 2021, 2022, and 2023. The 2024 and 2025 reports present findings as narrative notable observations with no comparable total, so those years are not shown as a category total.
+
+```{r findings-trend}
+pick <- tibble(financial_year = c(2021L,2022L,2023L), report_year = c(2022L,2023L,2023L))
+series <- cats |> inner_join(pick, by = c("financial_year","report_year")) |>
+  mutate(is_arrears = str_detect(str_to_lower(category_printed), "tax arrears"))
+trend <- series |> group_by(financial_year) |>
+  summarise(`All categories (K bn)` = round(sum(amount_kwacha, na.rm=TRUE)/1e9, 1),
+            `Excl. tax arrears (K bn)` = round(sum(amount_kwacha[!is_arrears], na.rm=TRUE)/1e9, 1),
+            .groups = "drop") |>
+  rename(`Financial year` = financial_year)
+trend
+```
+
+```{r chart-findings}
+#| fig-width: 8
+#| fig-height: 4.6
+plotdat <- series |> group_by(financial_year) |>
+  summarise(all = sum(amount_kwacha, na.rm=TRUE),
+            excl = sum(amount_kwacha[!is_arrears], na.rm=TRUE), .groups="drop") |>
+  pivot_longer(-financial_year) |>
+  mutate(name = recode(name, all = "All query categories",
+                       excl = "Excluding tax arrears"))
+ggplot(plotdat, aes(factor(financial_year), value/1e9, fill = name)) +
+  geom_col(position = position_dodge(width = .7), width = .65) +
+  geom_text(aes(label = comma(value/1e9, accuracy = .1)),
+            position = position_dodge(width = .7), vjust = -0.4, size = 3) +
+  scale_fill_manual(values = c("All query categories" = BLUE,
+                               "Excluding tax arrears" = LIGHT)) +
+  labs(title = "Reported value of audit findings, 2021-2023",
+       x = NULL, y = "Kwacha (billions)", fill = NULL,
+       caption = "Source: Auditor General trend tables (2022, 2023 reports).") +
+  theme(legend.position = "top")
+```
+
+The headline total fell each year, but it is dominated by one line, **Failure to Collect Tax Arrears**, which the Office takes from the Zambia Revenue Authority's own report and which measures a stock of arrears rather than an in-year loss. Removing it leaves a much smaller series that does not fall smoothly.
+
+# Ministry recurrence
+
+The count of unresolved-findings paragraphs is comparable across all five years. The number of paragraphs fell overall, from 52 in 2021 to 27 in 2025 (and from 40 in 2022 to 27 in 2025).
+
+```{r paras-per-year}
+#| fig-width: 7
+#| fig-height: 4
+ppy <- paras |> count(financial_year, name = "n")
+ggplot(ppy, aes(factor(financial_year), n)) +
+  geom_col(fill = BLUE, width = .65) +
+  geom_text(aes(label = n), vjust = -0.4, size = 3.6) +
+  labs(title = "Unresolved-findings paragraphs per report",
+       x = NULL, y = "Paragraphs", caption = "Source: Auditor General, Tables of Contents.")
+```
+
+Nine portfolios appear in every report over the five years. Provincial administration under the Office of the President has the most paragraphs, followed by Finance, Agriculture, Home Affairs, Education, and Health.
+
+```{r recurrence}
+#| fig-width: 8
+#| fig-height: 5.5
+recur <- paras |> group_by(ministry_std) |>
+  summarise(years_present = n_distinct(financial_year), n = n(), .groups = "drop")
+recur |> filter(years_present == 5) |>
+  mutate(ministry_std = fct_reorder(ministry_std, n)) |>
+  ggplot(aes(n, ministry_std)) +
+  geom_col(fill = BLUE) + geom_text(aes(label = n), hjust = -0.3, size = 3.2) +
+  scale_x_continuous(expand = expansion(mult = c(0,.1))) +
+  labs(title = "Portfolios flagged in every report, 2021-2025",
+       x = "Paragraphs (2021-2025)", y = NULL,
+       caption = "Source: Auditor General Tables of Contents. A paragraph is not a monetary total.")
+```
+
+# Internal checks
+
+Two checks confirm the transcription of the category tables.
+
+```{r checks}
+asp <- read_csv("data_raw/ag_trend_tables_asprinted.csv", show_col_types = FALSE)
+# (a) component sums vs printed totals
+comp <- asp |> filter(row_no != 99) |>
+  summarise(across(c(amt_prior_kwacha, amt_current_kwacha), ~sum(., na.rm = TRUE)))
+printed <- asp |> filter(row_no == 99) |> select(report_year, amt_prior_kwacha, amt_current_kwacha)
+# (b) FY2022 appears in both reports; difference should be near zero overall
+fy22a <- asp |> filter(report_year==2022, row_no!=99) |> summarise(s = sum(amt_current_kwacha, na.rm=TRUE)) |> pull(s)
+fy22b <- asp |> filter(report_year==2023, row_no!=99) |> summarise(s = sum(amt_prior_kwacha, na.rm=TRUE)) |> pull(s)
+tibble(check = c("FY2022 total, 2022 report", "FY2022 total, 2023 report", "difference"),
+       value = c(fy22a, fy22b, fy22a - fy22b))
+```
+
+The FY2022 total is identical in the two reports (K103,519,546,579). Elsewhere the two reports agree category by category except for a K7.26 million reallocation between two farming-input categories that nets to zero. Printed annual totals differ from the sum of their components by one Kwacha in 2021 and 2023 (rounding in the source).
+
+# Limitations
+
+- **Budget-execution series starts in 2022.** The 2021 report has no Statement B, so budget execution and surplus for 2021 are not available.
+- **Execution is not monotonic.** The 76% to 86% rise holds at the endpoints only; 2023 was 88% and 2024 was 82%.
+- **The findings-value series covers 2021-2023 only**, and is dominated by one externally sourced tax-arrears figure. 2024 and 2025 report no comparable total.
+- **Category labels and the set of categories change between years**, and some contain source typos.
+- **US dollar amounts are not converted** and are excluded from Kwacha totals.
+- **Paragraph counts measure the volume of findings, not their monetary size.**
+- This uses the published main reports only, not working papers, the budget Estimates, or later Treasury Minute responses.
+
+# How to cite and reproduce
+
+Cite each figure with the report year and the PDF page given in `data_clean/` and the data dictionary, for example: *Office of the Auditor General, Report on the Accounts of the Republic for the year ended 31 December 2025, page 5.*
+
+To reproduce: place the five source PDFs where `R/00_extract.R` expects them, then run the scripts in `R/` in order and render this report with `quarto render report/zambia_ag_reports_2021_2025.qmd`. See `README.md` and `docs/methods_and_limitations.md` for the full method.
+
+```{r session}
+#| echo: false
+cat("Rendered with R", as.character(getRversion()), "on", format(Sys.Date()), "\n")
+```

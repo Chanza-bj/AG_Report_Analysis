@@ -1,0 +1,79 @@
+report_year,row_no,category_printed,amt_prior_kwacha,amt_current_kwacha,printed_variance,printed_variance_pct,source_pdf_page,printed_page
+2022,1,Failure to Collect Tax Arrears,85780000000,97860886809,12080886809,14%,8,ii
+2022,2,Failure to Settle Obligations/ Outstanding Bills,3899705205,4944897302,1045192097,27%,8,ii
+2022,3,Irregular Payments,44275885,152446283,108170398,244%,8,ii
+2022,4,Overpayments,9421440,110384888,100963448,1072%,8,ii
+2022,5,Unaccounted for Revenue,1474462,53781920,52307458,3548%,8,ii
+2022,6,Failure to Utilise Funds,108283265,132503190,24219925,22%,8,ii
+2022,7,Irregular Distribution of Farmers Inputs,2205140,7350219,5145079,233%,8,ii
+2022,8,Loss of Revenue,17229561,25587961,8358400,49%,8,ii
+2022,9,Unacquitted Farming Inputs,175717,2242889,2067172,1176%,8,ii
+2022,10,Unacquitted for Funds,,814559,814559,0%,8,ii
+2022,11,Non - Submission of Expenditure Returns,,786692,786692,0%,8,ii
+2022,12,Failure to Remit Government Revenue,324618,194348,-130270,-40%,8,ii
+2022,13,Tranfer of Funds without Authority,1094100,767684,-326416,-30%,8,ii
+2022,14,Delayed Banking,1025034,380165,-644869,-63%,8,ii
+2022,15,Undisbursed Funds,1883224,,-1883224,-100%,8,ii
+2022,16,Irregular Inclusion of Beneficiaries for Farming Inputs,4231089,9524337,5293248,125%,8,ii
+2022,17,Undistributed Farming Inputs,4871877,1506767,-3365110,-69%,8,ii
+2022,18,Misappropriation of Funds,5171854,135207,-5036647,-97%,8,ii
+2022,19,Failure to install supplied equipment,9060746,182927,-8877819,-98%,8,ii
+2022,20,Unretired Accountable Imprest,11867459,51872,-11815587,-100%,8,ii
+2022,21,Unaccounted for Stores,36855805,14273997,-22581808,-61%,8,ii
+2022,22,Failure to Utilise System,60006423,2099156,-57907267,-97%,8,ii
+2022,23,Failure to Recover Advance Payments,70668686,,-70668686,-100%,8,ii
+2022,24,Unaccounted for Funds,83829318,388756,-83440562,-100%,8,ii
+2022,25,Undelivered Materials,94894666,11126717,-83767949,-88%,8,ii
+2022,26,Irregular Cash Withdraw,87095518,1156979,-85938539,-99%,8,ii
+2022,27,Misapplication of Funds,95804799,,-95804799,-100%,8,ii
+2022,28,Failure to Follow Procurement Procedures,487568976,660817,-486908159,-100%,8,ii
+2022,29,Loss of Public Funds,516831484,54141,-516777343,-100%,8,ii
+2022,30,Wasteful Expenditure,659945438,10463546,-649481891,-98%,8,ii
+2022,31,Failure to Collect Revenue,1085895631,52005531,-1033890100,-95%,8,ii
+2022,32,Non Recovery of Loans and Advances,1085247618,37447755,-1047799863,-97%,8,ii
+2022,33,Failure to Collect Taxes,1237753306,68909046,-1168844260,-94%,8,ii
+2022,34,Failure to Attain Revenue Collections Target,1555145893,,-1555145893,-100%,8,ii
+2022,35,Unvouched Expenditure,2946916207,16274582,-2930641625,-99%,8,ii
+2022,36,Irregular Refund of VAT,3562136950,,-3562136950,-100%,8,ii
+2022,37,Uncompetitive Procurement,12825822970,23300,-12825799670,-100%,8,ii
+2022,38,Over Commitment,16857783845,236237,-16857547608,-100%,8,ii
+2022,99,TOTAL,133252504208,103519546579,-29732957629,-22%,8,ii
+2023,1,Failure to Collect Tax Arrears,97860886809,66992800000,-30868086809,-32%,9,ii
+2023,2,Failure to Settle Obligations/ Outstanding Bills,4944897302,5232292703,287395401,6%,9,ii
+2023,3,Irregular Payments,152446283,745929026,593482743,389%,9,ii
+2023,4,Overpayments,110384888,72825929,-37558959,-34%,9,ii
+2023,5,Unaccounted for Revenue,53781920,638000,-53143920,-99%,9,ii
+2023,6,Failure to Utilise Funds,132503190,2693513302,2561010112,1933%,9,ii
+2023,7,Irregular Distribution of Inputs,14612629,2597495,-12015134,-82%,9,ii
+2023,8,Loss of Revenue,25587961,69690335,44102374,172%,9,ii
+2023,9,Unacquited Inputs,2242889,,-2242889,-100%,9,ii
+2023,10,Unaquitted for Funds,814559,,-814559,-100%,9,ii
+2023,11,Non - Submission of Expenditure Returns,786692,4518673,3731981,474%,9,ii
+2023,12,Failure to Remit Government Revenue,194348,3493454,3299106,1698%,9,ii
+2023,13,Tranfer of Funds without Authority,767684,167550,-600134,-78%,9,ii
+2023,14,Delayed Banking,380165,21200,-358965,-94%,9,ii
+2023,15,Undisbursed Funds,,6666976,6666976,0%,9,ii
+2023,16,Irregular Inclusion of beneficiaries for Farming Inputs,2261927,17790790,15528863,687%,9,ii
+2023,17,Undistributed Farming Inputs,1506767,,-1506767,-100%,9,ii
+2023,18,Misappropriation of Funds,135207,737927,602720,446%,9,ii
+2023,19,Failure to Install supplied equipment,182927,,-182927,-100%,9,ii
+2023,20,Unretired Accountable Imprest,51872,444251,392379,756%,9,ii
+2023,21,Unaccounted for Stores,14273997,3455453,-10818544,-76%,9,ii
+2023,22,Failure to Utilise System,2099156,,-2099156,-100%,9,ii
+2023,23,Failure to Recover Advance Payments,,249350,249350,0%,9,ii
+2023,24,Unaccounted for Funds,388756,27302800,26914044,6923%,9,ii
+2023,25,Undelivered Materials,11126717,841654,-10285063,-92%,9,ii
+2023,26,Irregular Cash Withdraw,1156979,167219,-989760,-86%,9,ii
+2023,27,Misapplication of Funds,,4671144,4671144,0%,9,ii
+2023,28,Failure to Follow Procurement Procedures,660817,2764010,2103193,318%,9,ii
+2023,29,Loss of Public Funds,54141,9422335,9368194,17303%,9,ii
+2023,30,Wasteful Expenditure,10463546,15130315,4666769,45%,9,ii
+2023,31,Failure to Collect Revenue,52005531,210969868,158964337,306%,9,ii
+2023,32,Non Recovery of Loans and Advances,37447755,6407269,-31040486,-83%,9,ii
+2023,33,Failure to Collect Taxes,68909046,2442514222,2373605176,3445%,9,ii
+2023,34,Failure to Attain Revenue Collections Target,,2618497597,2618497597,0%,9,ii
+2023,35,Unvouched Expenditure,16274582,15378988,-895594,-6%,9,ii
+2023,36,Uncompetitive Procurement,23300,227843,204543,878%,9,ii
+2023,37,Over Commitment,236237,,-236237,-100%,9,ii
+2023,38,Unauthorised Expenditure /Payments,,258137597,258137597,0%,9,ii
+2023,99,TOTAL,103519546579,81460265276,-22059281304,-21%,9,ii

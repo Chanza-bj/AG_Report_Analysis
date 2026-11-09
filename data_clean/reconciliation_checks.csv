@@ -1,0 +1,44 @@
+check,key,value_a,value_b,difference,ok
+column_total_vs_printed,report2022_FY2021,133252504209,133252504208,1,FALSE
+column_total_vs_printed,report2022_FY2022,103519546579,103519546579,0,TRUE
+column_total_vs_printed,report2023_FY2022,103519546579,103519546579,0,TRUE
+column_total_vs_printed,report2023_FY2023,81460265275,81460265276,-1,FALSE
+FY2022_cross_report,irregular distribution of farming inputs,7350219,14612629,-7262410,FALSE
+FY2022_cross_report,irregular inclusion of beneficiaries for farming inputs,9524337,2261927,7262410,FALSE
+FY2022_cross_report,failure to collect tax arrears,97860886809,97860886809,0,TRUE
+FY2022_cross_report,failure to settle obligations outstanding bills,4944897302,4944897302,0,TRUE
+FY2022_cross_report,irregular payments,152446283,152446283,0,TRUE
+FY2022_cross_report,overpayments,110384888,110384888,0,TRUE
+FY2022_cross_report,unaccounted for revenue,53781920,53781920,0,TRUE
+FY2022_cross_report,failure to utilise funds,132503190,132503190,0,TRUE
+FY2022_cross_report,loss of revenue,25587961,25587961,0,TRUE
+FY2022_cross_report,unacquitted farming inputs,2242889,2242889,0,TRUE
+FY2022_cross_report,unacquitted for funds,814559,814559,0,TRUE
+FY2022_cross_report,non submission of expenditure returns,786692,786692,0,TRUE
+FY2022_cross_report,failure to remit government revenue,194348,194348,0,TRUE
+FY2022_cross_report,transfer of funds without authority,767684,767684,0,TRUE
+FY2022_cross_report,delayed banking,380165,380165,0,TRUE
+FY2022_cross_report,undisbursed funds,0,0,0,TRUE
+FY2022_cross_report,undistributed farming inputs,1506767,1506767,0,TRUE
+FY2022_cross_report,misappropriation of funds,135207,135207,0,TRUE
+FY2022_cross_report,failure to install supplied equipment,182927,182927,0,TRUE
+FY2022_cross_report,unretired accountable imprest,51872,51872,0,TRUE
+FY2022_cross_report,unaccounted for stores,14273997,14273997,0,TRUE
+FY2022_cross_report,failure to utilise system,2099156,2099156,0,TRUE
+FY2022_cross_report,failure to recover advance payments,0,0,0,TRUE
+FY2022_cross_report,unaccounted for funds,388756,388756,0,TRUE
+FY2022_cross_report,undelivered materials,11126717,11126717,0,TRUE
+FY2022_cross_report,irregular cash withdrawal,1156979,1156979,0,TRUE
+FY2022_cross_report,misapplication of funds,0,0,0,TRUE
+FY2022_cross_report,failure to follow procurement procedures,660817,660817,0,TRUE
+FY2022_cross_report,loss of public funds,54141,54141,0,TRUE
+FY2022_cross_report,wasteful expenditure,10463546,10463546,0,TRUE
+FY2022_cross_report,failure to collect revenue,52005531,52005531,0,TRUE
+FY2022_cross_report,non recovery of loans and advances,37447755,37447755,0,TRUE
+FY2022_cross_report,failure to collect taxes,68909046,68909046,0,TRUE
+FY2022_cross_report,failure to attain revenue collections target,0,0,0,TRUE
+FY2022_cross_report,unvouched expenditure,16274582,16274582,0,TRUE
+FY2022_cross_report,irregular refund of vat,0,0,0,TRUE
+FY2022_cross_report,uncompetitive procurement,23300,23300,0,TRUE
+FY2022_cross_report,over commitment,236237,236237,0,TRUE
+FY2022_cross_report,unauthorised expenditure payments,0,0,0,TRUE
