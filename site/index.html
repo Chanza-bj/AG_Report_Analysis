@@ -262,6 +262,8 @@ footer a{color:var(--blue-d);font-weight:600}
           <input id="val_search" class="search" type="search" placeholder="Search context, supplier or ministry... e.g. hospital, road, NMS, drugs">
           <div class="chips">
             <button class="chip active" data-vf="all">All</button>
+            <button class="chip" data-vf="verified">Verified</button>
+            <button class="chip" data-vf="unverified">Unverified</button>
             <button class="chip" data-vf="US$">US$</button>
             <button class="chip" data-vf="K">Kwacha</button>
             <button class="chip" data-vf="2021">2021</button>
@@ -745,13 +747,15 @@ function renderValued(){
     let okf=true;
     if(valFilter==='US$') okf=r.cur==='US$';
     else if(valFilter==='K') okf=r.cur==='K';
+    else if(valFilter==='verified') okf=r.v===true;
+    else if(valFilter==='unverified') okf=r.v===false;
     else if(valFilter!=='all') okf=String(r.y)===valFilter;
     return okq&&okf; });
   document.getElementById('valued_count').textContent=rows.length+' of 182';
   document.getElementById('t_valued').innerHTML=
-    '<thead><tr><th>Year</th><th>Ministry</th><th>Amount</th><th>What the report says (context)</th><th>Page</th></tr></thead><tbody>'+
+    '<thead><tr><th>Year</th><th>Ministry</th><th>Amount</th><th>What the report says (context)</th><th>Status</th><th>Page</th></tr></thead><tbody>'+
     (rows.length?rows.map(r=>`<tr><td class="num">${r.y}</td><td>${r.m}</td><td class="num">${r.amt}</td>`+
-      `<td style="font-size:12px">${r.ctx}</td><td class="muted">p${r.p}</td></tr>`).join('')
+      `<td style="font-size:12px">${r.ctx}</td><td>${r.v?'<span class="badge b-yes">verified</span>':'<span class="badge b-na">unverified</span>'}</td><td class="muted">p${r.p}</td></tr>`).join('')
       :'<tr><td colspan="5" class="muted" style="padding:18px">No contracts match.</td></tr>')+'</tbody>';
 }
 renderValued();
