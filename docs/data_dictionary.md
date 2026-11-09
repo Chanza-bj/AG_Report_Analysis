@@ -77,6 +77,27 @@ Budget execution and fiscal balance from "Statement B – Statement of Compariso
 
 Budget execution percent (actual payments / final budget) and the surplus in billions are computed in `R/03_fiscal_outturn.R`, not stored.
 
+## data_clean/contracts_flagged.csv
+Named contracts the reports question. A first batch, drawn from the reports' highlighted cases (the bodies name many more). One row per contract.
+
+| column | meaning |
+|---|---|
+| financial_year | Report year (2021-2025). |
+| ministry_std | Standardised portfolio. |
+| supplier | Contractor or supplier named in the report ("not named" where the report withholds it). |
+| description | What the contract was for. |
+| contract_value | Contract sum, where stated. |
+| contract_currency | ZMW or USD. |
+| procurement_method | single-source, uncompetitive, competitive, concession, joint-venture, or unknown. |
+| delivered | Yes, No, Partial, or NA (not stated / not applicable) at the report's cut-off. |
+| issue_flagged | What the auditors questioned (e.g. undelivered, overpriced, unsupported payment, cover bidding, under-declaration). |
+| amount_at_issue | The amount the finding turns on (paid-but-undelivered, unrecovered, over-paid, etc.), where stated. |
+| amount_currency | ZMW or USD for amount_at_issue. |
+| source_pdf_page | Page citation. |
+| note | Extra detail. |
+
+Kwacha and US dollar amounts are never added together. A flagged contract is a question the auditors raised, not a proven loss.
+
 ## data_clean/report_metadata.csv
 One row per report.
 
