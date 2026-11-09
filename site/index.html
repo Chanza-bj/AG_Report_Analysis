@@ -239,8 +239,19 @@ footer a{color:var(--blue-d);font-weight:600}
         </div>
       </div>
       <div class="card tablecard" style="margin-top:16px">
-        <div class="hd" style="padding:16px 18px 6px"><h3>Deep-verified contracts</h3><span class="tag">32 of ~182 · who, how much, delivered?</span></div>
-        <div class="tbwrap"><table id="t_contracts"></table></div>
+        <div class="hd" style="padding:16px 18px 2px"><h3>Deep-verified contracts</h3><span class="tag" id="contracts_count">32 of ~182</span></div>
+        <div class="cap" style="padding:0 18px">Who got the contract, how much, delivered or not — checked against the page. Search or filter.</div>
+        <div class="toolbar">
+          <input id="con_search" class="search" type="search" placeholder="Search supplier, contract or ministry... e.g. AVIC, hospital, ZTE, seed">
+          <div class="chips">
+            <button class="chip active" data-kf="all">All</button>
+            <button class="chip" data-kf="No">Not delivered</button>
+            <button class="chip" data-kf="Partial">Partial</button>
+            <button class="chip" data-kf="Yes">Delivered</button>
+            <button class="chip" data-kf="NA">Status not stated</button>
+          </div>
+        </div>
+        <div class="scrolltable"><table id="t_contracts"></table></div>
       </div>
 
       <div class="card tablecard" style="margin-top:16px">
@@ -625,10 +636,25 @@ function badge(s){const m={'No':['b-no','Not delivered'],'Partial':['b-part','Pa
 document.getElementById('t_flags').innerHTML =
   '<thead><tr><th>What the auditors flagged</th><th>Contracts</th></tr></thead><tbody>'+
   flagCounts.map(f=>`<tr><td>${f[0]}</td><td class="num">${f[1]}</td></tr>`).join('')+'</tbody>';
-document.getElementById('t_contracts').innerHTML =
-  '<thead><tr><th>Year</th><th>Ministry</th><th>Supplier</th><th>Contract</th><th>Value</th><th>Delivered</th><th>Flagged</th><th>Page</th></tr></thead><tbody>'+
-  contracts.map(r=>`<tr><td class="num">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td>`+
-    `<td class="num">${r[4]}</td><td>${badge(r[5])}</td><td>${r[6]}</td><td class="muted">${r[7]}</td></tr>`).join('')+'</tbody>';
+let conFilter='all', conQuery='';
+function renderContracts(){
+  const q=conQuery.toLowerCase();
+  const rows=contracts.filter(r=>{
+    const okq=!q||((r[1]+' '+r[2]+' '+r[3]+' '+r[6]).toLowerCase().includes(q));
+    const okf=conFilter==='all'||r[5]===conFilter;
+    return okq&&okf; });
+  document.getElementById('contracts_count').textContent=rows.length+' of 32';
+  document.getElementById('t_contracts').innerHTML=
+    '<thead><tr><th>Year</th><th>Ministry</th><th>Supplier</th><th>Contract</th><th>Value</th><th>Delivered</th><th>Flagged</th><th>Page</th></tr></thead><tbody>'+
+    (rows.length?rows.map(r=>`<tr><td class="num">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td>`+
+      `<td class="num">${r[4]}</td><td>${badge(r[5])}</td><td>${r[6]}</td><td class="muted">${r[7]}</td></tr>`).join('')
+      :'<tr><td colspan="8" class="muted" style="padding:18px">No contracts match.</td></tr>')+'</tbody>';
+}
+renderContracts();
+document.getElementById('con_search').addEventListener('input',e=>{conQuery=e.target.value;renderContracts();});
+document.querySelectorAll('.chip[data-kf]').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip[data-kf]').forEach(x=>x.classList.remove('active'));
+  c.classList.add('active'); conFilter=c.dataset.kf; renderContracts(); }));
 document.getElementById('t_recurring').innerHTML =
   '<thead><tr><th>Supplier</th><th>Named in reports</th><th>Mentions</th></tr></thead><tbody>'+
   recurring.map(r=>`<tr><td>${r[0]}</td><td class="muted">${r[1]}</td><td class="num">${r[2]}</td></tr>`).join('')+'</tbody>';
