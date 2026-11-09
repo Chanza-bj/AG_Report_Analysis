@@ -365,6 +365,11 @@ footer a{color:var(--blue-d);font-weight:600}
           </div>
         </div>
       </div>
+      <div class="card" style="margin-top:16px">
+        <div class="hd"><h3>Where the money fell short: biggest underfunding</h3><span class="tag">in-report, indicative</span></div>
+        <div class="cap">Ministry budgets authorised but not fully funded, from each report's Budget, Funding and Expenditure section. Indicative in-report figures, not full appropriations. Underfunding is itself a driver of the delivery failures above.</div>
+        <div id="c_materiality" class="chart tall"></div>
+      </div>
     </section>
 
     <section class="section" id="method">
@@ -445,6 +450,11 @@ const seed=[['Zambezi Seed',5886.83,13.46],['Steward Globe',0,4322.58],['Seed Co
 ['ETG Inputs',0,587.52],['Western Seed',470.36,0],['Pioneer Corteva',0,275.28],['Zambian Crop Genetics',262.25,0],
 ['Bayer Zambia',0,197.85],['Klein Karoo',0,126.39]];
 const seedDeliveredMT=9176.89, seedUndeliveredMT=24106.15;
+/* biggest ministry underfunding (in-report, indicative), [label, K billions] */
+const materiality=[['Finance & Nat. Planning (2024)',16.80],['Agriculture (2025)',7.71],
+['Health (2023)',6.17],['Local Government (2024)',4.11],['Health (2025)',3.09],
+['Agriculture (2023)',1.53],['Community Dev (2023)',1.49],['Education (2023)',1.45],
+['Water Dev (2024)',1.36],['Education (2025)',1.26]];
 /* suppliers named per report (distinct, text-verified from the supplier index) */
 const supYears=['2021','2022','2023','2024','2025'];
 const supPerYear=[188,98,57,108,32];
@@ -573,6 +583,16 @@ mk('c_suppliers').setOption({color:['#2a78d6'],textStyle:{fontFamily:FONT},
   grid:{left:8,right:14,top:20,bottom:8,containLabel:true},
   xAxis:axisX(supYears),yAxis:axisYhide,
   series:[{type:'bar',data:supPerYear,itemStyle:{borderRadius:[5,5,0,0],color:'#2a78d6'},barWidth:'46%',label:barLabel()}]});
+
+/* materiality: biggest underfunding (horizontal) */
+const matR=materiality.slice().reverse();
+mk('c_materiality').setOption({textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'},...tip,valueFormatter:v=>'K'+v+'bn'},
+  grid:{left:8,right:36,top:10,bottom:6,containLabel:true},
+  xAxis:{type:'value',splitLine:{lineStyle:{color:GRID}},axisLabel:{show:false},axisLine:{show:false},axisTick:{show:false}},
+  yAxis:{type:'category',data:matR.map(d=>d[0]),axisTick:{show:false},axisLine:{show:false},axisLabel:{color:INK,fontWeight:600,fontSize:11}},
+  series:[{type:'bar',data:matR.map(d=>d[1]),itemStyle:{borderRadius:[0,5,5,0],color:'#eb6834'},barWidth:'62%',
+    label:{show:true,position:'right',color:INK,fontWeight:700,fontFamily:FONT,fontSize:11,formatter:p=>'K'+p.value+'bn'}}]});
 
 /* tables */
 function badge(s){const m={'No':['b-no','Not delivered'],'Partial':['b-part','Partial'],'Yes':['b-yes','Delivered'],'NA':['b-na','Not stated']};
