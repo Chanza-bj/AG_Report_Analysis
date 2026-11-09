@@ -1,0 +1,595 @@
+supplier,years_appearing,n_years,total_mentions,pages,verified_in_text
+Medici Land Governance Limited,2021;2022;2023;2025,4,4,2021: pdf p52; 2022: pdf p38; 2023: pdf p56 | 2025: pdf p65,FALSE
+AVIC International Limited,2021;2022;2024,3,10,"2021: pdf p308,309,310,311; 2022: pdf p274; 2024: pdf p154,164",TRUE
+NMS Infrastructure Limited,2022;2024;2025,3,7,"2022: pdf p97; 2024: pdf p156,157,158; 2025: pdf p116",TRUE
+Kamano Seed Company Limited,2021;2022;2024,3,6,"2022: pdf p83,213,215; 2024: pdf p345 | 2021: pdf p355,356",TRUE
+Steward Globe,2022;2024;2025,3,3,2022: pdf p215; 2024/2025 also appear in text (added manually),TRUE
+Stewards Globe Limited,2021;2025,2,6,"2021: pdf p147,355,356 | 2025: pdf p8,70",TRUE
+Creative Team Construction,2023;2024,2,5,"2023: pdf p258; 2024: pdf p228,235,236",TRUE
+Sarago General Dealers Limited,2021;2022,2,5,"2021: pdf p293,294; 2022: pdf p53 | 2021: pdf p293",TRUE
+Zambezi Seed,2022;2024,2,5,"2022: pdf p213,215,228; 2024: pdf p344",TRUE
+Zamchin Construction,2021;2024,2,5,2021: pdf p71; 2024: pdf p250,TRUE
+Alpha Commodities Limited,2021;2022,2,4,2021: pdf p367; 2022: pdf p210 | 2021: pdf p356,TRUE
+Afrox Zambia Limited,2021;2022,2,3,"2022: pdf p110,111 | 2021: pdf p165",TRUE
+Enhanced Smallholder Livestock Investment,2021;2022,2,3,"2021: pdf p334; 2022: pdf p6,198",TRUE
+Farmers Barn Limited,2021;2022,2,3,"2021: pdf p355,356 | 2022: pdf p215 (seed table, added manually)",TRUE
+Growmore Technologies,2024;2025,2,3,2024: pdf p338; 2025: pdf p197,TRUE
+Jiangsu Gold Civil Construction Company Limited,2024;2025,2,3,"2025: pdf p114,115 | 2024: pdf p151",TRUE
+Nyimba Investments Limited,2021;2022,2,3,2021: pdf p147 | 2021: pdf p356 | 2022: pdf p58,TRUE
+Stoutone Investments Limited,2022;2024,2,3,"2022: pdf p210; 2024: pdf p164,171",TRUE
+Zamtel Limited,2022;2023,2,3,"2022: pdf p292,301; 2023: pdf p172",TRUE
+Associated Limited External Works,2021;2024,2,2,2021: pdf p274; 2024: pdf p173,FALSE
+Frave General Dealers,2022;2023,2,2,2022: pdf p113; 2023: pdf p190,TRUE
+Gametech Zambia Ltd,2021;2022,2,2,2021: pdf p43; 2022: pdf p33,TRUE
+Kampe Investments Limited,2022;2024,2,2,2022: pdf p142; 2024: pdf p120,TRUE
+Poly Technologies,2021;2024,2,2,2021: pdf p80; 2024: pdf p90,TRUE
+SMR Construction Limited,2021;2024,2,2,2024: pdf p295 | 2021: pdf p77,FALSE
+Saro Agro Industrial Ltd,2024;2025,2,2,2025: pdf p197 | 2024: pdf p338,TRUE
+Shorthorn Printers Limited,2023;2024,2,2,2023: pdf p435 | 2024: pdf p386,TRUE
+Zhong Ding International Engineering,2021;2025,2,2,2021: pdf p174; 2025: pdf p117,TRUE
+Nyiombo Investments Limited,2024,1,14,"2024: pdf p111,112 | 2024: pdf p9,111,112",TRUE
+Primetime Freight,2024,1,13,"2024: pdf p11,184,185,186",TRUE
+Prestige Motors Limited,2023,1,12,"2023: pdf p44,45",TRUE
+Rockcliffe Trading,2021,1,8,"2021: pdf p355,356,357,358,361",TRUE
+Advant Solutions Limited,2021,1,7,"2021: pdf p436,437 | 2021: pdf p436",TRUE
+DDYPE Company Limited,2022,1,7,2022: pdf p143,FALSE
+NAB Africa Enterprises Limited,2021,1,7,"2021: pdf p380,381,382 | 2021: pdf p383 | 2021: pdf p380 | 2021: pdf p382",TRUE
+Padayache Trading,2021,1,7,"2021: pdf p287,290,302",TRUE
+Evanset Civil Works Engineering Limited,2021,1,6,"2021: pdf p294,295,296 | 2021: pdf p287",TRUE
+Kayombo Tech Limited,2024,1,6,"2024: pdf p294,296,297 | 2024: pdf p295",TRUE
+Mika Motors Ltd,2021,1,6,"2021: pdf p80,81,82 | 2021: pdf p81",TRUE
+Novatros Trading,2023,1,6,"2023: pdf p292,293,294",TRUE
+Accute Investments Limited,2021,1,5,"2021: pdf p13,163,164,165",TRUE
+Camco Equipment Zambia Limited,2021,1,5,2021: pdf p384,TRUE
+Mpulungu Harbour Management Limited,2021,1,5,"2021: pdf p12,144",TRUE
+Neria Investments Limited,2021,1,5,2021: pdf p356 | 2021: pdf p362 | 2021: pdf p367,TRUE
+Pannar Seed,2021,1,5,"2021: pdf p355,356,363,367",TRUE
+Augusta Limited,2025,1,4,2025: pdf p109,TRUE
+Elina Construction,2023,1,4,2023: pdf p184,TRUE
+M-SAT Limited,2023,1,4,"2023: pdf p247,248",TRUE
+Mikalile Trading Company Ltd,2021,1,4,"2021: pdf p81,82 | 2021: pdf p68,69",TRUE
+SALTECH Enterprises Limited,2023,1,4,"2023: pdf p106,107",TRUE
+Savenda Systems Limited,2021,1,4,"2021: pdf p297,298 | 2021: pdf p298",TRUE
+Shah Motors,2021,1,4,2021: pdf p295,TRUE
+Zamworth Construction Limited,2021,1,4,"2021: pdf p10,256",TRUE
+AMS Investments Limited,2023,1,3,"2023: pdf p270,271",TRUE
+Africa Union Cargo Zambia Limited,2024,1,3,2024: pdf p216,TRUE
+Afrifin Solutions Limited,2021,1,3,2021: pdf p382 | 2021: pdf p380,TRUE
+Cattlemen Livestock Cooperative Society Limited,2024,1,3,2024: pdf p130 | 2024: pdf p131,TRUE
+Cav Africa Enterprises Limited,2021,1,3,"2021: pdf p381,382 | 2021: pdf p380",TRUE
+China National Complete Engineering,2021,1,3,"2021: pdf p257,258,259",TRUE
+Daniel Tembo General Dealers,2022,1,3,2022: pdf p83,TRUE
+DotGov Solutions,2022,1,3,"2022: pdf p74,76,77",TRUE
+ETG Export Trading Co. Ltd,2021,1,3,"2021: pdf p378,379",TRUE
+Finecop Zambia Limited,2023,1,3,"2023: pdf p355,356,357",TRUE
+Helmet Engineering,2021,1,3,"2021: pdf p308,310",TRUE
+Honda Zambia Ltd,2023,1,3,"2023: pdf p331,332",TRUE
+Kariba Seed,2022,1,3,"2022: pdf p83,213,215",TRUE
+Koredo Investments Limited,2021,1,3,"2021: pdf p300,301 | 2021: pdf p300",FALSE
+Lamasat International Limited,2021,1,3,"2021: pdf p396,399",TRUE
+Latirium Co. Limited,2021,1,3,2021: pdf p297,TRUE
+Major Business Solutions Limited,2021,1,3,"2021: pdf p385,386",TRUE
+Mildil Construction Limited,2023,1,3,2023: pdf p184,TRUE
+Nyimba Investment Limited,2021,1,3,"2021: pdf p355,356 | 2021: pdf p361",TRUE
+Ogaz Zambia Limited,2021,1,3,"2021: pdf p164,165",TRUE
+Prime Time Investment Limited,2024,1,3,"2024: pdf p186,187 | 2024: pdf p188",TRUE
+Sanes General Dealers,2024,1,3,"2024: pdf p164,169,171",TRUE
+Savenda Construction,2021,1,3,"2021: pdf p319,320,321",FALSE
+Tapo Farms Limited,2021,1,3,"2021: pdf p391,394",TRUE
+Tesno General Dealers,2023,1,3,"2023: pdf p355,357",TRUE
+Tonlex Investment Limited,2024,1,3,"2024: pdf p159,164,172",TRUE
+ZTE Corporation Limited,2023,1,3,2023: pdf p69,TRUE
+AFCON Infrastructure Limited,2021,1,2,2021: pdf p136,TRUE
+Advanced Hospitality Solutions,2022,1,2,2022: pdf p33,TRUE
+Agrizam Investments Limited,2022,1,2,2022: pdf p211 | 2022: pdf p212,TRUE
+Biogenix Limited,2024,1,2,2024: pdf p302,TRUE
+Black Bear Auto Limited,2024,1,2,2024: pdf p299,TRUE
+Bonvoyage Enterprises Ltd,2024,1,2,"2024: pdf p299,300",TRUE
+Cashmo Construction Limited,2025,1,2,2025: pdf p233 | 2025: pdf p235,FALSE
+Chitemax Investment,2024,1,2,2024: pdf p262,TRUE
+Chitemax Investments,2024,1,2,2024: pdf p262,TRUE
+Chumene Investments,2024,1,2,2024: pdf p353,TRUE
+City Bank Zambia Limited,2023,1,2,2023: pdf p68,TRUE
+Commodity Monitor Limited,2025,1,2,2025: pdf p81 | 2025: pdf p82,TRUE
+Country Millers Limited,2021,1,2,2021: pdf p390,TRUE
+Epikaizo Investments Limited,2022,1,2,2022: pdf p67,TRUE
+Evanset Civil Works Limited,2021,1,2,2021: pdf p295,TRUE
+Export Trading,2021,1,2,2021: pdf p364,TRUE
+Fongda Corporation Limited,2021,1,2,2021: pdf p253,TRUE
+GNM Project Limited,2024,1,2,2024: pdf p237,TRUE
+GNM Projects Limited,2024,1,2,2024: pdf p120,TRUE
+Gold Trading,2025,1,2,2025: pdf p80,TRUE
+Golden Horse Investments Limited,2021,1,2,2021: pdf p71,TRUE
+Grant Engineering,2022,1,2,2022: pdf p251,TRUE
+Harbour Side Construction,2021,1,2,2021: pdf p274,TRUE
+Hemmings Investments Limited,2024,1,2,2024: pdf p168 | 2024: pdf p164,TRUE
+Impala Tech Group Ltd,2022,1,2,2022: pdf p33,TRUE
+Industrial Merchants Limited,2024,1,2,2024: pdf p71,TRUE
+Joshisa Electronics,2025,1,2,2025: pdf p90,TRUE
+KNR Limited,2023,1,2,"2023: pdf p92,93",TRUE
+Kalideck Pty Limited,2024,1,2,"2024: pdf p218,219",TRUE
+Kalumbila Multipirpose Co-operative Ltd,2024,1,2,2024: pdf p245,TRUE
+Kamron Investments Ltd,2024,1,2,2024: pdf p299,TRUE
+Kapiri- Mposhi District Construction,2022,1,2,2022: pdf p294,TRUE
+Kathemo,2024,1,2,2024: pdf p130 (added manually),TRUE
+Ketafazia General Dealers,2022,1,2,2022: pdf p67,TRUE
+King Long Motors Zambia Limited,2021,1,2,"2021: pdf p161,162",FALSE
+Klein Karoo Seed Zambia Limited,2021,1,2,"2021: pdf p355,356",TRUE
+Knox Marketing Solutions Limited,2021,1,2,2021: pdf p384 | 2021: pdf p383,TRUE
+Levcon Trading,2023,1,2,"2023: pdf p391,393",TRUE
+Lodestar International Limited,2021,1,2,"2021: pdf p13,84",TRUE
+Lubways Enterprise Limited,2024,1,2,"2024: pdf p238,239",TRUE
+Maba Medicals Limited,2022,1,2,2022: pdf p94,FALSE
+Mackphilisa Computer System Ltd,2023,1,2,2023: pdf p320,TRUE
+Mukuyu Ventures Limited,2023,1,2,2023: pdf p108,TRUE
+Muleka Investments Ltd,2021,1,2,"2021: pdf p300,301",TRUE
+Namwala District Construction,2022,1,2,"2022: pdf p294,304",TRUE
+Neria Investment Limited,2021,1,2,"2021: pdf p355,356",TRUE
+Outstanding Bills JJ Lowe Ltd,2022,1,2,2022: pdf p273,TRUE
+Pazzolona Engineers Limited,2023,1,2,2023: pdf p258,TRUE
+Power IT Limited,2022,1,2,2022: pdf p69,TRUE
+Primetime Investments Limited,2024,1,2,2024: pdf p187,TRUE
+Raymond Construction Limited,2021,1,2,2021: pdf p268 | 2021: pdf p223,TRUE
+Sams Investments,2024,1,2,2024: pdf p262,TRUE
+Sand-Ridge Associates Limited,2024,1,2,2024: pdf p244,FALSE
+Sandridge Associates Limited,2021,1,2,2021: pdf p65,TRUE
+Seedco Limited,2021,1,2,"2021: pdf p355,356",TRUE
+Sepli Investment,2022,1,2,2022: pdf p83,TRUE
+Share Africa Limited,2024,1,2,2024: pdf p346 | 2024: pdf p345,TRUE
+Stardy Construction,2021,1,2,2021: pdf p263,FALSE
+Sustainable Water Solutions Limited,2025,1,2,"2025: pdf p231,232",FALSE
+Synergy Seed,2022,1,2,"2022: pdf p213,215",TRUE
+Syngenta Zambia Limited,2021,1,2,"2021: pdf p355,356",TRUE
+Systems Interface Limited,2021,1,2,"2021: pdf p11,291",TRUE
+TFM Holdings Limited,2021,1,2,"2021: pdf p166,168",TRUE
+Tecon Engineering,2024,1,2,2024: pdf p264,TRUE
+Trans Seed Zambia Limited,2024,1,2,2024: pdf p137,TRUE
+Troikaz Investment Limited,2024,1,2,"2024: pdf p130,131",TRUE
+Unionlet Limited,2021,1,2,"2021: pdf p11,291",TRUE
+Vitumbo Investments,2021,1,2,2021: pdf p387,TRUE
+Wamuba Construction Limited,2023,1,2,2023: pdf p258,TRUE
+Web International Limited,2021,1,2,2021: pdf p163,FALSE
+Ya Investments Limited,2022,1,2,"2022: pdf p285,296",TRUE
+ZSIC General Insurance Limited,2023,1,2,"2023: pdf p318,417",TRUE
+ZTE Zambia Service Limited,2023,1,2,"2023: pdf p68,69",TRUE
+ZTE Zambia Services Limited,2023,1,2,2023: pdf p69,TRUE
+Zambian Fertiliser Limited,2021,1,2,"2021: pdf p355,356",TRUE
+Zdenakie Limited,2021,1,2,"2021: pdf p94,95",TRUE
+Zoona Transactions Zambia Limited,2023,1,2,2023: pdf p152,TRUE
+ACM Industrial Suppliers Limited,2025,1,1,2025: pdf p83,TRUE
+AMS Investment Limited,2023,1,1,2023: pdf p270,TRUE
+ANHUI Foreign Economic Construction,2021,1,1,2021: pdf p396,TRUE
+ASESCO Construction,2021,1,1,2021: pdf p320,FALSE
+Accams Lodge Limited,2021,1,1,2021: pdf p394,TRUE
+Accute Investment Limited,2021,1,1,2021: pdf p164,TRUE
+Active Timber Junction Medium Active Unene Trading,2025,1,1,2025: pdf p245,FALSE
+Activities Under Engineering,2025,1,1,2025: pdf p162,TRUE
+Addis Construction,2021,1,1,2021: pdf p89,FALSE
+Aditya Birla Global Trading Singapore PTE Limited,2024,1,1,2024: pdf p111,TRUE
+Advanced Products Zambia Limited,2024,1,1,2024: pdf p302,TRUE
+Advant Solution Limited,2021,1,1,2021: pdf p436,TRUE
+Advantex Investments Limited,2021,1,1,2021: pdf p36,TRUE
+Africa Enterprises Limited,2021,1,1,2021: pdf p381,TRUE
+Africa Site Masters Limited,2021,1,1,2021: pdf p310,TRUE
+African Access Limited,2021,1,1,2021: pdf p394,TRUE
+Afrifin Solution Ltd Cav Africa Enterprises,2021,1,1,2021: pdf p382,FALSE
+Afrifrin Solutions Limited,2021,1,1,2021: pdf p381,TRUE
+Afriwoods Construction,2021,1,1,2021: pdf p111,TRUE
+Agricon Zambia Limited,2022,1,1,2022: pdf p232,TRUE
+Agrizam Investment Limited,2022,1,1,2022: pdf p210,TRUE
+Agro Suppliers,2021,1,1,2021: pdf p368,TRUE
+Agroacres Seed Company Ltd,2025,1,1,2025: pdf p70,TRUE
+Akamwa Construction,2024,1,1,2024: pdf p333,TRUE
+Altavasta Investment Limited,2025,1,1,2025: pdf p174,TRUE
+Although Tonlex Investment Limited,2024,1,1,2024: pdf p161,TRUE
+Amac Seed Zambia Limited,2024,1,1,2024: pdf p139,FALSE
+Anamed Constrauction Limited,2023,1,1,2023: pdf p258,TRUE
+Aniaml Health Construction,2023,1,1,2023: pdf p359,FALSE
+Anita Construction,2021,1,1,2021: pdf p271,TRUE
+Anshan Investment Zambia Limited,2021,1,1,2021: pdf p36,TRUE
+Asf Zambia Hotel Holding Limited,2021,1,1,2021: pdf p40,TRUE
+Associated External PLADOC Engineering Limited,2024,1,1,2024: pdf p172,TRUE
+Associated External Trymate Zambia Limited,2024,1,1,2024: pdf p172,TRUE
+Associated Limited External Works Construction,2024,1,1,2024: pdf p171,FALSE
+Associated Sanes General Dealers,2024,1,1,2024: pdf p172,TRUE
+Atonement Construction,2021,1,1,2021: pdf p268,FALSE
+Avant Solutions Limited,2021,1,1,2021: pdf p436,TRUE
+Avima Pty Limited,2023,1,1,2023: pdf p364,TRUE
+Avondale Lusaka Nab-Africa Enterprises Ltd,2021,1,1,2021: pdf p382,FALSE
+Awanji Trading Limited,2021,1,1,2021: pdf p40,TRUE
+BCHOD Consulting Engineering,2021,1,1,2021: pdf p173,TRUE
+Bangweulu Sunshare Construction,2024,1,1,2024: pdf p208,FALSE
+Bayer Zambia,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+Bedok Ventures Limited,2021,1,1,2021: pdf p40,TRUE
+Berbrin Investment Limited,2023,1,1,2023: pdf p258,TRUE
+Betamin Investment Limited,2021,1,1,2021: pdf p36,TRUE
+Betani Sports Betting Zambia Ltd,2021,1,1,2021: pdf p43,TRUE
+Bhavesh Overseas Zambia Limited,2021,1,1,2021: pdf p36,TRUE
+Big Mountain Mining Zambia Limited,2021,1,1,2021: pdf p36,TRUE
+Big Tree Beverages Limited,2021,1,1,2021: pdf p40,TRUE
+Black Diamond Investments Limited,2024,1,1,2024: pdf p299,TRUE
+Bloom Concepts Ltd,2024,1,1,2024: pdf p245,TRUE
+Blue Print Seed Co. Ltd,2025,1,1,2025: pdf p70,TRUE
+Bola Bet Company Ltd,2022,1,1,2022: pdf p33,TRUE
+Book Hut Limited,2022,1,1,2022: pdf p296,TRUE
+Brut Construction,2021,1,1,2021: pdf p265,FALSE
+CLA Commercial Vehicle Ltd,2022,1,1,2022: pdf p236,TRUE
+CLA Commercial Vehicles Ltd,2022,1,1,2022: pdf p236,TRUE
+Capital Projects Mulobezi District Council Construction,2022,1,1,2022: pdf p280,TRUE
+Case Construction,2024,1,1,2024: pdf p250,TRUE
+Chadiza Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Champion Minerals Limited,2021,1,1,2021: pdf p36,TRUE
+Changula Dam Solutions KDW Construction,2024,1,1,2024: pdf p229,FALSE
+Chasefu Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Chembe Belview Tools Limited,2023,1,1,2023: pdf p403,FALSE
+Chibox Holdings Limited,2024,1,1,2024: pdf p322,TRUE
+Chibox Limited,2024,1,1,2024: pdf p323,TRUE
+Chibwika Limited,2024,1,1,2024: pdf p330,FALSE
+Chimanga Changa Limited,2022,1,1,2022: pdf p59,TRUE
+Chime Express Limited,2024,1,1,2024: pdf p374,TRUE
+China Geo Engineering,2021,1,1,2021: pdf p423,TRUE
+China Limited,2021,1,1,2021: pdf p257,TRUE
+Chinowacha Investment Limited,2024,1,1,2024: pdf p265,TRUE
+Chipando Construction,2021,1,1,2021: pdf p269,FALSE
+Chipando General Dealers,2021,1,1,2021: pdf p269,FALSE
+Chipangali Construction,2023,1,1,2023: pdf p276,FALSE
+Chipangali Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Chipili Woodrock Construction Limited,2023,1,1,2023: pdf p403,FALSE
+Chisanga Kasama Construction,2025,1,1,2025: pdf p111,FALSE
+Chisubu Company Limited,2023,1,1,2023: pdf p351,FALSE
+Chitambo District Construction,2022,1,1,2022: pdf p294,TRUE
+Chiungwe Dip Tanks Vubwi Construction,2022,1,1,2022: pdf p282,TRUE
+Chongwe Construction,2022,1,1,2022: pdf p281,TRUE
+Clearing Services-Primetime Freight,2024,1,1,2024: pdf p184,TRUE
+Cloud Tech Zambia Limited,2021,1,1,2021: pdf p277,TRUE
+Communicat Construction,2021,1,1,2021: pdf p112,TRUE
+Conchak Investments Limited,2022,1,1,2022: pdf p210,TRUE
+Conflict Free Minerals Limited,2021,1,1,2021: pdf p36,TRUE
+Connect Power Zesco Limited,2023,1,1,2023: pdf p256,FALSE
+Construction Chapa Kaputu Limited,2021,1,1,2021: pdf p117,FALSE
+Contractors Muchinga Limited,2021,1,1,2021: pdf p118,FALSE
+Cork Trading Ltd,2021,1,1,2021: pdf p287,TRUE
+Crambus General Dealers,2021,1,1,2021: pdf p204,FALSE
+Crismal-Tech Mining Limited,2021,1,1,2021: pdf p36,TRUE
+Crystaline Technologies Limited,2025,1,1,2025: pdf p195,FALSE
+DCEC Zambia Company Limited,2022,1,1,2022: pdf p60,TRUE
+Dairy Gold Limited,2021,1,1,2021: pdf p40,TRUE
+Damages Construction,2024,1,1,2024: pdf p170,FALSE
+Dana Oil Corporation Limited,2021,1,1,2021: pdf p145,TRUE
+Danait Transport Limited,2022,1,1,2022: pdf p52,TRUE
+Dar Engineering,2021,1,1,2021: pdf p173,TRUE
+Datong Construction,2021,1,1,2021: pdf p322,FALSE
+Davisbet Construction,2021,1,1,2021: pdf p270,FALSE
+Deep Blue Investment Company Limited,2021,1,1,2021: pdf p307,TRUE
+Delayed Construction,2025,1,1,2025: pdf p172,TRUE
+Delta Gas Zambia Limited,2021,1,1,2021: pdf p164,TRUE
+Despite Mackphilisa Computer Systems Limited,2024,1,1,2024: pdf p350,TRUE
+Detakhom Construction,2021,1,1,2021: pdf p97,FALSE
+Diamond Palace Construction,2024,1,1,2024: pdf p250,TRUE
+DotCom Technologies,2022,1,1,2022: pdf p301,TRUE
+Drainange Works Associated External Limited,2024,1,1,2024: pdf p168,FALSE
+Drilling Exploration Ltd,2021,1,1,2021: pdf p251,TRUE
+Dulsha Investments,2023,1,1,2023: pdf p374,FALSE
+ETG Inputs,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+Earthmac International Limited,2025,1,1,2025: pdf p162,TRUE
+Earthrow Construction,2021,1,1,2021: pdf p323,FALSE
+Edmas General Dealers Limited,2023,1,1,2023: pdf p352,TRUE
+Eldamain Business Solution Construction,2021,1,1,2021: pdf p71,FALSE
+Eldermain Construction,2021,1,1,2021: pdf p272,FALSE
+Elephant Bet Ltd,2021,1,1,2021: pdf p43,TRUE
+Employer Construction,2022,1,1,2022: pdf p294,TRUE
+Engineering Construction,2021,1,1,2021: pdf p265,TRUE
+Equalizer General Trading,2022,1,1,2022: pdf p148,TRUE
+Evergreen Fertilizer Limited,2022,1,1,2022: pdf p210,TRUE
+Evergreen Sports Betting Limited,2022,1,1,2022: pdf p33,TRUE
+Exolic Corporation Limited,2021,1,1,2021: pdf p37,TRUE
+Exoline Investments Limited,2021,1,1,2021: pdf p292,FALSE
+Expedite Construction,2024,1,1,2024: pdf p225,TRUE
+Exploration Limited,2024,1,1,2024: pdf p294,TRUE
+Export Ltd,2021,1,1,2021: pdf p287,TRUE
+Farthing Zambia Sports Betting Ltd,2021,1,1,2021: pdf p43,TRUE
+Feedo Investment Limited,2021,1,1,2021: pdf p287,TRUE
+Ferro Alloys Corporation Limited,2021,1,1,2021: pdf p36,TRUE
+Fertiliser Neria Investment Limited,2021,1,1,2021: pdf p358,TRUE
+Fertiliser Nyimba Investment Limited,2021,1,1,2021: pdf p358,TRUE
+Fertiliser Rockcliffe Trading,2021,1,1,2021: pdf p358,TRUE
+Fertiliser Zambian Fertiliser Limited,2021,1,1,2021: pdf p358,TRUE
+Franovigy Enterprises Limited,2024,1,1,2024: pdf p326,TRUE
+Fresino Enterprises Limited,2021,1,1,2021: pdf p71,TRUE
+Fungala Investment Limited,2023,1,1,2023: pdf p258,TRUE
+Ganeshi Suppliers,2021,1,1,2021: pdf p388,FALSE
+Garche General Dealers Limited,2022,1,1,2022: pdf p60,TRUE
+Gatoma Investment Limited,2023,1,1,2023: pdf p399,TRUE
+Gayrimenkul Yatrim Insaat Sanayi Ve Ticaret Limited,2021,1,1,2021: pdf p102,FALSE
+General Merchandise Limited,2024,1,1,2024: pdf p373,TRUE
+Geotech Limited,2025,1,1,2025: pdf p104,TRUE
+Glask Enterprises Limited,2024,1,1,2024: pdf p331,FALSE
+Glass Glazers Limited,2023,1,1,2023: pdf p258,TRUE
+Glazing Construction,2024,1,1,2024: pdf p168,FALSE
+Goldman Insurance Limited,2021,1,1,2021: pdf p428,TRUE
+Good Nature,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+Gwembe District Construction,2022,1,1,2022: pdf p294,TRUE
+H.M Milling Ltd,2022,1,1,2022: pdf p58,TRUE
+Haga Logistics Limited,2024,1,1,2024: pdf p70,TRUE
+Hazel Daniels International Limited,2021,1,1,2021: pdf p290,FALSE
+Hazel Daniels Limited,2021,1,1,2021: pdf p287,TRUE
+Hemings Investments Limited,2023,1,1,2023: pdf p258,TRUE
+Henan Overseas Engineering Construction Company Limited,2021,1,1,2021: pdf p389,TRUE
+Henan Zhongmeng Construction,2021,1,1,2021: pdf p388,TRUE
+Henina Engineering,2022,1,1,2022: pdf p65,TRUE
+Hollard Insurance Zambia Limited,2023,1,1,2023: pdf p318,TRUE
+Horizon Construction,2021,1,1,2021: pdf p109,FALSE
+Hotian Metal Company Limited,2021,1,1,2021: pdf p36,TRUE
+Hua Sheng Construction Limited,2022,1,1,2022: pdf p232,TRUE
+Hyten Construction Limited,2024,1,1,2024: pdf p326,TRUE
+Implement Engineering,2021,1,1,2021: pdf p78,TRUE
+Innovations Limited,2024,1,1,2024: pdf p233,TRUE
+Ipongo Rural Limited,2024,1,1,2024: pdf p205,FALSE
+JMMEL Construction,2024,1,1,2024: pdf p333,TRUE
+Jasema Construction Limited,2025,1,1,2025: pdf p162,TRUE
+Jiangsu Gold Construction,2024,1,1,2024: pdf p150,TRUE
+Jiansu Gold Civil Construction Limited,2021,1,1,2021: pdf p389,TRUE
+Jihua Limited,2021,1,1,2021: pdf p287,TRUE
+Jotech Mining Logistics Limited,2024,1,1,2024: pdf p250,TRUE
+Jozanga Investment Limited,2025,1,1,2025: pdf p243,FALSE
+KCM Green Ltd,2023,1,1,2023: pdf p346,FALSE
+KDF Engineering,2024,1,1,2024: pdf p227,TRUE
+KDW Engineering Limited,2024,1,1,2024: pdf p239,FALSE
+Kabundi Manganese Company Limited,2021,1,1,2021: pdf p36,TRUE
+Kabwe Milling Ltd,2022,1,1,2022: pdf p58,TRUE
+Kafue District- Construction,2022,1,1,2022: pdf p294,TRUE
+Kalabo Correction Service Kalabo Correctional Construction,2023,1,1,2023: pdf p111,FALSE
+Kalomo District Construction,2022,1,1,2022: pdf p294,TRUE
+Kalomo Steward Globe Investment,2023,1,1,2023: pdf p140,TRUE
+Kamach Ventures Limited,2025,1,1,2025: pdf p162,TRUE
+Kampe Construction,2024,1,1,2024: pdf p122,FALSE
+Kampe Investment Limited,2022,1,1,2022: pdf p142,FALSE
+Kamron Investment Kitchen Utensils Limited,2024,1,1,2024: pdf p301,TRUE
+Kamron Investment Limited,2024,1,1,2024: pdf p300,TRUE
+Kasama Twinery General Dealers,2021,1,1,2021: pdf p423,TRUE
+Kaseke Mungwi Construction,2025,1,1,2025: pdf p111,FALSE
+Kasenengwa Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Katete Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Katoba Rural Ltd,2024,1,1,2024: pdf p204,TRUE
+Katuta Boarding Luwingu Investment,2023,1,1,2023: pdf p254,FALSE
+Kawambwa Chisulo Primary School JKMM General Dealers,2021,1,1,2021: pdf p447,FALSE
+Kawambwa Kawambw JKMM General Dealers,2024,1,1,2024: pdf p208,FALSE
+Kawazane Investment Limited,2022,1,1,2022: pdf p294,TRUE
+Kazungula District Construction,2022,1,1,2022: pdf p294,TRUE
+Kel Oracle Trading,2021,1,1,2021: pdf p350,TRUE
+Keshimaria Investment Limited,2024,1,1,2024: pdf p247,TRUE
+Keysmar Construction,2021,1,1,2021: pdf p273,FALSE
+King Salman Bin Engineering,2024,1,1,2024: pdf p164,FALSE
+Kitwe Raymond Construction Ltd,2024,1,1,2024: pdf p208,TRUE
+Klein Karoo,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+Klein Karoo Seed,2021,1,1,2021: pdf p358,TRUE
+Kwasu Properties Ltd,2024,1,1,2024: pdf p127,TRUE
+Lake Tech Enterprises Limited,2021,1,1,2021: pdf p98,TRUE
+Laminators Solutions,2021,1,1,2021: pdf p86,FALSE
+Large Active Nyiloji Timber Processing Limited,2025,1,1,2025: pdf p245,FALSE
+Leagin Zambia Limited,2022,1,1,2022: pdf p33,TRUE
+Leisely Howards Limited,2024,1,1,2024: pdf p299,TRUE
+Leisley Howard Limited,2024,1,1,2024: pdf p299,TRUE
+Letscar Limited,2021,1,1,2021: pdf p287,TRUE
+Limanya Enterprise Limited,2023,1,1,2023: pdf p370,TRUE
+Linsang Investments Company Limited,2021,1,1,2021: pdf p36,TRUE
+Liswatch General Dealers,2023,1,1,2023: pdf p340,TRUE
+Livingstone Construction,2024,1,1,2024: pdf p127,FALSE
+Livingstone Lontinos General Dealers,2024,1,1,2024: pdf p208,TRUE
+Lolimark General Dealers,2025,1,1,2025: pdf p162,TRUE
+London Contractors Limited,2023,1,1,2023: pdf p189,TRUE
+Loxlax Limited,2024,1,1,2024: pdf p352,TRUE
+Luangwa District PLADOC Engineering,2024,1,1,2024: pdf p171,FALSE
+Luano Praise Comfort Limited,2024,1,1,2024: pdf p209,FALSE
+Luano Zone Six Enter Prises Ltd,2024,1,1,2024: pdf p209,FALSE
+Luanshya Agro Supplies Limited,2024,1,1,2024: pdf p299,TRUE
+Luanshya Engineering Limited,2024,1,1,2024: pdf p250,TRUE
+Luansobe Boarding Masaiti Investment,2023,1,1,2023: pdf p254,TRUE
+Lubways Construction,2024,1,1,2024: pdf p228,FALSE
+Luing'a Dam Limited,2024,1,1,2024: pdf p229,FALSE
+Luinga Dam Limited,2024,1,1,2024: pdf p227,FALSE
+Lukama Suppliers,2021,1,1,2021: pdf p384,TRUE
+Lundazi Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Lupososhi Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Lusangazi Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Lwamala Secondary School,2024,1,1,"2024: pdf p303 (school, not a supplier)",TRUE
+M.M. Copier Electronics,2024,1,1,2024: pdf p247,TRUE
+MTN Zambia Limited,2024,1,1,2024: pdf p252,TRUE
+Mafinga Ngiwe General Dealers,2022,1,1,2022: pdf p206,FALSE
+Mainway Construction Limited,2021,1,1,2021: pdf p310,TRUE
+Malsam Chimfushi Day Secondary School Construction,2024,1,1,2024: pdf p296,FALSE
+Malsam Construction,2024,1,1,2024: pdf p295,TRUE
+Mandanga Milling Company Limited,2022,1,1,2022: pdf p309,TRUE
+Mandate Enhanced Smallholder Livestock Investment,2022,1,1,2022: pdf p198,FALSE
+Mapompo Investments Limited,2021,1,1,2021: pdf p36,TRUE
+Marike Construction,2021,1,1,2021: pdf p323,FALSE
+Markus Engineering,2025,1,1,2025: pdf p162,TRUE
+Martin Luther King Construction,2022,1,1,2022: pdf p281,TRUE
+Masimu Construction,2024,1,1,2024: pdf p373,TRUE
+Matty Construction Limited,2025,1,1,2025: pdf p80,FALSE
+Matyel Solutions,2023,1,1,2023: pdf p92,FALSE
+Mayfair Insurance Company Zambia Limited,2023,1,1,2023: pdf p318,TRUE
+Mbaswa Dam Limited Construction,2024,1,1,2024: pdf p229,FALSE
+Mbuzan General Dealers,2025,1,1,2025: pdf p119,TRUE
+Mcphilisa Computer Systems Limited,2025,1,1,2025: pdf p196,FALSE
+Mecs Services Limited,2025,1,1,2025: pdf p163,FALSE
+Medium Active Bluesky Plywood Resource Limited,2025,1,1,2025: pdf p245,FALSE
+Medium Cost Construction,2021,1,1,2021: pdf p263,FALSE
+Megwu General Limited,2023,1,1,2023: pdf p403,TRUE
+Menov Trading Limited,2024,1,1,2024: pdf p220,TRUE
+Messers Walltech Enterprises Ltd,2021,1,1,2021: pdf p71,TRUE
+Messrs SALTECH Enterprises Limited,2023,1,1,2023: pdf p107,TRUE
+Miangi General Dealers,2023,1,1,2023: pdf p341,TRUE
+Mika Motors Zambia Ltd,2021,1,1,2021: pdf p80,TRUE
+Milenge District Construction,2023,1,1,2023: pdf p187,TRUE
+Mitete Construction,2021,1,1,2021: pdf p247,FALSE
+Mixjer Construction,2021,1,1,2021: pdf p270,FALSE
+Mkushi District Construction,2022,1,1,2022: pdf p294,TRUE
+Mkushi District Stoutone Investments,2024,1,1,2024: pdf p170,FALSE
+MoA HQ Growmore Technologies Limited,2024,1,1,2024: pdf p338,FALSE
+Molozi Primary Construction,2023,1,1,2023: pdf p275,FALSE
+Morlexium Minerals And Metals Limited,2021,1,1,2021: pdf p36,TRUE
+Mount Meru Petroleum Zambia Limited,2021,1,1,2021: pdf p40,TRUE
+Mpande Dam Limited Company Construction,2024,1,1,2024: pdf p227,FALSE
+Mpulungu District Construction,2022,1,1,2022: pdf p293,TRUE
+Mpulungu Harbour Limited,2021,1,1,2021: pdf p145,TRUE
+Muco Trading Limited,2021,1,1,2021: pdf p275,TRUE
+Mufumbwe Chikanji Construction Limited,2025,1,1,2025: pdf p245,FALSE
+Mumash Construction,2022,1,1,2022: pdf p112,FALSE
+Mumbwa District Construction,2022,1,1,2022: pdf p294,TRUE
+Mungwi Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Munobe Tasulwa Ltd,2025,1,1,2025: pdf p70,TRUE
+Mupepetwe Engineering,2022,1,1,2022: pdf p295,TRUE
+Mutabrine Investments Limited,2024,1,1,2024: pdf p329,TRUE
+Mutenda Transport Ltd Construction,2024,1,1,2024: pdf p209,FALSE
+Mwansabombwe Greevis Enterprises Limited,2023,1,1,2023: pdf p403,TRUE
+Mwense District Mwense Richtone Engineering,2024,1,1,2024: pdf p208,FALSE
+Mwos Investments,2022,1,1,2022: pdf p33,TRUE
+Nakasinde General Dealers,2024,1,1,2024: pdf p328,TRUE
+Nakonde District Administration Construction,2022,1,1,2022: pdf p283,TRUE
+Nampundwe Shibuyun Construction,2024,1,1,2024: pdf p206,FALSE
+Ndola Limited,2024,1,1,2024: pdf p170,FALSE
+Ndola Synergy Seed Zambia Ltd,2023,1,1,2023: pdf p315,TRUE
+Ndola Teaching Ndola Jearmy Enterprises Ltd,2024,1,1,2024: pdf p208,FALSE
+Nelkan Industrial Construction,2022,1,1,2022: pdf p273,TRUE
+Neria's Investment,2021,1,1,2021: pdf p361,TRUE
+Netweb Construction,2021,1,1,2021: pdf p270,FALSE
+Nkanmu Investments Contractor,2024,1,1,2024: pdf p234,FALSE
+Nkhuzi Marketing Agency Limited,2024,1,1,2024: pdf p328,FALSE
+Northland Equipment Ltd,2024,1,1,2024: pdf p341,TRUE
+Nothgirb Investment Limited,2023,1,1,2023: pdf p376,FALSE
+Nyamphande Boarding School Construction,2023,1,1,2023: pdf p275,FALSE
+Nyavyiombo Primary School Construction,2023,1,1,2023: pdf p275,FALSE
+Nyimba Millers Ltd,2022,1,1,2022: pdf p58,TRUE
+Off Road Trading Limited,2022,1,1,2022: pdf p304,TRUE
+Online Hq Solutions,2021,1,1,2021: pdf p43,TRUE
+Ontheedge General Dealers,2024,1,1,2024: pdf p222,FALSE
+PET-GYB Limited,2024,1,1,2024: pdf p250,TRUE
+PLADOC Engineering Limited,2024,1,1,2024: pdf p164,TRUE
+Pambashe Resources Limited,2021,1,1,2021: pdf p36,TRUE
+Pangeni Works Limited,2025,1,1,2025: pdf p89,TRUE
+Pannar Corteva,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+PaphilTech Limited,2023,1,1,2023: pdf p258,TRUE
+Patient Department Trading,2023,1,1,2023: pdf p191,FALSE
+Pemba Steward Globe Investment,2023,1,1,2023: pdf p140,TRUE
+Peniel Agri Solutions,2025,1,1,2025: pdf p70,TRUE
+Petauke Mtumpha Primary School Construction,2023,1,1,2023: pdf p275,FALSE
+Petauke Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Pioneer Corteva,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+Platinum Bet Zambia Ltd,2021,1,1,2021: pdf p43,TRUE
+Platinum Stone Ltd,2021,1,1,2021: pdf p426,TRUE
+Pleasure Sports Innovation Ltd,2021,1,1,2021: pdf p43,TRUE
+Plr Projects Zambia Limited,2021,1,1,2021: pdf p36,TRUE
+Portland Commodities Limited,2022,1,1,2022: pdf p210,TRUE
+Power Times Enterprise Limited,2022,1,1,2022: pdf p210,TRUE
+Premier Betting Ltd,2021,1,1,2021: pdf p43,TRUE
+Prince Ma General Dealers,2021,1,1,2021: pdf p453,TRUE
+Pros On Cash Trading,2021,1,1,2021: pdf p147,TRUE
+Pumbing Construction,2024,1,1,2024: pdf p167,FALSE
+Quamech Engineering,2021,1,1,2021: pdf p40,TRUE
+Questionable Payment- Construction,2021,1,1,2021: pdf p438,TRUE
+Ranch Agro Tech,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+Ranch Agrotech Ltd,2024,1,1,2024: pdf p345,TRUE
+Raton Freight Zambia Limited,2024,1,1,2024: pdf p148,TRUE
+Rayton Construction Ltd,2024,1,1,2024: pdf p127,FALSE
+Raytone Construction,2021,1,1,2021: pdf p112,FALSE
+Rechaji Investment Limited,2025,1,1,2025: pdf p101,TRUE
+Reliance Construction,2024,1,1,2024: pdf p228,FALSE
+Research Station- Construction,2022,1,1,2022: pdf p278,TRUE
+Roan Mineral Resources Limited,2021,1,1,2021: pdf p36,TRUE
+Rong Xing Investments Limited,2021,1,1,2021: pdf p36,TRUE
+Rufunsa Construction,2022,1,1,2022: pdf p281,TRUE
+Ruthfield Engineering,2024,1,1,2024: pdf p107,TRUE
+Ruvt Investment,2022,1,1,2022: pdf p83,TRUE
+SSF Investment Limited,2022,1,1,2022: pdf p53,FALSE
+Sable Construction,2024,1,1,2024: pdf p228,FALSE
+Sable Zinc Kabwe Limited,2021,1,1,2021: pdf p36,TRUE
+Salford Farm Limited,2023,1,1,2023: pdf p51,TRUE
+Saltech Construction,2021,1,1,2021: pdf p321,FALSE
+Samar Agro Investment Limited,2022,1,1,2022: pdf p210,TRUE
+Sams Investment,2024,1,1,2024: pdf p263,TRUE
+Sandland Resources Limited,2021,1,1,2021: pdf p394,TRUE
+Savenda Management Services Limited,2021,1,1,2021: pdf p398,FALSE
+Scirocco Enterprise Limited,2024,1,1,2024: pdf p126,TRUE
+Seed Co,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+Seed Farmers Barn Limited,2021,1,1,2021: pdf p358,FALSE
+Seed Kamano Seed Company Limited,2021,1,1,2021: pdf p358,FALSE
+Seed Pannar Seed,2021,1,1,2021: pdf p358,FALSE
+Seed Stewards Globe Limited,2021,1,1,2021: pdf p358,FALSE
+Seed Syngenta Zambia Limited,2021,1,1,2021: pdf p358,FALSE
+Seed Zambia Seed Company Limited,2021,1,1,2021: pdf p358,FALSE
+Shandong Dejian Group Company Limited,2021,1,1,2021: pdf p312,TRUE
+Shandong Dejian Group Zambia Limited,2021,1,1,2021: pdf p313,TRUE
+Share Mix Limited,2023,1,1,2023: pdf p364,TRUE
+Shibuyunji Construction,2022,1,1,2022: pdf p281,TRUE
+Siemens Healthcare Proprietary Ltd,2024,1,1,2024: pdf p151,TRUE
+Sinazongwe Construction,2022,1,1,2022: pdf p281,TRUE
+Sinazongwe DACO Buumi Construction Limited,2024,1,1,2024: pdf p333,FALSE
+Sinda Construction,2023,1,1,2023: pdf p277,FALSE
+Sinda Neria Investments Ltd,2021,1,1,2021: pdf p362,FALSE
+Singapore PTE Limited,2024,1,1,2024: pdf p16,TRUE
+Small Active Kakwezhi Suppliers,2025,1,1,2025: pdf p245,FALSE
+Smelter Co Ltd,2021,1,1,2021: pdf p102,TRUE
+Soft Clan Technologies,2023,1,1,2023: pdf p240,TRUE
+Sokotela Enterprises Limited,2021,1,1,2021: pdf p275,TRUE
+Solar Skye Trading Pty Ltd,2021,1,1,2021: pdf p40,TRUE
+Solatech Construction,2021,1,1,2021: pdf p322,FALSE
+Solatech Limited,2024,1,1,2024: pdf p261,TRUE
+Solus General Dealers,2021,1,1,2021: pdf p181,TRUE
+Solutions Insurance Construction,2024,1,1,2024: pdf p227,FALSE
+Splash Liquor Trading,2023,1,1,2023: pdf p382,TRUE
+Star Choice Zambia Limited,2021,1,1,2021: pdf p36,TRUE
+Starlight Lao Minerals International Limited,2021,1,1,2021: pdf p36,TRUE
+Steward Global Limited,2023,1,1,2023: pdf p139,TRUE
+Stone Edge Mining Zambia Limited,2021,1,1,2021: pdf p36,TRUE
+Stoutone Investment Limited,2024,1,1,2024: pdf p164,TRUE
+Strong Tower Mining Limited,2021,1,1,2021: pdf p36,TRUE
+Sunshare Construction Limited,2022,1,1,2022: pdf p111,TRUE
+Supabet Ltd,2021,1,1,2021: pdf p43,TRUE
+Supix Minerals Limited,2021,1,1,2021: pdf p36,TRUE
+Supplier Siambelele Dam Limited,2024,1,1,2024: pdf p228,FALSE
+Suzgo Trading,2024,1,1,2024: pdf p247,TRUE
+Swengwa Construction,2021,1,1,2021: pdf p266,FALSE
+Swiss Bake Limited,2021,1,1,2021: pdf p40,TRUE
+Swiss Singapore Overseas Enterprises PTE Limited,2024,1,1,2024: pdf p111,TRUE
+T. Mushinkula Trading,2021,1,1,2021: pdf p269,TRUE
+TAMZ General Dealers,2021,1,1,2021: pdf p407,TRUE
+TAZAMA Petroleum Limited,2023,1,1,2023: pdf p34,FALSE
+Temwini General Dealers,2021,1,1,2021: pdf p280,TRUE
+Tenacity Construction,2021,1,1,2021: pdf p267,FALSE
+Thema General Suppliers Ltd,2025,1,1,2025: pdf p70,TRUE
+Thriotech Zambia Limited,2024,1,1,2024: pdf p268,TRUE
+Tiana Tia Manufacturing Zambia Limited,2021,1,1,2021: pdf p36,TRUE
+Translantic Ventures Limited,2023,1,1,2023: pdf p258,TRUE
+Transport Zambia Limited,2022,1,1,2022: pdf p301,TRUE
+Treo Zambia Limited,2025,1,1,2025: pdf p162,TRUE
+Trymate Zambia Limited,2024,1,1,2024: pdf p161,TRUE
+Tuncay Investment,2024,1,1,2024: pdf p288,TRUE
+Twinery General Dealers,2021,1,1,2021: pdf p423,TRUE
+UNIK Construction Engineering Ltd,2022,1,1,2022: pdf p137,TRUE
+Urban Technics Limited,2021,1,1,2021: pdf p173,FALSE
+V.B.S General Dealers Limited,2021,1,1,2021: pdf p438,TRUE
+VBS General Dealers,2021,1,1,2021: pdf p439,TRUE
+Vet Suppliers,2025,1,1,2025: pdf p248,TRUE
+Vilma Enterprises Ltd,2025,1,1,2025: pdf p70,TRUE
+Virgin Blue Company Limited,2021,1,1,2021: pdf p36,TRUE
+Vitumbo Investment Limited,2021,1,1,2021: pdf p387,TRUE
+Wah Kong Enterprises Ltd,2021,1,1,2021: pdf p347,TRUE
+Web Commercial Limited,2022,1,1,2022: pdf p210,TRUE
+Wegos General Dealers Limited,2021,1,1,2021: pdf p324,FALSE
+Weixin Company Limited,2021,1,1,2021: pdf p36,TRUE
+Works Shanghai Construction Limited,2021,1,1,2021: pdf p285,FALSE
+World Sports Betting Ltd,2022,1,1,2022: pdf p33,TRUE
+Xincheng Minerals Processing Limited,2021,1,1,2021: pdf p36,TRUE
+Z-Con Construction,2021,1,1,2021: pdf p319,FALSE
+ZANACO Limited,2022,1,1,2022: pdf p163,TRUE
+ZCCM Investments Holdings,2021,1,1,2021: pdf p100,TRUE
+ZYTICS Limited,2022,1,1,2022: pdf p185,TRUE
+Zambezi Rwenzori Timber Limited,2025,1,1,2025: pdf p245,FALSE
+Zambezi Sawmills Limited,2021,1,1,2021: pdf p458,TRUE
+Zambian Crop Genetics,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+Zamseed,2022,1,1,"2022: pdf p215 (seed table, added manually)",TRUE
+Zesco Limited,2023,1,1,2023: pdf p256,TRUE
+Zhengtai Construction,2021,1,1,2021: pdf p111,FALSE
+Zhong Ding International Construction,2024,1,1,2024: pdf p164,FALSE
+Zoncor Investment Limited,2021,1,1,2021: pdf p40,TRUE

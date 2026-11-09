@@ -114,6 +114,20 @@ Supplier-level detail of the 2022/2023 FISP seed procurement, from "Table 7: See
 
 Verified against the printed totals: 33,283.04 MT contracted, 9,176.89 delivered (27.6%), 24,106.15 undelivered. The 13 suppliers at 100% undelivered were paid K786,008,813 of their K1,199,203,190 contracts. A later check found most delivered late, between mid January and end March 2023. Delivery is "not delivered" only as at the report's cut-off.
 
+## data_clean/supplier_index.csv
+A broad index of company names that appear across the reports, produced by `R/04_supplier_index.R` from an auto-extraction (`data_raw/supplier_index_raw.csv`). It is cleaned (parsing artifacts, section headers, place names and seed types removed), near-duplicate names merged, and each name checked against the report text. This is an index of **appearances**, not a verified contract register; the valued, delivery-checked contracts are in `contracts_flagged.csv`. Residual auto-extraction noise may remain.
+
+| column | meaning |
+|---|---|
+| supplier | Canonical company name (longest of the merged variants). |
+| years_appearing | Report years the name appears in, semicolon-separated. |
+| n_years | Number of distinct report years. |
+| total_mentions | Total mentions across reports (from the extraction). |
+| pages | Reported PDF pages by year. |
+| verified_in_text | TRUE if the name is found in the extracted text of a claimed year. |
+
+After cleaning: ~594 names, ~454 text-verified; 28 appear in more than one report. Distinct verified suppliers per report: 2021 ~188, 2022 ~98, 2023 ~57, 2024 ~108, 2025 ~32.
+
 ## data_clean/report_metadata.csv
 One row per report.
 
