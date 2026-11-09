@@ -190,3 +190,17 @@ Rebuilt by `R/02_notable_observations.R`:
 - chart5_notable_by_ministry.png - Kwacha value of selected notable observations by ministry (narrative years).
 - table_notable_by_ministry_year.csv - Kwacha and US dollar totals and observation counts per ministry per year.
 - table_notable_usd.csv - the US dollar observations listed on their own.
+
+## data_raw/contracts_valued_all.csv
+Auto-extracted list of every "contract sum of [amount]" mention in the report bodies (~182), to show the full scale of named contracts. One row per mention. Amounts and pages are regex-reliable; ministry is attributed from the nearest preceding Head (body only); supplier and delivery status are NOT captured here. Some rows may be sub-amounts, references to other contracts, or the same contract on two pages. This is the breadth layer; `contracts_flagged.csv` is the deep-verified 32.
+
+| column | meaning |
+|---|---|
+| financial_year | Report year. |
+| ministry | Ministry/Head the mention falls under (best-effort). |
+| currency | K, US$ or N$. |
+| amount | Contract sum, numeric. |
+| pdf_page | PDF page of the mention. |
+| context | First ~75 characters of the line, for orientation. |
+
+Totals (indicative): 139 Kwacha contracts ~K57.8bn; 43 US dollar contracts ~US$1.82bn.
