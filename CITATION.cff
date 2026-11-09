@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this dataset or analysis, please cite it as below, and cite each underlying figure with its report year and PDF page."
+title: "Zambia's public finances through the Auditor General's reports, 2021 to 2025"
+abstract: >-
+  A reproducible analysis of the Office of the Auditor General of Zambia's
+  Reports on the Accounts of the Republic (financial years 2021-2025),
+  covering budget execution and surplus, the value of audit findings, and
+  ministry recurrence. All figures are transcribed from the source PDFs with
+  page citations.
+type: dataset
+authors:
+  - family-names: Chanza
+    given-names: Boyd
+version: "1.0.0"
+date-released: "2026-11-09"
+license: MIT
+keywords:
+  - Zambia
+  - Auditor General
+  - public finance
+  - budget execution
+  - open data
+  - reproducible research
+# Replace with the repository URL once published:
+repository-code: "https://github.com/USERNAME/zambia-ag-reports"
