@@ -15,6 +15,7 @@
 <script src="vendor/echarts.min.js"></script>
 <script src="suppliers_data.js"></script>
 <script src="cases_data.js"></script>
+<script src="valued_data.js"></script>
 <style>
 :root{
   --blue:#2a78d6; --blue-d:#1c5cab; --blue-l:#86b6ef; --teal:#1baf7a; --orange:#eb6834;
@@ -252,6 +253,25 @@ footer a{color:var(--blue-d);font-weight:600}
           </div>
         </div>
         <div class="scrolltable"><table id="t_contracts"></table></div>
+      </div>
+
+      <div class="card tablecard" style="margin-top:16px">
+        <div class="hd" style="padding:16px 18px 2px"><h3>All valued contracts named</h3><span class="tag" id="valued_count">182</span></div>
+        <div class="cap" style="padding:0 18px">Every "contract sum of K/US$…" in the reports (~182). Amount, ministry and page are reliable; supplier and detail are in the context column. The 34 above are deep-verified from these.</div>
+        <div class="toolbar">
+          <input id="val_search" class="search" type="search" placeholder="Search context, supplier or ministry... e.g. hospital, road, NMS, drugs">
+          <div class="chips">
+            <button class="chip active" data-vf="all">All</button>
+            <button class="chip" data-vf="US$">US$</button>
+            <button class="chip" data-vf="K">Kwacha</button>
+            <button class="chip" data-vf="2021">2021</button>
+            <button class="chip" data-vf="2022">2022</button>
+            <button class="chip" data-vf="2023">2023</button>
+            <button class="chip" data-vf="2024">2024</button>
+            <button class="chip" data-vf="2025">2025</button>
+          </div>
+        </div>
+        <div class="scrolltable"><table id="t_valued"></table></div>
       </div>
 
       <div class="card tablecard" style="margin-top:16px">
@@ -715,6 +735,30 @@ document.getElementById('cases_search').addEventListener('input',e=>{casesQuery=
 document.querySelectorAll('.chip[data-cf]').forEach(c=>c.addEventListener('click',()=>{
   document.querySelectorAll('.chip[data-cf]').forEach(x=>x.classList.remove('active'));
   c.classList.add('active'); casesFilter=c.dataset.cf; renderCases(); }));
+
+/* all valued contracts (~182) table */
+let valFilter='all', valQuery='';
+function renderValued(){
+  const q=valQuery.toLowerCase();
+  const rows=VALUED.filter(r=>{
+    const okq=!q||((r.ctx+' '+r.m).toLowerCase().includes(q));
+    let okf=true;
+    if(valFilter==='US$') okf=r.cur==='US$';
+    else if(valFilter==='K') okf=r.cur==='K';
+    else if(valFilter!=='all') okf=String(r.y)===valFilter;
+    return okq&&okf; });
+  document.getElementById('valued_count').textContent=rows.length+' of 182';
+  document.getElementById('t_valued').innerHTML=
+    '<thead><tr><th>Year</th><th>Ministry</th><th>Amount</th><th>What the report says (context)</th><th>Page</th></tr></thead><tbody>'+
+    (rows.length?rows.map(r=>`<tr><td class="num">${r.y}</td><td>${r.m}</td><td class="num">${r.amt}</td>`+
+      `<td style="font-size:12px">${r.ctx}</td><td class="muted">p${r.p}</td></tr>`).join('')
+      :'<tr><td colspan="5" class="muted" style="padding:18px">No contracts match.</td></tr>')+'</tbody>';
+}
+renderValued();
+document.getElementById('val_search').addEventListener('input',e=>{valQuery=e.target.value;renderValued();});
+document.querySelectorAll('.chip[data-vf]').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip[data-vf]').forEach(x=>x.classList.remove('active'));
+  c.classList.add('active'); valFilter=c.dataset.vf; renderValued(); }));
 
 /* audit opinion rows */
 const opinions=[['2021','No formal opinion','b-na','p —'],['2022','Unqualified (clean)','b-yes','p21'],
