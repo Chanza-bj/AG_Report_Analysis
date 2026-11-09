@@ -1,0 +1,42 @@
+# Publishes the rendered Quarto report to GitHub Pages.
+# It deploys the HTML that is already committed in report/ (no R build needed),
+# so the site at https://Chanza-bj.github.io/AG_Report_Analysis/ shows the report.
+#
+# One-time setup: repo Settings -> Pages -> "Build and deployment" ->
+# Source: "GitHub Actions". After that this runs on every push to main.
+name: Publish report to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble site (report as landing page)
+        run: |
+          mkdir -p _site
+          cp report/zambia_ag_reports_2021_2025.html _site/index.html
+          # keep the original filename available too
+          cp report/zambia_ag_reports_2021_2025.html _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

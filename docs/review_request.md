@@ -14,8 +14,10 @@ I have built a small, reproducible dataset and analysis from the Auditor
 General's Reports on the Accounts of the Republic for 2021 to 2025. Before I
 share any figures publicly, I would value your eyes on the method and the three
 headline points. Everything is transcribed from the reports with the PDF page
-recorded for each figure, and the code and data are here: [repository link].
-The rendered report is [link to the HTML].
+recorded for each figure, and the code and data are here:
+https://github.com/Chanza-bj/AG_Report_Analysis
+The rendered report is at: https://Chanza-bj.github.io/AG_Report_Analysis/
+(available once GitHub Pages is enabled).
 
 The three points I would draw from it are:
 
