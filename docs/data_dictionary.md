@@ -98,6 +98,22 @@ Named contracts the reports question. A first batch, drawn from the reports' hig
 
 Kwacha and US dollar amounts are never added together. A flagged contract is a question the auditors raised, not a proven loss.
 
+## data_clean/seed_delivery_2022.csv
+Supplier-level detail of the 2022/2023 FISP seed procurement, from "Table 7: Seed Not Delivered as at 15th January 2023" in the 2022 report (PDF page 215, printed page 198). One row per supplier; base figures transcribed from the table, derived figures computed in code.
+
+| column | meaning |
+|---|---|
+| supplier | Seed supplier as named in the table. |
+| contract_sum_zmw | Contract sum (ZMW). |
+| amount_paid_zmw | Amount paid at the cut-off (ZMW); "-" in the source recorded as 0. |
+| qty_contracted_mt | Quantity contracted, metric tonnes. |
+| qty_delivered_mt | Quantity delivered by 15 Jan 2023, metric tonnes. |
+| qty_undelivered_mt | Quantity undelivered (contracted minus delivered); two rows show a small negative/rounding as printed. |
+| pct_undelivered_reported | Percentage undelivered, as printed. |
+| source_pdf_page | PDF page (215). |
+
+Verified against the printed totals: 33,283.04 MT contracted, 9,176.89 delivered (27.6%), 24,106.15 undelivered. The 13 suppliers at 100% undelivered were paid K786,008,813 of their K1,199,203,190 contracts. A later check found most delivered late, between mid January and end March 2023. Delivery is "not delivered" only as at the report's cut-off.
+
 ## data_clean/report_metadata.csv
 One row per report.
 

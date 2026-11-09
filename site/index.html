@@ -119,6 +119,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <a href="#budget"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg> Budget &amp; surplus</a>
       <a href="#findings"><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg> Audit findings</a>
       <a href="#contracts"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contracts</a>
+      <a href="#delivery"><svg viewBox="0 0 24 24"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg> Delivered?</a>
       <a href="#ministries"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg> Ministries</a>
       <a href="#method"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> How to read</a>
     </nav>
@@ -209,6 +210,39 @@ footer a{color:var(--blue-d);font-weight:600}
       </div>
     </section>
 
+    <!-- DELIVERY -->
+    <section class="section" id="delivery">
+      <h2>Were the goods delivered?</h2>
+      <div class="grid two">
+        <div class="card">
+          <div class="hd"><h3>Delivery status of flagged items, by year</h3><span class="tag">count</span></div>
+          <div class="cap">Among the contracts and suppliers the auditors flagged. 2023 not yet extracted; 2022 is the FISP seed table (17 suppliers).</div>
+          <div id="c_delyear" class="chart"></div>
+        </div>
+        <div class="card">
+          <div class="hd"><h3>Spotlight: 2022 FISP seed, 33,283 MT ordered</h3><span class="tag">page 215</span></div>
+          <div class="cap">Seed for the 2022/2023 season. Delivered vs not delivered by 15 January 2023.</div>
+          <div id="c_seeddonut" class="chart" style="height:220px"></div>
+          <div style="display:flex;gap:10px;margin-top:4px;flex-wrap:wrap">
+            <div style="flex:1;min-width:120px;background:#fbfcfd;border:1px solid var(--line);border-radius:10px;padding:10px 12px">
+              <div style="font-size:12px;color:var(--ink2);font-weight:600">Delivered on time</div>
+              <div style="font-size:20px;font-weight:800">28%</div>
+              <div style="font-size:11.5px;color:var(--muted)">9,177 of 33,283 MT</div></div>
+            <div style="flex:1;min-width:120px;background:#fdf5f5;border:1px solid #f3d9d9;border-radius:10px;padding:10px 12px">
+              <div style="font-size:12px;color:#b42318;font-weight:600">Paid for nil delivery</div>
+              <div style="font-size:20px;font-weight:800;color:#b42318">K786m</div>
+              <div style="font-size:11.5px;color:var(--muted)">to 13 suppliers that delivered nothing</div></div>
+          </div>
+          <div class="cap" style="margin-top:8px">A later check found most suppliers delivered late, between mid January and end of March 2023, missing the planting window.</div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <div class="hd"><h3>Seed delivered vs not delivered, by supplier (2022)</h3><span class="tag">metric tonnes</span></div>
+        <div class="cap">Thirteen of seventeen suppliers had delivered none of their seed by the deadline.</div>
+        <div id="c_seedbar" class="chart" style="height:430px"></div>
+      </div>
+    </section>
+
     <!-- MINISTRIES -->
     <section class="section" id="ministries">
       <h2>Ministries flagged in every report</h2>
@@ -275,8 +309,20 @@ const contracts=[
  ['2021','Finance','Vendor (unnamed)','Zambia Chancery in Turkey','US$6.9m','NA','unsupported fees US$2.9m','p12'],
  ['2021','Works & Supply','Seller (ex-German Embassy)','Office building purchase','US$2.5m','Yes','overpriced (valued US$1.5m)','p15'],
  ['2021','Agriculture','Various suppliers','Farming inputs, direct bidding','US$430.3m','Partial','single-source; part-delivered','p15'],
- ['2021','Defence','ZNS Shandong','Mukula log export to China','not stated','Yes','under-declared US$2.5m','p12']
+ ['2021','Defence','ZNS Shandong','Mukula log export to China','not stated','Yes','under-declared US$2.5m','p12'],
+ ['2022','Agriculture','17 seed suppliers (FISP)','33,283 MT of seed, 2022/23 season','K1.94bn','No','K786m paid for nil delivery','p215']
 ];
+/* delivery status counts by year: [Delivered, Partial, Not delivered, Not stated] */
+const delYears=['2021','2022','2024','2025'];
+const delData={Delivered:[3,3,0,0],Partial:[2,1,1,0],'Not delivered':[1,13,2,1],'Not stated':[5,0,4,0]};
+const delColors={Delivered:'#1baf7a',Partial:'#eda100','Not delivered':'#e34948','Not stated':'#c2c8d0'};
+/* 2022 FISP seed, by supplier (sorted by contracted MT desc): [delivered, undelivered] */
+const seed=[['Zambezi Seed',5886.83,13.46],['Steward Globe',0,4322.58],['Seed Co',0,4282.56],
+['Good Nature',0,3467.08],['Synergy Seed',0,2873.34],['Zamseed',2557.45,303.73],['Kamano Seed',0,2511.58],
+['Pannar Corteva',0,1994.66],['Farmers Barn',0,1786.28],['Kariba Seed',0,773.88],['Ranch Agro Tech',0,589.89],
+['ETG Inputs',0,587.52],['Western Seed',470.36,0],['Pioneer Corteva',0,275.28],['Zambian Crop Genetics',262.25,0],
+['Bayer Zambia',0,197.85],['Klein Karoo',0,126.39]];
+const seedDeliveredMT=9176.89, seedUndeliveredMT=24106.15;
 
 /* ---- shared ECharts style ---- */
 const INK='#10151b',INK2='#5b6470',GRID='#eef0f2',FONT='Inter,system-ui,sans-serif';
@@ -344,6 +390,36 @@ mk('c_contracts').setOption({textStyle:{fontFamily:FONT},
       backgroundColor:'#fff',borderColor:'#e9ebee',borderWidth:1,borderRadius:7,padding:[3,7]},
     labelLine:{length:10,length2:8,lineStyle:{color:'#c7ccd3'}},
     data:contractStatus.map(d=>({name:d.name,value:d.value,itemStyle:{color:d.c}}))}]});
+
+/* delivery status by year (stacked) */
+mk('c_delyear').setOption({textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'},...tip},
+  legend:{top:0,left:0,itemWidth:10,itemHeight:10,icon:'circle',textStyle:{color:INK2,fontWeight:600,fontSize:11}},
+  grid:{left:8,right:14,top:38,bottom:8,containLabel:true},
+  xAxis:axisX(delYears),yAxis:{type:'value',splitLine:{lineStyle:{color:GRID}},axisLabel:{color:INK2},axisLine:{show:false},axisTick:{show:false}},
+  series:Object.keys(delData).map(k=>({name:k,type:'bar',stack:'s',data:delData[k],
+    itemStyle:{color:delColors[k]},barWidth:'46%',
+    emphasis:{focus:'series'}}))});
+
+/* seed delivered vs undelivered donut (MT) */
+mk('c_seeddonut').setOption({textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'item',...tip,formatter:p=>`${p.name}<br><b>${p.value.toLocaleString(undefined,{maximumFractionDigits:0})}</b> MT · ${p.percent}%`},
+  legend:{bottom:0,left:'center',itemWidth:10,itemHeight:10,icon:'circle',textStyle:{color:INK2,fontWeight:600,fontSize:11}},
+  series:[{type:'pie',radius:['55%','78%'],center:['50%','42%'],itemStyle:{borderColor:'#fff',borderWidth:3},
+    label:{show:true,formatter:p=>p.percent+'%',color:INK,fontWeight:700,fontSize:12},
+    data:[{name:'Delivered on time',value:seedDeliveredMT,itemStyle:{color:'#1baf7a'}},
+          {name:'Not delivered by deadline',value:seedUndeliveredMT,itemStyle:{color:'#e34948'}}]}]});
+
+/* seed by supplier (horizontal stacked) */
+const sName=seed.map(s=>s[0]).reverse(), sDel=seed.map(s=>s[1]).reverse(), sUnd=seed.map(s=>Math.max(0,s[2])).reverse();
+mk('c_seedbar').setOption({textStyle:{fontFamily:FONT},
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'},...tip,valueFormatter:v=>v.toLocaleString(undefined,{maximumFractionDigits:0})+' MT'},
+  legend:{top:0,left:0,itemWidth:10,itemHeight:10,icon:'circle',textStyle:{color:INK2,fontWeight:600,fontSize:11}},
+  grid:{left:8,right:40,top:34,bottom:6,containLabel:true},
+  xAxis:{type:'value',splitLine:{lineStyle:{color:GRID}},axisLabel:{color:INK2},axisLine:{show:false},axisTick:{show:false}},
+  yAxis:{type:'category',data:sName,axisTick:{show:false},axisLine:{show:false},axisLabel:{color:INK,fontWeight:600,fontSize:11}},
+  series:[{name:'Delivered',type:'bar',stack:'s',data:sDel,itemStyle:{color:'#1baf7a',borderRadius:[4,0,0,4]},barWidth:'62%'},
+    {name:'Not delivered',type:'bar',stack:'s',data:sUnd,itemStyle:{color:'#e34948'},barWidth:'62%'}]});
 
 /* tables */
 function badge(s){const m={'No':['b-no','Not delivered'],'Partial':['b-part','Partial'],'Yes':['b-yes','Delivered'],'NA':['b-na','Not stated']};
