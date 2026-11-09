@@ -4,6 +4,27 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.1.0] - 2026-11-09
+
+Major analytical expansion and a new interactive dashboard.
+
+### Added
+- **Interactive dashboard** (`site/index.html`, ECharts) published as the landing page; the written report moved to `full-report.html`.
+- **Contracts flagged** (`contracts_flagged.csv`) expanded from 19 to **32 named contracts** across ~15 ministries, each verified against its PDF page (AVIC, ZTE, Siemens, Jiangsu Gold, Augusta, IHMSA, Nyiombo, Pozzolana, Buywell, Henina, Menov, Joshisa, …).
+- **Supplier index** (`supplier_index.csv`, `R/04`, `R/05`) - ~471 text-verified company names across the reports, with a searchable dashboard table and recurring-supplier view.
+- **2022 FISP seed delivery** (`seed_delivery_2022.csv`) - 17 suppliers, 33,283 MT, verified against page 215.
+- **Audit opinions** (`audit_opinions.csv`) - 2022-2025 all unqualified; 2021 none.
+- **Repeat/unresolved findings** (`repeat_findings.csv`, `R/06`) - 26 of 39 categories recur; 4 rose every year.
+- **Materiality** (`ministry_funding_gaps.csv`) - 13 in-report underfunding figures (K47.7bn), ministry-attributed.
+- Budget-execution, surplus, and delivery-status analyses; red-flag signals.
+
+### Changed
+- Report rewritten for a general audience (code hidden); professional, CVD-validated chart palette.
+- Removed the "ZM" placeholder logo; strengthened mobile responsiveness.
+
+### Verified
+- Every headline figure and every contract checked against its rendered source page.
+
 ## [1.0.0] - 2026-11-09
 
 First published version. Covers the Auditor General of Zambia's Reports on the
