@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="vendor/echarts.min.js"></script>
+<script src="suppliers_data.js"></script>
 <style>
 :root{
   --blue:#2a78d6; --blue-d:#1c5cab; --blue-l:#86b6ef; --teal:#1baf7a; --orange:#eb6834;
@@ -94,6 +95,15 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
 .b-yes{background:#e7f6ef;color:#167a53}
 .b-na{background:#eef0f2;color:#5b6470}
 .muted{color:var(--muted)}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 18px 10px}
+.search{flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:13px;color:var(--ink);background:#fcfcfd}
+.search:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(42,120,214,.12)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{padding:7px 12px;border:1px solid var(--line);background:var(--card);border-radius:999px;font-weight:600;font-size:12px;color:var(--ink2);cursor:pointer}
+.chip:hover{background:var(--line2)}
+.chip.active{background:#eaf1fb;border-color:#cadcf6;color:var(--blue-d)}
+.scrolltable{max-height:460px;overflow:auto}
+.scrolltable th{position:sticky;top:0;z-index:1}
 
 footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--ink2);font-size:12.5px;line-height:1.6}
 footer a{color:var(--blue-d);font-weight:600}
@@ -275,6 +285,22 @@ footer a{color:var(--blue-d);font-weight:600}
           <div class="hd"><h3>Suppliers named in more than one report</h3><span class="tag">recurring</span></div>
           <div class="tbwrap"><table id="t_recurring"></table></div>
         </div>
+      </div>
+
+      <div class="card tablecard" style="margin-top:16px">
+        <div class="hd" style="padding:16px 18px 2px"><h3>All named suppliers</h3><span class="tag" id="sup_count">471</span></div>
+        <div class="cap" style="padding:0 18px">Delivery status and amount are shown only where the reports give them (27 suppliers so far: 6 delivered, 4 partial, 17 not delivered). The rest are appearances in the reports.</div>
+        <div class="toolbar">
+          <input id="sup_search" class="search" type="search" placeholder="Search a supplier, e.g. Zamseed, AVIC, Nyiombo...">
+          <div class="chips">
+            <button class="chip active" data-f="all">All</button>
+            <button class="chip" data-f="status">With delivery detail</button>
+            <button class="chip" data-f="Delivered">Delivered</button>
+            <button class="chip" data-f="Partial">Partial</button>
+            <button class="chip" data-f="Not delivered">Not delivered</button>
+          </div>
+        </div>
+        <div class="scrolltable"><table id="t_all"></table></div>
       </div>
     </section>
 
@@ -500,6 +526,36 @@ document.getElementById('t_contracts').innerHTML =
 document.getElementById('t_recurring').innerHTML =
   '<thead><tr><th>Supplier</th><th>Named in reports</th><th>Mentions</th></tr></thead><tbody>'+
   recurring.map(r=>`<tr><td>${r[0]}</td><td class="muted">${r[1]}</td><td class="num">${r[2]}</td></tr>`).join('')+'</tbody>';
+
+/* searchable "all suppliers" table */
+function fmtAmt(a,c){ if(a==null) return '<span class="muted">&mdash;</span>';
+  const u=c==='USD'?'US$':'K';
+  const v=a>=1e9?(a/1e9).toFixed(2)+'bn':a>=1e6?(a/1e6).toFixed(1)+'m':Math.round(a).toLocaleString();
+  return u+v; }
+function sbadge(s){ if(!s) return '<span class="muted">&mdash;</span>';
+  const m={'Delivered':'b-yes','Partial':'b-part','Not delivered':'b-no'};
+  return `<span class="badge ${m[s]||'b-na'}">${s}</span>`; }
+let supFilter='all', supQuery='';
+function renderAll(){
+  const q=supQuery.toLowerCase();
+  const rows=SUPPLIERS.filter(r=>{
+    const okq=!q||r.n.toLowerCase().includes(q);
+    let okf=true;
+    if(supFilter==='status') okf=r.s!=='';
+    else if(supFilter!=='all') okf=r.s===supFilter;
+    return okq&&okf; });
+  document.getElementById('sup_count').textContent=rows.length+' of '+SUPPLIERS.length;
+  document.getElementById('t_all').innerHTML=
+    '<thead><tr><th>Supplier</th><th>Years named</th><th>Mentions</th><th>Delivery</th><th>Amount</th></tr></thead><tbody>'+
+    (rows.length?rows.map(r=>`<tr><td>${r.n}</td><td class="muted">${r.y}</td><td class="num">${r.m}</td>`+
+      `<td>${sbadge(r.s)}</td><td class="num">${fmtAmt(r.a,r.c)}${(r.ay&&r.a!=null)?` <span class="muted" style="font-weight:400">(${r.ay})</span>`:''}</td></tr>`).join('')
+      :'<tr><td colspan="5" class="muted" style="padding:18px">No suppliers match.</td></tr>')+'</tbody>';
+}
+renderAll();
+document.getElementById('sup_search').addEventListener('input',e=>{supQuery=e.target.value;renderAll();});
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
+  c.classList.add('active'); supFilter=c.dataset.f; renderAll(); }));
 
 /* mobile nav toggle */
 function toggleNav(force){
