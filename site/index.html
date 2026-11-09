@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="vendor/echarts.min.js"></script>
 <script src="suppliers_data.js"></script>
+<script src="cases_data.js"></script>
 <style>
 :root{
   --blue:#2a78d6; --blue-d:#1c5cab; --blue-l:#86b6ef; --teal:#1baf7a; --orange:#eb6834;
@@ -240,6 +241,25 @@ footer a{color:var(--blue-d);font-weight:600}
       <div class="card tablecard" style="margin-top:16px">
         <div class="hd" style="padding:16px 18px 6px"><h3>Deep-verified contracts</h3><span class="tag">32 of ~182 · who, how much, delivered?</span></div>
         <div class="tbwrap"><table id="t_contracts"></table></div>
+      </div>
+
+      <div class="card tablecard" style="margin-top:16px">
+        <div class="hd" style="padding:16px 18px 2px"><h3>Suppliers, goods &amp; services flagged</h3><span class="tag" id="cases_count">89</span></div>
+        <div class="cap" style="padding:0 18px">Specific goods and services the auditors flagged: the supplier (where the report names one), the item, amount and delivery status. Search or filter.</div>
+        <div class="toolbar">
+          <input id="cases_search" class="search" type="search" placeholder="Search supplier, item or entity... e.g. maize, Pembe, hospital, laptops">
+          <div class="chips">
+            <button class="chip active" data-cf="all">All</button>
+            <button class="chip" data-cf="nd">Not delivered</button>
+            <button class="chip" data-cf="named">Named supplier</button>
+            <button class="chip" data-cf="2021">2021</button>
+            <button class="chip" data-cf="2022">2022</button>
+            <button class="chip" data-cf="2023">2023</button>
+            <button class="chip" data-cf="2024">2024</button>
+            <button class="chip" data-cf="2025">2025</button>
+          </div>
+        </div>
+        <div class="scrolltable"><table id="t_cases"></table></div>
       </div>
     </section>
 
@@ -639,9 +659,34 @@ function renderAll(){
 }
 renderAll();
 document.getElementById('sup_search').addEventListener('input',e=>{supQuery=e.target.value;renderAll();});
-document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
-  document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
+document.querySelectorAll('.chip[data-f]').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip[data-f]').forEach(x=>x.classList.remove('active'));
   c.classList.add('active'); supFilter=c.dataset.f; renderAll(); }));
+
+/* supplier cases (goods & services) table */
+let casesFilter='all', casesQuery='';
+function ndbadge(nd){return nd?' <span class="badge b-no">not delivered</span>':'';}
+function renderCases(){
+  const q=casesQuery.toLowerCase();
+  const rows=CASES.filter(r=>{
+    const okq=!q||((r.s+' '+r.it+' '+r.e).toLowerCase().includes(q));
+    let okf=true;
+    if(casesFilter==='nd') okf=r.nd===true;
+    else if(casesFilter==='named') okf=r.named===true;
+    else if(casesFilter!=='all') okf=String(r.y)===casesFilter;
+    return okq&&okf; });
+  document.getElementById('cases_count').textContent=rows.length+' of '+CASES.length;
+  document.getElementById('t_cases').innerHTML=
+    '<thead><tr><th>Year</th><th>Supplier</th><th>Item (good / service)</th><th>Entity</th><th>Value</th><th>Delivered</th><th>Page</th></tr></thead><tbody>'+
+    (rows.length?rows.map(r=>`<tr><td class="num">${r.y}</td><td>${r.s}</td><td>${r.it}</td>`+
+      `<td class="muted">${r.e}</td><td class="num">${r.cv}</td><td>${r.d}${ndbadge(r.nd)}</td><td class="muted">p${r.p}</td></tr>`).join('')
+      :'<tr><td colspan="7" class="muted" style="padding:18px">No cases match.</td></tr>')+'</tbody>';
+}
+renderCases();
+document.getElementById('cases_search').addEventListener('input',e=>{casesQuery=e.target.value;renderCases();});
+document.querySelectorAll('.chip[data-cf]').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip[data-cf]').forEach(x=>x.classList.remove('active'));
+  c.classList.add('active'); casesFilter=c.dataset.cf; renderCases(); }));
 
 /* audit opinion rows */
 const opinions=[['2021','No formal opinion','b-na','p —'],['2022','Unqualified (clean)','b-yes','p21'],

@@ -204,3 +204,18 @@ Auto-extracted list of every "contract sum of [amount]" mention in the report bo
 | context | First ~75 characters of the line, for orientation. |
 
 Totals (indicative): 139 Kwacha contracts ~K57.8bn; 43 US dollar contracts ~US$1.82bn.
+
+## data_clean/supplier_cases.csv
+Specific goods and services the auditors flagged, as a supplier/item case list (89 cases). Spot-verified against pages (Pembe Milling p95, Ranch Agro Tech p215). Searchable and filterable on the dashboard.
+
+| column | meaning |
+|---|---|
+| report_year | Report year. |
+| entity | The audited entity/programme (e.g. DMMU district, a hospital). |
+| supplier | Supplier named, or "not named in extract" where the report does not name one. |
+| item | The good or service (e.g. mealie meal, drugs, equipment). |
+| contract_value / amount_paid / undelivered_value | Amounts where stated. |
+| delivered | What was delivered, as stated. |
+| status_as_at | The report's status/date. |
+| pdf_page | PDF page. |
+| note / named / not_delivered | Context and derived flags. |
