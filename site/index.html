@@ -149,6 +149,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <a href="#delivery"><svg viewBox="0 0 24 24"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg> Delivered?</a>
       <a href="#suppliers"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V8l6-4 6 4v13M10 21v-4h4v4"/></svg> Suppliers</a>
       <a href="#ministries"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg> Ministries</a>
+      <a href="#repeat"><svg viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg> Repeat findings</a>
       <a href="#opinion"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Opinion &amp; risk</a>
       <a href="#method"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> How to read</a>
     </nav>
@@ -317,6 +318,28 @@ footer a{color:var(--blue-d);font-weight:600}
         <div class="hd"><h3>Portfolios appearing in all five reports (2021-2025)</h3><span class="tag">sections raised</span></div>
         <div class="cap">Which portfolios recur. This shows where problems repeat, not which lost the most money.</div>
         <div id="c_ministries" class="chart tall"></div>
+      </div>
+    </section>
+
+    <!-- REPEAT FINDINGS -->
+    <section class="section" id="repeat">
+      <h2>Repeat &amp; unresolved findings</h2>
+      <div class="cap" style="margin:-6px 0 14px;max-width:760px">These are not one-off errors. The reports say each year's findings include matters "highlighted in previous reports but not resolved". Comparable category values exist for 2021 to 2023.</div>
+      <div class="grid two">
+        <div class="card tablecard">
+          <div class="hd" style="padding:16px 18px 6px"><h3>Finding categories that recur every comparable year</h3><span class="tag">26 of 39</span></div>
+          <div class="tbwrap"><table id="t_repeat"></table></div>
+        </div>
+        <div class="card">
+          <div class="hd"><h3>How persistent is it?</h3><span class="tag">2021-2025</span></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+            <div class="flagtile"><div class="ft-v">26 of 39</div><div class="ft-l">categories recur every year</div><div class="ft-s">2021 to 2023 (comparable years)</div></div>
+            <div class="flagtile"><div class="ft-v">4</div><div class="ft-l">rose every single year</div><div class="ft-s">obligations, unused funds, irregular payments, lost revenue</div></div>
+            <div class="flagtile"><div class="ft-v">9</div><div class="ft-l">ministries in all five reports</div><div class="ft-s">same portfolios recur</div></div>
+            <div class="flagtile"><div class="ft-v">K3.9&rarr;5.2bn</div><div class="ft-l">unpaid bills rose yearly</div><div class="ft-s">Failure to settle obligations</div></div>
+          </div>
+          <div class="cap" style="margin-top:12px">Green = the amount fell each year (improving); red = rose each year (worsening); grey = mixed. A persistent finding points to a control that has not been fixed.</div>
+        </div>
       </div>
     </section>
 
@@ -594,6 +617,27 @@ document.getElementById('opinion_rows').innerHTML=opinions.map(o=>
   `<div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-top:1px solid var(--line2)">
      <span style="font-weight:700">${o[0]}</span>
      <span><span class="badge ${o[2]}">${o[1]}</span> <span class="muted" style="font-size:11px">${o[3]}</span></span></div>`).join('');
+
+/* repeat finding categories (values exact from the 2022 & 2023 trend tables, in Kwacha) */
+const repeatCats=[
+ ['Failure to Collect Tax Arrears',85780000000,97860886809,66992800000,'mixed'],
+ ['Failure to Settle Obligations / Unpaid Bills',3899705205,4944897302,5232292703,'rose'],
+ ['Failure to Utilise Funds',108283265,132503190,2693513302,'rose'],
+ ['Failure to Collect Taxes',1237753306,68909046,2442514222,'mixed'],
+ ['Irregular Payments',44275885,152446283,745929026,'rose'],
+ ['Failure to Collect Revenue',1085895631,52005531,210969868,'mixed'],
+ ['Loss of Revenue',17229561,25587961,69690335,'rose'],
+ ['Overpayments',9421440,110384888,72825929,'mixed'],
+ ['Unaccounted for Funds',83829318,388756,27302800,'mixed'],
+ ['Wasteful Expenditure',659945438,10463546,15130315,'mixed'],
+ ['Unvouched Expenditure',2946916207,16274582,15378988,'fell'],
+ ['Non Recovery of Loans and Advances',1085247618,37447755,6407269,'fell']];
+function trend(d){const m={rose:['b-no','&#9650; rose'],fell:['b-yes','&#9660; fell'],mixed:['b-na','mixed']};
+  const x=m[d]||m.mixed; return `<span class="badge ${x[0]}">${x[1]}</span>`;}
+document.getElementById('t_repeat').innerHTML=
+  '<thead><tr><th>Query category</th><th>2021</th><th>2022</th><th>2023</th><th>Trend</th></tr></thead><tbody>'+
+  repeatCats.map(r=>`<tr><td>${r[0]}</td><td class="num">${fmtAmt(r[1],'ZMW')}</td>`+
+    `<td class="num">${fmtAmt(r[2],'ZMW')}</td><td class="num">${fmtAmt(r[3],'ZMW')}</td><td>${trend(r[4])}</td></tr>`).join('')+'</tbody>';
 
 /* mobile nav toggle */
 function toggleNav(force){
