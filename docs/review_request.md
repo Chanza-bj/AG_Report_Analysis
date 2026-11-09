@@ -19,15 +19,21 @@ https://github.com/Chanza-bj/AG_Report_Analysis
 The rendered report is at: https://Chanza-bj.github.io/AG_Report_Analysis/
 (available once GitHub Pages is enabled).
 
-The three points I would draw from it are:
+A one-page summary of the findings is in docs/key_findings_brief.md. The main points:
 
-1. Budget execution rose from 76% of the final budget in 2022 to 86% in 2025,
-   though it was not a straight line (88% in 2023, 82% in 2024). The 2021 report
-   has no comparable statement.
-2. The reported fiscal surplus shrank from about K30.2 billion in 2022 to about
-   K2.1 billion in 2025.
-3. The number of unresolved-findings paragraphs fell from 40 in 2022 to 27 in
-   2025, and the same portfolios recur each year.
+1. Budget execution rose from 76% of the final budget in 2022 to 86% in 2025
+   (not a straight line: 88% in 2023, 82% in 2024); the surplus shrank from
+   about K30.2bn to about K2.1bn. 2021 has no comparable statement.
+2. The financial statements received an unqualified ("clean") opinion every year
+   from 2022 to 2025, alongside large transaction-level findings.
+3. The same problems recur: 26 of 39 finding categories appear every comparable
+   year, nine ministries appear in all five reports, and unpaid bills rose from
+   K3.9bn to K5.2bn.
+4. 32 named contracts are flagged and page-verified (e.g. ZTE Safe City US$210m
+   with US$178.5m in loans outstanding; K786m paid to seed suppliers that
+   delivered nothing by the deadline).
+5. In-report figures show at least K47.7bn in ministry underfunding over
+   2023-2025, which the reports link to activities being dropped.
 
 I would be grateful for your view on three questions:
 

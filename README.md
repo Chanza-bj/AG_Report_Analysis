@@ -12,7 +12,7 @@ A reproducible analysis of the Office of the Auditor General of Zambia's *Report
 - **The reported value of findings is comparable only for 2021-2023** (K133.3bn, K103.5bn, K81.5bn), and is dominated by one ZRA tax-arrears line. The 2024 and 2025 reports publish no comparable total.
 - **Nine portfolios appear in every report.** Provincial administration under the Office of the President has the most unresolved-findings paragraphs, then Finance, Agriculture, Home Affairs, Education, and Health.
 
-The rendered report is `report/zambia_ag_reports_2021_2025.html` (open in a browser).
+**Live interactive dashboard:** https://chanza-bj.github.io/AG_Report_Analysis/ · one-page shareable summary: [`docs/key_findings_brief.md`](docs/key_findings_brief.md) · full written report: `report/zambia_ag_reports_2021_2025.html`.
 
 ## Repository structure
 
