@@ -40,7 +40,8 @@ short_ministry <- function(m) {
 # Format an amount + currency the way the table shows it.
 fmt_val <- function(a, cur) {
   if (is.na(a)) return("not stated")
-  u <- ifelse(cur %in% c("USD", "US$"), "US$", ifelse(cur == "ZMW", "K", paste0(cur, " ")))
+  u <- ifelse(cur %in% c("USD", "US$"), "US$",
+         ifelse(cur %in% c("ZMW", "K"), "K", paste0(cur, " ")))
   if (a >= 1e9)      v <- paste0(formatC(a/1e9, format = "f", digits = 2), "bn")
   else if (a >= 1e6) v <- paste0(formatC(a/1e6, format = "f", digits = 1), "m")
   else               v <- formatC(round(a), format = "d", big.mark = ",")
@@ -114,6 +115,66 @@ COUNTS <- list(
   valuedKn          = vK$n, valuedUSDn = vUS$n,
   cases             = nrow(cases))
 
+# ---- MASTER contract table (the 182 valued UNION the 34 deep-verified) ------
+# One row per contract line-item. Every "contract sum" from the reports is here;
+# the 34 deep-verified cases carry supplier, delivery status and the flag, and
+# are matched onto their valued row where the amount and page line up, else
+# appended. A single `v` flag says whether the row was deep-verified.
+vrow <- valued |>
+  mutate(amt_raw = suppressWarnings(as.numeric(amount))) |>
+  transmute(y = as.integer(financial_year),
+            m = short_ministry(ministry), sup = "", del = "",
+            amt_raw, cur = currency, amt = mapply(fmt_val, amt_raw, currency),
+            flag = str_squish(context), p = as.integer(pdf_page), v = FALSE,
+            matched = FALSE)
+
+fl <- cf |>
+  mutate(cv = suppressWarnings(as.numeric(contract_value)),
+         ai = suppressWarnings(as.numeric(amount_at_issue)),
+         y  = as.integer(financial_year), p = as.integer(source_pdf_page),
+         usedrow = NA_integer_)
+
+# match each deep-verified case to a valued row (same year + page + amount)
+for (i in seq_len(nrow(fl))) {
+  cand <- which(!vrow$matched & vrow$y == fl$y[i] & vrow$p == fl$p[i] &
+                (abs(vrow$amt_raw - fl$cv[i]) < 1 | abs(vrow$amt_raw - fl$ai[i]) < 1))
+  if (length(cand)) {
+    k <- cand[1]
+    vrow$matched[k] <- TRUE; vrow$v[k] <- TRUE
+    vrow$m[k] <- short_ministry(fl$ministry_std[i])
+    vrow$sup[k] <- fl$supplier[i]
+    vrow$del[k] <- recode(coalesce(fl$delivered[i], "NA"),
+                          Yes = "Yes", No = "No", Partial = "Partial", .default = "NA")
+    vrow$flag[k] <- str_squish(fl$issue_flagged[i])
+    fl$usedrow[i] <- k
+  } else fl$usedrow[i] <- NA_integer_
+}
+
+# deep-verified cases with no matching valued row -> append as verified rows
+extra <- fl |> filter(is.na(usedrow)) |>
+  transmute(y, m = short_ministry(ministry_std), sup = supplier,
+            del = recode(coalesce(delivered, "NA"),
+                         Yes = "Yes", No = "No", Partial = "Partial", .default = "NA"),
+            amt_raw = coalesce(cv, ai),
+            cur = recode(coalesce(contract_currency, amount_currency),
+                         USD = "US$", ZMW = "K", .default = "K"),
+            amt = mapply(fmt_val, coalesce(cv, ai),
+                         coalesce(contract_currency, amount_currency)),
+            flag = str_squish(issue_flagged), p, v = TRUE)
+
+master <- bind_rows(vrow |> select(-matched), extra) |>
+  arrange(desc(v), desc(y), p) |>
+  transmute(y = as.character(y), m, sup, amt, del,
+            flag, p = paste0("p", p), v)
+MASTER <- unname(as.list(as.data.frame(t(as.matrix(master)), stringsAsFactors = FALSE)))
+# force the verified flag back to real booleans in the array (matrix made them chr)
+MASTER <- lapply(seq_len(nrow(master)), function(i)
+  list(master$y[i], master$m[i], master$sup[i], master$amt[i],
+       master$del[i], master$flag[i], master$p[i], isTRUE(master$v[i])))
+
+COUNTS$master         <- nrow(master)
+COUNTS$masterVerified <- sum(master$v)
+
 # ---- write ------------------------------------------------------------------
 j <- function(x) toJSON(x, auto_unbox = TRUE, na = "string")
 js <- paste0(
@@ -123,6 +184,7 @@ js <- paste0(
   "const CONTRACT_STATUS = ", j(CONTRACT_STATUS), ";\n",
   "const FLAG_COUNTS = ",     toJSON(FLAG_COUNTS, auto_unbox = TRUE), ";\n",
   "const DELIVERY = ",        j(DELIVERY), ";\n",
+  "const MASTER = ",          toJSON(MASTER, auto_unbox = TRUE), ";\n",
   "const COUNTS = ",          j(COUNTS), ";\n")
 writeLines(js, "site/dashboard_data.js")
 
@@ -131,3 +193,6 @@ cat("status donut:", paste(names(dn), dn, collapse = "  "), "\n")
 cat("flag categories:\n"); print(fl_tab)
 cat("valued:", COUNTS$valued, "| K", COUNTS$valuedKbn, "bn (", vK$n, ") | US$",
     COUNTS$valuedUSDbn, "bn (", vUS$n, ") | cases:", COUNTS$cases, "\n")
+cat("MASTER rows:", COUNTS$master, "| verified:", COUNTS$masterVerified,
+    "| matched onto valued:", sum(!is.na(fl$usedrow)),
+    "| appended:", sum(is.na(fl$usedrow)), "\n")

@@ -241,40 +241,27 @@ footer a{color:var(--blue-d);font-weight:600}
         </div>
       </div>
       <div class="card tablecard" style="margin-top:16px">
-        <div class="hd" style="padding:16px 18px 2px"><h3>Deep-verified contracts</h3><span class="tag" id="contracts_count">34 of ~182</span></div>
-        <div class="cap" style="padding:0 18px">Who got the contract, how much, delivered or not — checked against the page. Search or filter.</div>
+        <div class="hd" style="padding:16px 18px 2px"><h3>All contracts (master table)</h3><span class="tag" id="master_count">206</span></div>
+        <div class="cap" style="padding:0 18px">Every contract with a stated amount in the reports, in one table. A <b>verified</b> row was deep-checked against its page &mdash; supplier, value and delivery status confirmed (<span id="master_vcount">34</span> so far). An <b>unverified</b> row is an amount the report names, with the supplier and detail in the context column, not yet page-checked. Search or filter.</div>
         <div class="toolbar">
-          <input id="con_search" class="search" type="search" placeholder="Search supplier, contract or ministry... e.g. AVIC, hospital, ZTE, seed">
+          <input id="master_search" class="search" type="search" placeholder="Search supplier, ministry or context... e.g. AVIC, hospital, ZTE, seed">
           <div class="chips">
-            <button class="chip active" data-kf="all">All</button>
-            <button class="chip" data-kf="No">Not delivered</button>
-            <button class="chip" data-kf="Partial">Partial</button>
-            <button class="chip" data-kf="Yes">Delivered</button>
-            <button class="chip" data-kf="NA">Status not stated</button>
+            <button class="chip active" data-mf="all">All</button>
+            <button class="chip" data-mf="verified">Verified</button>
+            <button class="chip" data-mf="unverified">Unverified</button>
+            <button class="chip" data-mf="No">Not delivered</button>
+            <button class="chip" data-mf="Partial">Partial</button>
+            <button class="chip" data-mf="Yes">Delivered</button>
+            <button class="chip" data-mf="US$">US$</button>
+            <button class="chip" data-mf="K">Kwacha</button>
+            <button class="chip" data-mf="2021">2021</button>
+            <button class="chip" data-mf="2022">2022</button>
+            <button class="chip" data-mf="2023">2023</button>
+            <button class="chip" data-mf="2024">2024</button>
+            <button class="chip" data-mf="2025">2025</button>
           </div>
         </div>
-        <div class="scrolltable"><table id="t_contracts"></table></div>
-      </div>
-
-      <div class="card tablecard" style="margin-top:16px">
-        <div class="hd" style="padding:16px 18px 2px"><h3>All valued contracts named</h3><span class="tag" id="valued_count">182</span></div>
-        <div class="cap" style="padding:0 18px">Every "contract sum of K/US$…" in the reports (~182). Amount, ministry and page are reliable; supplier and detail are in the context column. The 34 above are deep-verified from these.</div>
-        <div class="toolbar">
-          <input id="val_search" class="search" type="search" placeholder="Search context, supplier or ministry... e.g. hospital, road, NMS, drugs">
-          <div class="chips">
-            <button class="chip active" data-vf="all">All</button>
-            <button class="chip" data-vf="verified">Verified</button>
-            <button class="chip" data-vf="unverified">Unverified</button>
-            <button class="chip" data-vf="US$">US$</button>
-            <button class="chip" data-vf="K">Kwacha</button>
-            <button class="chip" data-vf="2021">2021</button>
-            <button class="chip" data-vf="2022">2022</button>
-            <button class="chip" data-vf="2023">2023</button>
-            <button class="chip" data-vf="2024">2024</button>
-            <button class="chip" data-vf="2025">2025</button>
-          </div>
-        </div>
-        <div class="scrolltable"><table id="t_valued"></table></div>
+        <div class="scrolltable"><table id="t_master"></table></div>
       </div>
 
       <div class="card tablecard" style="margin-top:16px">
@@ -473,6 +460,7 @@ const delYears=DELIVERY.years, delData=DELIVERY.data, delColors=DELIVERY.colors;
   set('tag_status',COUNTS.contracts+' of ~'+COUNTS.valued);
   set('ft_single',COUNTS.singleSource);
   set('ft_notdel',COUNTS.notFullyDelivered+' of '+COUNTS.contracts);
+  set('master_vcount',COUNTS.masterVerified);
   const sd=SUPPLIERS.filter(r=>r.s==='Delivered').length,
         sp=SUPPLIERS.filter(r=>r.s==='Partial').length,
         sn=SUPPLIERS.filter(r=>r.s==='Not delivered').length;
@@ -635,25 +623,39 @@ function badge(s){const m={'No':['b-no','Not delivered'],'Partial':['b-part','Pa
 document.getElementById('t_flags').innerHTML =
   '<thead><tr><th>What the auditors flagged</th><th>Contracts</th></tr></thead><tbody>'+
   flagCounts.map(f=>`<tr><td>${f[0]}</td><td class="num">${f[1]}</td></tr>`).join('')+'</tbody>';
-let conFilter='all', conQuery='';
-function renderContracts(){
-  const q=conQuery.toLowerCase();
-  const rows=contracts.filter(r=>{
-    const okq=!q||((r[1]+' '+r[2]+' '+r[3]+' '+r[6]).toLowerCase().includes(q));
-    const okf=conFilter==='all'||r[5]===conFilter;
+/* master contract table: 182 valued UNION 34 deep-verified, one verified flag.
+   row = [year, ministry, supplier, amount, delivered, flag/context, page, verified] */
+let mFilter='all', mQuery='';
+function renderMaster(){
+  const q=mQuery.toLowerCase();
+  const rows=MASTER.filter(r=>{
+    const okq=!q||((r[1]+' '+r[2]+' '+r[5]).toLowerCase().includes(q));
+    let okf=true;
+    if(mFilter==='verified') okf=r[7]===true;
+    else if(mFilter==='unverified') okf=r[7]===false;
+    else if(mFilter==='No'||mFilter==='Partial'||mFilter==='Yes') okf=r[4]===mFilter;
+    else if(mFilter==='US$') okf=r[3].indexOf('US$')===0;
+    else if(mFilter==='K') okf=r[3].charAt(0)==='K';
+    else if(mFilter!=='all') okf=r[0]===mFilter;
     return okq&&okf; });
-  document.getElementById('contracts_count').textContent=rows.length+' of '+contracts.length;
-  document.getElementById('t_contracts').innerHTML=
-    '<thead><tr><th>Year</th><th>Ministry</th><th>Supplier</th><th>Contract</th><th>Value</th><th>Delivered</th><th>Flagged</th><th>Page</th></tr></thead><tbody>'+
-    (rows.length?rows.map(r=>`<tr><td class="num">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td>`+
-      `<td class="num">${r[4]}</td><td>${badge(r[5])}</td><td>${r[6]}</td><td class="muted">${r[7]}</td></tr>`).join('')
+  document.getElementById('master_count').textContent=rows.length+' of '+MASTER.length;
+  const dash='<td class="muted">&mdash;</td>';
+  document.getElementById('t_master').innerHTML=
+    '<thead><tr><th>Year</th><th>Ministry</th><th>Supplier</th><th>Amount</th><th>Delivered</th><th>Flagged / context</th><th>Status</th><th>Page</th></tr></thead><tbody>'+
+    (rows.length?rows.map(r=>`<tr><td class="num">${r[0]}</td><td>${r[1]}</td>`+
+      (r[2]?`<td>${r[2]}</td>`:dash)+
+      `<td class="num">${r[3]}</td>`+
+      (r[4]?`<td>${badge(r[4])}</td>`:dash)+
+      `<td style="font-size:12px">${r[5]}</td>`+
+      `<td>${r[7]?'<span class="badge b-yes">verified</span>':'<span class="badge b-na">unverified</span>'}</td>`+
+      `<td class="muted">${r[6]}</td></tr>`).join('')
       :'<tr><td colspan="8" class="muted" style="padding:18px">No contracts match.</td></tr>')+'</tbody>';
 }
-renderContracts();
-document.getElementById('con_search').addEventListener('input',e=>{conQuery=e.target.value;renderContracts();});
-document.querySelectorAll('.chip[data-kf]').forEach(c=>c.addEventListener('click',()=>{
-  document.querySelectorAll('.chip[data-kf]').forEach(x=>x.classList.remove('active'));
-  c.classList.add('active'); conFilter=c.dataset.kf; renderContracts(); }));
+renderMaster();
+document.getElementById('master_search').addEventListener('input',e=>{mQuery=e.target.value;renderMaster();});
+document.querySelectorAll('.chip[data-mf]').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip[data-mf]').forEach(x=>x.classList.remove('active'));
+  c.classList.add('active'); mFilter=c.dataset.mf; renderMaster(); }));
 document.getElementById('t_recurring').innerHTML =
   '<thead><tr><th>Supplier</th><th>Named in reports</th><th>Mentions</th></tr></thead><tbody>'+
   recurring.map(r=>`<tr><td>${r[0]}</td><td class="muted">${r[1]}</td><td class="num">${r[2]}</td></tr>`).join('')+'</tbody>';
@@ -713,31 +715,6 @@ document.querySelectorAll('.chip[data-cf]').forEach(c=>c.addEventListener('click
   document.querySelectorAll('.chip[data-cf]').forEach(x=>x.classList.remove('active'));
   c.classList.add('active'); casesFilter=c.dataset.cf; renderCases(); }));
 
-/* all valued contracts (~182) table */
-let valFilter='all', valQuery='';
-function renderValued(){
-  const q=valQuery.toLowerCase();
-  const rows=VALUED.filter(r=>{
-    const okq=!q||((r.ctx+' '+r.m).toLowerCase().includes(q));
-    let okf=true;
-    if(valFilter==='US$') okf=r.cur==='US$';
-    else if(valFilter==='K') okf=r.cur==='K';
-    else if(valFilter==='verified') okf=r.v===true;
-    else if(valFilter==='unverified') okf=r.v===false;
-    else if(valFilter!=='all') okf=String(r.y)===valFilter;
-    return okq&&okf; });
-  document.getElementById('valued_count').textContent=rows.length+' of '+VALUED.length;
-  document.getElementById('t_valued').innerHTML=
-    '<thead><tr><th>Year</th><th>Ministry</th><th>Amount</th><th>What the report says (context)</th><th>Status</th><th>Page</th></tr></thead><tbody>'+
-    (rows.length?rows.map(r=>`<tr><td class="num">${r.y}</td><td>${r.m}</td><td class="num">${r.amt}</td>`+
-      `<td style="font-size:12px">${r.ctx}</td><td>${r.v?'<span class="badge b-yes">verified</span>':'<span class="badge b-na">unverified</span>'}</td><td class="muted">p${r.p}</td></tr>`).join('')
-      :'<tr><td colspan="6" class="muted" style="padding:18px">No contracts match.</td></tr>')+'</tbody>';
-}
-renderValued();
-document.getElementById('val_search').addEventListener('input',e=>{valQuery=e.target.value;renderValued();});
-document.querySelectorAll('.chip[data-vf]').forEach(c=>c.addEventListener('click',()=>{
-  document.querySelectorAll('.chip[data-vf]').forEach(x=>x.classList.remove('active'));
-  c.classList.add('active'); valFilter=c.dataset.vf; renderValued(); }));
 
 /* audit opinion rows */
 const opinions=[['2021','No formal opinion','b-na','p —'],['2022','Unqualified (clean)','b-yes','p21'],
