@@ -4,6 +4,18 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.3.0] - 2026-11-10
+
+Completeness fix: rebuild the organisation index and measure its coverage.
+
+### Added
+- **Coverage audit** (`R/12_coverage_audit.R`, `data_clean/coverage_audit.csv`): pulls every company-like name from the full report text and measures how many we captured.
+
+### Changed
+- **Organisation index rebuilt** (`R/04_supplier_index.R`) to extract names directly from the report text instead of filtering a pre-made extract. It now catches acronym-named agencies and state firms (ZAMMSA, NAPSA, ZPPA, Nitrogen Chemicals of Zambia) and firms the old filter dropped (Trade Kings, Zambia Seed Company), and fixes a space-matching bug that had been discarding valid names.
+- **Coverage of clearly-named companies rose from 73% to 90%**; distinct organisations indexed rose from 594 to 1,103. Measured, not claimed (`docs/qa_sampling.md`).
+- Dashboard supplier section relabelled from "suppliers" to "organisations named", states the measured 90% coverage, and the per-year chart now computes from the index rather than hand-kept numbers.
+
 ## [1.2.0] - 2026-11-10
 
 Consolidation pass: make the dashboard data-driven and reduce drift risk.

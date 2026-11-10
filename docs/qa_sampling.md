@@ -12,11 +12,35 @@ trust them before any name is acted on.
 |-------|------|-----------|---------|
 | Valued contracts | 182 | Every "contract sum of K/US$…" pulled from the reports, with amount, ministry and page | 30 |
 | Supplier cases (goods & services) | 89 | Supplier/item/amount/delivery, spot-verified | 20 named |
-| Supplier name index | 454 verified | Company names auto-extracted, then flagged as seen in the report text | 25 |
+| Organisation index | 1,103 | Suppliers, contractors, agencies and state firms, extracted directly from the report text | 25 |
 
 The 34 deep-verified contracts are **not** sampled here. Every one of them was
 already read against its page, so they are the reference layer, not a layer
 under test.
+
+## Coverage: how complete is the organisation index?
+
+Sampling tells you whether the rows you have are right. It does not tell you how
+many you are missing. An earlier version of the index was built by filtering a
+pre-made extract and demonstrably missed real organisations: agencies that go by
+initials (ZAMMSA, NAPSA, ZPPA) were absent, and firms such as Trade Kings,
+Zambia Seed Company and Nitrogen Chemicals of Zambia were dropped.
+
+The index was rebuilt (`R/04_supplier_index.R`) to extract names directly from
+the report text, with broader name patterns and a curated set of acronym and
+state-firm names, then measured (`R/12_coverage_audit.R`):
+
+| Measure | Before | After |
+|---------|--------|-------|
+| Distinct organisations indexed | 594 | 1,103 |
+| Capture of clearly-named companies (ending "Limited"/"Ltd") | 73% | 90% |
+| Agency acronyms (ZAMMSA, NAPSA, ZPPA) captured | no | yes |
+
+About 10% of clearly-named companies are still not captured. These are mostly
+extraction fragments and names that carry a lower-case word in the middle (for
+example "X of Zambia Limited"), which the pattern does not yet join. The index
+is a strong, measured sample of the organisations named, not a complete
+register; the citable layer remains the 34 deep-verified contracts.
 
 ## Method
 

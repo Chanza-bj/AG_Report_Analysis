@@ -1,113 +1,164 @@
 # =============================================================================
-# 04_supplier_index.R  -  Clean the auto-extracted supplier index into a
-# usable list of company names that appear across the reports, with the years
-# and PDF pages they appear on. This is an INDEX of named companies (appearances),
-# not a verified contract register; contracts_flagged.csv is the valued layer.
+# 04_supplier_index.R  -  Build an index of ORGANISATIONS named in the reports
+# (suppliers, contractors, vendors, agencies and state firms), directly from the
+# pdftotext -layout text of all five reports. This is an INDEX of names that
+# appear, with the years and PDF pages; it is not a verified contract register
+# (contracts_flagged.csv is the deep-verified layer).
 #
-# Input : data_raw/supplier_index_raw.csv  (user-supplied auto-extraction)
-#         extraction/AG_<year>_text.txt    (for text verification; optional)
+# Rebuilt to raise coverage: extracts company-suffix names across the body text
+# AND a curated set of acronym / state-firm names (ZAMMSA, NAPSA, Nitrogen
+# Chemicals, ...) that a suffix-only rule misses. Coverage is measured by
+# R/12_coverage_audit.R.
+#
+# Input : extraction/AG_<year>_layout.txt
 # Output: data_clean/supplier_index.csv
 # =============================================================================
 suppressMessages({library(readr); library(dplyr); library(tidyr); library(stringr)})
+FF <- rawToChar(as.raw(12))
+clean_bytes <- function(s) iconv(s, to = "UTF-8", sub = "")
 
-raw <- read_csv("data_raw/supplier_index_raw.csv", show_col_types = FALSE) |>
-  rename(name = supplier_name_as_written, years = years_appearing,
-         mentions = total_mentions, pages = year_and_pdf_pages) |>
-  mutate(name = str_squish(name))
+# ---- load each year's pages (byte-safe), skip the front matter / ToC ---------
+YEARS <- 2021:2025
+PAGES <- list()
+for (y in YEARS) {
+  f <- sprintf("extraction/AG_%d_layout.txt", y)
+  if (!file.exists(f)) next
+  raw <- readChar(f, file.info(f)$size, useBytes = TRUE)
+  pg  <- strsplit(raw, FF, fixed = TRUE, useBytes = TRUE)[[1]]
+  if (length(pg) > 11) pg <- pg[11:length(pg)]        # drop cover + contents
+  PAGES[[as.character(y)]] <- clean_bytes(pg)
+}
+BODY <- sapply(PAGES, function(p) paste(p, collapse = "\n"))
 
-# ---- 1. Drop parsing artifacts (table headers, fragments, place/section names,
-#         seed TYPES, generic construction/works fragments) --------------------
-noise_lead <- str_c("^(Amount|Assets|Acronyms|Background|Date|Qty|Personnel|",
-  "Selected|Same|Seed Suppliers|Seed Seed|Suppliers|Supplies|Supply|Traders|",
-  "Projects?|Phase|Weeks?|Other|Others|Infrastructure|Delivered|Overpaid|",
-  "Uncontracted|Undistributed|Beneficiaries|Bidding|Required Bid|Tax Registration|",
-  "ZPPA|Districts?|Northern|Southern|Eastern|Western|Central|Lusaka|Muchinga|",
-  "Luapula|Copperbelt|North Western|Incomplete|Commenc|Washed Away|Stalled|",
-  "Revised|Completion|Funding|Existing|Related|Maintenance|Refurbishment|Nursing|",
-  "Biomedical|Mechanical|Electrical|Fire Services|Health Post|Health Sciences|",
-  "Hospital|General Hospital|School|Secondary|High School|Bus Station|Sanitation|",
-  "Drainage|Painting|Roofing|Wall Fence|Staircases|First Floor|Prefabricated|",
-  "Manually Drilled|Water Mechanisation|Chancery Construction|Palaces|Houses|",
-  "Lodges?|Country Lodge|Investment$|Investments$|Limited|Construction$|Engineering$|",
-  "Enterprises? Ltd$|Years|July|June|January|February|March|December|October|",
-  "Capacity Building|Builders|Mining Limited$|Grain|Group Ltd$|III |Km |Lot |Lines|",
-  "Society Limited$|Supply|Corporation Ltd$|Company Zambia Ltd$|Electrical|Date Balance)")
-# seed TYPES (not companies): a crop word immediately before "Seed"
-seed_type <- str_c("(Soya|Sunflower|Spinach|Pumpkin|Rice|Groundnut|Forage|Pasture|",
-  "Excess Beans?|Poor|Certified|Beneficiaries|Uncontracted|Undistributed|Kabulangeti|",
-  "Mbereshi|Masaiti|Ferts?|Pannar Seed$|Soya Beans?|Qty Price|Selected Seed|Seed Seed|",
-  "Groundnut|Districts Farmers|Stylosanthesis|Dlroba|Kekeli|Certification Institute|",
-  "Beneficiaries Seed)")
-drop_contains <- "(Amount Station|Seed Suppliers No|Qty Price Total|Programme Sub-Programme|Bidding Companies|Required Bid|Tax Registration|ZPPA Registration|Delivered Goods|Development Trust|Date Balance Season)"
+# ---- 1. company-suffix names -------------------------------------------------
+SUF <- paste0("(Limited|Ltd|Company|Enterprises?|Investments?|Holdings|Services|",
+  "Agency|Trading|Suppliers|Construction|Engineering|Contractors?|Pharmaceuticals?|",
+  "Industries|Corporation|Consultants?|Consulting|Technologies|Ventures|Logistics|",
+  "Motors|Farms?|Mills?|Milling|Agro|Chemicals|Hardware|Stores|Petroleum|General Dealers)")
+NAME_RE <- paste0("\\b([A-Z][A-Za-z0-9&'.-]+(?:\\s+[A-Z0-9][A-Za-z0-9&'.-]+){0,5}\\s+", SUF, ")\\b")
 
-# purely-generic names (a generic stem + a company suffix, nothing distinctive)
-generic <- str_c("^(General Dealers|Investments?|Solutions|Supply Company|Suppliers|",
-  "Supplies|Supply|Traders|Trading|Grain|Cropping|Society|Houses|Lodges?|Marketing|",
-  "Monitors|Lines|Builders|Maintenance|Electrical|Mining|Logistics|Veterinary|Secondary|",
-  "Enterprises|Corporation|Group|Company Zambia|Engineering Company|Capacity Building|",
-  "Enhanced Smallholder|Correctional Industries|Hand|Multi-Industry|Managed Solutions|",
-  "Star Agency Constructors|Supply Ltd|Society|Investment|School Investments|",
-  "Phase II Investments|Regional Investment|Western Investment|Manually Drilled Investment|",
-  "Maternity Annex Investments|Spring Creek Investment|Lindham Investment|Floyven Investment)",
-  "( Limited| Ltd| Ltd\\.|$)")
+suffix_names <- unique(unlist(lapply(BODY, function(b)
+  str_squish(regmatches(b, gregexpr(NAME_RE, b, perl = TRUE))[[1]]))))
 
-clean <- raw |>
-  filter(!str_detect(name, regex(noise_lead, ignore_case = TRUE)),
-         !str_detect(name, regex(paste0("\\b", seed_type, "\\b.*Seed$"), ignore_case = TRUE)),
-         !str_detect(name, regex(drop_contains, ignore_case = TRUE)),
-         !str_detect(name, regex(generic, ignore_case = TRUE)),
-         str_count(name, "\\w+") <= 8,                 # drop long header-like strings
-         str_detect(name, "[A-Za-z]"))
+# ---- 2. curated acronym / state-firm names (suffix-only rule misses these) ---
+CURATED <- c(
+  "ZAMMSA","Zambia Medicines and Medical Supplies Agency","NAPSA","ZPPA","ZESCO",
+  "ZAMTEL","Zambia Railways","Zampost","INDENI","TAZAMA","ZSIC","ZCCM-IH","ZCCM",
+  "Nitrogen Chemicals of Zambia","Nitrogen Chemicals","ZAFFICO","Food Reserve Agency",
+  "Road Development Agency","Zambia National Building Society","Development Bank of Zambia",
+  "ZNBC","Mukuba","Kagem","Mopani","Konkola","Zambeef","Zambian Breweries","Trade Kings",
+  "Zambia Seed Company","Zamseed","National Road Fund Agency","Zambia Correctional Service",
+  "Zambia Air Force","Zambia National Service","Water Resources Management Authority",
+  "Rural Electrification Authority","Zambia Information and Communications Technology Authority",
+  "Public Service Pensions Fund","Workers Compensation Fund","Local Authorities Superannuation Fund")
+curated_present <- CURATED[sapply(CURATED, function(x) any(sapply(BODY, grepl, pattern = x, fixed = TRUE)))]
 
-# ---- 2. Merge near-duplicate names (Ltd/Limited/Co variants, spacing) --------
-norm_key <- function(x) x |>
-  str_to_lower() |>
-  str_replace_all("\\b(limited|ltd|ltd\\.|co\\.|co|company|incorporated|inc|plc|pte|pty)\\b", " ") |>
-  str_replace_all("[^a-z0-9 ]", " ") |> str_squish()
+cand <- unique(c(suffix_names, curated_present))
 
-merged <- clean |>
-  mutate(key = norm_key(name)) |>
-  filter(key != "") |>
+# ---- 3. drop fragments and purely-generic names ------------------------------
+# Only true sentence-starts / table words that are never part of a company name.
+# Region, sector and month words are NOT dropped (real firms start with them,
+# e.g. "Southern Africa Ferro Alloys", "Eastern Golden Wheel Zambia").
+noise_lead <- regex(str_c("^(Amount|Amounts|Although|Assets|Acronyms|Background|Date|Qty|",
+  "Personnel|Selected|Same|Other|Others|These|This|That|The|Was|Were|Being|Audit|Report|",
+  "Balance|Opening|Closing|Note|Figure|Annex|Total|Table|Various|Infrastructure|Delivered|",
+  "Overpaid|Required|Related|Existing|Revised|Completion|Funding|Incomplete|Commenc|Washed|",
+  "Stalled|Manually|Programme|Sub-Programme|Lot|Km|Under|Bidding|Phase|Weeks?|Staircases|",
+  "First Floor|Prefabricated|Wall Fence|Administaration|Activities)\\b"), ignore_case = FALSE)
+
+# single distinctive token required: drop names whose key is one generic word
+GEN1 <- c("zambia","services","service","traders","trading","suppliers","supplies","supply",
+  "investment","investments","enterprises","enterprise","construction","engineering","limited",
+  "general","holdings","company","group","agency","corporation","contractors","industries",
+  "logistics","ventures","motors","hand","associates","solutions","technologies")
+nk <- function(x) x |> str_to_lower() |>
+  str_replace_all("\\b(limited|ltd|ltd\\.|co\\.|co|company|incorporated|inc|plc|pte|pty)\\b"," ") |>
+  str_replace_all("[^a-z0-9 ]"," ") |> str_squish()
+
+# strip leading date / number / "No." junk tokens ("June 2022. Habitech Ltd" -> "Habitech Ltd")
+MONTHS <- "January|February|March|April|May|June|July|August|September|October|November|December"
+strip_lead <- function(x) {
+  repeat {
+    x2 <- sub(paste0("^(", MONTHS, "|No\\.?|[0-9]+\\.?)\\s+"), "", x, perl = TRUE, ignore.case = TRUE)
+    if (identical(x2, x)) break; x <- x2
+  }
+  str_squish(x)
+}
+cand <- unique(vapply(cand, strip_lead, character(1)))
+cand <- cand[!str_detect(cand, noise_lead)]
+cand <- cand[str_count(cand, "\\w+") <= 8 & nchar(cand) >= 4]
+cand <- cand[!str_detect(cand, "\\b(19|20)\\d{2}\\b")]       # drop names carrying a year
+cand <- cand[!str_detect(cand, "\\bNo\\.")]                  # drop table "No." refs
+
+# keep a name only if it has a distinctive token (not a pure sector/generic phrase);
+# curated agency names are always kept even when their words are all generic.
+GENERIC <- c("health","services","service","medical","supplies","supply","general","stores","store",
+  "public","social","technical","support","hospital","primary","central","pharmaceutical","pharmaceuticals",
+  "insurance","company","agency","national","local","government","district","districts","provincial",
+  "correctional","defence","safety","geriatric","imaging","dental","nursing","maternity","surgical",
+  "clinical","goods","works","project","projects","classroom","blocks","dam","chief","export","import",
+  "limited","ltd","holdings","group","corporation","contractors","contractor","logistics","trading",
+  "traders","suppliers","enterprises","enterprise","investment","investments","construction","engineering",
+  "management","development","dealers","fund","reserve","road","building","society","authority","financial",
+  "bank","trust","union","cooperative","station","office","department","ministry","programme","of","and",
+  "the","zambia","zambian","industries","technologies","ventures","petroleum","chemicals","hardware",
+  "consultants","consulting","motors","mills","milling","agro","farms","farm")
+has_distinct <- function(x) {
+  w <- str_split(str_to_lower(str_replace_all(x, "[^A-Za-z ]", " ")), "\\s+")[[1]]
+  w <- w[nchar(w) >= 3]
+  any(!(w %in% GENERIC))
+}
+cand <- cand[vapply(cand, has_distinct, logical(1)) | cand %in% curated_present]
+cand <- cand[nk(cand) != ""]
+
+# ---- 4. years, pages and mention counts for each name ------------------------
+# Match against squished pages: the -layout text has column gaps (multiple
+# spaces), but extracted names are squished, so fixed matching needs squished text.
+PAGES_SQ <- lapply(PAGES, str_squish)
+occ <- function(name) {
+  yrs <- character(); pgtxt <- character(); total <- 0L
+  for (y in names(PAGES_SQ)) {
+    pv <- PAGES_SQ[[y]]
+    hits <- which(vapply(pv, function(p) grepl(name, p, fixed = TRUE), logical(1)))
+    if (length(hits)) {
+      yrs <- c(yrs, y)
+      total <- total + sum(vapply(pv[hits],
+        function(p) lengths(gregexpr(name, p, fixed = TRUE)), integer(1)))
+      pgtxt <- c(pgtxt, sprintf("%s: pdf p%s", y, paste(hits + 10, collapse = ",")))
+    }
+  }
+  list(years = paste(yrs, collapse = ";"), n_years = length(yrs),
+       mentions = total, pages = paste(pgtxt, collapse = "; "))
+}
+
+rows <- lapply(cand, occ)
+idx <- tibble(
+  supplier        = cand,
+  years_appearing = sapply(rows, `[[`, "years"),
+  n_years         = sapply(rows, `[[`, "n_years"),
+  total_mentions  = sapply(rows, `[[`, "mentions"),
+  pages           = sapply(rows, `[[`, "pages")) |>
+  filter(n_years >= 1)
+
+# ---- 5. merge Ltd/Limited variants (canonical = longest) ---------------------
+idx <- idx |>
+  mutate(key = nk(supplier)) |>
   group_by(key) |>
   summarise(
-    supplier = name[which.max(nchar(name))],           # canonical = longest variant
-    years_appearing = paste(sort(unique(unlist(str_split(paste(years, collapse=";"), ";")))), collapse=";"),
-    n_years = length(unique(unlist(str_split(paste(years, collapse=";"), ";")))),
-    total_mentions = sum(mentions),
-    pages = paste(unique(pages), collapse=" | "),
+    supplier        = supplier[which.max(nchar(supplier))],
+    years_appearing = paste(sort(unique(unlist(str_split(paste(years_appearing, collapse=";"), ";")))), collapse=";"),
+    n_years         = length(unique(unlist(str_split(paste(years_appearing, collapse=";"), ";")))),
+    total_mentions  = sum(total_mentions),
+    pages           = paste(unique(pages), collapse = "; "),
     .groups = "drop") |>
-  select(supplier, years_appearing, n_years, total_mentions, pages) |>
+  mutate(verified_in_text = TRUE) |>            # text-derived: present by construction
+  select(supplier, years_appearing, n_years, total_mentions, pages, verified_in_text) |>
   arrange(desc(n_years), desc(total_mentions), supplier)
 
-# ---- 3. Text-verify each supplier appears in a claimed year's report ---------
-texts <- list()
-for (yr in c("2021","2022","2023","2024","2025")) {
-  fp <- file.path("extraction", paste0("AG_", yr, "_text.txt"))
-  if (!file.exists(fp)) fp <- file.path("extraction", paste0("AG_", yr, "_layout.txt"))
-  texts[[yr]] <- if (file.exists(fp)) paste(readLines(fp, warn = FALSE), collapse = " ") else ""
-}
-verify_one <- function(supplier, years) {
-  ys <- unlist(str_split(years, ";"))
-  any(vapply(ys, function(y) {
-    t <- texts[[y]]; if (is.null(t) || t == "") return(NA)
-    str_detect(t, fixed(supplier, ignore_case = TRUE))
-  }, logical(1)), na.rm = TRUE)
-}
-merged <- merged |>
-  rowwise() |>
-  mutate(verified_in_text = verify_one(supplier, years_appearing)) |>
-  ungroup()
+write_csv(idx, "data_clean/supplier_index.csv")
 
-write_csv(merged, "data_clean/supplier_index.csv")
-
-cat("Raw rows:", nrow(raw), "| after cleaning:", nrow(clean),
-    "| after dedupe:", nrow(merged), "\n")
-cat("Verified present in report text:", sum(merged$verified_in_text), "/", nrow(merged), "\n")
-cat("Appearing in more than one year:", sum(merged$n_years > 1), "\n\n")
-cat("--- Suppliers named in 2 or more reports (text-verified) ---\n")
-print(merged |> filter(n_years > 1, verified_in_text) |>
-      select(supplier, years_appearing, total_mentions), n = 40)
-# per-year distinct supplier counts
-py <- merged |> filter(verified_in_text) |>
-  separate_rows(years_appearing, sep=";") |> count(years_appearing, name="n_suppliers")
-cat("\n--- Distinct verified suppliers named per report ---\n"); print(py)
+cat("Organisations indexed from report text:", nrow(idx), "\n")
+cat("Named in more than one report:", sum(idx$n_years > 1), "\n")
+cat("Curated agency/SOE names found present:", length(curated_present), "\n")
+for (q in c("ZAMMSA","NAPSA","Nitrogen Chemicals","Trade Kings","Zambia Seed"))
+  cat(sprintf("  '%s' now in index: %s\n", q, any(grepl(q, idx$supplier, ignore.case = TRUE))))

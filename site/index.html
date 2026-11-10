@@ -322,7 +322,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <h2>Suppliers named across the reports</h2>
       <div class="note" style="background:#eef4fd;border-color:#d4e3fa;color:#214a7c">
         <span>&#9432;</span>
-        <div>This is a broad <b>index of company names that appear in the reports</b>, auto-extracted and cleaned, then checked against the report text. It shows how many suppliers are involved; it is not a list of verified contracts with values. The valued, delivery-checked contracts are in the <a href="#contracts" style="color:#1c5cab;font-weight:600">Contracts</a> section. Some residual noise from auto-extraction may remain.</div>
+        <div>This is an <b>index of organisations named in the reports</b> &mdash; suppliers, contractors, vendors, agencies and state firms &mdash; built directly from the report text. A coverage check against every company name in the reports puts capture at about <b>90% of named companies</b> (see <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/docs/qa_sampling.md" target="_blank" rel="noopener" style="color:#1c5cab;font-weight:600">the method note</a>); agency names such as ZAMMSA and NAPSA are included. It shows who is named, not verified contract values &mdash; those are in the <a href="#contracts" style="color:#1c5cab;font-weight:600">Contracts</a> section. A small amount of residual extraction noise remains.</div>
       </div>
       <div class="grid two">
         <div class="card">
@@ -480,7 +480,8 @@ const materiality=[['Finance & Nat. Planning (2024)',16.80],['Agriculture (2025)
 ['Water Dev (2024)',1.36],['Education (2025)',1.26]];
 /* suppliers named per report (distinct, text-verified from the supplier index) */
 const supYears=['2021','2022','2023','2024','2025'];
-const supPerYear=[188,98,57,108,32];
+/* distinct organisations named per report, computed from the index (not hand-kept) */
+const supPerYear=supYears.map(Y=>SUPPLIERS.filter(r=>String(r.y).split(/[,;]/).map(s=>s.trim()).includes(Y)).length);
 /* suppliers named in more than one report (curated from supplier_index.csv) */
 const recurring=[
  ['AVIC International Limited','2021, 2022, 2024',10],

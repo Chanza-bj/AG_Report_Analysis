@@ -62,9 +62,10 @@ checks$cases <- tibble(layer = "cases(89)", year = cs$report_year,
   detail = clean(cs$item))
 
 # ---- 3. supplier index (verified): name on any of its cited pages -----------
-ix <- read_csv("data_clean/supplier_index.csv", show_col_types = FALSE) |>
+ix_all <- read_csv("data_clean/supplier_index.csv", show_col_types = FALSE) |>
   filter(verified_in_text) |> mutate(tok = sapply(supplier, token)) |> filter(!is.na(tok))
-ix <- ix[sample(nrow(ix), 25), ]
+n_index <- nrow(ix_all)
+ix <- ix_all[sample(n_index, 25), ]
 # parse "2021: pdf p308,309; 2022: pdf p97" -> (year, page) pairs, test any
 check_index <- function(tok, pages) {
   grps <- str_match_all(pages, "(20\\d\\d)\\s*:\\s*pdf\\s*p?([0-9,\\s]+)")[[1]]
@@ -77,7 +78,7 @@ check_index <- function(tok, pages) {
   FALSE
 }
 ix$found <- mapply(check_index, ix$tok, ix$pages)
-checks$index <- tibble(layer = "index(454)", year = NA, page = NA,
+checks$index <- tibble(layer = paste0("index(", n_index, ")"), year = NA, page = NA,
   target = ix$supplier, found = ix$found, detail = clean(ix$pages))
 
 # ---- report -----------------------------------------------------------------
