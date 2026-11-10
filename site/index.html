@@ -756,7 +756,7 @@ function renderValued(){
     '<thead><tr><th>Year</th><th>Ministry</th><th>Amount</th><th>What the report says (context)</th><th>Status</th><th>Page</th></tr></thead><tbody>'+
     (rows.length?rows.map(r=>`<tr><td class="num">${r.y}</td><td>${r.m}</td><td class="num">${r.amt}</td>`+
       `<td style="font-size:12px">${r.ctx}</td><td>${r.v?'<span class="badge b-yes">verified</span>':'<span class="badge b-na">unverified</span>'}</td><td class="muted">p${r.p}</td></tr>`).join('')
-      :'<tr><td colspan="5" class="muted" style="padding:18px">No contracts match.</td></tr>')+'</tbody>';
+      :'<tr><td colspan="6" class="muted" style="padding:18px">No contracts match.</td></tr>')+'</tbody>';
 }
 renderValued();
 document.getElementById('val_search').addEventListener('input',e=>{valQuery=e.target.value;renderValued();});
