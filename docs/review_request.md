@@ -31,7 +31,7 @@ A one-page summary of the findings is in docs/key_findings_brief.md. The main po
    K3.9bn to K5.2bn.
 4. 34 named contracts are deep-verified and page-checked (e.g. ZTE Safe City
    US$210m with US$178.5m in loans outstanding; K786m paid to seed suppliers
-   that delivered nothing by the deadline). These sit inside a master table of
+   paid before delivery, most delivered late by March 2023). These sit inside a master table of
    206 contracts, each row carrying a single verified / unverified flag: the 34
    verified rows are citable now; an unverified row is an amount the report
    names on a page, with the supplier and detail still to be deep-checked.

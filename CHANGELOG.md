@@ -4,6 +4,20 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.5.0] - 2026-11-10
+
+Accuracy and credibility pass from a critical read of the dashboard.
+
+### Changed
+- **FISP seed wording corrected.** "Paid for nil delivery / delivered nothing" overstated the evidence; the reports say the 13 suppliers had not delivered at the 15 January 2023 deadline and most delivered late by March 2023. Reworded to "paid before delivery; delivered late" across the dashboard, brief, report and `contracts_flagged.csv`.
+- **Findings-value chart limited to 2022-2023**, the only years with a comparable single total (the 2021 bar was on a different basis).
+- **Counts reconciled.** The overview and method section now explain what each figure counts (34 deep-verified, ~182 valued, 206 master, 89 cases, 1,231 organisations); the stale "450+/471" supplier figures now compute from the data.
+- **Overclaim removed.** "Every figure is page-cited" narrowed to the accurate statement that contract and supplier rows carry the PDF page while budget and findings figures cite the report year.
+- **"Named is not fault" made explicit** in the supplier section; KPI reworded to "not fully delivered (no or partial)"; seed price range shown as exact per-tonne values so it matches the 4.1x spread.
+
+### Added
+- **"Data behind each chart"** panel linking every chart to its source CSV on GitHub.
+
 ## [1.4.0] - 2026-11-10
 
 Push organisation-name coverage higher by joining connector names.

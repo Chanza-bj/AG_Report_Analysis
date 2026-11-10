@@ -22,7 +22,7 @@
 
 From 34 named contracts deep-checked against their pages, examples:
 - **ZTE - Safe City security network, US$210 million**, with **US$178.5 million in loans still outstanding** (2023).
-- **Seed suppliers (FISP), 2022:** only 28% of 33,283 tonnes delivered on time; **K786 million paid to 13 suppliers that had delivered nothing** by the deadline.
+- **Seed suppliers (FISP), 2022:** only 28% of 33,283 tonnes delivered on time; **K786 million paid before delivery to 13 suppliers yet to deliver** at the 15 January deadline. A later check found most delivered between mid-January and March 2023, after the planting window.
 - **AVIC (Cancer Centre Ndola, K306m)** and **Siemens (Cancer Hospital Lusaka, US$30.8m)** - hospital builds delayed; an **irregular US$6.6m advance** paid to Siemens without verifying the guarantee.
 - **Pozzolana - ECE hub, Serenje:** contractor **abandoned the site**; 0 of 40 early-childhood hubs built.
 - **Menov Trading - pontoon materials:** K1.84m **paid before the contract was signed**.
