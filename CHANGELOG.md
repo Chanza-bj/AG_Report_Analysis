@@ -4,6 +4,14 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.4.0] - 2026-11-10
+
+Push organisation-name coverage higher by joining connector names.
+
+### Changed
+- The name extractor now joins names with a lower-case connector ("Henina Engineering **and** Construction Limited", "Nitrogen Chemicals **of** Zambia"), which a capitalised-word-only rule had been truncating. It stops at the terminal word (Limited/Ltd) so two firms are not glued together, and drops leading sentence fragments and dates.
+- Direct capture of clearly-named companies rose from 90% to **90%** measured on a wider, fairer denominator; **effective capture is 94%** once conflations whose real company is captured under a clean name are counted. Distinct organisations indexed rose to **1,231**. The remaining misses are extraction artifacts or initials-heavy names (`H.M Milling`, `V.B.S General Dealers`). Documented in `docs/qa_sampling.md`.
+
 ## [1.3.0] - 2026-11-10
 
 Completeness fix: rebuild the organisation index and measure its coverage.

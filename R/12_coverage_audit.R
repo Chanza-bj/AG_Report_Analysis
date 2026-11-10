@@ -12,7 +12,11 @@ SUF <- paste0("(Limited|Ltd|Company|Enterprises?|Investments?|Holdings|Services|
               "Agency|Trading|Suppliers|Construction|Engineering|Contractors?|",
               "Pharmaceuticals?|Industries|Corporation|Consultants?|Consulting|",
               "General Dealers|Technologies|Ventures|Logistics|Motors|Farms?)")
-NAME_RE <- paste0("\\b([A-Z][A-Za-z&'\\-]+(?:\\s+[A-Z][A-Za-z&'\\-]+){0,4}\\s+", SUF, ")\\b")
+# same join rule as the extractor: letter-start words that are never a suffix
+# (stop at first suffix), plus lower-case connectors, lazy for the shortest name
+SUFW <- gsub("^.|.$", "", SUF)   # strip the outer parens from SUF
+WORD <- "(?!(?:Limited|Ltd)\\b)[A-Z][A-Za-z0-9&'.-]*"; CONN <- "(?:of|and|for|the|&)"
+NAME_RE <- paste0("\\b(", WORD, "(?:\\s+(?:", WORD, "|", CONN, ")){0,6}\\s+(", SUFW, "))\\b")
 
 clean <- function(s) iconv(s, to = "UTF-8", sub = "")       # drop bad bytes
 

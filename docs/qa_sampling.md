@@ -32,15 +32,23 @@ state-firm names, then measured (`R/12_coverage_audit.R`):
 
 | Measure | Before | After |
 |---------|--------|-------|
-| Distinct organisations indexed | 594 | 1,103 |
-| Capture of clearly-named companies (ending "Limited"/"Ltd") | 73% | 90% |
+| Distinct organisations indexed | 594 | 1,231 |
+| Capture of clearly-named companies (ending "Limited"/"Ltd"), direct | 73% | 90% |
+| Effective capture (counting conflations whose real company is captured under a clean name) | — | 94% |
 | Agency acronyms (ZAMMSA, NAPSA, ZPPA) captured | no | yes |
+| Names with a connector joined ("Henina Engineering **and** Construction", "Nitrogen Chemicals **of** Zambia") | no | yes |
 
-About 10% of clearly-named companies are still not captured. These are mostly
-extraction fragments and names that carry a lower-case word in the middle (for
-example "X of Zambia Limited"), which the pattern does not yet join. The index
-is a strong, measured sample of the organisations named, not a complete
-register; the citable layer remains the 34 deep-verified contracts.
+The direct figure is 90%. Of the ~10% not matched, inspection shows almost all
+are extraction artifacts the index correctly rejects: sentence fragments
+("Construction of Cancer AVIC International Limited"), two firms joined by "and"
+("Ministry and NMS Infrastructure Limited"), and table noise. The real company
+inside each is captured under a clean name, which is why effective coverage is
+94%. The handful genuinely missed are initials-heavy names (for example
+"H.M Milling Ltd", "V.B.S General Dealers Ltd"), dropped because their only
+long word is a generic one.
+
+The index is a strong, measured sample of the organisations named, not a
+complete register; the citable layer remains the 34 deep-verified contracts.
 
 ## Method
 

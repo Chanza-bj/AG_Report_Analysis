@@ -31,11 +31,22 @@ for (y in YEARS) {
 BODY <- sapply(PAGES, function(p) paste(p, collapse = "\n"))
 
 # ---- 1. company-suffix names -------------------------------------------------
-SUF <- paste0("(Limited|Ltd|Company|Enterprises?|Investments?|Holdings|Services|",
+SUFW <- paste0("Limited|Ltd|Company|Enterprises?|Investments?|Holdings|Services|",
   "Agency|Trading|Suppliers|Construction|Engineering|Contractors?|Pharmaceuticals?|",
   "Industries|Corporation|Consultants?|Consulting|Technologies|Ventures|Logistics|",
-  "Motors|Farms?|Mills?|Milling|Agro|Chemicals|Hardware|Stores|Petroleum|General Dealers)")
-NAME_RE <- paste0("\\b([A-Z][A-Za-z0-9&'.-]+(?:\\s+[A-Z0-9][A-Za-z0-9&'.-]+){0,5}\\s+", SUF, ")\\b")
+  "Motors|Farms?|Mills?|Milling|Agro|Chemicals|Hardware|Stores|Petroleum|General Dealers")
+# A name is a capitalised, letter-starting word (never itself a suffix word, so
+# the match stops at the FIRST suffix instead of gluing two companies together),
+# then more such words OR lower-case connectors (of, and, for, the, &) so
+# "Nitrogen Chemicals of Zambia Limited" and "Import and Export Ltd" join, ending
+# in a company suffix. Lazy so it takes the shortest name, dropping leading
+# sentence fragments and dates.
+# exclude only the terminal words (Limited/Ltd) from mid-name, so the match never
+# crosses one (no "...Limited X Limited" conflation) but industry words
+# (Engineering, Construction, ...) can sit mid-name; greedy to reach the last suffix.
+WORD <- "(?!(?:Limited|Ltd)\\b)[A-Z][A-Za-z0-9&'.-]*"
+CONN <- "(?:of|and|for|the|&)"
+NAME_RE <- paste0("\\b(", WORD, "(?:\\s+(?:", WORD, "|", CONN, ")){0,6}\\s+(", SUFW, "))\\b")
 
 suffix_names <- unique(unlist(lapply(BODY, function(b)
   str_squish(regmatches(b, gregexpr(NAME_RE, b, perl = TRUE))[[1]]))))
@@ -64,7 +75,10 @@ noise_lead <- regex(str_c("^(Amount|Amounts|Although|Assets|Acronyms|Background|
   "Balance|Opening|Closing|Note|Figure|Annex|Total|Table|Various|Infrastructure|Delivered|",
   "Overpaid|Required|Related|Existing|Revised|Completion|Funding|Incomplete|Commenc|Washed|",
   "Stalled|Manually|Programme|Sub-Programme|Lot|Km|Under|Bidding|Phase|Weeks?|Staircases|",
-  "First Floor|Prefabricated|Wall Fence|Administaration|Activities)\\b"), ignore_case = FALSE)
+  "First Floor|Prefabricated|Wall Fence|Administaration|Activities|Construction|Road|Roads|",
+  "Ministry|Health|District|Districts|Classroom|Cropping|Factory|Declaration|Form|Charge|",
+  "Schools?|Rehabilitation|Drilling|Supply of|Payment|Procurement|Purchase|Works)\\b"),
+  ignore_case = FALSE)
 
 # single distinctive token required: drop names whose key is one generic word
 GEN1 <- c("zambia","services","service","traders","trading","suppliers","supplies","supply",

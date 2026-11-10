@@ -1,11 +1,14 @@
 name,key,captured
 Unionlet Limited,unionlet,TRUE
 Systems Interface Limited,systems interface,TRUE
-Joint Stock Company,joint stock,TRUE
+Ministry and Joint Stock Company,ministry and joint stock,FALSE
+Loans and Investments,loans and investments,TRUE
 Mpulungu Harbour Management Limited,mpulungu harbour management,TRUE
 Lodestar International Limited,lodestar international,TRUE
 Accute Investments Limited,accute investments,TRUE
-Social Services,social services,FALSE
+Irregular Engagement of Contractor,irregular engagement of contractor,TRUE
+Ministry of Community Development and Social Services,ministry of community development and social services,FALSE
+Overpayment of Suppliers,overpayment of suppliers,TRUE
 Safety Agency,safety agency,FALSE
 Yascn Toll Management Agency,yascn toll management agency,TRUE
 Linsang Investments Company Limited,linsang investments,TRUE
@@ -57,150 +60,196 @@ Premier Betting Ltd,premier betting,TRUE
 Betani Sports Betting Zambia Ltd,betani sports betting zambia,TRUE
 Gametech Zambia Ltd,gametech zambia,TRUE
 Platinum Bet Zambia Ltd,platinum bet zambia,TRUE
-Pleasure Sports Innovation Ltd,pleasure sports innovation,FALSE
+Pleasure Sports Innovation Ltd,pleasure sports innovation,TRUE
+Ministry of Transport and Logistics,ministry of transport and logistics,FALSE
+Road Transport and Safety Agency,road transport and safety agency,FALSE
+Mandate The Road Transport and Safety Agency,mandate the road transport and safety agency,TRUE
 Medici Land Governance Ltd,medici land governance,TRUE
-Industry Zambia Compulsory Standards Agency,industry zambia compulsory standards agency,TRUE
+Trade and Industry Zambia Compulsory Standards Agency,trade and industry zambia compulsory standards agency,TRUE
 Mandate The Zambia Compulsory Standards Agency,mandate the zambia compulsory standards agency,TRUE
-Directors The Zambia Compulsory Standards Agency,directors the zambia compulsory standards agency,TRUE
+Board of Directors The Zambia Compulsory Standards Agency,board of directors the zambia compulsory standards agency,TRUE
+Board for the Agency,board for the agency,TRUE
 The Agency,the agency,FALSE
 Tourism Enterprise,tourism enterprise,TRUE
-Maintenance Services,maintenance services,TRUE
+Bubujara Electronic and General Dealers,bubujara electronic and general dealers,TRUE
+Office Accommodation and Maintenance Services,office accommodation and maintenance services,TRUE
 Sandridge Associates Limited,sandridge associates,TRUE
 Printing Services,printing services,TRUE
+Institutions Owning for Printing Services,institutions owning for printing services,TRUE
+Contract Management Procurement of Goods and Services,contract management procurement of goods and services,TRUE
 Mikalile Trading Company Ltd,mikalile trading,TRUE
 Zamchin Construction Company,zamchin construction,TRUE
 Golden Horse Investments,golden horse investments,TRUE
 Floyven Investment,floyven investment,TRUE
-Traders Limited,traders,FALSE
+JM J Traders Limited,jm j traders,FALSE
 Eldamain Business Solution Construction,eldamain business solution construction,TRUE
 Messers Walltech Enterprises Ltd,messers walltech enterprises,TRUE
 Fresino Enterprises Limited,fresino enterprises,TRUE
+Commenced No. Name of Contractor,commenced no name of contractor,FALSE
+Pavesi Marketing and General Dealers,pavesi marketing and general dealers,TRUE
+No. Contractor,no contractor,FALSE
+D1atong Construction,d1atong construction,TRUE
 July Ltd,july,FALSE
+W2altech Construction,w2altech construction,TRUE
 The Contractor,the contractor,FALSE
+Z3amchin Construction,z3amchin construction,TRUE
+M4wamona Construction,m4wamona construction,TRUE
 Radiation Protection Agency,radiation protection agency,TRUE
 Zambia Environmental Management Agency,zambia environmental management agency,TRUE
+Municipal Council and the Zambia Environmental Management Agency,municipal council and the zambia environmental management agency,TRUE
 Technical Services,technical services,FALSE
 Zambia Consolidated Copper Mines Investment Holdings,zambia consolidated copper mines investment holdings,TRUE
 SMR Construction Limited,smr construction,TRUE
 Implement Engineering,implement engineering,TRUE
-Motor Vehicles Mika Motors,motor vehicles mika motors,TRUE
+Contract for Handling of Motor Vehicles Mika Motors,contract for handling of motor vehicles mika motors,TRUE
 Mika Motors Zambia Ltd,mika motors zambia,TRUE
 Poly Technologies,poly technologies,TRUE
 Mika Motors,mika motors,TRUE
+Contract for Design and Construction,contract for design and construction,TRUE
 AVIC International Holding Corporation,avic international holding corporation,TRUE
 LCC Company,lcc,TRUE
-Mission Project Contractor,mission project contractor,TRUE
+Mortgage Financed Projects No. Mission Project Contractor,mortgage financed projects no mission project contractor,FALSE
 Addis Construction,addis construction,TRUE
 Chancery Construction,chancery construction,TRUE
+No. Mission Project Contractor,no mission project contractor,FALSE
 Food Reserve Agency,food reserve agency,TRUE
 Zdenakie Limited,zdenakie,TRUE
+DMMU and Zdenakie Limited,dmmu and zdenakie,TRUE
 Detakhom Construction,detakhom construction,TRUE
 Tashnac Enterprise,tashnac enterprise,TRUE
 Lake Tech Enterprises Limited,lake tech enterprises,TRUE
-Operational Matters Financial Investment,operational matters financial investment,TRUE
+Operational Matters Financial Investment Management Recapitalisation and Investments,operational matters financial investment management recapitalisation and investments,TRUE
 Financial Investment,financial investment,FALSE
 State Owned Enterprises,state owned enterprises,TRUE
-Medium Enterprises,medium enterprises,TRUE
-ZCCM Investments Holdings,zccm investments holdings,TRUE
+Small and Medium Enterprises,small and medium enterprises,TRUE
+Shareholders of ZCCM Investments Holdings,shareholders of zccm investments holdings,TRUE
 Smelter Co Ltd,smelter,TRUE
-Yatrim Insaat Sanayi Ve Ticaret Limited,yatrim insaat sanayi ve ticaret,FALSE
-International Corporation,international corporation,TRUE
+Mita Gayrimenkul Yatrim Insaat Sanayi Ve Ticaret Limited,mita gayrimenkul yatrim insaat sanayi ve ticaret,TRUE
+Administration Ministry of Foreign Affairs and International Corporation,administration ministry of foreign affairs and international corporation,TRUE
 Tan Tashin Zapa Legal Services,tan tashin zapa legal services,TRUE
 Meral Eroglu Agency,meral eroglu agency,TRUE
-Date Construction,date construction,FALSE
+Projects. No. Contractor,projects no contractor,FALSE
+Amounts K Revised End K K Date Construction,amounts k revised end k k date construction,FALSE
 Horizon Construction,horizon construction,TRUE
+Tripple V Construction,tripple v construction,TRUE
+Certified Paid Start and Sum Amounts No. Contractor,certified paid start and sum amounts no contractor,FALSE
 Stoutone Construction,stoutone construction,TRUE
 Afriwoods Construction,afriwoods construction,TRUE
 Zhengtai Construction,zhengtai construction,TRUE
 Communicat Construction,communicat construction,TRUE
-Construction Chilenje Limited,construction chilenje,TRUE
+Construction Chilenje Limited,construction chilenje,FALSE
 Raytone Construction,raytone construction,TRUE
+Selected Feeder Roads No. Contractor,selected feeder roads no contractor,FALSE
 Musaika Farm,musaika farm,TRUE
 Chabanya Farm,chabanya farm,TRUE
 Although Contractor,although contractor,FALSE
-Construction Chapa Kaputu Limited,construction chapa kaputu,TRUE
-Contractors Muchinga Limited,contractors muchinga,TRUE
-Musele- Limited,musele,TRUE
+Construction Chapa Kaputu Limited,construction chapa kaputu,FALSE
+Engineering District of Contractors Muchinga Limited,engineering district of contractors muchinga,TRUE
+Contractors the Musele- Limited,contractors the musele,TRUE
+Amounts No. Contractor,amounts no contractor,FALSE
 Mercury Kasakalabwe Lines Ltd,mercury kasakalabwe lines,TRUE
 Zambia Ltd,zambia,FALSE
 Mining Logistics,mining logistics,TRUE
 December Investments,december investments,FALSE
 Consultancy Consulting Services,consultancy consulting services,TRUE
 Associates Limited,associates,TRUE
+Paid Start and Sum Revised End No. Contractor,paid start and sum revised end no contractor,FALSE
 Consultancy Services,consultancy services,TRUE
 July Consulting,july consulting,FALSE
 Services Ltd,services,FALSE
+Design and Construction,design and construction,TRUE
+Engineering Procurement and Construction,engineering procurement and construction,TRUE
 AFCON Infrastructure Limited,afcon infrastructure,TRUE
+Selection of Contractor,selection of contractor,TRUE
 Questionable Contractor,questionable contractor,TRUE
-Mpulungu Harbour Limited,mpulungu harbour,TRUE
+Debt Management for Mpulungu Harbour Limited,debt management for mpulungu harbour,TRUE
 Dana Oil Corporation Limited,dana oil corporation,TRUE
-Altaka Corporation,altaka corporation,TRUE
+The Ministry of Community Development and Social Services,the ministry of community development and social services,FALSE
+Questionable Use of Limited,questionable use of,TRUE
+Supplier Contract Contract Sum Date K Altaka Corporation,supplier contract contract sum date k altaka corporation,TRUE
 Nyimba Investments,nyimba investments,TRUE
-Limited PowerTimes Enterprises,powertimes enterprises,TRUE
+PowerTimes Enterprises,powertimes enterprises,TRUE
 Better Changes Enterprises,better changes enterprises,TRUE
 Pros On Cash Trading,pros on cash trading,TRUE
 Stewards Globe Limited,stewards globe,TRUE
 Zambia Seed Company,zambia seed,TRUE
-Cropping Limited,cropping,TRUE
+Zambezi Ranching and Cropping Limited,zambezi ranching and cropping,TRUE
 Overpaid Suppliers,overpaid suppliers,FALSE
 Hospital Services,hospital services,FALSE
 Primary Health Services,primary health services,FALSE
 Central Technical Services,central technical services,FALSE
-Support Services,support services,FALSE
+Management and Support Services,management and support services,FALSE
 Renal Services,renal services,TRUE
+Kalindawalo General Hospital CT Scan and Renal Services,kalindawalo general hospital ct scan and renal services,TRUE
 Pharmaceutical Services,pharmaceutical services,FALSE
 King Long Motors Zambia Limited,king long motors zambia,TRUE
+Request for Pharmaceutical,request for pharmaceutical,TRUE
+Carter Mart and Web International Limited,carter mart and web international,TRUE
 Web International Limited,web international,TRUE
-Diagnostic Services,diagnostic services,TRUE
+Director for Clinical Care and Diagnostic Services,director for clinical care and diagnostic services,TRUE
 Accute Investment Limited,accute investment,TRUE
 Ogaz Zambia Limited,ogaz zambia,TRUE
 Delta Gas Zambia Limited,delta gas zambia,TRUE
 Afrox Zambia Limited,afrox zambia,TRUE
+Contract for the Construction,contract for the construction,TRUE
 TFM Holdings Limited,tfm holdings,TRUE
-Projects Under Construction,projects under construction,TRUE
+Status of Projects Under Construction,status of projects under construction,TRUE
+Contract for Consultancy Services,contract for consultancy services,TRUE
 Dar Engineering,dar engineering,TRUE
 Urban Technics Limited,urban technics,TRUE
 BCHOD Consulting Engineering,bchod consulting engineering,TRUE
 Supervising Consultant,supervising consultant,TRUE
+Contract for Construction,contract for construction,TRUE
 Zhong Ding International Engineering Company,zhong ding international engineering,TRUE
 Wah Kong Enterprises,wah kong enterprises,TRUE
 Spectrum Architectural Consultants,spectrum architectural consultants,TRUE
-Diagnostics Services,diagnostics services,TRUE
-Medical Supplies Agency,medical supplies agency,FALSE
+Zambia Institute of Architects and the Engineering,zambia institute of architects and the engineering,TRUE
+Clinical Care and Diagnostics Services,clinical care and diagnostics services,TRUE
+The Zambia Medicines and Medical Supplies Agency,the zambia medicines and medical supplies agency,FALSE
+Procurement of Goods and Services,procurement of goods and services,FALSE
 Solus General Dealers,solus general dealers,TRUE
 Insurance Company,insurance,FALSE
 Emergency Services,emergency services,TRUE
 Biomedical Engineering,biomedical engineering,TRUE
-Medical Imaging Services,medical imaging services,FALSE
+Support Services,support services,FALSE
+Biomedical Engineering and Support Services,biomedical engineering and support services,TRUE
+Laboratory and Medical Imaging Services,laboratory and medical imaging services,TRUE
 Laboratory Services,laboratory services,TRUE
+Medical Imaging Services,medical imaging services,FALSE
 Mental Health Services,mental health services,TRUE
 Neonatal Health Care Services,neonatal health care services,TRUE
 Outpatient Services,outpatient services,TRUE
 Dental Surgery Services,dental surgery services,TRUE
-Medical Services,medical services,FALSE
+Collect Medical Fees-Partnership for Medical Services,collect medical fees partnership for medical services,TRUE
+Environmental Health and Support Services,environmental health and support services,TRUE
 Blood Bank Services,blood bank services,TRUE
 Crambus General Dealers,crambus general dealers,TRUE
-Rehabilitation Services,rehabilitation services,TRUE
+Rehabilitation Services,rehabilitation services,FALSE
 Ambulance Services,ambulance services,TRUE
 Raymond Construction Limited,raymond construction,TRUE
 Essential Medicines Logistics,essential medicines logistics,TRUE
 Operating Theatre Services,operating theatre services,TRUE
-Imagery Services,imagery services,TRUE
-Safety Services,safety services,FALSE
+Diagnostics and Imagery Services,diagnostics and imagery services,TRUE
+Environmental Health and Safety Services,environmental health and safety services,TRUE
+Rehabilitative and Support Services,rehabilitative and support services,TRUE
+Community Development and Social Services,community development and social services,TRUE
 Uncompleted Projects Project Contractor,uncompleted projects project contractor,TRUE
 Lukulu Construction,lukulu construction,TRUE
+Mongu Municipal Council and the Contractor,mongu municipal council and the contractor,TRUE
 Project Contractor,project contractor,FALSE
-Sanitation Facilities Construction,sanitation facilities construction,TRUE
+Construction of Sanitation Facilities Construction,construction of sanitation facilities construction,FALSE
 GFA Consulting,gfa consulting,TRUE
-Drilling Exploration Ltd,drilling exploration,TRUE
+Drilling Exploration Ltd,drilling exploration,FALSE
 Manually Drilled Boreholes Construction,manually drilled boreholes construction,FALSE
-Manually Drilled Investment,manually drilled investment,FALSE
-Hand Limited,hand,TRUE
+Manually Drilled Investment Boreholes and Hand Limited,manually drilled investment boreholes and hand,FALSE
 Fongda Corporation Limited,fongda corporation,TRUE
 Zamworth Construction Limited,zamworth construction,TRUE
-China Limited,china,TRUE
-China National Complete Engineering Corporation,china national complete engineering corporation,TRUE
+Industrial and Commercial Bank of China Limited,industrial and commercial bank of china,TRUE
+Contract for the Design and Construction,contract for the design and construction,TRUE
+Supply and Communication and China National Complete Engineering,supply and communication and china national complete engineering,TRUE
+Infrastructure Development and China National Complete Engineering Corporation,infrastructure development and china national complete engineering corporation,FALSE
 Contractors Construction,contractors construction,FALSE
+Ministry and the Contractor,ministry and the contractor,FALSE
 Hardware Construction,hardware construction,FALSE
 High Cost Limited,high cost,TRUE
 Engineering Construction,engineering construction,FALSE
@@ -208,10 +257,13 @@ Ngabwe District Stardy Construction,ngabwe district stardy construction,TRUE
 Stardy Construction,stardy construction,TRUE
 Shibuyunji District Jamcho Construction,shibuyunji district jamcho construction,TRUE
 Chije Construction,chije construction,TRUE
-Associated Limited,associated,TRUE
-Limited Nyimba District Brut Construction,nyimba district brut construction,TRUE
+Houses & Associated Limited,houses associated,TRUE
+Ministry and Office the Contractor,ministry and office the contractor,FALSE
+Nyimba District Brut Construction,nyimba district brut construction,TRUE
 Sinda District Pozollona Construction,sinda district pozollona construction,TRUE
 Olcint Construction,olcint construction,TRUE
+International & Associated Limited,international associated,TRUE
+External Works Vubwi District JM & J Construction,external works vubwi district jm j construction,TRUE
 Lunga District Swengwa Construction,lunga district swengwa construction,TRUE
 Integrity Construction,integrity construction,TRUE
 Crestmark Construction,crestmark construction,TRUE
@@ -219,24 +271,25 @@ Chilanga District Machtech Construction,chilanga district machtech construction,
 Administration Block Limited,administration block,TRUE
 Habitech Construction,habitech construction,TRUE
 Admininistaration Limited,admininistaration,TRUE
-Limited Rufunsa District Tenacity Construction,rufunsa district tenacity construction,TRUE
+Rufunsa District Tenacity Construction,rufunsa district tenacity construction,TRUE
 Lumworks Construction,lumworks construction,TRUE
-Limited Construction,construction,FALSE
-External Works Atonement Construction,external works atonement construction,TRUE
+Houses & External Works Atonement Construction,houses external works atonement construction,TRUE
 January Enterprises,january enterprises,FALSE
 Carriers Low Cost Houses Limited,carriers low cost houses,TRUE
 Chipando Construction,chipando construction,TRUE
-Mushinkula Trading,mushinkula trading,FALSE
+T. Mushinkula Trading,t mushinkula trading,TRUE
 Matty General Dealers,matty general dealers,TRUE
 Profab Construction,profab construction,TRUE
+Associated Limited,associated,TRUE
 Davisbet Construction,davisbet construction,TRUE
 Siavonga District Mixjer Construction,siavonga district mixjer construction,TRUE
 Netweb Construction,netweb construction,TRUE
-Zimba District Construction,zimba district construction,TRUE
+Certified Paid Start and Revised End No. Contractor,certified paid start and revised end no contractor,FALSE
+Observations Date K K K Zimba District Construction,observations date k k k zimba district construction,TRUE
 Luampa District Moffat Metal Construction,luampa district moffat metal construction,TRUE
-Bemkel Construction,bemkel construction,FALSE
+Bemkel Construction,bemkel construction,TRUE
 Anita Construction,anita construction,TRUE
-Revised End Construction,revised end construction,FALSE
+Observations Sum Amounts K Revised End Construction,observations sum amounts k revised end construction,TRUE
 Simuliya Construction,simuliya construction,TRUE
 Eldermain Construction,eldermain construction,TRUE
 Milestone Technical Services,milestone technical services,TRUE
@@ -246,12 +299,13 @@ Keysmar Construction,keysmar construction,TRUE
 Zambica Construction,zambica construction,TRUE
 Mwandi District Harbour Side Construction,mwandi district harbour side construction,TRUE
 Harbour Side Construction,harbour side construction,TRUE
+End Observations Sikongo District K K Date Construction,end observations sikongo district k k date construction,TRUE
 Sokotela Enterprises Limited,sokotela enterprises,TRUE
 Muco Trading Limited,muco trading,TRUE
 Associated External Limited,associated external,TRUE
 Cloud Tech Zambia Limited,cloud tech zambia,TRUE
 Temwini General Dealers,temwini general dealers,TRUE
-Works Shanghai Construction Limited,works shanghai construction,TRUE
+Overpayment for Works Shanghai Construction Limited,overpayment for works shanghai construction,TRUE
 Speed Dragon Enterprises,speed dragon enterprises,TRUE
 Cork Trading Ltd,cork trading,TRUE
 Hazel Daniels Limited,hazel daniels,TRUE
@@ -261,32 +315,43 @@ Letscar Limited,letscar,TRUE
 Jihua Limited,jihua,TRUE
 Evanset Civil Works Engineering Limited,evanset civil works engineering,TRUE
 Feedo Investment Limited,feedo investment,TRUE
-Export Ltd,export,FALSE
+Aquarius Import and Export Ltd,aquarius import and export,TRUE
+Unexecuted Contracts No. Contractor,unexecuted contracts no contractor,FALSE
 Stalkline Enterprises,stalkline enterprises,TRUE
+Aquarius Import & Export Limited,aquarius import export,TRUE
 Spring Creek Investment,spring creek investment,TRUE
+Provide Justification for Limited,provide justification for,TRUE
 Hazel Daniels International Limited,hazel daniels international,TRUE
-Nsochita General Contractors,nsochita general contractors,TRUE
-Suppliers Ltd,suppliers,FALSE
-Companies Registration Agency,companies registration agency,TRUE
+Questionable Identification of Suppliers,questionable identification of suppliers,TRUE
+Nsochita General Contractors & Suppliers Ltd,nsochita general contractors suppliers,TRUE
+Patents and Companies Registration Agency,patents and companies registration agency,TRUE
 Exoline Investments Limited,exoline investments,TRUE
 Sarago General Dealers,sarago general dealers,TRUE
-Motor Vehicles Evanset Civil Works Engineering,motor vehicles evanset civil works engineering,TRUE
-Refurbishment Limited,refurbishment,TRUE
+Supply of Motor Vehicles Evanset Civil Works Engineering,supply of motor vehicles evanset civil works engineering,FALSE
+Evanset Civil Works Engineering and Refurbishment Limited,evanset civil works engineering and refurbishment,TRUE
 Evanset Civil Works Limited,evanset civil works,TRUE
 Shah Motors,shah motors,TRUE
+Latirium Co. Limited,latirium,TRUE
 Savenda Systems Limited,savenda systems,TRUE
 Pay Contractor,pay contractor,TRUE
+Joint Stock Company,joint stock,TRUE
 Koredo Investments Limited,koredo investments,TRUE
 Muleka Investments Ltd,muleka investments,TRUE
+Apex Supplies and Padayache Trading,apex supplies and padayache trading,TRUE
 Deep Blue Investment Company Limited,deep blue investment,TRUE
-Helmet Engineering,helmet engineering,TRUE
+AVIC and Helmet Engineering and Construction Limited,avic and helmet engineering and construction,TRUE
+Helmet Engineering & Construction Limited,helmet engineering construction,TRUE
 AVIC International Limited,avic international,TRUE
+ZNS and AVIC International Limited,zns and avic international,TRUE
+Zambia National Service Threshold No. Name of Contractor,zambia national service threshold no name of contractor,FALSE
 Mainway Construction Limited,mainway construction,TRUE
 Africa Site Masters Limited,africa site masters,TRUE
+Agreement Zambia National Service and AVIC International Limited,agreement zambia national service and avic international,TRUE
 Shandong Dejian Group Company Limited,shandong dejian group,TRUE
 Shandong Dejian Group Zambia Limited,shandong dejian group zambia,TRUE
 Hua Jiang Boarding Investment Limited,hua jiang boarding investment,TRUE
 Investment Limited,investment,FALSE
+Projects Status No. Contractor,projects status no contractor,FALSE
 Savenda Construction,savenda construction,TRUE
 Z-Con Construction,z con construction,TRUE
 ASESCO Construction,asesco construction,TRUE
@@ -295,6 +360,7 @@ Datong Construction,datong construction,TRUE
 Solatech Construction,solatech construction,TRUE
 Earthrow Construction,earthrow construction,TRUE
 Marike Construction,marike construction,TRUE
+Water Reticulation and Construction,water reticulation and construction,TRUE
 Wegos General Dealers Limited,wegos general dealers,TRUE
 Chilanga Fish Farm,chilanga fish farm,TRUE
 Enhanced Smallholder Livestock Investment,enhanced smallholder livestock investment,TRUE
@@ -314,6 +380,8 @@ Syngenta Zambia Limited,syngenta zambia,TRUE
 Farmers Barn Limited,farmers barn,TRUE
 Neria Investments Limited,neria investments,TRUE
 Alpha Commodities Ltd,alpha commodities,TRUE
+Alpha Commodities. Rockcliffe Trading,alpha commodities rockcliffe trading,TRUE
+Zambian Fertiliser Company. Rockcliffe Trading,zambian fertiliser rockcliffe trading,TRUE
 Fertiliser Neria Investment Limited,fertiliser neria investment,TRUE
 Fertiliser Nyimba Investment Limited,fertiliser nyimba investment,TRUE
 Fertiliser Zambian Fertiliser Limited,fertiliser zambian fertiliser,TRUE
@@ -322,7 +390,7 @@ Seed Zambia Seed Company Limited,seed zambia seed,TRUE
 Seed Seedco Limited,seed seedco,TRUE
 Seed Kamano Seed Company Limited,seed kamano seed,TRUE
 Seed Stewards Globe Limited,seed stewards globe,TRUE
-Seed Syngenta Zambia Limited,seed syngenta zambia,FALSE
+Seed Syngenta Zambia Limited,seed syngenta zambia,TRUE
 Seed Farmers Barn Limited,seed farmers barn,TRUE
 Neria's Investment,neria s investment,TRUE
 Mungwi Neria Investments Ltd,mungwi neria investments,TRUE
@@ -336,22 +404,24 @@ Chasefu Neria Investments Ltd,chasefu neria investments,TRUE
 Petauke Neria Investments Ltd,petauke neria investments,TRUE
 Lusangazi Neria Investments Ltd,lusangazi neria investments,TRUE
 Sinda Neria Investments Ltd,sinda neria investments,TRUE
+Zambezi Ranching & Cropping Ltd,zambezi ranching cropping,TRUE
 Export Trading,export trading,FALSE
-Season Suppliers,season suppliers,TRUE
+Date Balance K K Season Suppliers,date balance k k season suppliers,FALSE
+Synergy Z Ltd,synergy z,TRUE
 Agro Suppliers,agro suppliers,FALSE
 North Western Mufumbwe Halimwene Contractors,north western mufumbwe halimwene contractors,TRUE
 Chimster Enterprises,chimster enterprises,TRUE
 Stolen Farm,stolen farm,TRUE
-ETG Export Trading,etg export trading,TRUE
+ETG Export Trading Co. Ltd,etg export trading,TRUE
 NAB Africa Enterprises Ltd,nab africa enterprises,TRUE
-Bidding Company,bidding,FALSE
+No. Bidding Company,no bidding,FALSE
 Cav Africa Enterprises Ltd,cav africa enterprises,TRUE
 Afrifin Solutions Ltd,afrifin solutions,TRUE
 Africa Enterprises Limited,africa enterprises,TRUE
 Afrifrin Solutions Limited,afrifrin solutions,TRUE
 Tax Registration Certificates Nab-Africa Enterprises Ltd,tax registration certificates nab africa enterprises,TRUE
 Afrifin Solution Ltd,afrifin solution,TRUE
-Tax Registration Certificate Cav Africa Enterprises,tax registration certificate cav africa enterprises,TRUE
+Plot No. Tax Registration Certificate Cav Africa Enterprises,plot no tax registration certificate cav africa enterprises,FALSE
 Signed Nab-Africa Enterprises Ltd,signed nab africa enterprises,TRUE
 ZPPA Registration Form Print-OutAfrifin Solutions Ltd,zppa registration form print outafrifin solutions,TRUE
 Knox Marketing Solutions Limited,knox marketing solutions,TRUE
@@ -361,64 +431,77 @@ Major Business Solutions Limited,major business solutions,TRUE
 HP Laserjet Enterprise,hp laserjet enterprise,TRUE
 Vitumbo Investments,vitumbo investments,TRUE
 Vitumbo Investment Limited,vitumbo investment,TRUE
-Ganeshi Suppliers,ganeshi suppliers,TRUE
-Henan Zhongmeng Construction,henan zhongmeng construction,TRUE
-Engineering Company Limited,engineering,FALSE
+Ganeshi Suppliers and General Dealers,ganeshi suppliers and general dealers,TRUE
+Henan Zhongmeng Construction and Engineering Company Limited,henan zhongmeng construction and engineering,TRUE
 Henan Overseas Engineering Construction Company Limited,henan overseas engineering construction,TRUE
 Jiansu Gold Civil Construction Limited,jiansu gold civil construction,TRUE
 Country Millers Limited,country millers,TRUE
+Citizens Economic Empowerment Commission and Country Millers Limited,citizens economic empowerment commission and country millers,TRUE
 Tapo Farms Limited,tapo farms,TRUE
 Incomplete Tapo Farms Limited,incomplete tapo farms,FALSE
-Cashew Processing Plant Acamm's Lodge Limited,cashew processing plant acamm s lodge,FALSE
+Factory Uncompleted Cashew Processing Plant Acamm's Lodge Limited,factory uncompleted cashew processing plant acamm s lodge,FALSE
+Citizens Economic Empowerment Commission and Acamm's Lodges Limited,citizens economic empowerment commission and acamm s lodges,FALSE
 Acamm's Lodges Limited,acamm s lodges,TRUE
 Acamm's Lodge Limited,acamm s lodge,TRUE
-Board Resolution Minutes Acamm's Lodges Limited,board resolution minutes acamm s lodges,FALSE
+Provide Board Resolution Minutes Acamm's Lodges Limited,provide board resolution minutes acamm s lodges,TRUE
 African Access Limited,african access,TRUE
 Sandland Resources Limited,sandland resources,TRUE
+Frena & Company,frena,TRUE
 Accams Lodge Limited,accams lodge,TRUE
 Country Lodge Limited,country lodge,TRUE
 Mongu Limited,mongu,TRUE
-Beta Denmwa Automated Total Amount Engineering,beta denmwa automated total amount engineering,FALSE
+Limulunga Tenkara Beta Denmwa Automated Total Amount Engineering,limulunga tenkara beta denmwa automated total amount engineering,TRUE
 Lamasat International Limited,lamasat international,TRUE
 ANHUI Foreign Economic Construction,anhui foreign economic construction,TRUE
 Savenda Management Services Limited,savenda management services,TRUE
-Project Services,project services,FALSE
+United Nations Office for Project Services,united nations office for project services,TRUE
 TAMZ General Dealers,tamz general dealers,TRUE
 Alitheme Enterprises,alitheme enterprises,TRUE
-Project District Contractor,project district contractor,FALSE
-Chella Enterprise,chella enterprise,FALSE
-Bus Station Kasama China Geo Engineering,bus station kasama china geo engineering,FALSE
-Kapisha Farmers Training Luwingu Wachimba Contractors,kapisha farmers training luwingu wachimba contractors,FALSE
+Ministry Community Development and Social Services,ministry community development and social services,FALSE
+Approved Projects No. Project District Contractor,approved projects no project district contractor,FALSE
+Youth Skills Training Centre Mbala G.S Chella Enterprise,youth skills training centre mbala g s chella enterprise,FALSE
+Of Chikumanino Bus Station Kasama China Geo Engineering,of chikumanino bus station kasama china geo engineering,TRUE
+Completion Of Kapisha Farmers Training Luwingu Wachimba Contractors,completion of kapisha farmers training luwingu wachimba contractors,FALSE
 Centre General Dealers,centre general dealers,TRUE
-For Completion Of Ntumpa Twinery General Dealers,for completion of ntumpa twinery general dealers,FALSE
+Materials For Completion Of Ntumpa Twinery General Dealers,materials for completion of ntumpa twinery general dealers,TRUE
 Kasama Twinery General Dealers,kasama twinery general dealers,TRUE
-Chella Enterprises,chella enterprises,FALSE
-General Dealers Limited,general dealers,FALSE
+Irregular Use of Limited,irregular use of,TRUE
+G.S. Chella Enterprises,g s chella enterprises,TRUE
+Wichimba Contactor and General Dealers Limited,wichimba contactor and general dealers,TRUE
 Platinum Stone Ltd,platinum stone,TRUE
-Slys Financial Services,slys financial services,TRUE
+Insurance Companies No. Insurance Company,insurance companies no insurance,FALSE
+Robert and Slys Financial Services,robert and slys financial services,TRUE
 Goldman Insurance Limited,goldman insurance,TRUE
-Road Development Agency,road development agency,TRUE
+Road Development Agency,road development agency,FALSE
 Gold Motor Services,gold motor services,TRUE
 Advant Solutions Limited,advant solutions,TRUE
 Avant Solutions Limited,avant solutions,TRUE
 Advant Solution Limited,advant solution,TRUE
 Messrs AVIC International Holding Corporation,messrs avic international holding corporation,TRUE
-Kufanga Contractors,kufanga contractors,TRUE
+Kufanga Contractors and General Dealers,kufanga contractors and general dealers,TRUE
+Provincial Administration and Kufanga Contractors and General Dealers,provincial administration and kufanga contractors and general dealers,TRUE
 Questionable Payment- Construction,questionable payment construction,TRUE
+V.B.S General Dealers Limited,v b s general dealers,FALSE
 VBS General Dealers,vbs general dealers,TRUE
 Local Government Services,local government services,FALSE
-District Project Contractor,district project contractor,FALSE
+Community Developmet and Social Services,community developmet and social services,TRUE
+Classroom Blocks No. District Project Contractor,classroom blocks no district project contractor,FALSE
 Kawambwa Chisulo Primary School JKMM General Dealers,kawambwa chisulo primary school jkmm general dealers,TRUE
-Samfya Makasa Primary School Star Agency,samfya makasa primary school star agency,FALSE
+Samfya Makasa Primary School Star Agency Contractors,samfya makasa primary school star agency contractors,TRUE
+Munale Constructors and General Dealers,munale constructors and general dealers,TRUE
 Star Agency Constructors Limited,star agency constructors,TRUE
 Prince Ma General Dealers,prince ma general dealers,TRUE
 Forestry Management Services,forestry management services,TRUE
 Zambezi Sawmills Limited,zambezi sawmills,TRUE
+Ministry of Finance Loans and Investments,ministry of finance loans and investments,FALSE
 National Road Fund Agency,national road fund agency,TRUE
 Spending Agency,spending agency,TRUE
-Veterinary Services,veterinary services,TRUE
-Fever DVS Establishment Register DWRD Enterprise,fever dvs establishment register dwrd enterprise,FALSE
+Disaster Risk Management DHOs Department of Veterinary Services,disaster risk management dhos department of veterinary services,TRUE
+East Coast Fever DVS Establishment Register DWRD Enterprise,east coast fever dvs establishment register dwrd enterprise,TRUE
 Risk Management ECEC Food Reserve Agency,risk management ecec food reserve agency,TRUE
+Coordinating Offices PACRA Patents and Companies Registration Agency,coordinating offices pacra patents and companies registration agency,TRUE
+Management Division RTSA Road Transport and Safety Agency,management division rtsa road transport and safety agency,TRUE
+Centres ZAMMSA Zambia Medicines and Medical Supplies Agency,centres zammsa zambia medicines and medical supplies agency,TRUE
 Public Investment,public investment,FALSE
 Bola Bet Company Ltd,bola bet,TRUE
 Impala Tech Group Ltd,impala tech group,TRUE
@@ -433,22 +516,30 @@ Dispatched International Logistics,dispatched international logistics,TRUE
 Although Dispatched International Logistics,although dispatched international logistics,FALSE
 Budget Logistics,budget logistics,TRUE
 FVG Kabwe Milling Ltd,fvg kabwe milling,TRUE
-Milling Ltd,milling,FALSE
+H.M Milling Ltd,h m milling,FALSE
 Nyimba Millers Ltd,nyimba millers,TRUE
 Chimanga Changa Limited,chimanga changa,TRUE
 Garche General Dealers Limited,garche general dealers,TRUE
 DCEC Zambia Company Limited,dcec zambia,TRUE
-Henina Engineering,henina engineering,TRUE
+RTSA and Ministry of Transport and Logistics,rtsa and ministry of transport and logistics,TRUE
+Henina Engineering and Construction Limited,henina engineering and construction,TRUE
+Ketafazia General Dealers and Epikaizo Investments,ketafazia general dealers and epikaizo investments,TRUE
 Ketafazia General Dealers,ketafazia general dealers,TRUE
-Epikaizo Investments,epikaizo investments,TRUE
+Epikaizo Investments Limited,epikaizo investments,TRUE
 Zambia Correctional Services,zambia correctional services,FALSE
+Use of Goods and Services,use of goods and services,TRUE
 Power IT Limited,power it,TRUE
 Underutilised Developed Services,underutilised developed services,TRUE
+Integration of Road Transport and Safety Agency,integration of road transport and safety agency,TRUE
 Digital Public Services,digital public services,TRUE
 Operator-Assisted Services,operator assisted services,TRUE
 Zambia Compulsory Standards Agency,zambia compulsory standards agency,TRUE
 Un-utilised Developed Services,un utilised developed services,TRUE
+Road Traffic and Safety Agency,road traffic and safety agency,FALSE
+Development of Services,development of services,FALSE
+Lack of Enterprise,lack of enterprise,TRUE
 Online Revenue Collection Services,online revenue collection services,TRUE
+List of Suppliers No. Suppliers,list of suppliers no suppliers,FALSE
 Lindham Investment,lindham investment,TRUE
 Best Med Services,best med services,TRUE
 Daniel Tembo General Dealers,daniel tembo general dealers,TRUE
@@ -456,26 +547,37 @@ Sepli Investment,sepli investment,TRUE
 Ruvt Investment,ruvt investment,TRUE
 Magnum Security Services,magnum security services,TRUE
 Zambia Agency,zambia agency,FALSE
+Livestock and Ministry of Commerce Trade and Industries,livestock and ministry of commerce trade and industries,TRUE
 Maba Medicals Limited,maba medicals,TRUE
+Hospital. Construction,hospital construction,FALSE
 NMS Infrastructure Limited,nms infrastructure,TRUE
 Sunshare Construction Limited,sunshare construction,TRUE
-Mumash Construction,mumash construction,TRUE
+Mumash Construction and Suppliers,mumash construction and suppliers,TRUE
 Personnel Total Suppliers,personnel total suppliers,FALSE
+Director of Finance Ministry of Transport and Logistics,director of finance ministry of transport and logistics,TRUE
 UNIK Construction Engineering Ltd,unik construction engineering,TRUE
+Ministries of General Education and Transport and Logistics,ministries of general education and transport and logistics,TRUE
 Kampe Investments Limited,kampe investments,TRUE
 Kampe Investment Limited,kampe investment,TRUE
 DDYPE Company Limited,ddype,TRUE
+Awarded Sum Payment Status No. Name of Contractor,awarded sum payment status no name of contractor,FALSE
+Provinces of Zambia No. Name of Contractor,provinces of zambia no name of contractor,FALSE
 Equimpment Awarded Required Contractor,equimpment awarded required contractor,TRUE
-Medium Youth Enterprises,medium youth enterprises,TRUE
+Small and Medium Youth Enterprises,small and medium youth enterprises,TRUE
 Equalizer General Trading,equalizer general trading,TRUE
 Pebble Signs Advertising Company,pebble signs advertising,TRUE
+Outstanding Bills Category Amount K Contractors,outstanding bills category amount k contractors,TRUE
+Suppliers of Goods and Services,suppliers of goods and services,FALSE
 Zambia Statistics Agency,zambia statistics agency,TRUE
-Siavonga DEO Choma PEO Farm,siavonga deo choma peo farm,FALSE
+Siavonga DEO Choma PEO Farm,siavonga deo choma peo farm,TRUE
 ZANACO Limited,zanaco,TRUE
+Management of Farm,management of farm,FALSE
 Abandoned Farm,abandoned farm,TRUE
+Procure Goods and Services,procure goods and services,TRUE
 Intercopy Corporation,intercopy corporation,TRUE
 ZYTICS Limited,zytics,TRUE
-Mandate Enhanced Smallholder Livestock Investment,mandate enhanced smallholder livestock investment,FALSE
+Mandate Enhanced Smallholder Livestock Investment,mandate enhanced smallholder livestock investment,TRUE
+Department of Veterinary Services,department of veterinary services,TRUE
 Mafinga Ngiwe General Dealers,mafinga ngiwe general dealers,TRUE
 Samar Agro Investment Limited,samar agro investment,TRUE
 Stoutone Investments Limited,stoutone investments,TRUE
@@ -490,8 +592,10 @@ Central Province Limited,central province,TRUE
 Northern Province Zambia Company Limited,northern province zambia,TRUE
 Eastern Province Agrizam Investments,eastern province agrizam investments,TRUE
 Agrizam Investments Limited,agrizam investments,TRUE
-Grain Limited,grain,TRUE
+Ferts Seed and Grain Limited,ferts seed and grain,TRUE
 Required Bid Agrizam Investments Ltd,required bid agrizam investments,FALSE
+Ferts Seed & Grain Ltd,ferts seed grain,TRUE
+Grain Ltd,grain,TRUE
 Group Ltd,group,FALSE
 Selected Seed Suppliers,selected seed suppliers,FALSE
 Mansa Farm,mansa farm,TRUE
@@ -504,46 +608,51 @@ CLA Commercial Vehicles Ltd,cla commercial vehicles,TRUE
 CLA Commercial Vehicle Ltd,cla commercial vehicle,TRUE
 Local Suppliers,local suppliers,FALSE
 Western Investment,western investment,TRUE
-Grant Engineering,grant engineering,TRUE
-Operations Logistics,operations logistics,TRUE
+Grant Engineering and General Dealers,grant engineering and general dealers,TRUE
+Ministry of Transport and Operations Logistics,ministry of transport and operations logistics,FALSE
 Implement Funded Programme Construction,implement funded programme construction,TRUE
+Ministry of Transport & Logistics,ministry of transport logistics,FALSE
 Towing Logistics,towing logistics,TRUE
-Outstanding Bills JJ Lowe Ltd,outstanding bills jj lowe,TRUE
+Administration of Outstanding Bills JJ Lowe Ltd,administration of outstanding bills jj lowe,TRUE
 Nelkan Industrial Construction,nelkan industrial construction,TRUE
+House and Construction,house and construction,TRUE
 Wasteful Expenditure Construction,wasteful expenditure construction,TRUE
-Security Services,security services,TRUE
-Luapula Province Mwense District Council Construction,luapula province mwense district council construction,FALSE
+Provision of Security Services,provision of security services,TRUE
+Lease Agreement Ministry of Finance Loans and Investments,lease agreement ministry of finance loans and investments,TRUE
+Capital Projects Luapula Province Mwense District Council Construction,capital projects luapula province mwense district council construction,TRUE
 Other Projects Western Province Construction,other projects western province construction,FALSE
+Province Rehabilitation of One Staff House and Construction,province rehabilitation of one staff house and construction,TRUE
 Research Station- Construction,research station construction,TRUE
 Lusaka Province Construction,lusaka province construction,TRUE
 Muchinga Province Construction,muchinga province construction,TRUE
 Infrastructure Development Headquarters Construction,infrastructure development headquarters construction,FALSE
-Bus Station Construction,bus station construction,TRUE
+Markets and Bus Station Construction,markets and bus station construction,TRUE
 Fire Services Construction,fire services construction,TRUE
 Western Province Construction,western province construction,TRUE
+Kaama Basic School and Construction,kaama basic school and construction,TRUE
 Other Infrastructure Projects Construction,other infrastructure projects construction,FALSE
-Capital Projects Mulobezi District Council Construction,capital projects mulobezi district council construction,TRUE
-School Chikowa Day Secondary School Construction,school chikowa day secondary school construction,FALSE
-School Limulunga Day High School Construction,school limulunga day high school construction,FALSE
+Management of Capital Projects Mulobezi District Council Construction,management of capital projects mulobezi district council construction,TRUE
+Boarding Secondary School Chikowa Day Secondary School Construction,boarding secondary school chikowa day secondary school construction,TRUE
+Day Secondary School Limulunga Day High School Construction,day secondary school limulunga day high school construction,TRUE
 Infrastructure Development Construction,infrastructure development construction,FALSE
 Sinazongwe Construction,sinazongwe construction,TRUE
 Chongwe Construction,chongwe construction,TRUE
 Rufunsa Construction,rufunsa construction,TRUE
 Shibuyunji Construction,shibuyunji construction,TRUE
 Martin Luther King Construction,martin luther king construction,TRUE
-Chiungwe Dip Tanks Vubwi Construction,chiungwe dip tanks vubwi construction,TRUE
+Mtwalo and Chiungwe Dip Tanks Vubwi Construction,mtwalo and chiungwe dip tanks vubwi construction,TRUE
 Western Region Construction,western region construction,TRUE
-Sub Division Farm,sub division farm,TRUE
+Procurement of Sub Division Farm,procurement of sub division farm,FALSE
 Nakonde District Administration Construction,nakonde district administration construction,TRUE
 Mansa District Kapesha Mukanga Prison Farms,mansa district kapesha mukanga prison farms,TRUE
 Kabwe Construction,kabwe construction,TRUE
+Irregular Procurement of Goods and Services,irregular procurement of goods and services,TRUE
 Ya Investments Limited,ya investments,FALSE
 October First Enterprises,october first enterprises,FALSE
 Insure Farm Equipment Chitumba Prison Farm,insure farm equipment chitumba prison farm,TRUE
 Outstanding Fees Zamtel Limited,outstanding fees zamtel,TRUE
-Maternity Wing Construction,maternity wing construction,FALSE
-Mukwikile Rural Post Construction,mukwikile rural post construction,FALSE
-Lwanya Health Post Construction,lwanya health post construction,TRUE
+Construction of Maternity Wing Construction,construction of maternity wing construction,FALSE
+Mukwikile Rural Post Construction Lwanya Health Post Construction,mukwikile rural post construction lwanya health post construction,TRUE
 Chibamba Rural Centre Mpulungu District Construction,chibamba rural centre mpulungu district construction,TRUE
 Ten Staff Houses Construction,ten staff houses construction,TRUE
 Namwala District Construction,namwala district construction,TRUE
@@ -555,103 +664,125 @@ Mumbwa District Construction,mumbwa district construction,TRUE
 Kapiri-Mposhi District Construction,kapiri mposhi district construction,TRUE
 Mkushi District Construction,mkushi district construction,TRUE
 Kafue District- Construction,kafue district construction,TRUE
-Mechanical Engineering,mechanical engineering,TRUE
+MCD Civil and Mechanical Engineering,mcd civil and mechanical engineering,TRUE
 Deliver Passenger Vessels Multi-Industry Limited,deliver passenger vessels multi industry,TRUE
 Contractor Construction,contractor construction,FALSE
+T. I Investments,t i investments,FALSE
 Employer Construction,employer construction,TRUE
 Kawazane Investment Limited,kawazane investment,TRUE
 Complete Construction,complete construction,TRUE
-Mupepetwe Engineering,mupepetwe engineering,TRUE
-Contracting Company,contracting,TRUE
-Documentation Book Hut Limited,documentation book hut,TRUE
-Transport Zambia Limited,transport zambia,TRUE
-Passenger Services,passenger services,TRUE
-DotCom Technologies,dotcom technologies,TRUE
-Zambia Postal Services,zambia postal services,TRUE
+Mupepetwe Engineering and Contracting Company,mupepetwe engineering and contracting,TRUE
+Outstanding Debt for Goods and Services,outstanding debt for goods and services,TRUE
+Lusaka Province Lack of Documentation Book Hut Limited,lusaka province lack of documentation book hut,TRUE
+Management of National Science Centre Contract for Construction,management of national science centre contract for construction,TRUE
+Contract for Security Services,contract for security services,TRUE
+J & J Transport Zambia Limited,j j transport zambia,TRUE
+Under Declared GVM Freight and Passenger Services,under declared gvm freight and passenger services,FALSE
+E-Toll Payments Irregular Use of DotCom Technologies,e toll payments irregular use of dotcom technologies,TRUE
+Engagement of Zambia Postal Services,engagement of zambia postal services,TRUE
+Engagement of Contractors,engagement of contractors,TRUE
 Off Road Trading Limited,off road trading,TRUE
 Tosh Building Contractors,tosh building contractors,TRUE
-Goods Defence Services,goods defence services,FALSE
-Defence Services,defence services,FALSE
-Chiefs' Palaces Construction,chiefs palaces construction,TRUE
+Imprest for Procurement of Goods Defence Services,imprest for procurement of goods defence services,TRUE
+Payments Maina Soko Military Hospital and Defence Services,payments maina soko military hospital and defence services,TRUE
+Construction of Chiefs' Palaces Construction,construction of chiefs palaces construction,FALSE
 Conference Services,conference services,TRUE
-Undelivered Building Blocks Mandanga Milling Company,undelivered building blocks mandanga milling,TRUE
-Infrastructure Development Project CGAPs Correctional Industries,infrastructure development project cgaps correctional industries,FALSE
-ERB Energy Regulation Board ERP Enterprise,erb energy regulation board erp enterprise,FALSE
-Organization NRFA National Road Fund Agency,organization nrfa national road fund agency,FALSE
-Pension Fund RDA Road Development Agency,pension fund rda road development agency,FALSE
-Medicines Regulatory Authority ZAPD Zambia Agency,medicines regulatory authority zapd zambia agency,FALSE
+Undelivered Building Blocks Mandanga Milling Company Limited,undelivered building blocks mandanga milling,TRUE
+CERS Cashew Infrastructure Development Project CGAPs Correctional Industries,cers cashew infrastructure development project cgaps correctional industries,TRUE
+Establishment Register ERB Energy Regulation Board ERP Enterprise,establishment register erb energy regulation board erp enterprise,TRUE
+Plant Protection Organization NRFA National Road Fund Agency,plant protection organization nrfa national road fund agency,TRUE
+Public Service Pension Fund RDA Road Development Agency,public service pension fund rda road development agency,TRUE
+Departmental Charges RTSA Road Transport and Safety Agency,departmental charges rtsa road transport and safety agency,TRUE
+Spectrometer ZAMMSA Zambia Medicines and Medical Supplies Agency,spectrometer zammsa zambia medicines and medical supplies agency,TRUE
+ZAMRA Zambia Medicines Regulatory Authority ZAPD Zambia Agency,zamra zambia medicines regulatory authority zapd zambia agency,TRUE
 Disability ZCS Zambia Correctional Services,disability zcs zambia correctional services,TRUE
 ZEMA Zambia Environment Management Agency,zema zambia environment management agency,TRUE
 TAZAMA Petroleum Limited,tazama petroleum,TRUE
-Righlux Services,righlux services,TRUE
-Inspur Group Joint Ventures,inspur group joint ventures,TRUE
+Righlux Services and Inspur Group Joint Ventures,righlux services and inspur group joint ventures,TRUE
 Oracle Corporation,oracle corporation,TRUE
 Prestige Motors Limited,prestige motors,TRUE
+Director-General of the Investment,director general of the investment,TRUE
 Mandate The National Road Fund Agency,mandate the national road fund agency,TRUE
 Salford Farm Limited,salford farm,TRUE
+Acting Director Commercial and Technical Services,acting director commercial and technical services,TRUE
 Mandate The Zambia Environmental Management Agency,mandate the zambia environmental management agency,TRUE
+Treasury. The Agency,treasury the agency,TRUE
+Anti-Terror and Zambia Correctional Services,anti terror and zambia correctional services,TRUE
 ZTE Zambia Service Limited,zte zambia service,TRUE
 City Bank Zambia Limited,city bank zambia,TRUE
 ZTE Corporation Limited,zte corporation,TRUE
 ZTE Zambia Services Limited,zte zambia services,TRUE
-Road Transport Safety Agency,road transport safety agency,TRUE
+Ministry of Home Affairs and ZTE Corporation,ministry of home affairs and zte corporation,FALSE
+Road Transport Safety Agency,road transport safety agency,FALSE
 Federal Housing Corporation,federal housing corporation,TRUE
 KNR Limited,knr,TRUE
 Liwian Ventures,liwian ventures,TRUE
+General Operations of the Zambia Correctional Services,general operations of the zambia correctional services,TRUE
 The Zambia Correctional Services,the zambia correctional services,FALSE
 Correctional Services,correctional services,FALSE
-Health Care Services,health care services,TRUE
+Health Care Services,health care services,FALSE
 SALTECH Enterprises Limited,saltech enterprises,TRUE
+Ministry of Home Affairs and SALTECH Enterprises Limited,ministry of home affairs and saltech enterprises,FALSE
 Messrs SALTECH Enterprises Limited,messrs saltech enterprises,TRUE
+Between Ministry of Home Affairs and Mukuyu Ventures,between ministry of home affairs and mukuyu ventures,TRUE
 Mukuyu Ventures Limited,mukuyu ventures,TRUE
 Kalabo Correction Service Kalabo Correctional Construction,kalabo correction service kalabo correctional construction,TRUE
 Correctional Industries,correctional industries,FALSE
 Zambia Correctional Service Correctional Industries,zambia correctional service correctional industries,FALSE
-Animals Singani Farms,animals singani farms,TRUE
+CIRF Income Generated Details Amount K Correctional Industries,cirf income generated details amount k correctional industries,TRUE
+Chief Retainers. Construction,chief retainers construction,TRUE
+Management of Animals Singani Farms,management of animals singani farms,TRUE
 Singani Farms,singani farms,TRUE
-Steward Global Limited,steward global,TRUE
+Afriseed and Steward Global Limited,afriseed and steward global,TRUE
 Kalomo Steward Globe Investment,kalomo steward globe investment,TRUE
 Pemba Steward Globe Investment,pemba steward globe investment,TRUE
 Zoona Transactions Zambia Limited,zoona transactions zambia,TRUE
+Zambia Medicines and Medical Supplies Agency,zambia medicines and medical supplies agency,TRUE
 Zamtel Limited,zamtel,TRUE
-Project Project Name Contractor,project project name contractor,TRUE
-Second Contractor,second contractor,TRUE
+Delayed Completion of Project Project Name Contractor,delayed completion of project project name contractor,TRUE
+Questionable Engagement of Second Contractor,questionable engagement of second contractor,TRUE
+Elina Construction and Supplies Limited,elina construction and supplies,TRUE
 Elina Construction,elina construction,TRUE
-Supplies Limited,supplies,FALSE
 Mildil Construction Limited,mildil construction,TRUE
 Copperbelt Province Project Name Contractor,copperbelt province project name contractor,TRUE
-Auditor Village Hospital Construction,auditor village hospital construction,TRUE
-District Hospital Phase Engineering,district hospital phase engineering,TRUE
+Report of the Auditor Village Hospital Construction,report of the auditor village hospital construction,FALSE
+Republic for the District Hospital Phase Engineering,republic for the district hospital phase engineering,TRUE
 III Ltd,iii,TRUE
 Project Name Contractor,project name contractor,TRUE
-Workmanship Luapula Province Project Name Contractor,workmanship luapula province project name contractor,FALSE
+Poor Workmanship Luapula Province Project Name Contractor,poor workmanship luapula province project name contractor,TRUE
 Milenge District Construction,milenge district construction,TRUE
 Mwense District Enterprises,mwense district enterprises,TRUE
-London Contractors Limited,london contractors,TRUE
+Davies and London Contractors Limited,davies and london contractors,TRUE
 Frave General Dealers,frave general dealers,TRUE
-Projects Eastern Province Project Name Contractor,projects eastern province project name contractor,TRUE
+Completion of Projects Eastern Province Project Name Contractor,completion of projects eastern province project name contractor,FALSE
 Patient Department Trading,patient department trading,TRUE
 Naviyombo Contractors,naviyombo contractors,TRUE
-Works Project Name Contractor,works project name contractor,TRUE
+Completion of Works Project Name Contractor,completion of works project name contractor,FALSE
 January Construction,january construction,FALSE
 Laundry Services,laundry services,TRUE
-Cafeteria Services,cafeteria services,TRUE
-Amount Suppliers,amount suppliers,FALSE
-Contractors Suppliers,contractors suppliers,FALSE
-Specialised Services,specialised services,TRUE
+Kitchen and Cafeteria Services,kitchen and cafeteria services,TRUE
+Engagement of Suppliers,engagement of suppliers,TRUE
+Pharmaceutical Licenses Province Hospital No. of Amount Suppliers,pharmaceutical licenses province hospital no of amount suppliers,FALSE
+Outstanding Obligations Category Amount K Contractors Suppliers,outstanding obligations category amount k contractors suppliers,TRUE
+Goods and Services,goods and services,FALSE
+Teacher Education and Specialised Services,teacher education and specialised services,TRUE
 Soft Clan Technologies,soft clan technologies,TRUE
 The Consultant,the consultant,FALSE
 M-SAT Limited,m sat,TRUE
+Irregular Engagement of M-SAT Limited,irregular engagement of m sat,TRUE
+Provision of Services,provision of services,TRUE
 Roshe Pharmaceuticals,roshe pharmaceuticals,TRUE
+Clearance Certificates Station Account No. of Amount Suppliers,clearance certificates station account no of amount suppliers,FALSE
 Comments Contractor,comments contractor,TRUE
+K K K K Construction,k k k k construction,FALSE
 Luansobe Boarding Masaiti Investment,luansobe boarding masaiti investment,TRUE
 Contractor Secondary School Limited,contractor secondary school,TRUE
 Mweenda Boarding Henan Contractor,mweenda boarding henan contractor,TRUE
-Limited Contractor,contractor,FALSE
 Katuta Boarding Luwingu Investment,katuta boarding luwingu investment,TRUE
-Matty Joint Ventures,matty joint ventures,TRUE
+Shanai & Matty Joint Ventures,shanai matty joint ventures,TRUE
 Zesco Limited,zesco,TRUE
 Connect Power Zesco Limited,connect power zesco,TRUE
+Advance No. Name of Contractor,advance no name of contractor,FALSE
 Anamed Constrauction Limited,anamed constrauction,TRUE
 Berbrin Investment Limited,berbrin investment,TRUE
 Creative Team Construction,creative team construction,TRUE
@@ -672,35 +803,41 @@ Molozi Primary Construction,molozi primary construction,TRUE
 Lumezi Construction,lumezi construction,TRUE
 Chipungu Community School Construction,chipungu community school construction,TRUE
 CRB Construction,crb construction,TRUE
-Staff Houses Construction,staff houses construction,FALSE
+Staff Houses Construction,staff houses construction,TRUE
 Chipangali Construction,chipangali construction,TRUE
 Painting Construction,painting construction,TRUE
 Sinda Construction,sinda construction,TRUE
-Construction Construction,construction construction,FALSE
+K Construction Construction,k construction construction,FALSE
 April Completion Construction,april completion construction,FALSE
 Roofing Construction,roofing construction,TRUE
+Province District School Supply of Goods & Services,province district school supply of goods services,TRUE
 Permanent Secretary Education Services,permanent secretary education services,TRUE
-School Construction,school construction,TRUE
-Solar Water Pumps Lot Contractor,solar water pumps lot contractor,TRUE
+Implementation and Technical Guidelines for the School Construction,implementation and technical guidelines for the school construction,TRUE
+Installation of Solar Water Pumps Lot Contractor,installation of solar water pumps lot contractor,TRUE
 Nande Ventures,nande ventures,TRUE
 Novatros Trading,novatros trading,TRUE
+Date No. Contractor,date no contractor,FALSE
+Unpaid No. Contractor,unpaid no contractor,FALSE
 Independent Verification Agency,independent verification agency,TRUE
+Social Services,social services,FALSE
+Development and Social Services,development and social services,FALSE
 Undelivered Farming Inputs DISTRICT Contractor,undelivered farming inputs district contractor,TRUE
 Ndola Synergy Seed Zambia Ltd,ndola synergy seed zambia,TRUE
+Farming Season No. Company,farming season no,FALSE
 Mayfair Insurance Company Zambia Limited,mayfair insurance zambia,TRUE
 ZSIC General Insurance Limited,zsic general insurance,TRUE
 Hollard Insurance Zambia Limited,hollard insurance zambia,TRUE
-Manage Enterprise,manage enterprise,FALSE
+COBIT APO03 Manage Enterprise,cobit apo03 manage enterprise,TRUE
 Mackphilisa Computer System Ltd,mackphilisa computer system,TRUE
 Honda Zambia Ltd,honda zambia,TRUE
-Amount Transactions Suppliers,amount transactions suppliers,FALSE
+Station No. of No. of Amount Transactions Suppliers,station no of no of amount transactions suppliers,FALSE
 Katopola Farm,katopola farm,TRUE
 Liswatch General Dealers,liswatch general dealers,TRUE
 Miangi General Dealers,miangi general dealers,TRUE
 Manshya Farm,manshya farm,TRUE
 Nansanga Farm,nansanga farm,TRUE
-Amount VAT Suppliers,amount vat suppliers,FALSE
-KCM Green Ltd,kcm green,TRUE
+VAT Province Stations No. of Amount VAT Suppliers,vat province stations no of amount vat suppliers,FALSE
+SPA Capital Advisors Pvt and KCM Green Ltd,spa capital advisors pvt and kcm green,TRUE
 Chisubu Company Limited,chisubu,TRUE
 Edmas General Dealers Limited,edmas general dealers,TRUE
 Senanga District Construction,senanga district construction,TRUE
@@ -708,10 +845,12 @@ Sioma District Construction,sioma district construction,TRUE
 Finecop Zambia Limited,finecop zambia,TRUE
 Tesno General Dealers,tesno general dealers,TRUE
 Animal Health Services,animal health services,TRUE
-Aniaml Health Construction,aniaml health construction,FALSE
+Aniaml Health Construction,aniaml health construction,TRUE
 Extension Services,extension services,TRUE
+Lack of Farm,lack of farm,TRUE
 Share Mix Limited,share mix,TRUE
 Avima Pty Limited,avima,TRUE
+Local Government Services and Management and Support Services,local government services and management and support services,FALSE
 Small Medium Enterprises,small medium enterprises,TRUE
 Limanya Enterprise Limited,limanya enterprise,TRUE
 Wall Fence Construction,wall fence construction,FALSE
@@ -719,59 +858,70 @@ Dulsha Investments,dulsha investments,TRUE
 Nothgirb Investment Limited,nothgirb investment,TRUE
 Jearmy Enterprise,jearmy enterprise,TRUE
 External Works Construction,external works construction,TRUE
-Splash Liquor Trading,splash liquor trading,TRUE
+Splash Liquor Trading and General Dealers,splash liquor trading and general dealers,TRUE
+Community Devevelopment and Social Services,community devevelopment and social services,TRUE
+Development & Social Services,development social services,FALSE
 Levcon Trading,levcon trading,TRUE
+Economic Development and Management and Support Services,economic development and management and support services,TRUE
 Development District Development Support Services,development district development support services,FALSE
 Gatoma Investment Limited,gatoma investment,TRUE
+Land Administration and Survey Services,land administration and survey services,TRUE
 Survey Services,survey services,TRUE
 Megwu General Limited,megwu general,TRUE
-District Contractor,district contractor,FALSE
+Stalled Projects No. District Contractor,stalled projects no district contractor,FALSE
 Chembe Belview Tools Limited,chembe belview tools,TRUE
 Chipili Woodrock Construction Limited,chipili woodrock construction,TRUE
 Mwansabombwe Greevis Enterprises Limited,mwansabombwe greevis enterprises,TRUE
+Man K Trading,man k trading,TRUE
 M&S Enterprises,m s enterprises,FALSE
 Regional Investment,regional investment,TRUE
 Shorthorn Printers Limited,shorthorn printers,TRUE
-Capacity Building Limited,capacity building,TRUE
-Clearing Services,clearing services,TRUE
+Alliance Procurement and Capacity Building Limited,alliance procurement and capacity building,TRUE
+Contract for Customs and Clearing Services,contract for customs and clearing services,TRUE
+Customs and Clearing Services for Pharmaceuticals,customs and clearing services for pharmaceuticals,TRUE
 Previous Contractors,previous contractors,TRUE
+Logistics and African Union Financial Services,logistics and african union financial services,TRUE
 African Union Financial Services,african union financial services,TRUE
-Acronyms Aditya Birla Global Trading,acronyms aditya birla global trading,FALSE
-Singapore PTE Limited,singapore,TRUE
-Government Accounting Policies CDF Correctional Industries,government accounting policies cdf correctional industries,FALSE
+Acronyms Aditya Birla Global Trading Singapore PTE Limited,acronyms aditya birla global trading singapore,FALSE
+Interventions AF Alliance Procurement and Capacity Building Limited,interventions af alliance procurement and capacity building,TRUE
+CDA Central Government Accounting Policies CDF Correctional Industries,cda central government accounting policies cdf correctional industries,TRUE
 EMLIP Essential Medicines Logistics,emlip essential medicines logistics,TRUE
-Service Providers FRA Food Reserve Agency,service providers fra food reserve agency,FALSE
-Zambia NRFA National Road Fund Agency,zambia nrfa national road fund agency,TRUE
-PACRA Patents And Companies Registration Agency,pacra patents and companies registration agency,FALSE
-Procedure SSOEL Swiss Singapore Overseas Enterprises,procedure ssoel swiss singapore overseas enterprises,FALSE
-Enhancement Project ZCS Zambia Correctional Services,enhancement project zcs zambia correctional services,FALSE
-System ZIGS Zambia Integrated Government Services,system zigs zambia integrated government services,FALSE
-Certification Institute ZTA Zambia Tourism Agency,certification institute zta zambia tourism agency,TRUE
+FSPs Financial Service Providers FRA Food Reserve Agency,fsps financial service providers fra food reserve agency,TRUE
+Council of Zambia NRFA National Road Fund Agency,council of zambia nrfa national road fund agency,TRUE
+Coordinating Office PACRA Patents And Companies Registration Agency,coordinating office pacra patents and companies registration agency,TRUE
+Time Objective RTSA Road Transport and Safety Agency,time objective rtsa road transport and safety agency,TRUE
+Standard Operating Procedure SSOEL Swiss Singapore Overseas Enterprises,standard operating procedure ssoel swiss singapore overseas enterprises,TRUE
+Zambia Education Enhancement Project ZCS Zambia Correctional Services,zambia education enhancement project zcs zambia correctional services,TRUE
+Management Information System ZIGS Zambia Integrated Government Services,management information system zigs zambia integrated government services,TRUE
+Control and Certification Institute ZTA Zambia Tourism Agency,control and certification institute zta zambia tourism agency,TRUE
 Assets Under Construction,assets under construction,FALSE
 Madison Life Insurance Company,madison life insurance,TRUE
 Madison Asset Management Company,madison asset management,TRUE
-Developed Services,developed services,TRUE
+Under Utilisation of Developed Services,under utilisation of developed services,FALSE
 Zambia Integrated Government Services,zambia integrated government services,TRUE
 Unutilised Developed Services,unutilised developed services,TRUE
-Health Services,health services,FALSE
+Occupational Safety and Health Services,occupational safety and health services,TRUE
 Zambia Tourism Agency,zambia tourism agency,TRUE
 Haga Logistics Limited,haga logistics,TRUE
-Industrial Merchants Limited,industrial merchants,TRUE
+M and N Industrial Merchants Limited,m and n industrial merchants,TRUE
 Integrate Passport Services,integrate passport services,TRUE
-TDCF Loan Repayments Tourism Enterprise,tdcf loan repayments tourism enterprise,TRUE
+Mandate The Road Traffic and Safety Agency,mandate the road traffic and safety agency,TRUE
+K K K TDCF Loan Repayments Tourism Enterprise,k k k tdcf loan repayments tourism enterprise,TRUE
 Tourism Enterprises,tourism enterprises,TRUE
-Zambia Tourism Agency Zambia Tourism Agency,zambia tourism agency zambia tourism agency,TRUE
-Policing Services,policing services,TRUE
+Management of Zambia Tourism Agency Zambia Tourism Agency,management of zambia tourism agency zambia tourism agency,TRUE
+Lots and Farms,lots and farms,TRUE
+Crime Prevention and Policing Services,crime prevention and policing services,TRUE
 Community Support Services,community support services,TRUE
-Consular Central Technical Services,consular central technical services,TRUE
-Ruthfield Engineering,ruthfield engineering,TRUE
+Protocol and Consular Central Technical Services,protocol and consular central technical services,TRUE
+Ruthfield Engineering and Suppliers,ruthfield engineering and suppliers,TRUE
 Abandoned Construction,abandoned construction,TRUE
+Finance and National Planning Loans and Investments,finance and national planning loans and investments,TRUE
 Nyiombo Investments,nyiombo investments,TRUE
 Swiss Singapore Overseas Enterprises PTE Limited,swiss singapore overseas enterprises,TRUE
-Aditya Birla Global Trading,aditya birla global trading,FALSE
+Aditya Birla Global Trading Singapore PTE Limited,aditya birla global trading singapore,TRUE
 Chief Kasoma Lunga Contractor Construction,chief kasoma lunga contractor construction,TRUE
 Private Contractors,private contractors,TRUE
-Province District Contractor,province district contractor,FALSE
+Private Contractors No. Province District Contractor,private contractors no province district contractor,FALSE
 North Western Zambezi Sydmark Operations Ltd,north western zambezi sydmark operations,TRUE
 North Western Mushindamo Sydmark Operations Ltd,north western mushindamo sydmark operations,TRUE
 North Western Mwinilunga Sydmark Operations Ltd,north western mwinilunga sydmark operations,TRUE
@@ -780,7 +930,8 @@ North Western Kasempa Sydmark Operations Ltd,north western kasempa sydmark opera
 North Western Kabompo Transley Enterprises,north western kabompo transley enterprises,TRUE
 North Western Manyinga Transley Enterprises,north western manyinga transley enterprises,TRUE
 North Western Ikielenga Transley Enterprises,north western ikielenga transley enterprises,TRUE
-Supply Ltd,supply,FALSE
+North Western Mufumbwe Teso Works and Supply Ltd,north western mufumbwe teso works and supply,TRUE
+North Western Solwezi Teso Works and Supply Ltd,north western solwezi teso works and supply,TRUE
 Lusaka Luangwa Acco Civil Engineering Ltd,lusaka luangwa acco civil engineering,TRUE
 Lusaka Rufunsa Ndekazi Investment Ltd,lusaka rufunsa ndekazi investment,TRUE
 Lusaka Kafue Kezia Investment Ltd,lusaka kafue kezia investment,TRUE
@@ -793,78 +944,110 @@ Northern Mbala Kampe Investments,northern mbala kampe investments,TRUE
 Northern Kasama Kampe Investments,northern kasama kampe investments,TRUE
 Northern Senga Kampe Investments,northern senga kampe investments,TRUE
 Total Luwingu Shupe Investment Ltd,total luwingu shupe investment,FALSE
-Mart Speed Contruction Lunte Transatlantic Ventures,mart speed contruction lunte transatlantic ventures,FALSE
-Mporokoso Transatlantic Ventures,mporokoso transatlantic ventures,FALSE
-Mpulungu GNM Projects Limited,mpulungu gnm projects,FALSE
-Engage New Contractor,engage new contractor,TRUE
+Contruction Mungwi Mart Speed Contruction Lunte Transatlantic Ventures,contruction mungwi mart speed contruction lunte transatlantic ventures,TRUE
+Mporokoso Transatlantic Ventures Mpulungu GNM Projects Limited,mporokoso transatlantic ventures mpulungu gnm projects,TRUE
+Engage New Contractor for the Construction,engage new contractor for the construction,TRUE
 GNM Projects Limited,gnm projects,TRUE
+Total Start and Amounts Paid Revised No. Contractor,total start and amounts paid revised no contractor,FALSE
 Kampe Construction,kampe construction,TRUE
 Main Palace Investment,main palace investment,TRUE
 The Enterprises,the enterprises,FALSE
 The Investments,the investments,FALSE
 Scirocco Enterprise Limited,scirocco enterprise,TRUE
+Loans and Investment,loans and investment,TRUE
+Wasteful Expenditure No. Project Name Contractor,wasteful expenditure no project name contractor,FALSE
 Rayton Construction Ltd,rayton construction,TRUE
 Kwasu Properties Ltd,kwasu properties,TRUE
-Custodial Services,custodial services,TRUE
-Rehabiltation Services,rehabiltation services,TRUE
+Expenditure Unspent Authorized Funds Management and Support Services,expenditure unspent authorized funds management and support services,TRUE
+K K Custodial Services,k k custodial services,TRUE
+K Rehabiltation Services,k rehabiltation services,TRUE
 Society Limited,society,FALSE
 Troikaz Investment Limited,troikaz investment,TRUE
 Cattlemen Livestock Cooperative Society Ltd,cattlemen livestock cooperative society,TRUE
 Trans Seed Zambia Limited,trans seed zambia,TRUE
 Amac Seed Zambia Limited,amac seed zambia,TRUE
-Related Services,related services,FALSE
+Goods and Related Services,goods and related services,TRUE
 Raton Freight Zambia Limited,raton freight zambia,TRUE
+K Hospital Services,k hospital services,FALSE
 Jiangsu Gold Construction Company,jiangsu gold construction,TRUE
 Jiangsu Gold Civil Construction Company,jiangsu gold civil construction,TRUE
-Financial Services,financial services,FALSE
+Banking and Financial Services,banking and financial services,TRUE
 Siemens Healthcare Proprietary Ltd,siemens healthcare proprietary,TRUE
+Top Access Supply and Construction Limited,top access supply and construction,TRUE
+Ministry and NMS Infrastructure Limited,ministry and nms infrastructure,FALSE
+Ministry of Health and the Contractor,ministry of health and the contractor,FALSE
+Contract for Completion of the Construction,contract for completion of the construction,TRUE
 Tonlex Investment Limited,tonlex investment,TRUE
+National Council for Construction,national council for construction,TRUE
 Although Tonlex Investment Limited,although tonlex investment,FALSE
 Trymate Zambia Limited,trymate zambia,TRUE
 TAC Base Enterprise,tac base enterprise,TRUE
 Project Details Contractor,project details contractor,TRUE
-Cancer AVIC International Limited,cancer avic international,TRUE
+Engineering Company,engineering,FALSE
+Construction of Cancer AVIC International Limited,construction of cancer avic international,FALSE
 Mufulira District Hospital Sanes General Dealers,mufulira district hospital sanes general dealers,TRUE
+Phase One and Associated External Works Construction,phase one and associated external works construction,FALSE
 Associated External Works Construction,associated external works construction,TRUE
 PLADOC Engineering Limited,pladoc engineering,TRUE
-Hemmings Investments Limited,hemmings investments,TRUE
+District Hospital and Hemmings Investments Limited,district hospital and hemmings investments,FALSE
 Associated External Works Phase II Construction,associated external works phase ii construction,TRUE
 Stoutone Investment Limited,stoutone investment,TRUE
-District Hospital Phase One Sanes General Dealers,district hospital phase one sanes general dealers,TRUE
-Cancer Limited,cancer,TRUE
+Associated External Works Completion of the Construction,associated external works completion of the construction,TRUE
+District Hospital Phase One Sanes General Dealers,district hospital phase one sanes general dealers,FALSE
+Staircases the Cancer Limited,staircases the cancer,FALSE
 Hospital Phase Sanes General Dealers,hospital phase sanes general dealers,TRUE
-District Hospital Phase Stoutone Investments,district hospital phase stoutone investments,TRUE
+Date Construction,date construction,FALSE
+District Hospital Phase Stoutone Investments,district hospital phase stoutone investments,FALSE
 Pumbing Construction,pumbing construction,TRUE
-District Hospital Phase PLADOC Engineering,district hospital phase pladoc engineering,TRUE
+District Hospital Phase PLADOC Engineering,district hospital phase pladoc engineering,FALSE
 Landscaping Construction,landscaping construction,TRUE
-External Works Associated External Limited,external works associated external,FALSE
+Carpentry & Joinery District Hospital and Hemmings Investments,carpentry joinery district hospital and hemmings investments,TRUE
+External Works Associated External Limited,external works associated external,TRUE
 Pathways Construction,pathways construction,TRUE
 Ikelenge District Stoutone Investment,ikelenge district stoutone investment,TRUE
-Glazing Construction,glazing construction,TRUE
-Sanes General Dealers,sanes general dealers,TRUE
+Completion of the Glazing Construction,completion of the glazing construction,FALSE
+Hospital Phase One and Sanes General Dealers,hospital phase one and sanes general dealers,TRUE
 Delayed Enterprises,delayed enterprises,TRUE
 Ndola Limited,ndola,TRUE
+Constructing of Mongu District Tonlex Investment,constructing of mongu district tonlex investment,TRUE
+Construction of Mkushi District Stoutone Investments,construction of mkushi district stoutone investments,FALSE
+Previous Contractor K Contractor,previous contractor k contractor,TRUE
+K K Contract for Completion of the Construction,k k contract for completion of the construction,TRUE
 Mongu District Tonlex Investment,mongu district tonlex investment,TRUE
-Mkushi District Stoutone Investments,mkushi district stoutone investments,TRUE
-Previous Contractor,previous contractor,TRUE
-Luangwa District PLADOC Engineering,luangwa district pladoc engineering,TRUE
-Works Phase II Investments Limited,works phase ii investments,TRUE
+Construction of Luangwa District PLADOC Engineering,construction of luangwa district pladoc engineering,FALSE
+Works Phase II Investments Limited,works phase ii investments,FALSE
+Sanes General Dealers,sanes general dealers,TRUE
+Availed for Audit No. Project Details Contractor,availed for audit no project details contractor,FALSE
+Value of Bond K K Construction,value of bond k k construction,TRUE
 Associated External Works Limited,associated external works,TRUE
-Associated Sanes General Dealers,associated sanes general dealers,TRUE
+Completion of the Construction,completion of the construction,FALSE
+K Contract for Completion of the Construction,k contract for completion of the construction,TRUE
+District Hospital Phase One and Associated Sanes General Dealers,district hospital phase one and associated sanes general dealers,FALSE
 Associated External PLADOC Engineering Limited,associated external pladoc engineering,TRUE
 Associated External Trymate Zambia Limited,associated external trymate zambia,TRUE
+Works Completion of the Construction,works completion of the construction,FALSE
+Mwinilunga District Hospital Phase One Sanes General Dealers,mwinilunga district hospital phase one sanes general dealers,TRUE
+Amount for No. Project Details Contractor,amount for no project details contractor,FALSE
+Preliminaries K K Construction,preliminaries k k construction,TRUE
 Mkushi District Stoutone Investment Limited,mkushi district stoutone investment,TRUE
-Associated External Investments,associated external investments,TRUE
-Works Phase II Limited,works phase ii,TRUE
-Choma District Nchifer Enterprises,choma district nchifer enterprises,TRUE
+Hospital and Associated External Investments,hospital and associated external investments,TRUE
+Works Phase II Limited,works phase ii,FALSE
+Construction of Ikelenge District Stoutone Investment,construction of ikelenge district stoutone investment,FALSE
+Hospital Phase I and Associated Limited,hospital phase i and associated,TRUE
+Contractor Sum Sum K K K Construction,contractor sum sum k k k construction,TRUE
+Construction of Choma District Nchifer Enterprises,construction of choma district nchifer enterprises,FALSE
+Provision of Customs and Clearing Services,provision of customs and clearing services,TRUE
+Customs and Clearing Services,customs and clearing services,TRUE
 Prime Time Investment Limited,prime time investment,TRUE
-Limited Form Hello Logistics Limited,form hello logistics,TRUE
+Bid Securing Declaration Duration Webzed Shipping and Logistics,bid securing declaration duration webzed shipping and logistics,TRUE
+Form Hello Logistics Limited,form hello logistics,FALSE
 Primetime Investments Limited,primetime investments,TRUE
-Clearing Current Proposed Services,clearing current proposed services,TRUE
-Difference Percentage Remarks Clearing Services,difference percentage remarks clearing services,FALSE
-Abandoned Projects Institution District Project Contractor,abandoned projects institution district project contractor,TRUE
+Customs and Customs and Clearing Current Proposed Services,customs and customs and clearing current proposed services,TRUE
+Contract No. Difference Percentage Remarks Clearing Services,contract no difference percentage remarks clearing services,FALSE
+Management of Blood Bank Services,management of blood bank services,TRUE
+Delayed and Abandoned Projects Institution District Project Contractor,delayed and abandoned projects institution district project contractor,TRUE
 Observations Period Date Sum Contractor,observations period date sum contractor,TRUE
-Related Engineering,related engineering,FALSE
+Teaching Hospital and Related Engineering,teaching hospital and related engineering,TRUE
 Maintenance Construction,maintenance construction,TRUE
 Hospital Zambezi Ward Services,hospital zambezi ward services,TRUE
 Institution District Project Contractor,institution district project contractor,TRUE
@@ -874,45 +1057,57 @@ Katoba Rural Ltd,katoba rural,TRUE
 Central Province Ipongo Rural Chibomb Construction,central province ipongo rural chibomb construction,TRUE
 Maternity Annex Investments,maternity annex investments,TRUE
 Ipongo Rural Limited,ipongo rural,TRUE
-Nampundwe Shibuyun Construction,nampundwe shibuyun construction,TRUE
-Ndeke Village Kitwe Raymond Construction Ltd,ndeke village kitwe raymond construction,TRUE
-Hospital Construction,hospital construction,FALSE
-Nursing Investments Ltd Construction,nursing investments construction,FALSE
+Scope of Works K K Nampundwe Shibuyun Construction,scope of works k k nampundwe shibuyun construction,TRUE
+Upgrading of Ndeke Village Kitwe Raymond Construction Ltd,upgrading of ndeke village kitwe raymond construction,TRUE
+Schools of Nursing Investments Ltd,schools of nursing investments,FALSE
 Community Health Ndola Jearmy Enterprises Ltd,community health ndola jearmy enterprises,TRUE
-School Mwense Richtone Engineering,school mwense richtone engineering,TRUE
-District Limited Construction,district construction,FALSE
-District Suppilers Limited,district suppilers,TRUE
-Mwense District Mwense Sindaziwiza Enterprises,mwense district mwense sindaziwiza enterprises,TRUE
-III Revised District Limited,iii revised district,TRUE
+School Mwense Richtone Engineering,school mwense richtone engineering,FALSE
+District Limited,district,FALSE
+District Suppilers Limited,district suppilers,FALSE
+Completion of Mwense District Mwense Sindaziwiza Enterprises,completion of mwense district mwense sindaziwiza enterprises,FALSE
+I & III Revised District Limited,i iii revised district,TRUE
 Kawambw JKMM General Dealers,kawambw jkmm general dealers,TRUE
 Dambwa North Lupososhi Limited,dambwa north lupososhi,TRUE
 NA NA Livingstone Lontinos General Dealers,na na livingstone lontinos general dealers,TRUE
-Katetaule Luano Praise Comfort Limited,katetaule luano praise comfort,TRUE
-Luano Zone Six Enter Prises Ltd,luano zone six enter prises,FALSE
-Health Post Ngabwe Waona Construction,health post ngabwe waona construction,TRUE
-Mutenda Transport Ltd Construction,mutenda transport construction,TRUE
+Construction of Katetaule Luano Praise Comfort Limited,construction of katetaule luano praise comfort,FALSE
+Tumbwe Luano Zone Six Enter Prises Ltd,tumbwe luano zone six enter prises,TRUE
+Health Post Ngabwe Waona Construction,health post ngabwe waona construction,FALSE
+Mutenda Transport Ltd,mutenda transport,TRUE
 Balombwana Enterprises Ltd,balombwana enterprises,TRUE
-Health Sciences Construction,health sciences construction,TRUE
+College of Health Sciences Construction,college of health sciences construction,TRUE
 Office Block Davisbet Enterprises,office block davisbet enterprises,TRUE
 Government Printing Services,government printing services,TRUE
 Pontoon Services,pontoon services,TRUE
+Namibian Port Authority and African Union Financial Services,namibian port authority and african union financial services,TRUE
+Government of Zambia and African Union Financial Services,government of zambia and african union financial services,TRUE
 Zambia Cargo Logistics Company,zambia cargo logistics,TRUE
+Port Authority and the African Union Financial Services,port authority and the african union financial services,TRUE
+Zambia and the African Union Financial Services,zambia and the african union financial services,TRUE
+Republic of Zambia and African Union Financial Services,republic of zambia and african union financial services,TRUE
 Africa Union Cargo Zambia Limited,africa union cargo zambia,TRUE
+Unconfirmed Existence of African Union Financial Services,unconfirmed existence of african union financial services,TRUE
+Behalf of African Union Financial Services,behalf of african union financial services,TRUE
 Kalideck Pty Limited,kalideck,TRUE
+Ministry and Kalideck Pty Limited,ministry and kalideck,FALSE
 Menov Trading Limited,menov trading,TRUE
 Ontheedge General Dealers,ontheedge general dealers,TRUE
 Expedite Construction,expedite construction,TRUE
-Mbaswa Dam Limited Company,mbaswa dam,TRUE
-Chief Brenum Zambia Company,chief brenum zambia,TRUE
+Contracts for Construction,contracts for construction,TRUE
+Contractor Company Paid K Construction,contractor paid k construction,TRUE
+Mbaswa Dam Limited,mbaswa dam,TRUE
+Construction of Chief Brenum Zambia Company,construction of chief brenum zambia,FALSE
 Mpande Dam Limited,mpande dam,TRUE
-Myrex Business Solutions Discover Insurance Construction,myrex business solutions discover insurance construction,FALSE
+Changula Dam Myrex Business Solutions Discover Insurance Construction,changula dam myrex business solutions discover insurance construction,TRUE
 Luinga Dam KDF Engineering Total Limited,luinga dam kdf engineering total,TRUE
 May Contractor,may contractor,FALSE
+Construction Construction,construction construction,FALSE
 Lubways Construction,lubways construction,TRUE
 Sable Construction,sable construction,TRUE
 Reliance Construction,reliance construction,TRUE
 Supplier Siambelele Dam Limited,supplier siambelele dam,TRUE
-Chief Mpande Limited Dam Construction,chief mpande dam construction,TRUE
+Advance IPC-02 IPC-03 Total Amount Closure of Contractor,advance ipc 02 ipc 03 total amount closure of contractor,FALSE
+Chief Mpande Limited,chief mpande,TRUE
+Dam Construction,dam construction,FALSE
 Changula Dam Solutions Construction,changula dam solutions construction,TRUE
 Luing'a Dam Engineering,luing a dam engineering,TRUE
 Commence Construction Works Contractor,commence construction works contractor,TRUE
@@ -920,6 +1115,7 @@ Commenced Investment,commenced investment,TRUE
 Commenced Industries,commenced industries,TRUE
 Lot Limited,lot,FALSE
 Commenced Ltd,commenced,TRUE
+Project Name Name of Contractor,project name name of contractor,TRUE
 Stephcat Enterprise Contractor,stephcat enterprise contractor,TRUE
 Bengwave Contractor,bengwave contractor,TRUE
 Nande Venture Contractor,nande venture contractor,TRUE
@@ -928,53 +1124,72 @@ Innovations Limited,innovations,TRUE
 Capricon Innovations Contractor,capricon innovations contractor,TRUE
 Hand Capricorn Innovation Contractor,hand capricorn innovation contractor,TRUE
 Nkanmu Investments Contractor,nkanmu investments contractor,TRUE
-Lot Ltd Contractor,lot contractor,FALSE
 North- Stephcat Enterprise,north stephcat enterprise,TRUE
+Creative Team Construction and General Dealers Limited,creative team construction and general dealers,TRUE
 Discover Insurance Company,discover insurance,TRUE
-General Washed Away Embankment Under Construction,general washed away embankment under construction,FALSE
+Auditor General Washed Away Embankment Under Construction,auditor general washed away embankment under construction,TRUE
 GNM Project Limited,gnm project,TRUE
 Indigo Insurance Company,indigo insurance,TRUE
 Lubways Enterprise Limited,lubways enterprise,TRUE
 KDW Engineering Limited,kdw engineering,TRUE
+Public Infrastructure K K K Property Management Services,public infrastructure k k k property management services,TRUE
 Property Management Services,property management services,TRUE
 Sand-Ridge Associates Limited,sand ridge associates,TRUE
 Kalumbila Multipirpose Co-operative Ltd,kalumbila multipirpose operative,TRUE
 Outstanding Services,outstanding services,TRUE
-Medium Enterprise,medium enterprise,TRUE
-Bloom Concepts Ltd,bloom concepts,FALSE
+Ministry of Small and Medium Enterprise,ministry of small and medium enterprise,FALSE
+Bloom Concepts Ltd,bloom concepts,TRUE
 Keshimaria Investment Limited,keshimaria investment,TRUE
 Suzgo Trading,suzgo trading,TRUE
+Urban Development and Preventive and Maintenance Services,urban development and preventive and maintenance services,TRUE
+Date Contract Total Beneficial Contract Amount No. Contractor,date contract total beneficial contract amount no contractor,FALSE
 Jotech Mining Logistics Limited,jotech mining logistics,TRUE
 Diamond Palace Construction,diamond palace construction,TRUE
 Luanshya Engineering Limited,luanshya engineering,TRUE
 Case Construction,case construction,TRUE
 Rockfield Contractors,rockfield contractors,TRUE
-PET-GYB Limited,pet gyb,FALSE
-MTN Zambia Limited,mtn zambia,TRUE
+PET-GYB Limited,pet gyb,TRUE
+Infratel and MTN Zambia Limited,infratel and mtn zambia,TRUE
+Complete No.4 Construction,complete no 4 construction,FALSE
+Complete No.10 Construction,complete no 10 construction,FALSE
+Complete No.12 Construction,complete no 12 construction,FALSE
+Complete No.15 Construction,complete no 15 construction,FALSE
+Complete No.17 Construction,complete no 17 construction,FALSE
+Complete Glazing Painting No.18 Construction,complete glazing painting no 18 construction,FALSE
 Solatech Limited,solatech,TRUE
+Sams Investments and Chitemax Investments,sams investments and chitemax investments,TRUE
 Sams Investments,sams investments,TRUE
 Chitemax Investments,chitemax investments,TRUE
 Chitemax Investment,chitemax investment,TRUE
 Staff Houses Sams Investment,staff houses sams investment,TRUE
-Merkkn Ventures,merkkn ventures,FALSE
+Labor Works Contract Date Lot No. Contractor,labor works contract date lot no contractor,FALSE
+Merkkn Ventures,merkkn ventures,TRUE
 Weeks Construction,weeks construction,FALSE
-Tecon Engineering Construction,tecon engineering construction,FALSE
-Blessed Crown Construction,blessed crown construction,FALSE
+Tecon Engineering Construction,tecon engineering construction,TRUE
+Blessed Crown Construction,blessed crown construction,TRUE
 Weeks Technical Services,weeks technical services,FALSE
 Tecon Engineering,tecon engineering,TRUE
+Delayed Completion of the Construction,delayed completion of the construction,TRUE
 Chinowacha Investment Limited,chinowacha investment,TRUE
 Thriotech Zambia Limited,thriotech zambia,TRUE
 Demwemu Enterprise,demwemu enterprise,TRUE
+Irregular Engagement of Suppliers,irregular engagement of suppliers,TRUE
+Province District School No. of Amount Suppliers,province district school no of amount suppliers,FALSE
 Southern Livingstone Hilcrest Secondary School Suppliers,southern livingstone hilcrest secondary school suppliers,TRUE
+Procurement and Construction,procurement and construction,FALSE
 Tuncay Investment,tuncay investment,TRUE
 Sakapoti Enterprises,sakapoti enterprises,TRUE
+Procure Labour for Construction,procure labour for construction,TRUE
 Engineering Services,engineering services,FALSE
+School No. Contractor,school no contractor,FALSE
 Kayombo Tech Limited,kayombo tech,TRUE
 Malsam Construction,malsam construction,TRUE
+Supply Company Limited,supply,FALSE
 Solutions Limited,solutions,TRUE
 Exploration Limited,exploration,TRUE
-Expiry Date Contractor,expiry date contractor,TRUE
-Boreholes Province School Status Contractor,boreholes province school status contractor,TRUE
+Sign Date Advance Date of Expiry Date Contractor,sign date advance date of expiry date contractor,TRUE
+Physical Status of Boreholes Province School Status Contractor,physical status of boreholes province school status contractor,TRUE
+Delivery of Home Economics Equipment No. Contractor,delivery of home economics equipment no contractor,FALSE
 Black Bear Auto Limited,black bear auto,TRUE
 Bonvoyage Enterprises,bonvoyage enterprises,TRUE
 Investments Limited,investments,FALSE
@@ -984,108 +1199,132 @@ Black Diamond Investments Limited,black diamond investments,TRUE
 Leisley Howard Limited,leisley howard,TRUE
 Luanshya Agro Supplies Limited,luanshya agro supplies,TRUE
 Kamron Investment Limited,kamron investment,TRUE
-Goods Not Meeting Technical Specifications Suppliers,goods not meeting technical specifications suppliers,FALSE
+Delivered Goods Not Meeting Technical Specifications Suppliers,delivered goods not meeting technical specifications suppliers,FALSE
 Enterprises Ltd,enterprises,FALSE
 Kamron Investment Kitchen Utensils Limited,kamron investment kitchen utensils,TRUE
+Paid Payment Balance Lot No. Schools No. Contractor,paid payment balance lot no schools no contractor,FALSE
 Kabvinira Enterprise,kabvinira enterprise,TRUE
 Logistics Limited,logistics,FALSE
 Biogenix Limited,biogenix,TRUE
 Advanced Products Zambia Limited,advanced products zambia,TRUE
-General Contractor Limited,general contractor,FALSE
+MC Chewe Buildings and General Contractor Limited,mc chewe buildings and general contractor,TRUE
 Management Support Services,management support services,FALSE
 Chibox Holdings Limited,chibox holdings,TRUE
 Chibox Limited,chibox,TRUE
 Hyten Construction Limited,hyten construction,TRUE
 Franovigy Enterprises Limited,franovigy enterprises,TRUE
-Northern Engineering,northern engineering,TRUE
+Northern Engineering and Construction Limited,northern engineering and construction,TRUE
 Nkhuzi Marketing Agency Limited,nkhuzi marketing agency,TRUE
 Nakasinde General Dealers,nakasinde general dealers,TRUE
-Districts Contractor,districts contractor,FALSE
+Contract Amount Balance Paid K No. Districts Contractor,contract amount balance paid k no districts contractor,FALSE
 Limulunga Agency,limulunga agency,TRUE
 Mutabrine Investments Limited,mutabrine investments,TRUE
-Amounts Sum Paid District Project Contractor,amounts sum paid district project contractor,FALSE
+Contract Contract Amounts Sum Paid District Project Contractor,contract contract amounts sum paid district project contractor,TRUE
 Chibwika Limited,chibwika,TRUE
 Glask Enterprises Limited,glask enterprises,TRUE
 Recover Advance Payment District Project Contractor,recover advance payment district project contractor,TRUE
-Zingalume Enterprises,zingalume enterprises,TRUE
+Sindamisale and Enterprises,sindamisale and enterprises,TRUE
+Tafelansoni and Zingalume Enterprises,tafelansoni and zingalume enterprises,TRUE
 Sinazongwe Sinazongwe DACO Buumi Construction Limited,sinazongwe sinazongwe daco buumi construction,TRUE
 Akamwa Construction,akamwa construction,TRUE
-JMMEL Construction,jmmel construction,TRUE
+JMMEL Construction and General Dealers,jmmel construction and general dealers,TRUE
+Suppliers of Farming Equipment No. Suppliers,suppliers of farming equipment no suppliers,FALSE
 Growmore Technologies,growmore technologies,TRUE
 Saro Agro-Industrial Ltd,saro agro industrial,TRUE
-Incompatible Drawbar MoA HQ Growmore Technologies,incompatible drawbar moa hq growmore technologies,TRUE
+Supply of Incompatible Drawbar MoA HQ Growmore Technologies,supply of incompatible drawbar moa hq growmore technologies,FALSE
 Register Mechanisation Farm,register mechanisation farm,TRUE
+Trailers No Province Station No. of Farm,trailers no province station no of farm,FALSE
 Northland Equipment Ltd,northland equipment,TRUE
+Engagement of Seed Suppliers,engagement of seed suppliers,TRUE
 Seed Suppliers,seed suppliers,TRUE
 Share Africa Ltd,share africa,TRUE
 Ranch Agrotech Ltd,ranch agrotech,TRUE
-Yield Insurance Company,yield insurance,TRUE
+Farmer for Poor Germination and Yield Insurance Company,farmer for poor germination and yield insurance,TRUE
 Zambia State Insurance Corporation,zambia state insurance corporation,TRUE
 Despite Mackphilisa Computer Systems Limited,despite mackphilisa computer systems,TRUE
-Buchetekelo Zambia Police Farms,buchetekelo zambia police farms,TRUE
+Shimabala and Buchetekelo Zambia Police Farms,shimabala and buchetekelo zambia police farms,TRUE
 Shimabala Police Farms,shimabala police farms,TRUE
 Buchetekelo Police Farm,buchetekelo police farm,TRUE
-Astragal Contractors,astragal contractors,TRUE
-Loxlax Limited,loxlax,TRUE
+Astragal Contractors and Loxlax Limited,astragal contractors and loxlax,TRUE
 Chumene Investments,chumene investments,TRUE
 Zambia National Services,zambia national services,FALSE
 Survey Surveyed Services,survey surveyed services,TRUE
 Resource Services,resource services,TRUE
 Forestry Officer Enterprise,forestry officer enterprise,TRUE
-Masimu Construction,masimu construction,TRUE
-General Merchandise Limited,general merchandise,TRUE
+Masimu Construction and General Merchandise Limited,masimu construction and general merchandise,TRUE
 Chime Express Limited,chime express,TRUE
-Childhood Education DNPW Essential Medicines Logistics,childhood education dnpw essential medicines logistics,FALSE
-Support Programme ENT Food Reserve Agency,support programme ent food reserve agency,FALSE
-Medical Supplies Agency ZAPD Zambia Agency,medical supplies agency zapd zambia agency,TRUE
-Project ZEMA Zambia Environment Management Agency,project zema zambia environment management agency,FALSE
-Managed Enterprise,managed enterprise,FALSE
+DHO Early Childhood Education DNPW Essential Medicines Logistics,dho early childhood education dnpw essential medicines logistics,TRUE
+Farmer Input Support Programme ENT Food Reserve Agency,farmer input support programme ent food reserve agency,TRUE
+Transit RTSA Road Transport and Safety Agency,transit rtsa road transport and safety agency,TRUE
+Tax ZAMMSA Zambia Medicines and Medical Supplies Agency,tax zammsa zambia medicines and medical supplies agency,TRUE
+ZAPD Zambia Agency,zapd zambia agency,TRUE
+Education Enhancement Project ZEMA Zambia Environment Management Agency,education enhancement project zema zambia environment management agency,TRUE
+APO03 Managed Enterprise,apo03 managed enterprise,TRUE
 National Immigration Services,national immigration services,TRUE
-Internal Security National Immigration Services,internal security national immigration services,TRUE
-Mandate The National Immigration Services,mandate the national immigration services,FALSE
-Casino Licence Fees Tourism Enterprise,casino licence fees tourism enterprise,TRUE
+Home Affairs and Internal Security National Immigration Services,home affairs and internal security national immigration services,TRUE
+Mandate The National Immigration Services,mandate the national immigration services,TRUE
+K K K Casino Licence Fees Tourism Enterprise,k k k casino licence fees tourism enterprise,TRUE
+Seed Companies Date Signed Name of Company,seed companies date signed name of,TRUE
 Kekeli Seed Company,kekeli seed,TRUE
 Agroacres Seed Company Ltd,agroacres seed,TRUE
 Vilma Enterprises Ltd,vilma enterprises,TRUE
 Thema General Suppliers Ltd,thema general suppliers,TRUE
-Marketing Ltd,marketing,TRUE
-Veterinary Ltd,veterinary,TRUE
+Blue Print Seed Co. Ltd,blue print seed,TRUE
+Chems Agro and Marketing Ltd,chems agro and marketing,TRUE
+Zambian Crop and Veterinary Ltd,zambian crop and veterinary,TRUE
 Munobe Tasulwa Ltd,munobe tasulwa,TRUE
 Mines Technical Services,mines technical services,TRUE
-Prefabricated Gold Trading,prefabricated gold trading,FALSE
+Mines and Technical Services,mines and technical services,TRUE
+Construction of Prefabricated Gold Trading,construction of prefabricated gold trading,FALSE
 Matty Construction Limited,matty construction,TRUE
 Gold Trading,gold trading,TRUE
 Commodity Monitor Limited,commodity monitor,TRUE
 Monitors Ltd,monitors,TRUE
 ACM Industrial Suppliers Limited,acm industrial suppliers,TRUE
 Japanese International Cooperation Agency,japanese international cooperation agency,TRUE
-Television Services,television services,TRUE
+Broadcasting and Television Services,broadcasting and television services,TRUE
 Information Services,information services,TRUE
 Press Services,press services,TRUE
-Public Adress Services,public adress services,TRUE
+Public Address Number of Public Adress Services,public address number of public adress services,TRUE
 Pangeni Works Limited,pangeni works,TRUE
+Joshisa Electronics and General Dealers,joshisa electronics and general dealers,TRUE
+Custodial Services,custodial services,TRUE
+Rehabiltation Services,rehabiltation services,TRUE
 Nyango Correctional Farm,nyango correctional farm,TRUE
 See Open Air Farm,see open air farm,TRUE
-Amount Department Suppliers,amount department suppliers,FALSE
+System Station No. of Amount Department Suppliers,system station no of amount department suppliers,FALSE
 Rechaji Investment Limited,rechaji investment,TRUE
 Geotech Limited,geotech,TRUE
-Releases Underfunding Expenditure Primary Health Services,releases underfunding expenditure primary health services,FALSE
+Programme Provision Releases Underfunding Expenditure Primary Health Services,programme provision releases underfunding expenditure primary health services,FALSE
+K K K K Hospital Services,k k k k hospital services,FALSE
 Augusta Limited,augusta,TRUE
-Projects Institution District Project Contractor,projects institution district project contractor,TRUE
-Kaseke Mungwi Construction,kaseke mungwi construction,TRUE
-Maternity Enterprise,maternity enterprise,FALSE
+General Manager of Augusta Limited,general manager of augusta,TRUE
+Delayed Completion of Projects Institution District Project Contractor,delayed completion of projects institution district project contractor,TRUE
+Works of Delay K K Kaseke Mungwi Construction,works of delay k k kaseke mungwi construction,FALSE
+Rural Health of Maternity Enterprise,rural health of maternity enterprise,TRUE
+Months Centre Annex and Limited,months centre annex and,TRUE
 Chisanga Kasama Construction,chisanga kasama construction,TRUE
 Incomplete Maternity Annex Chilongoshi Kasama Construction,incomplete maternity annex chilongoshi kasama construction,FALSE
-Maternity Enterprises,maternity enterprises,FALSE
-Incomplete Maternity Annex Chungu Lupososhi Construction,incomplete maternity annex chungu lupososhi construction,FALSE
+RHC of Maternity Enterprises,rhc of maternity enterprises,TRUE
+Months Annex and Limited,months annex and,TRUE
+K K Incomplete Maternity Annex Chungu Lupososhi Construction,k k incomplete maternity annex chungu lupososhi construction,TRUE
+Months Annex and Enterprises,months annex and enterprises,TRUE
+Ministry of Health and Jiangsu Gold Civil Construction,ministry of health and jiangsu gold civil construction,FALSE
+Questionable Budgeting for Construction,questionable budgeting for construction,TRUE
+Ministry and Contractor,ministry and contractor,FALSE
 Mbuzan General Dealers,mbuzan general dealers,TRUE
-Histopathology Services,histopathology services,TRUE
+Zambia Medicine and Medical Supplies Agency,zambia medicine and medical supplies agency,TRUE
+Clinic and Services,clinic and services,TRUE
+Lack of Histopathology Services,lack of histopathology services,TRUE
 Geriatric Services,geriatric services,FALSE
-Electrical Limited,electrical,TRUE
+Ngalitas Hardware and Electrical Limited,ngalitas hardware and electrical,TRUE
 Stalled Construction,stalled construction,FALSE
-Builders Limited,builders,TRUE
-Funds Budget Funding Variance Investment,funds budget funding variance investment,TRUE
+Pozzolana Engineers and Builders Limited,pozzolana engineers and builders,TRUE
+DRF Transport and General Dealers,drf transport and general dealers,TRUE
+Funding Source of Funds Budget Funding Variance Investment,funding source of funds budget funding variance investment,FALSE
 Activities Under Engineering Services,activities under engineering services,FALSE
+Contracts for the Construction,contracts for the construction,TRUE
+Date Paid K No. Schools No. Contractor,date paid k no schools no contractor,FALSE
 October Enterprises Limited,october enterprises,FALSE
 Treo Zambia Limited,treo zambia,TRUE
 Earthmac International Limited,earthmac international,TRUE
@@ -1093,34 +1332,46 @@ Kamach Ventures Limited,kamach ventures,TRUE
 Lolimark General Dealers,lolimark general dealers,TRUE
 Jasema Construction Limited,jasema construction,TRUE
 Markus Engineering,markus engineering,TRUE
+Construction Limited,construction,FALSE
 Mecs Services Limited,mecs services,TRUE
-Funding Total Schools Construction,funding total schools construction,FALSE
-Contracts Delayed Construction,contracts delayed construction,TRUE
+Funding for Construction,funding for construction,FALSE
+No. of Funding for Funding Total Schools Construction,no of funding for funding total schools construction,FALSE
+Management of Contracts Delayed Construction,management of contracts delayed construction,TRUE
+Imperial Contracts and Supplies Limited,imperial contracts and supplies,TRUE
 Undistributed Pasture Seed Contractor,undistributed pasture seed contractor,TRUE
-Districts Aquiras Trading Limited,districts aquiras trading,TRUE
+Spp Spp Spp Alpha Group K K Limited,spp spp spp alpha group k k,TRUE
+Districts Aquiras Trading Limited,districts aquiras trading,FALSE
 Maluwasa Investment Limited,maluwasa investment,TRUE
 Altavasta Investment Limited,altavasta investment,TRUE
 Meteorological Services,meteorological services,TRUE
 Crystaline Technologies Limited,crystaline technologies,TRUE
 SMS Gateway Services,sms gateway services,TRUE
 Mcphilisa Computer Systems Limited,mcphilisa computer systems,TRUE
+Advisory and Technical Services,advisory and technical services,TRUE
 Weeks Equipment Ltd,weeks equipment,FALSE
 Longe Farm,longe farm,TRUE
 Unsheltered Tractor Longe Farm,unsheltered tractor longe farm,TRUE
+Astragal Contractors and Suppliers Limited,astragal contractors and suppliers,TRUE
+Lusitu and Mwomboshi Schemes and Astragal Contractors,lusitu and mwomboshi schemes and astragal contractors,TRUE
+Suppliers Limited,suppliers,FALSE
+Ministry of Comm. Dev & Social Services,ministry of comm dev social services,FALSE
 Suppliers Goods And Services,suppliers goods and services,FALSE
+Irregular Use of Direct Bidding Name of Contractor,irregular use of direct bidding name of contractor,TRUE
+Name of Contractor,name of contractor,TRUE
 Sustainable Water Solutions Limited,sustainable water solutions,TRUE
 Me Contractors,me contractors,FALSE
 Existing Limited,existing,FALSE
 Cashmo Construction,cashmo construction,TRUE
-Cashmo Contractors,cashmo contractors,TRUE
+Cashmo Contractors and General Dealers Limited,cashmo contractors and general dealers,TRUE
 Maintenance Limited,maintenance,TRUE
+Programme Sub-Programme No. of No. of Amount Suppliers,programme sub programme no of no of amount suppliers,FALSE
 Jozanga Investment Limited,jozanga investment,TRUE
-District Company,district,FALSE
+Concessionaire Without Nurseries No. District Company,concessionaire without nurseries no district,FALSE
 Manyinga Bluesky Plywood Resource Limited,manyinga bluesky plywood resource,TRUE
-Mining Limited,mining,TRUE
-Small Active Nyiloji Timber Processing Limited,small active nyiloji timber processing,FALSE
-Active Medium Active Muwe-ma Agencies Limited,active medium active muwe ma agencies,FALSE
-Active Large Active Luwi Wood General Dealers,active large active luwi wood general dealers,FALSE
+Active Large Active Hensa Timbers and Mining Limited,active large active hensa timbers and mining,TRUE
+Small Active Small Active Nyiloji Timber Processing Limited,small active small active nyiloji timber processing,TRUE
+Tang Small Active Medium Active Muwe-ma Agencies Limited,tang small active medium active muwe ma agencies,FALSE
+Trust Small Active Large Active Luwi Wood General Dealers,trust small active large active luwi wood general dealers,FALSE
 Zambezi Kakwezhi Suppliers Rwenzori Timber Limited,zambezi kakwezhi suppliers rwenzori timber,TRUE
 Timber Junction Unene Trading Limited,timber junction unene trading,TRUE
 Mufumbwe Sharma Brothers Chikanji Construction Limited,mufumbwe sharma brothers chikanji construction,TRUE

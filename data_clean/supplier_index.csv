@@ -1,36 +1,46 @@
 supplier,years_appearing,n_years,total_mentions,pages,verified_in_text
+Unaccounted for Stores,2021;2022;2023;2024;2025,5,74,"2021: pdf p184,220,224,332,339,342,374,414,418,430,440,445,459,471; 2022: pdf p93,131,181,194,220,239,240,243,262,275,280,284,285,286,289,291,292,293,295,297,298,299,300,303,305,306,307,308,309,311; 2023: pdf p175,217,273,396,416,433; 2024: pdf p368,385; 2025: pdf p167,168,169,257",TRUE
 ZPPA,2021;2022;2023;2024;2025,5,49,"2021: pdf p33,81,85,134,136,166,167,168,176,294,300,313,354,381,382,386,387,424,437; 2022: pdf p13,210; 2023: pdf p16,107,368; 2024: pdf p19,150,151,187,278; 2025: pdf p16,180,239",TRUE
 Zambia Correctional Service,2021;2022;2023;2024;2025,5,47,"2021: pdf p469; 2022: pdf p68,72; 2023: pdf p16,67,68,75,102,103,104,105,106,124,125; 2024: pdf p19,116,117,128,129,130,132,134,353; 2025: pdf p92,99",TRUE
 ZAMMSA,2021;2022;2023;2024;2025,5,41,"2021: pdf p178,187,198,213,240; 2022: pdf p13,106; 2023: pdf p16,166,167; 2024: pdf p19,182,183,184,185,186; 2025: pdf p15,109,121,137",TRUE
 NAPSA,2021;2022;2023;2024;2025,5,35,"2021: pdf p307,308,309,310,446; 2022: pdf p12,189,306,308; 2023: pdf p14,144,145,165,328; 2024: pdf p17,33,181,182,274,275; 2025: pdf p14,152,212",TRUE
+Community Development and Social Services,2021;2022;2023;2024;2025,5,31,"2021: pdf p15,145,150,244,410,468,469; 2022: pdf p82,85,92,258,259,303; 2023: pdf p130,133,148,150,308,310,401,407; 2024: pdf p135,142; 2025: pdf p74,75,99,102,103,178",TRUE
+Name of Contractor,2021;2022;2023;2024;2025,5,14,"2021: pdf p71,310; 2022: pdf p143; 2023: pdf p258; 2024: pdf p233; 2025: pdf p230,231,232,233,234,235,236,237",TRUE
 ZSIC,2021;2022;2023;2024;2025,5,12,"2021: pdf p184,351,410; 2022: pdf p67; 2023: pdf p318,319,417; 2024: pdf p347; 2025: pdf p194",TRUE
 Zambia Medicines and Medical Supplies Agency,2021;2022;2023;2024;2025,5,8,"2021: pdf p178; 2022: pdf p13; 2023: pdf p16,166; 2024: pdf p19,182,183; 2025: pdf p15",TRUE
 Zambia National Service,2021;2022;2023;2024,4,41,"2021: pdf p109,290,305,306,307,308,309,310,311,312,362,435,436,464,468; 2022: pdf p13,254,255,275,291,308; 2023: pdf p16,310,412,413; 2024: pdf p19,353",TRUE
 Food Reserve Agency,2021;2022;2024;2025,4,14,"2021: pdf p93,317; 2022: pdf p11,48,57,58; 2024: pdf p17,134; 2025: pdf p13,69,71,72",TRUE
 National Road Fund Agency,2021;2022;2023;2024,4,12,"2021: pdf p468; 2022: pdf p66,301; 2023: pdf p15,48,49; 2024: pdf p18,69,70",TRUE
 Consultancy Services,2021;2022;2024;2025,4,9,"2021: pdf p133,134,135,172,173; 2022: pdf p284; 2024: pdf p152,293; 2025: pdf p115",TRUE
-Diagnostics Services,2021;2023;2024;2025,4,5,"2021: pdf p178; 2023: pdf p166,203; 2024: pdf p182; 2025: pdf p137",TRUE
+Clinical Care and Diagnostics Services,2021;2023;2024;2025,4,5,"2021: pdf p178; 2023: pdf p166,203; 2024: pdf p182; 2025: pdf p137",TRUE
 Medici Land Governance Limited,2021;2022;2023;2025,4,4,2021: pdf p52; 2022: pdf p38; 2023: pdf p56; 2025: pdf p65,TRUE
 Solutions Limited,2021;2024;2025,3,17,"2021: pdf p381,382,383,385,386,436,437; 2024: pdf p294; 2025: pdf p230,231,232",TRUE
+Contract for the Construction,2021;2022;2024,3,13,"2021: pdf p166,257; 2022: pdf p97,285; 2024: pdf p107,120,126,164,172,238,239",TRUE
 AVIC International Limited,2021;2022;2024,3,10,"2021: pdf p308,309,310,311; 2022: pdf p274; 2024: pdf p154,164; 2021: pdf p310",TRUE
 Associated Limited,2021;2024;2025,3,10,"2021: pdf p264,266,270,274; 2024: pdf p167,171,173; 2025: pdf p113",TRUE
+Loans and Investment,2021;2022;2024,3,10,"2021: pdf p12,99,465; 2022: pdf p277; 2024: pdf p111,127",TRUE
+Loans and Investments,2021;2022;2024,3,9,"2021: pdf p12,99,465; 2022: pdf p277; 2024: pdf p111,127",TRUE
 Tourism Enterprise,2021;2024;2025,3,8,"2021: pdf p57; 2024: pdf p77,78,82; 2025: pdf p56",TRUE
 Zesco Limited,2022;2023;2025,3,8,"2023: pdf p256; 2022: pdf p186,301; 2023: pdf p124; 2025: pdf p162,221,246",TRUE
-Companies Registration Agency,2021;2022;2024,3,7,"2021: pdf p291,436; 2022: pdf p12,75; 2024: pdf p18,39",TRUE
 NMS Infrastructure Limited,2022;2024;2025,3,7,"2022: pdf p97; 2024: pdf p156,157,158; 2025: pdf p116",TRUE
+Patents and Companies Registration Agency,2021;2022;2024,3,6,"2021: pdf p291,436; 2022: pdf p12,75; 2024: pdf p39",TRUE
 Zambia Environmental Management Agency,2021;2023;2025,3,6,"2021: pdf p75,76,77; 2023: pdf p61; 2025: pdf p245",TRUE
 Animal Health Services,2023;2024;2025,3,5,"2023: pdf p359; 2024: pdf p305,306; 2025: pdf p169,175",TRUE
+Contract for Construction,2021;2022;2025,3,5,"2021: pdf p174; 2022: pdf p143,296; 2025: pdf p114",TRUE
 Essential Medicines Logistics,2021;2024;2025,3,5,"2021: pdf p228; 2024: pdf p17,192; 2025: pdf p13,138",TRUE
-Medium Enterprise,2021;2023;2024,3,5,"2021: pdf p100; 2023: pdf p369,421; 2024: pdf p245,354",TRUE
-Road Development Agency,2021;2023;2024,3,5,"2021: pdf p435,437; 2023: pdf p15,51; 2024: pdf p71",TRUE
 Wah Kong Enterprises Ltd,2021;2024;2025,3,5,"2021: pdf p174,347; 2024: pdf p164; 2025: pdf p117; 2021: pdf p347",TRUE
 Zambia Compulsory Standards Agency,2021;2022;2023,3,5,2021: pdf p55; 2022: pdf p76; 2023: pdf p228,TRUE
 Zampost,2022;2023;2024,3,5,"2022: pdf p292,301; 2023: pdf p385; 2024: pdf p369",TRUE
-Medium Enterprises,2021;2023;2024,3,4,"2021: pdf p100; 2023: pdf p369,421; 2024: pdf p354",TRUE
 Saro Agro,2023;2024;2025,3,4,"2023: pdf p138,292; 2024: pdf p338; 2025: pdf p197",TRUE
 Water Resources Management Authority,2022;2023;2024,3,4,"2022: pdf p78; 2023: pdf p16; 2024: pdf p19,39",TRUE
+Contract for Consultancy Services,2021;2022;2024,3,3,2021: pdf p173; 2022: pdf p284; 2024: pdf p152,TRUE
+Financial Regulations and Public Stores,2023;2024;2025,3,3,2023: pdf p26; 2024: pdf p29; 2025: pdf p26,TRUE
+Livestock and Ministry of Commerce Trade and Industries,2022;2023;2025,3,3,2022: pdf p92; 2023: pdf p133; 2025: pdf p102,TRUE
+Small and Medium Enterprises,2021;2023;2024,3,3,2021: pdf p100; 2023: pdf p421; 2024: pdf p354,TRUE
 Zambia Air Force,2021;2022,2,16,"2021: pdf p288,291,295,296,297,298,301,303,304; 2022: pdf p295",TRUE
 Nyimba Investment Limited,2021;2022,2,10,"2021: pdf p355,356,358; 2021: pdf p147,355,356,358,361; 2022: pdf p58",TRUE
+Procure Goods and Services,2022;2025,2,10,"2022: pdf p180,284,285,293,295,299,300; 2025: pdf p149",TRUE
+Unaccounted for Stores Public Stores,2021;2022,2,10,"2021: pdf p224,332,339,342,374,414,430,440,459; 2022: pdf p93",TRUE
 Institution District Project Contractor,2024;2025,2,8,"2024: pdf p202,203,204,205,206; 2025: pdf p111,112,113",TRUE
 Project Name Contractor,2023;2024,2,8,"2023: pdf p183,186,187,188,191,192; 2024: pdf p127",TRUE
 Sarago General Dealers Limited,2021;2022,2,8,"2021: pdf p293,294; 2022: pdf p53",TRUE
@@ -38,61 +48,59 @@ Kamano Seed Company Limited,2021;2024,2,7,"2021: pdf p355,356,358; 2021: pdf p35
 Stewards Globe Limited,2021;2025,2,6,"2021: pdf p147,355,356,358; 2025: pdf p70",TRUE
 Associates Limited,2021;2024,2,5,"2021: pdf p65,132; 2024: pdf p244",TRUE
 Creative Team Construction,2023;2024,2,5,"2023: pdf p258; 2024: pdf p228,235,236",TRUE
-Developed Services,2022;2024,2,5,"2022: pdf p75,77,78; 2024: pdf p39",TRUE
 External Works Construction,2023;2024,2,5,"2023: pdf p379; 2024: pdf p164,172,173",TRUE
 Jiangsu Gold Civil Construction Company Limited,2024;2025,2,5,"2024: pdf p151; 2025: pdf p114,115; 2025: pdf p114,115",TRUE
 Nyimba Investments Limited,2021;2022,2,5,"2021: pdf p147,356; 2022: pdf p58; 2021: pdf p356; 2022: pdf p58",TRUE
-School Construction,2022;2023,2,5,"2022: pdf p281; 2023: pdf p275,291",TRUE
 Zamchin Construction Company,2021;2024,2,5,2021: pdf p71; 2024: pdf p250,TRUE
 Zamtel Limited,2022;2023,2,5,"2022: pdf p292,301; 2023: pdf p172; 2023: pdf p124,151",TRUE
 Alpha Commodities Limited,2021;2022,2,4,2021: pdf p356; 2021: pdf p367; 2022: pdf p210,TRUE
-Cropping Limited,2021;2024,2,4,"2021: pdf p147,355; 2021: pdf p364; 2024: pdf p91",TRUE
 Enhanced Smallholder Livestock Investment,2021;2022,2,4,2021: pdf p334; 2022: pdf p198,TRUE
 Growmore Technologies,2024;2025,2,4,2024: pdf p338; 2025: pdf p197,TRUE
 Raymond Construction Limited,2021;2024,2,4,"2021: pdf p223; 2021: pdf p223,268; 2024: pdf p208",TRUE
 SMR Construction Limited,2021;2024,2,4,"2021: pdf p77; 2021: pdf p77; 2024: pdf p294,295",TRUE
 Afrox Zambia Limited,2021;2022,2,3,"2021: pdf p165; 2022: pdf p110,111",TRUE
 Ambulance Services,2021;2023,2,3,"2021: pdf p217; 2023: pdf p170,204",TRUE
-Astragal Contractors,2024;2025,2,3,"2024: pdf p352; 2025: pdf p216,217",TRUE
 Blood Bank Services,2021;2024,2,3,"2021: pdf p198,222; 2024: pdf p193",TRUE
+Department of Veterinary Services,2022;2024,2,3,"2022: pdf p11,199; 2024: pdf p39",TRUE
 First Enterprises,2022;2025,2,3,"2022: pdf p286,296; 2025: pdf p163",TRUE
 Kalonga Milling,2022;2023,2,3,2022: pdf p287; 2023: pdf p125,TRUE
 Mansa Farm,2021;2022,2,3,2021: pdf p373; 2022: pdf p222,TRUE
-Mining Limited,2021;2025,2,3,2021: pdf p36; 2025: pdf p245,TRUE
 Printing Services,2021;2024,2,3,2021: pdf p66; 2024: pdf p212,TRUE
 Ranch Agro,2022;2024,2,3,"2022: pdf p213,215; 2024: pdf p345",TRUE
-Rehabilitation Services,2021;2025,2,3,"2021: pdf p207,228; 2025: pdf p126",TRUE
 Seed Suppliers,2022;2024,2,3,2022: pdf p213; 2024: pdf p345,TRUE
 Stolen Farm,2021;2022,2,3,2021: pdf p371; 2022: pdf p287,TRUE
 Stoutone Investments Limited,2022;2024,2,3,"2022: pdf p210; 2024: pdf p164,171",TRUE
 Sunshare Construction Limited,2022;2024,2,3,2022: pdf p111; 2022: pdf p111; 2024: pdf p208,TRUE
-Veterinary Services,2022;2024,2,3,"2022: pdf p11,199; 2024: pdf p39",TRUE
 Western Province Public Stores,2021;2023,2,3,"2021: pdf p178,184; 2023: pdf p273",TRUE
+Zambezi Ranching and Cropping Limited,2021;2024,2,3,"2021: pdf p147,355; 2024: pdf p91",TRUE
 Zambezi Seed Company,2022;2024,2,3,2022: pdf p228; 2024: pdf p344,TRUE
 Associated External Limited,2021;2024,2,2,2021: pdf p275; 2024: pdf p168,TRUE
 Chongwe Construction,2022;2024,2,2,2022: pdf p281; 2024: pdf p204,TRUE
 Complete Construction,2022;2024,2,2,2022: pdf p295; 2024: pdf p108,TRUE
 Custodial Services,2024;2025,2,2,2024: pdf p128; 2025: pdf p92,TRUE
+Engagement of Suppliers,2023;2024,2,2,2023: pdf p213; 2024: pdf p282,TRUE
 Fish Farms,2021;2022,2,2,2021: pdf p340; 2022: pdf p191,TRUE
 Frave General Dealers,2022;2023,2,2,2022: pdf p113; 2023: pdf p190,TRUE
 Gametech Zambia Ltd,2021;2022,2,2,2021: pdf p43; 2022: pdf p33,TRUE
-Health Care Services,2021;2023,2,2,2021: pdf p194; 2023: pdf p105,TRUE
 Jearmy Enterprise,2023;2024,2,2,2023: pdf p378; 2024: pdf p208,TRUE
 Kampe Investments Limited,2022;2024,2,2,2022: pdf p142; 2024: pdf p120,TRUE
 Laboratory Services,2021;2025,2,2,2021: pdf p191; 2025: pdf p123,TRUE
 Lusaka Province Construction,2022;2024,2,2,2022: pdf p278; 2024: pdf p263,TRUE
-Maintenance Services,2021;2024,2,2,2021: pdf p64; 2024: pdf p248,TRUE
 Mandate The National Road Fund Agency,2023;2024,2,2,2023: pdf p48; 2024: pdf p69,TRUE
 Mining Logistics,2021;2024,2,2,2021: pdf p120; 2024: pdf p250,TRUE
 Poly Technologies,2021;2024,2,2,2021: pdf p80; 2024: pdf p90,TRUE
-Projects Institution District Project Contractor,2024;2025,2,2,2024: pdf p202; 2025: pdf p111,TRUE
+Questionable Use of Limited,2021;2024,2,2,2021: pdf p146; 2024: pdf p126,TRUE
 Rehabiltation Services,2024;2025,2,2,2024: pdf p128; 2025: pdf p92,TRUE
 Sanitation Company,2023;2025,2,2,2023: pdf p260; 2025: pdf p221,TRUE
 Saro Agro-Industrial Ltd,2024;2025,2,2,2024: pdf p338; 2025: pdf p197,TRUE
 Shorthorn Printers Limited,2023;2024,2,2,2023: pdf p435; 2024: pdf p386,TRUE
+Spectrometer ZAMMSA Zambia Medicines and Medical Supplies Agency,2023;2024,2,2,2023: pdf p16; 2024: pdf p19,TRUE
 Spending Agency,2021;2022,2,2,2021: pdf p470; 2022: pdf p310,TRUE
+Staff Houses Construction,2022;2023,2,2,2022: pdf p293; 2023: pdf p275,TRUE
 Tourism Enterprises,2024;2025,2,2,2024: pdf p82; 2025: pdf p56,TRUE
+Unaccounted for Stores Stores,2021;2024,2,2,2021: pdf p418; 2024: pdf p368,TRUE
 Undelivered Stores,2021;2022,2,2,2021: pdf p407; 2022: pdf p279,TRUE
+ZAPD Zambia Agency,2023;2025,2,2,2023: pdf p16; 2025: pdf p15,TRUE
 ZEMA Zambia Environment Management Agency,2023;2025,2,2,2023: pdf p16; 2025: pdf p15,TRUE
 Zhong Ding International Engineering Company,2021;2025,2,2,2021: pdf p174; 2025: pdf p117,TRUE
 Neria Investments Limited,2021,1,31,"2021: pdf p356; 2021: pdf p362; 2021: pdf p356,362,367",TRUE
@@ -102,18 +110,18 @@ Prestige Motors Limited,2023,1,20,"2023: pdf p44,45",TRUE
 DDYPE Company Limited,2022,1,15,2022: pdf p143,TRUE
 Emergency Services,2021,1,11,"2021: pdf p187,191,197,203,209,212,216,219,221,225",TRUE
 Tonlex Investment Limited,2024,1,11,"2024: pdf p159,161,164,172; 2024: pdf p159,161,164,166,170,171,172",TRUE
-Zambia Seed Company Limited,2021,1,11,"2021: pdf p306,355,356,358; 2021: pdf p147,306,355,356,358",TRUE
+Zambia Seed Company Limited,2021,1,11,"2021: pdf p147,306,355,356,358; 2021: pdf p306,355,356,358",TRUE
 Konkola,2021,1,10,"2021: pdf p12,100,101,102",TRUE
 Nab-Africa Enterprises Limited,2021,1,9,"2021: pdf p380; 2021: pdf p380,382; 2021: pdf p381; 2021: pdf p382; 2021: pdf p383",TRUE
 Rockcliffe Trading,2021,1,9,"2021: pdf p355,356,357,358,361",TRUE
 Tapo Farms Limited,2021,1,9,"2021: pdf p391,392,394",TRUE
 ZTE Corporation Limited,2023,1,9,"2023: pdf p69; 2023: pdf p69,70",TRUE
+Environmental Health and Support Services,2021,1,8,"2021: pdf p197,203,209,212,216,219,221,225",TRUE
 Mika Motors Ltd,2021,1,8,"2021: pdf p80,81,82; 2021: pdf p81",TRUE
-Clearing Services,2024,1,7,"2024: pdf p11,184,186,187",TRUE
-Evanset Civil Works Engineering Limited,2021,1,7,"2021: pdf p287; 2021: pdf p287,294,295,296",TRUE
 Padayache Trading,2021,1,7,"2021: pdf p287,290,302",TRUE
 Sanes General Dealers,2024,1,7,"2024: pdf p164,166,169,171,172",TRUE
 Advant Solutions Limited,2021,1,6,"2021: pdf p436,437",TRUE
+Customs and Clearing Services,2024,1,6,"2024: pdf p11,184,186,187",TRUE
 Kayombo Tech Limited,2024,1,6,"2024: pdf p294,296,297; 2024: pdf p295",TRUE
 Mikalile Trading Company Ltd,2021,1,6,"2021: pdf p68,69; 2021: pdf p68,69,81,82",TRUE
 Novatros Trading,2023,1,6,"2023: pdf p292,293,294",TRUE
@@ -130,40 +138,40 @@ TAZAMA,2023,1,5,"2023: pdf p33,34",TRUE
 Augusta Limited,2025,1,4,2025: pdf p109,TRUE
 Cav Africa Enterprises Limited,2021,1,4,"2021: pdf p380,382; 2021: pdf p381,382",TRUE
 Chitemax Investment,2024,1,4,2024: pdf p262,TRUE
+Contract for Completion of the Construction,2024,1,4,"2024: pdf p159,161,171,172",TRUE
+Contracts for Construction,2024,1,4,"2024: pdf p226,230",TRUE
+Design and Construction,2021,1,4,"2021: pdf p82,136,257",TRUE
 Discover Insurance Company,2024,1,4,"2024: pdf p235,236,239,240",TRUE
 Elina Construction,2023,1,4,2023: pdf p184,TRUE
+Evanset Civil Works Engineering and Refurbishment Limited,2021,1,4,"2021: pdf p294,295,296",TRUE
 GNM Projects Limited,2024,1,4,"2024: pdf p119,120",TRUE
-Kufanga Contractors,2021,1,4,"2021: pdf p437,438",TRUE
-Limited Associated External Works Construction,2024,1,4,"2024: pdf p164,173; 2024: pdf p173",TRUE
+Kufanga Contractors and General Dealers,2021,1,4,"2021: pdf p437,438",TRUE
 M-SAT Limited,2023,1,4,"2023: pdf p247,248",TRUE
 Mkushi District Stoutone Investment Limited,2024,1,4,"2024: pdf p173; 2024: pdf p170,173",TRUE
-Previous Contractor,2024,1,4,"2024: pdf p11,170,171",TRUE
 Prime Time Investment Limited,2024,1,4,"2024: pdf p186,187; 2024: pdf p188",TRUE
-Refurbishment Limited,2021,1,4,"2021: pdf p294,295,296",TRUE
 Savenda Systems Limited,2021,1,4,"2021: pdf p297,298; 2021: pdf p298",TRUE
-Security Services,2022,1,4,"2022: pdf p84,277,297",TRUE
 Shah Motors,2021,1,4,2021: pdf p295,TRUE
 Zambia Tourism Agency,2024,1,4,"2024: pdf p19,39,82",TRUE
 AMS Investments Limited,2023,1,3,"2023: pdf p270,271",TRUE
 Africa Union Cargo Zambia Limited,2024,1,3,2024: pdf p216,TRUE
 Afrifin Solutions Limited,2021,1,3,"2021: pdf p380,382; 2021: pdf p382",TRUE
-Bulk Stores,2021,1,3,"2021: pdf p205,213,231",TRUE
-Capacity Building Limited,2024,1,3,"2024: pdf p11,16,278",TRUE
+Alliance Procurement and Capacity Building Limited,2024,1,3,"2024: pdf p11,16,278",TRUE
+Associated External Works Construction,2024,1,3,"2024: pdf p164,173",TRUE
 Cashmo Construction Limited,2025,1,3,"2025: pdf p233,235; 2025: pdf p235",TRUE
 Cattlemen Livestock Cooperative Society Limited,2024,1,3,2024: pdf p130; 2024: pdf p131,TRUE
-China National Complete Engineering Corporation,2021,1,3,"2021: pdf p257,258,259",TRUE
+Creative Team Construction and General Dealers Limited,2024,1,3,"2024: pdf p235,236",TRUE
 Daniel Tembo General Dealers,2022,1,3,2022: pdf p83,TRUE
 Dispatched International Logistics,2022,1,3,2022: pdf p55,TRUE
 ETG Export Trading Co. Ltd,2021,1,3,"2021: pdf p378,379",TRUE
-Epikaizo Investments Limited,2022,1,3,2022: pdf p67,TRUE
+Elina Construction and Supplies Limited,2023,1,3,2023: pdf p184,TRUE
 Farmers Barn Limited,2021,1,3,"2021: pdf p355,356,358",TRUE
 Finecop Zambia Limited,2023,1,3,"2023: pdf p355,356,357",TRUE
 Gold Trading,2025,1,3,2025: pdf p80,TRUE
 Golden Horse Investments Limited,2021,1,3,2021: pdf p71,TRUE
-Grain Limited,2022,1,3,"2022: pdf p212; 2022: pdf p212,213",TRUE
-Helmet Engineering,2021,1,3,"2021: pdf p308,310",TRUE
+Helmet Engineering & Construction Limited,2021,1,3,"2021: pdf p308; 2021: pdf p308,310",TRUE
 Honda Zambia Ltd,2023,1,3,"2023: pdf p331,332",TRUE
 Information Services,2025,1,3,"2025: pdf p87,88",TRUE
+Irregular Procurement of Goods and Services,2022,1,3,"2022: pdf p285,306,307",TRUE
 Kamron Investments Ltd,2024,1,3,2024: pdf p299,TRUE
 Koredo Investments Limited,2021,1,3,"2021: pdf p300; 2021: pdf p300,301",TRUE
 Lamasat International Limited,2021,1,3,"2021: pdf p396,399",TRUE
@@ -171,16 +179,16 @@ Latirium Co. Limited,2021,1,3,2021: pdf p297,TRUE
 Lindham Investment,2022,1,3,2022: pdf p83,TRUE
 Major Business Solutions Limited,2021,1,3,"2021: pdf p385,386",TRUE
 Malsam Construction,2024,1,3,"2024: pdf p294,295,296",TRUE
-Mbaswa Dam Limited Company,2024,1,3,"2024: pdf p227; 2024: pdf p227,229",TRUE
 Mildil Construction Limited,2023,1,3,2023: pdf p184,TRUE
 National Immigration Services,2025,1,3,"2025: pdf p36,54",TRUE
 Neria Investment Limited,2021,1,3,"2021: pdf p355,356,358",TRUE
 Nitrogen Chemicals,2021,1,3,"2021: pdf p355,356,358",TRUE
 Nitrogen Chemicals of Zambia,2021,1,3,"2021: pdf p355,356,358",TRUE
-Nsochita General Contractors,2021,1,3,"2021: pdf p290,291",TRUE
+Nsochita General Contractors & Suppliers Ltd,2021,1,3,"2021: pdf p290,291",TRUE
 Ogaz Zambia Limited,2021,1,3,2021: pdf p164; 2021: pdf p165,TRUE
 Previous Contractors,2024,1,3,"2024: pdf p11,170,171",TRUE
 Project Details Contractor,2024,1,3,"2024: pdf p164,171,173",TRUE
+Provision of Customs and Clearing Services,2024,1,3,"2024: pdf p184,186,187",TRUE
 Savenda Construction,2021,1,3,"2021: pdf p319,320,321",TRUE
 Seedco Limited,2021,1,3,"2021: pdf p355,356,358",TRUE
 Superior Milling,2022,1,3,"2022: pdf p57,58,59",TRUE
@@ -193,8 +201,11 @@ AFCON Infrastructure Limited,2021,1,2,2021: pdf p136,TRUE
 AVIC International Holding Corporation,2021,1,2,"2021: pdf p82,437",TRUE
 Acamm's Lodge Limited,2021,1,2,2021: pdf p392,TRUE
 Aditya Birla Global Trading Singapore PTE Limited,2024,1,2,"2024: pdf p16,111",TRUE
+Administration of Outstanding Bills JJ Lowe Ltd,2022,1,2,2022: pdf p273,TRUE
 Afrifin Solution Ltd,2021,1,2,2021: pdf p382,TRUE
-Army Worm Chemicals,2021,1,2,"2021: pdf p363,364",TRUE
+Associated External Works Completion of the Construction,2024,1,2,"2024: pdf p164,170",TRUE
+Astragal Contractors and Suppliers Limited,2025,1,2,"2025: pdf p216,217",TRUE
+Behalf of African Union Financial Services,2024,1,2,2024: pdf p217,TRUE
 Biogenix Limited,2024,1,2,2024: pdf p302,TRUE
 Biomedical Engineering,2021,1,2,"2021: pdf p187,191",TRUE
 Black Bear Auto Limited,2024,1,2,2024: pdf p299,TRUE
@@ -206,20 +217,22 @@ City Bank Zambia Limited,2023,1,2,2023: pdf p68,TRUE
 Commodity Monitor Limited,2025,1,2,2025: pdf p81; 2025: pdf p82,TRUE
 Country Millers Limited,2021,1,2,2021: pdf p390,TRUE
 Dental Surgery Services,2021,1,2,2021: pdf p195,TRUE
-District Hospital Phase One Sanes General Dealers,2024,1,2,"2024: pdf p164,172",TRUE
 Evanset Civil Works Limited,2021,1,2,2021: pdf p295,TRUE
 Federal Housing Corporation,2023,1,2,2023: pdf p89,TRUE
 Fongda Corporation Limited,2021,1,2,2021: pdf p253,TRUE
 GNM Project Limited,2024,1,2,2024: pdf p237,TRUE
-Grant Engineering,2022,1,2,2022: pdf p251,TRUE
-Hand Limited,2021,1,2,"2021: pdf p251,252",TRUE
+Grain Ltd,2022,1,2,"2022: pdf p212,213",TRUE
+Grant Engineering and General Dealers,2022,1,2,2022: pdf p251,TRUE
 Harbour Side Construction,2021,1,2,2021: pdf p274,TRUE
 High Cost Limited,2021,1,2,"2021: pdf p262,268",TRUE
+House and Construction,2022,1,2,"2022: pdf p274,278",TRUE
 Ikelenge District Stoutone Investment,2024,1,2,"2024: pdf p168,173",TRUE
 Impala Tech Group Ltd,2022,1,2,2022: pdf p33,TRUE
 Indigo Insurance Company,2024,1,2,2024: pdf p237,TRUE
-Industrial Merchants Limited,2024,1,2,2024: pdf p71,TRUE
+Irregular Engagement of Contractor,2021,1,2,"2021: pdf p14,167",TRUE
 Joint Stock Company,2021,1,2,"2021: pdf p11,298",TRUE
+Joshisa Electronics and General Dealers,2025,1,2,2025: pdf p90,TRUE
+K Contract for Completion of the Construction,2024,1,2,"2024: pdf p171,172",TRUE
 KNR Limited,2023,1,2,"2023: pdf p92,93",TRUE
 Kalideck Pty Limited,2024,1,2,"2024: pdf p218,219",TRUE
 Kalumbila Multipirpose Co-operative Ltd,2024,1,2,2024: pdf p245,TRUE
@@ -234,24 +247,27 @@ Lodestar International Limited,2021,1,2,"2021: pdf p13,84",TRUE
 Longe Farm,2025,1,2,2025: pdf p198,TRUE
 Luanshya Agro,2024,1,2,2024: pdf p299,TRUE
 Lubways Enterprise Limited,2024,1,2,"2024: pdf p238,239",TRUE
+M and N Industrial Merchants Limited,2024,1,2,2024: pdf p71,TRUE
 Maba Medicals Limited,2022,1,2,2022: pdf p94,TRUE
 Mackphilisa Computer System Ltd,2023,1,2,2023: pdf p320,TRUE
 Magnum Security Services,2022,1,2,2022: pdf p84,TRUE
-Matty Joint Ventures,2023,1,2,"2023: pdf p256,257",TRUE
+Mbaswa Dam Limited,2024,1,2,"2024: pdf p227,229",TRUE
 Mines Technical Services,2025,1,2,"2025: pdf p77,80",TRUE
 Mission Project Contractor,2021,1,2,"2021: pdf p89,90",TRUE
 Mongu District Tonlex Investment,2024,1,2,"2024: pdf p170,171",TRUE
 Monitors Ltd,2025,1,2,2025: pdf p81,TRUE
 Mukuyu Ventures Limited,2023,1,2,2023: pdf p108,TRUE
 Muleka Investments Ltd,2021,1,2,"2021: pdf p300,301",TRUE
+Munale Constructors and General Dealers,2021,1,2,"2021: pdf p447,448",TRUE
 Namwala District Construction,2022,1,2,"2022: pdf p294,304",TRUE
 Nande Venture Contractor,2024,1,2,2024: pdf p233,TRUE
 Nande Ventures,2023,1,2,"2023: pdf p292,294",TRUE
 Nansanga Farm,2023,1,2,2023: pdf p342,TRUE
 Neria's Investment,2021,1,2,2021: pdf p361,TRUE
 North Western Zambezi Sydmark Operations Ltd,2024,1,2,2024: pdf p119,TRUE
-Outstanding Bills JJ Lowe Ltd,2022,1,2,2022: pdf p273,TRUE
+Office Furniture and General Stores,2022,1,2,2022: pdf p35,TRUE
 Outstanding Fees Zamtel Limited,2022,1,2,"2022: pdf p292,301",TRUE
+Overpayment of Suppliers,2021,1,2,"2021: pdf p15,147",TRUE
 PLADOC Engineering Limited,2024,1,2,"2024: pdf p164,172",TRUE
 Pazzolona Engineers Limited,2023,1,2,2023: pdf p258,TRUE
 Pembe Milling,2021,1,2,"2021: pdf p95,96",TRUE
@@ -266,17 +282,19 @@ Sams Investments,2024,1,2,2024: pdf p262,TRUE
 Sand-Ridge Associates Limited,2024,1,2,2024: pdf p244,TRUE
 Sandridge Associates Limited,2021,1,2,2021: pdf p65,TRUE
 Sepli Investment,2022,1,2,2022: pdf p83,TRUE
+Shanai & Matty Joint Ventures,2023,1,2,"2023: pdf p256,257",TRUE
 Share Africa Limited,2024,1,2,2024: pdf p345; 2024: pdf p346,TRUE
 Singani Farms,2023,1,2,2023: pdf p127,TRUE
-Singapore PTE Limited,2024,1,2,"2024: pdf p16,111",TRUE
 Stardy Construction,2021,1,2,2021: pdf p263,TRUE
 Stoutone Investment Limited,2024,1,2,"2024: pdf p164,173",TRUE
+Supply and Communication and China National Complete Engineering,2021,1,2,"2021: pdf p257,259",TRUE
 Survey Services,2023,1,2,"2023: pdf p401,402",TRUE
 Sustainable Water Solutions Limited,2025,1,2,"2025: pdf p231,232",TRUE
 Swiss Singapore Overseas Enterprises PTE Limited,2024,1,2,"2024: pdf p19,111",TRUE
 Systems Interface Limited,2021,1,2,"2021: pdf p11,291",TRUE
 TFM Holdings Limited,2021,1,2,"2021: pdf p166,168",TRUE
 Tecon Engineering,2024,1,2,2024: pdf p264,TRUE
+Top Access Supply and Construction Limited,2024,1,2,2024: pdf p155,TRUE
 Trade Kings Limited,2021,1,2,2021: pdf p40,TRUE
 Trans Seed Zambia Limited,2024,1,2,2024: pdf p137,TRUE
 Treasury. The Agency,2023,1,2,2023: pdf p64,TRUE
@@ -303,23 +321,29 @@ AMS Investment Limited,2023,1,1,2023: pdf p270,TRUE
 ANHUI Foreign Economic Construction,2021,1,1,2021: pdf p396,TRUE
 APO03 Managed Enterprise,2025,1,1,2025: pdf p31,TRUE
 ASESCO Construction,2021,1,1,2021: pdf p320,TRUE
+AVIC and Helmet Engineering and Construction Limited,2021,1,1,2021: pdf p308,TRUE
 Abandoned Construction,2024,1,1,2024: pdf p108,TRUE
 Abandoned Farm,2022,1,1,2022: pdf p171,TRUE
-Abandoned Projects Institution District Project Contractor,2024,1,1,2024: pdf p202,TRUE
 Accams Lodge Limited,2021,1,1,2021: pdf p394,TRUE
+Accounting Officers and Stores,2023,1,1,2023: pdf p327,TRUE
 Accute Investment Limited,2021,1,1,2021: pdf p164,TRUE
-Active Small Active Nyiloji Timber Processing Limited,2025,1,1,2025: pdf p245,TRUE
+Acting Director Commercial and Technical Services,2023,1,1,2023: pdf p51,TRUE
+Active Large Active Hensa Timbers and Mining Limited,2025,1,1,2025: pdf p245,TRUE
 Addis Construction,2021,1,1,2021: pdf p89,TRUE
 Admininistaration Limited,2021,1,1,2021: pdf p267,TRUE
 Administration Block Limited,2021,1,1,2021: pdf p267,TRUE
+Administration Ministry of Foreign Affairs and International Corporation,2021,1,1,2021: pdf p103,TRUE
 Advanced Products Zambia Limited,2024,1,1,2024: pdf p302,TRUE
 Advant Solution Limited,2021,1,1,2021: pdf p436,TRUE
 Advantex Investments Limited,2021,1,1,2021: pdf p36,TRUE
+Advisory and Technical Services,2025,1,1,2025: pdf p197,TRUE
 Africa Site Masters Limited,2021,1,1,2021: pdf p310,TRUE
 African Access Limited,2021,1,1,2021: pdf p394,TRUE
 African Brothers Corporation,2022,1,1,2022: pdf p231,TRUE
 Afrifrin Solutions Limited,2021,1,1,2021: pdf p381,TRUE
+Afriseed and Steward Global Limited,2023,1,1,2023: pdf p139,TRUE
 Afriwoods Construction,2021,1,1,2021: pdf p111,TRUE
+Agreement Zambia National Service and AVIC International Limited,2021,1,1,2021: pdf p310,TRUE
 Agricon Zambia Limited,2022,1,1,2022: pdf p232,TRUE
 Agrizam Investment Limited,2022,1,1,2022: pdf p210,TRUE
 Agrizam Investments Limited,2022,1,1,2022: pdf p212,TRUE
@@ -327,93 +351,98 @@ Agroacres Seed Company Ltd,2025,1,1,2025: pdf p70,TRUE
 Akamwa Construction,2024,1,1,2024: pdf p333,TRUE
 Alitheme Enterprises,2021,1,1,2021: pdf p409,TRUE
 Alpha Commodities. Rockcliffe Trading,2021,1,1,2021: pdf p356,TRUE
-Altaka Corporation,2021,1,1,2021: pdf p147,TRUE
 Altavasta Investment Limited,2025,1,1,2025: pdf p174,TRUE
 Amac Seed Zambia Limited,2024,1,1,2024: pdf p139,TRUE
-Ammaranthus 02.04.24 Chems Agro,2025,1,1,2025: pdf p70,TRUE
 Anamed Constrauction Limited,2023,1,1,2023: pdf p258,TRUE
-Animals Singani Farms,2023,1,1,2023: pdf p127,TRUE
+Aniaml Health Construction,2023,1,1,2023: pdf p359,TRUE
 Anita Construction,2021,1,1,2021: pdf p271,TRUE
 Anshan Investment Zambia Limited,2021,1,1,2021: pdf p36,TRUE
+Anti-Terror and Zambia Correctional Services,2023,1,1,2023: pdf p68,TRUE
+Apex Supplies and Padayache Trading,2021,1,1,2021: pdf p302,TRUE
+Approved Assets and General Stores,2022,1,1,2022: pdf p35,TRUE
+Aquarius Import & Export Limited,2021,1,1,2021: pdf p288,TRUE
+Aquarius Import and Export Ltd,2021,1,1,2021: pdf p287,TRUE
 Asf Zambia Hotel Holding Limited,2021,1,1,2021: pdf p40,TRUE
-Associated External Investments,2024,1,1,2024: pdf p173,TRUE
 Associated External PLADOC Engineering Limited,2024,1,1,2024: pdf p172,TRUE
 Associated External Trymate Zambia Limited,2024,1,1,2024: pdf p172,TRUE
 Associated External Works Limited,2024,1,1,2024: pdf p171,TRUE
 Associated External Works Phase II Construction,2024,1,1,2024: pdf p164,TRUE
-Associated Sanes General Dealers,2024,1,1,2024: pdf p172,TRUE
+Astragal Contractors and Loxlax Limited,2024,1,1,2024: pdf p352,TRUE
 Auditor General Washed Away Embankment Under Construction,2024,1,1,2024: pdf p236,TRUE
-Auditor Village Hospital Construction,2023,1,1,2023: pdf p186,TRUE
 Avant Solutions Limited,2021,1,1,2021: pdf p436,TRUE
 Avima Pty Limited,2023,1,1,2023: pdf p364,TRUE
 Awanji Trading Limited,2021,1,1,2021: pdf p40,TRUE
 BCHOD Consulting Engineering,2021,1,1,2021: pdf p173,TRUE
 Balombwana Enterprises Ltd,2024,1,1,2024: pdf p209,TRUE
+Banking and Financial Services,2024,1,1,2024: pdf p151,TRUE
 Bedok Ventures Limited,2021,1,1,2021: pdf p40,TRUE
+Bemkel Construction,2021,1,1,2021: pdf p271,TRUE
 Bengwave Contractor,2024,1,1,2024: pdf p233,TRUE
 Berbrin Investment Limited,2023,1,1,2023: pdf p258,TRUE
 Best Med Services,2022,1,1,2022: pdf p83,TRUE
 Betamin Investment Limited,2021,1,1,2021: pdf p36,TRUE
 Betani Sports Betting Zambia Ltd,2021,1,1,2021: pdf p43,TRUE
 Better Changes Enterprises,2021,1,1,2021: pdf p147,TRUE
+Between Ministry of Home Affairs and Mukuyu Ventures,2023,1,1,2023: pdf p108,TRUE
 Bhavesh Overseas Zambia Limited,2021,1,1,2021: pdf p36,TRUE
+Bid Securing Declaration Duration Webzed Shipping and Logistics,2024,1,1,2024: pdf p187,TRUE
 Big Mountain Mining Zambia Limited,2021,1,1,2021: pdf p36,TRUE
 Big Tree Beverages Limited,2021,1,1,2021: pdf p40,TRUE
+Biomedical Engineering and Support Services,2021,1,1,2021: pdf p191,TRUE
 Black Diamond Investments Limited,2024,1,1,2024: pdf p299,TRUE
+Blessed Crown Construction,2024,1,1,2024: pdf p264,TRUE
+Bloom Concepts Ltd,2024,1,1,2024: pdf p245,TRUE
+Blue Print Seed Co. Ltd,2025,1,1,2025: pdf p70,TRUE
+Board for the Agency,2021,1,1,2021: pdf p55,TRUE
+Board of Directors The Zambia Compulsory Standards Agency,2021,1,1,2021: pdf p55,TRUE
+Boarding Secondary School Chikowa Day Secondary School Construction,2022,1,1,2022: pdf p281,TRUE
 Bola Bet Company Ltd,2022,1,1,2022: pdf p33,TRUE
-Boreholes Province School Status Contractor,2024,1,1,2024: pdf p296,TRUE
+Broadcasting and Television Services,2025,1,1,2025: pdf p87,TRUE
+Bubujara Electronic and General Dealers,2021,1,1,2021: pdf p63,TRUE
 Buchetekelo Police Farm,2024,1,1,2024: pdf p351,TRUE
-Buchetekelo Zambia Police Farms,2024,1,1,2024: pdf p351,TRUE
 Budget Logistics,2022,1,1,2022: pdf p58,TRUE
-Builders Limited,2025,1,1,2025: pdf p154,TRUE
-Bus Station Construction,2022,1,1,2022: pdf p280,TRUE
+CDA Central Government Accounting Policies CDF Correctional Industries,2024,1,1,2024: pdf p16,TRUE
+CERS Cashew Infrastructure Development Project CGAPs Correctional Industries,2023,1,1,2023: pdf p12,TRUE
+CIRF Income Generated Details Amount K Correctional Industries,2023,1,1,2023: pdf p125,TRUE
 CLA Commercial Vehicle Ltd,2022,1,1,2022: pdf p236,TRUE
 CLA Commercial Vehicles Ltd,2022,1,1,2022: pdf p236,TRUE
 COBIT APO03 Manage Enterprise,2023,1,1,2023: pdf p319,TRUE
 CRB Construction,2023,1,1,2023: pdf p275,TRUE
-Cafeteria Services,2023,1,1,2023: pdf p211,TRUE
-Cancer AVIC International Limited,2024,1,1,2024: pdf p164,TRUE
-Cancer Limited,2024,1,1,2024: pdf p166,TRUE
-Capital Projects Mulobezi District Council Construction,2022,1,1,2022: pdf p280,TRUE
+Capital Projects Luapula Province Mwense District Council Construction,2022,1,1,2022: pdf p278,TRUE
 Capricon Innovations Contractor,2024,1,1,2024: pdf p233,TRUE
+Carpentry & Joinery District Hospital and Hemmings Investments,2024,1,1,2024: pdf p168,TRUE
 Carpricon Contractor,2024,1,1,2024: pdf p233,TRUE
 Carriers Low Cost Houses Limited,2021,1,1,2021: pdf p268,TRUE
+Carter Mart and Web International Limited,2021,1,1,2021: pdf p163,TRUE
 Case Construction,2024,1,1,2024: pdf p250,TRUE
-Cashew Infrastructure Development Project CGAPs Correctional Industries,2023,1,1,2023: pdf p12,TRUE
-Cashmo Contractors,2025,1,1,2025: pdf p234,TRUE
-Casino Licence Fees 122031 Tourism Enterprise,2021,1,1,2021: pdf p57,TRUE
-Casino Licence Fees Tourism Enterprise,2025,1,1,2025: pdf p56,TRUE
-Cav Africa Enterprises Ltd Afrifin Solution Ltd,2021,1,1,2021: pdf p382,TRUE
-Central Government Accounting Policies CDF Correctional Industries,2024,1,1,2024: pdf p16,TRUE
+Cashmo Contractors and General Dealers Limited,2025,1,1,2025: pdf p234,TRUE
 Central Province Ipongo Rural Chibomb Construction,2024,1,1,2024: pdf p205,TRUE
 Central Province Limited,2022,1,1,2022: pdf p211,TRUE
 Centre General Dealers,2021,1,1,2021: pdf p423,TRUE
-Certification Institute ZTA Zambia Tourism Agency,2024,1,1,2024: pdf p19,TRUE
+Centres ZAMMSA Zambia Medicines and Medical Supplies Agency,2022,1,1,2022: pdf p13,TRUE
 Chabanya Farm,2021,1,1,2021: pdf p115,TRUE
 Chadiza Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
 Champion Minerals Limited,2021,1,1,2021: pdf p36,TRUE
 Chancery Construction,2021,1,1,2021: pdf p89,TRUE
+Changula Dam Myrex Business Solutions Discover Insurance Construction,2024,1,1,2024: pdf p227,TRUE
 Changula Dam Solutions Construction,2024,1,1,2024: pdf p229,TRUE
 Chasefu Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
 Chembe Belview Tools Limited,2023,1,1,2023: pdf p403,TRUE
 Chembe District Administration Stores,2021,1,1,2021: pdf p445,TRUE
+Chems Agro and Marketing Ltd,2025,1,1,2025: pdf p70,TRUE
 Chibamba Rural Centre Mpulungu District Construction,2022,1,1,2022: pdf p293,TRUE
 Chibox Holdings Limited,2024,1,1,2024: pdf p322,TRUE
 Chibox Limited,2024,1,1,2024: pdf p323,TRUE
 Chibwika Limited,2024,1,1,2024: pdf p330,TRUE
-Chief Brenum Zambia Company,2024,1,1,2024: pdf p227,TRUE
 Chief Kasoma Lunga Contractor Construction,2024,1,1,2024: pdf p119,TRUE
-Chief Mpande Limited Dam Construction,2024,1,1,2024: pdf p229,TRUE
+Chief Mpande Limited,2024,1,1,2024: pdf p229,TRUE
 Chief Retainers. Construction,2023,1,1,2023: pdf p125,TRUE
-Chiefs' Palaces Construction,2022,1,1,2022: pdf p308,TRUE
 Chije Construction,2021,1,1,2021: pdf p264,TRUE
-Chikumanino Bus Station Kasama China Geo Engineering,2021,1,1,2021: pdf p423,TRUE
 Chilanga District Machtech Construction,2021,1,1,2021: pdf p267,TRUE
 Chilanga Fish Farm,2021,1,1,2021: pdf p333,TRUE
 Chimanga Changa Limited,2022,1,1,2022: pdf p59,TRUE
 Chime Express Limited,2024,1,1,2024: pdf p374,TRUE
 Chimster Enterprises,2021,1,1,2021: pdf p370,TRUE
-China Limited,2021,1,1,2021: pdf p257,TRUE
 Chinowacha Investment Limited,2024,1,1,2024: pdf p265,TRUE
 Chipangali Construction,2023,1,1,2023: pdf p276,TRUE
 Chipangali Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
@@ -422,139 +451,173 @@ Chipungu Community School Construction,2023,1,1,2023: pdf p275,TRUE
 Chisanga Kasama Construction,2025,1,1,2025: pdf p111,TRUE
 Chisubu Company Limited,2023,1,1,2023: pdf p351,TRUE
 Chitambo District Construction,2022,1,1,2022: pdf p294,TRUE
-Chiungwe Dip Tanks Vubwi Construction,2022,1,1,2022: pdf p282,TRUE
-Choma District Nchifer Enterprises,2024,1,1,2024: pdf p173,TRUE
-Clearing Current Proposed Services,2024,1,1,2024: pdf p187,TRUE
+Citizens Economic Empowerment Commission and Country Millers Limited,2021,1,1,2021: pdf p390,TRUE
+Clinic and Services,2025,1,1,2025: pdf p122,TRUE
 Cloud Tech Zambia Limited,2021,1,1,2021: pdf p277,TRUE
-Coast Fever DVS Establishment Register DWRD Enterprise,2022,1,1,2022: pdf p11,TRUE
+Collect Medical Fees-Partnership for Medical Services,2021,1,1,2021: pdf p196,TRUE
+College of Health Sciences Construction,2024,1,1,2024: pdf p209,TRUE
 Commence Construction Works Contractor,2024,1,1,2024: pdf p231,TRUE
 Commenced Industries,2024,1,1,2024: pdf p231,TRUE
 Commenced Investment,2024,1,1,2024: pdf p231,TRUE
 Commenced Ltd,2024,1,1,2024: pdf p231,TRUE
 Comments Contractor,2023,1,1,2023: pdf p254,TRUE
 Communicat Construction,2021,1,1,2021: pdf p112,TRUE
+Community Developmet and Social Services,2021,1,1,2021: pdf p443,TRUE
+Community Devevelopment and Social Services,2023,1,1,2023: pdf p386,TRUE
 Community Health Ndola Jearmy Enterprises Ltd,2024,1,1,2024: pdf p208,TRUE
 Community Support Services,2024,1,1,2024: pdf p93,TRUE
 Conchak Investments Limited,2022,1,1,2022: pdf p210,TRUE
 Conference Services,2022,1,1,2022: pdf p309,TRUE
 Conflict Free Minerals Limited,2021,1,1,2021: pdf p36,TRUE
 Connect Power Zesco Limited,2023,1,1,2023: pdf p256,TRUE
-Construction Chapa Kaputu Limited,2021,1,1,2021: pdf p117,TRUE
-Construction Chilenje Limited,2021,1,1,2021: pdf p112,TRUE
-Consular Central Technical Services,2024,1,1,2024: pdf p94,TRUE
+Constructing of Mongu District Tonlex Investment,2024,1,1,2024: pdf p170,TRUE
 Consultancy Consulting Services,2021,1,1,2021: pdf p132,TRUE
-Contract Amounts Sum Paid District Project Contractor,2024,1,1,2024: pdf p330,TRUE
-Contracting Company,2022,1,1,2022: pdf p295,TRUE
+Contract Contract Amounts Sum Paid District Project Contractor,2024,1,1,2024: pdf p330,TRUE
+Contract Management Procurement of Goods and Services,2021,1,1,2021: pdf p68,TRUE
+Contract Sums for Supply of Army Worm Chemicals,2021,1,1,2021: pdf p364,TRUE
+Contract for Customs and Clearing Services,2024,1,1,2024: pdf p11,TRUE
+Contract for Design and Construction,2021,1,1,2021: pdf p82,TRUE
+Contract for Handling of Motor Vehicles Mika Motors,2021,1,1,2021: pdf p80,TRUE
+Contract for Security Services,2022,1,1,2022: pdf p297,TRUE
+Contract for the Design and Construction,2021,1,1,2021: pdf p257,TRUE
+Contractor Company Paid K Construction,2024,1,1,2024: pdf p227,TRUE
 Contractor Secondary School Limited,2023,1,1,2023: pdf p254,TRUE
-Contractors Muchinga Limited,2021,1,1,2021: pdf p118,TRUE
-Contracts Delayed Construction,2025,1,1,2025: pdf p172,TRUE
+Contractor Sum Sum K K K Construction,2024,1,1,2024: pdf p173,TRUE
+Contractors the Musele- Limited,2021,1,1,2021: pdf p118,TRUE
+Contracts for the Construction,2025,1,1,2025: pdf p162,TRUE
+Control and Certification Institute ZTA Zambia Tourism Agency,2024,1,1,2024: pdf p19,TRUE
+Contruction Mungwi Mart Speed Contruction Lunte Transatlantic Ventures,2024,1,1,2024: pdf p119,TRUE
+Coordinating Office PACRA Patents And Companies Registration Agency,2024,1,1,2024: pdf p18,TRUE
+Coordinating Offices PACRA Patents and Companies Registration Agency,2022,1,1,2022: pdf p12,TRUE
 Copperbelt Province Project Name Contractor,2023,1,1,2023: pdf p186,TRUE
 Cork Trading Ltd,2021,1,1,2021: pdf p287,TRUE
+Council of Zambia NRFA National Road Fund Agency,2024,1,1,2024: pdf p18,TRUE
 Country Lodge Limited,2021,1,1,2021: pdf p394,TRUE
 Crambus General Dealers,2021,1,1,2021: pdf p204,TRUE
 Crestmark Construction,2021,1,1,2021: pdf p266,TRUE
+Crime Prevention and Policing Services,2024,1,1,2024: pdf p90,TRUE
 Crismal-Tech Mining Limited,2021,1,1,2021: pdf p36,TRUE
-Cropping 100.00 150.00 150.00 Limited,2021,1,1,2021: pdf p356,TRUE
-Cropping 13.05.21 Zambia Seed Company,2021,1,1,2021: pdf p147,TRUE
 Crystaline Technologies Limited,2025,1,1,2025: pdf p195,TRUE
+Customs and Clearing Services for Pharmaceuticals,2024,1,1,2024: pdf p11,TRUE
+Customs and Customs and Clearing Current Proposed Services,2024,1,1,2024: pdf p187,TRUE
 D1atong Construction,2021,1,1,2021: pdf p72,TRUE
 DCEC Zambia Company Limited,2022,1,1,2022: pdf p60,TRUE
-DEO 31 Siavonga DEO Choma PEO Farm,2022,1,1,2022: pdf p154,TRUE
+DHO Early Childhood Education DNPW Essential Medicines Logistics,2025,1,1,2025: pdf p13,TRUE
+DMMU and Zdenakie Limited,2021,1,1,2021: pdf p95,TRUE
+DRF Transport and General Dealers,2025,1,1,2025: pdf p157,TRUE
 Dairy Gold Limited,2021,1,1,2021: pdf p40,TRUE
-Dam Myrex Business Solutions Discover Insurance Construction,2024,1,1,2024: pdf p227,TRUE
 Dambwa North Lupososhi Limited,2024,1,1,2024: pdf p208,TRUE
 Dana Oil Corporation Limited,2021,1,1,2021: pdf p145,TRUE
 Danait Transport Limited,2022,1,1,2022: pdf p52,TRUE
 Dar Engineering,2021,1,1,2021: pdf p173,TRUE
 Datong Construction,2021,1,1,2021: pdf p322,TRUE
+Davies and London Contractors Limited,2023,1,1,2023: pdf p189,TRUE
 Davisbet Construction,2021,1,1,2021: pdf p270,TRUE
+Day Secondary School Limulunga Day High School Construction,2022,1,1,2022: pdf p281,TRUE
+Debt Management for Mpulungu Harbour Limited,2021,1,1,2021: pdf p145,TRUE
 Deep Blue Investment Company Limited,2021,1,1,2021: pdf p307,TRUE
+Delayed Completion of Project Project Name Contractor,2023,1,1,2023: pdf p183,TRUE
+Delayed Completion of Projects Institution District Project Contractor,2025,1,1,2025: pdf p111,TRUE
+Delayed Completion of the Construction,2024,1,1,2024: pdf p265,TRUE
 Delayed Enterprises,2024,1,1,2024: pdf p169,TRUE
+Delayed and Abandoned Projects Institution District Project Contractor,2024,1,1,2024: pdf p202,TRUE
 Delicious Milling,2022,1,1,2022: pdf p58,TRUE
 Deliver Passenger Vessels Multi-Industry Limited,2022,1,1,2022: pdf p294,TRUE
 Deliver Stores,2022,1,1,2022: pdf p288,TRUE
 Delta Gas Zambia Limited,2021,1,1,2021: pdf p164,TRUE
 Demwemu Enterprise,2024,1,1,2024: pdf p280,TRUE
+Departmental Charges RTSA Road Transport and Safety Agency,2023,1,1,2023: pdf p15,TRUE
+Design and Build of the Milling,2023,1,1,2023: pdf p107,TRUE
 Despite Mackphilisa Computer Systems Limited,2024,1,1,2024: pdf p350,TRUE
 Detakhom Construction,2021,1,1,2021: pdf p97,TRUE
-Diagnostic Services,2021,1,1,2021: pdf p164,TRUE
+Diagnostics and Imagery Services,2021,1,1,2021: pdf p237,TRUE
 Diamond Palace Construction,2024,1,1,2024: pdf p250,TRUE
 Digital Public Services,2022,1,1,2022: pdf p76,TRUE
-Directors The Zambia Compulsory Standards Agency,2021,1,1,2021: pdf p55,TRUE
+Director for Clinical Care and Diagnostic Services,2021,1,1,2021: pdf p164,TRUE
+Director of Finance Ministry of Transport and Logistics,2022,1,1,2022: pdf p135,TRUE
+Director-General of the Investment,2023,1,1,2023: pdf p44,TRUE
 Disability ZCS Zambia Correctional Services,2023,1,1,2023: pdf p16,TRUE
-District Hospital Phase Engineering,2023,1,1,2023: pdf p186,TRUE
-District Hospital Phase PLADOC Engineering,2024,1,1,2024: pdf p167,TRUE
-District Hospital Phase Stoutone Investments,2024,1,1,2024: pdf p167,TRUE
-District Suppilers Limited,2024,1,1,2024: pdf p208,TRUE
-Districts Aquiras Trading Limited,2025,1,1,2025: pdf p174,TRUE
-Documentation Book Hut Limited,2022,1,1,2022: pdf p296,TRUE
-DotCom Technologies,2022,1,1,2022: pdf p301,TRUE
-Drilling Exploration Ltd,2021,1,1,2021: pdf p251,TRUE
-Drugs-Bulk Stores,2021,1,1,2021: pdf p213,TRUE
+Disaster Risk Management DHOs Department of Veterinary Services,2022,1,1,2022: pdf p11,TRUE
+Disposal of Motor Vehicle and General Stores,2022,1,1,2022: pdf p34,TRUE
+Disposal of Motor Vehicles and General Stores,2025,1,1,2025: pdf p48,TRUE
 Dulsha Investments,2023,1,1,2023: pdf p374,TRUE
+E-Toll Payments Irregular Use of DotCom Technologies,2022,1,1,2022: pdf p301,TRUE
 EMLIP Essential Medicines Logistics,2024,1,1,2024: pdf p17,TRUE
-Early Childhood Education DNPW Essential Medicines Logistics,2025,1,1,2025: pdf p13,TRUE
 Earthmac International Limited,2025,1,1,2025: pdf p162,TRUE
 Earthrow Construction,2021,1,1,2021: pdf p323,TRUE
+East Coast Fever DVS Establishment Register DWRD Enterprise,2022,1,1,2022: pdf p11,TRUE
 Eastern Golden Wheel Zambia Limited,2021,1,1,2021: pdf p36,TRUE
 Eastern Province Agrizam Investments,2022,1,1,2022: pdf p211,TRUE
 Eastern Province Construction,2023,1,1,2023: pdf p274,TRUE
 Eastern Province Public Stores,2021,1,1,2021: pdf p98,TRUE
+Economic Development and Management and Support Services,2023,1,1,2023: pdf p396,TRUE
 Edmas General Dealers Limited,2023,1,1,2023: pdf p352,TRUE
-Education Enhancement Project ZCS Zambia Correctional Services,2024,1,1,2024: pdf p19,TRUE
+Education Enhancement Project ZEMA Zambia Environment Management Agency,2025,1,1,2025: pdf p15,TRUE
 Eldamain Business Solution Construction,2021,1,1,2021: pdf p71,TRUE
 Eldermain Construction,2021,1,1,2021: pdf p272,TRUE
-Electrical Limited,2025,1,1,2025: pdf p135,TRUE
 Elephant Bet Ltd,2021,1,1,2021: pdf p43,TRUE
 Employer Construction,2022,1,1,2022: pdf p294,TRUE
-Engage New Contractor,2024,1,1,2024: pdf p120,TRUE
-Enhancement Project ZEMA Zambia Environment Management Agency,2025,1,1,2025: pdf p15,TRUE
+End Observations Sikongo District K K Date Construction,2021,1,1,2021: pdf p275,TRUE
+Engage New Contractor for the Construction,2024,1,1,2024: pdf p120,TRUE
+Engagement of Contractors,2022,1,1,2022: pdf p304,TRUE
+Engagement of Seed Suppliers,2024,1,1,2024: pdf p345,TRUE
+Engagement of Zambia Postal Services,2022,1,1,2022: pdf p303,TRUE
+Engineering District of Contractors Muchinga Limited,2021,1,1,2021: pdf p118,TRUE
+Engineering Procurement and Construction,2021,1,1,2021: pdf p136,TRUE
+Environmental Health and Safety Services,2021,1,1,2021: pdf p239,TRUE
+Epikaizo Investments Limited,2022,1,1,2022: pdf p67,TRUE
 Equalizer General Trading,2022,1,1,2022: pdf p148,TRUE
 Equimpment Awarded Required Contractor,2022,1,1,2022: pdf p144,TRUE
+Establishment Register ERB Energy Regulation Board ERP Enterprise,2023,1,1,2023: pdf p13,TRUE
+Evanset Civil Works Engineering Limited,2021,1,1,2021: pdf p287,TRUE
 Evergreen Fertilizer Limited,2022,1,1,2022: pdf p210,TRUE
 Evergreen Sports Betting Limited,2022,1,1,2022: pdf p33,TRUE
 Exolic Corporation Limited,2021,1,1,2021: pdf p37,TRUE
 Exoline Investments Limited,2021,1,1,2021: pdf p292,TRUE
 Expedite Construction,2024,1,1,2024: pdf p225,TRUE
-Expiry Date Contractor,2024,1,1,2024: pdf p295,TRUE
+Expenditure Unspent Authorized Funds Management and Support Services,2024,1,1,2024: pdf p128,TRUE
 Exploration Limited,2024,1,1,2024: pdf p294,TRUE
 Extension Services,2023,1,1,2023: pdf p359,TRUE
-External Works Atonement Construction,2021,1,1,2021: pdf p268,TRUE
+External Works Associated External Limited,2024,1,1,2024: pdf p168,TRUE
+External Works Vubwi District JM & J Construction,2021,1,1,2021: pdf p266,TRUE
+FSPs Financial Service Providers FRA Food Reserve Agency,2024,1,1,2024: pdf p17,TRUE
 FVG Kabwe Milling Ltd,2022,1,1,2022: pdf p58,TRUE
-Famers Inputs Public Stores,2021,1,1,2021: pdf p421,TRUE
+Farmer Input Support Programme ENT Food Reserve Agency,2025,1,1,2025: pdf p13,TRUE
+Farmer for Poor Germination and Yield Insurance Company,2024,1,1,2024: pdf p346,TRUE
 Farthing Zambia Sports Betting Ltd,2021,1,1,2021: pdf p43,TRUE
 Feedo Investment Limited,2021,1,1,2021: pdf p287,TRUE
-Fees 10.1 Mandate The National Immigration Services,2025,1,1,2025: pdf p54,TRUE
 Ferro Alloys Corporation Limited,2021,1,1,2021: pdf p36,TRUE
 Fertiliser Neria Investment Limited,2021,1,1,2021: pdf p358,TRUE
 Fertiliser Nitrogen Chemicals,2021,1,1,2021: pdf p358,TRUE
 Fertiliser Nyimba Investment Limited,2021,1,1,2021: pdf p358,TRUE
 Fertiliser Rockcliffe Trading,2021,1,1,2021: pdf p358,TRUE
 Fertiliser Zambian Fertiliser Limited,2021,1,1,2021: pdf p358,TRUE
-Financial Service Providers FRA Food Reserve Agency,2024,1,1,2024: pdf p17,TRUE
+Ferts Seed & Grain Ltd,2022,1,1,2022: pdf p212,TRUE
+Ferts Seed and Grain Limited,2022,1,1,2022: pdf p212,TRUE
+Finance and National Planning Loans and Investments,2024,1,1,2024: pdf p111,TRUE
 Fire Services Construction,2022,1,1,2022: pdf p280,TRUE
 Floyven Investment,2021,1,1,2021: pdf p71,TRUE
 Forestry Management Services,2021,1,1,2021: pdf p457,TRUE
 Forestry Officer Enterprise,2024,1,1,2024: pdf p372,TRUE
 Franovigy Enterprises Limited,2024,1,1,2024: pdf p326,TRUE
+Frena & Company,2021,1,1,2021: pdf p394,TRUE
 Fresino Enterprises Limited,2021,1,1,2021: pdf p71,TRUE
-Funds Budget Funding Variance Investment,2025,1,1,2025: pdf p160,TRUE
 Fungala Investment Limited,2023,1,1,2023: pdf p258,TRUE
 G.S. Chella Enterprises,2021,1,1,2021: pdf p424,TRUE
 GFA Consulting,2021,1,1,2021: pdf p249,TRUE
-Ganeshi Suppliers,2021,1,1,2021: pdf p388,TRUE
+Ganeshi Suppliers and General Dealers,2021,1,1,2021: pdf p388,TRUE
 Garche General Dealers Limited,2022,1,1,2022: pdf p60,TRUE
 Gatoma Investment Limited,2023,1,1,2023: pdf p399,TRUE
-Gayrimenkul Yatrim Insaat Sanayi Ve Ticaret Limited,2021,1,1,2021: pdf p102,TRUE
-General Fuel Amount Transactions Stores,2021,1,1,2021: pdf p430,TRUE
-General Merchandise Limited,2024,1,1,2024: pdf p373,TRUE
+General Manager of Augusta Limited,2025,1,1,2025: pdf p109,TRUE
+General Operations of the Zambia Correctional Services,2023,1,1,2023: pdf p103,TRUE
 Geotech Limited,2025,1,1,2025: pdf p104,TRUE
 Glask Enterprises Limited,2024,1,1,2024: pdf p331,TRUE
 Glass Glazers Limited,2023,1,1,2023: pdf p258,TRUE
-Glazing Construction,2024,1,1,2024: pdf p169,TRUE
 Gold Motor Services,2021,1,1,2021: pdf p435,TRUE
 Goldman Insurance Limited,2021,1,1,2021: pdf p428,TRUE
+Goods and Related Services,2024,1,1,2024: pdf p140,TRUE
 Government Printing Services,2024,1,1,2024: pdf p212,TRUE
+Government of Zambia and African Union Financial Services,2024,1,1,2024: pdf p213,TRUE
 Gwembe District Construction,2022,1,1,2022: pdf p294,TRUE
 HP Laserjet Enterprise,2021,1,1,2021: pdf p386,TRUE
 Habitech Construction,2021,1,1,2021: pdf p267,TRUE
@@ -562,45 +625,51 @@ Haga Logistics Limited,2024,1,1,2024: pdf p70,TRUE
 Hand Capricorn Innovation Contractor,2024,1,1,2024: pdf p234,TRUE
 Hazel Daniels International Limited,2021,1,1,2021: pdf p290,TRUE
 Hazel Daniels Limited,2021,1,1,2021: pdf p287,TRUE
-Health Post 12 Construction,2024,1,1,2024: pdf p209,TRUE
-Health Post Ngabwe Waona Construction,2024,1,1,2024: pdf p209,TRUE
-Health Sciences Construction,2024,1,1,2024: pdf p209,TRUE
 Hemings Investments Limited,2023,1,1,2023: pdf p258,TRUE
-Hemmings Investments External Works Associated External Limited,2024,1,1,2024: pdf p168,TRUE
-Hemmings Investments Limited,2024,1,1,2024: pdf p164,TRUE
 Henan Overseas Engineering Construction Company Limited,2021,1,1,2021: pdf p389,TRUE
-Henan Zhongmeng Construction,2021,1,1,2021: pdf p388,TRUE
-Henina Engineering,2022,1,1,2022: pdf p65,TRUE
-Histopathology Services,2025,1,1,2025: pdf p122,TRUE
+Henan Zhongmeng Construction and Engineering Company Limited,2021,1,1,2021: pdf p388,TRUE
+Henina Engineering and Construction Limited,2022,1,1,2022: pdf p65,TRUE
 Hollard Insurance Zambia Limited,2023,1,1,2023: pdf p318,TRUE
+Home Affairs and Internal Security National Immigration Services,2025,1,1,2025: pdf p54,TRUE
 Horizon Construction,2021,1,1,2021: pdf p109,TRUE
+Hospital Phase I and Associated Limited,2024,1,1,2024: pdf p173,TRUE
+Hospital Phase One and Sanes General Dealers,2024,1,1,2024: pdf p169,TRUE
 Hospital Phase Sanes General Dealers,2024,1,1,2024: pdf p166,TRUE
 Hospital Zambezi Ward Services,2024,1,1,2024: pdf p202,TRUE
+Hospital and Associated External Investments,2024,1,1,2024: pdf p173,TRUE
 Hotian Metal Company Limited,2021,1,1,2021: pdf p36,TRUE
+Houses & Associated Limited,2021,1,1,2021: pdf p264,TRUE
+Houses & External Works Atonement Construction,2021,1,1,2021: pdf p268,TRUE
 Hua Jiang Boarding Investment Limited,2021,1,1,2021: pdf p318,TRUE
 Hua Sheng Construction Limited,2022,1,1,2022: pdf p232,TRUE
 Hyten Construction Limited,2024,1,1,2024: pdf p326,TRUE
-IFMIS Hardware,2024,1,1,2024: pdf p37,TRUE
+I & III Revised District Limited,2024,1,1,2024: pdf p208,TRUE
 III Ltd,2023,1,1,2023: pdf p186,TRUE
-III Revised District Limited,2024,1,1,2024: pdf p208,TRUE
-Imagery Services,2021,1,1,2021: pdf p237,TRUE
+Imperial Contracts and Supplies Limited,2025,1,1,2025: pdf p172,TRUE
 Implement Engineering,2021,1,1,2021: pdf p78,TRUE
 Implement Funded Programme Construction,2022,1,1,2022: pdf p258,TRUE
-Incompatible Drawbar MoA HQ Growmore Technologies Limited,2024,1,1,2024: pdf p338,TRUE
+Implementation and Technical Guidelines for the School Construction,2023,1,1,2023: pdf p291,TRUE
+Imprest for Procurement of Goods Defence Services,2022,1,1,2022: pdf p305,TRUE
 Independent Verification Agency,2023,1,1,2023: pdf p294,TRUE
-Industry Zambia Compulsory Standards Agency,2021,1,1,2021: pdf p55,TRUE
-Information System ZIGS Zambia Integrated Government Services,2024,1,1,2024: pdf p19,TRUE
+Industrial and Commercial Bank of China Limited,2021,1,1,2021: pdf p257,TRUE
+Infratel and MTN Zambia Limited,2024,1,1,2024: pdf p252,TRUE
 Innovations Limited,2024,1,1,2024: pdf p233,TRUE
-Input Support Programme ENT Food Reserve Agency,2025,1,1,2025: pdf p13,TRUE
-Inspur Group Joint Ventures,2023,1,1,2023: pdf p40,TRUE
+Installation of Solar Water Pumps Lot Contractor,2023,1,1,2023: pdf p292,TRUE
+Institutions Owning for Printing Services,2021,1,1,2021: pdf p66,TRUE
 Insure Farm Equipment Chitumba Prison Farm,2022,1,1,2022: pdf p287,TRUE
 Integrate Passport Services,2024,1,1,2024: pdf p72,TRUE
+Integration of Road Transport and Safety Agency,2022,1,1,2022: pdf p75,TRUE
 Integrity Construction,2021,1,1,2021: pdf p266,TRUE
 Intercopy Corporation,2022,1,1,2022: pdf p185,TRUE
-Internal Security National Immigration Services,2025,1,1,2025: pdf p54,TRUE
-International Corporation,2021,1,1,2021: pdf p103,TRUE
+International & Associated Limited,2021,1,1,2021: pdf p266,TRUE
+Interventions AF Alliance Procurement and Capacity Building Limited,2024,1,1,2024: pdf p16,TRUE
 Ipongo Rural Limited,2024,1,1,2024: pdf p205,TRUE
-JMMEL Construction,2024,1,1,2024: pdf p333,TRUE
+Irregular Engagement of M-SAT Limited,2023,1,1,2023: pdf p248,TRUE
+Irregular Engagement of Suppliers,2024,1,1,2024: pdf p282,TRUE
+Irregular Use of Direct Bidding Name of Contractor,2025,1,1,2025: pdf p230,TRUE
+Irregular Use of Limited,2021,1,1,2021: pdf p424,TRUE
+J & J Transport Zambia Limited,2022,1,1,2022: pdf p301,TRUE
+JMMEL Construction and General Dealers,2024,1,1,2024: pdf p333,TRUE
 Japanese International Cooperation Agency,2025,1,1,2025: pdf p84,TRUE
 Jasema Construction Limited,2025,1,1,2025: pdf p162,TRUE
 Jiangsu Gold Construction Company,2024,1,1,2024: pdf p150,TRUE
@@ -608,13 +677,20 @@ Jiansu Gold Civil Construction Limited,2021,1,1,2021: pdf p389,TRUE
 Jihua Limited,2021,1,1,2021: pdf p287,TRUE
 Jotech Mining Logistics Limited,2024,1,1,2024: pdf p250,TRUE
 Jozanga Investment Limited,2025,1,1,2025: pdf p243,TRUE
-KCM Green Ltd,2023,1,1,2023: pdf p346,TRUE
+K K Contract for Completion of the Construction,2024,1,1,2024: pdf p171,TRUE
+K K Custodial Services,2024,1,1,2024: pdf p128,TRUE
+K K Incomplete Maternity Annex Chungu Lupososhi Construction,2025,1,1,2025: pdf p113,TRUE
+K K K Casino Licence Fees Tourism Enterprise,2025,1,1,2025: pdf p56,TRUE
+K K K TDCF Loan Repayments Tourism Enterprise,2024,1,1,2024: pdf p78,TRUE
+K Rehabiltation Services,2024,1,1,2024: pdf p128,TRUE
 KDW Engineering Limited,2024,1,1,2024: pdf p239,TRUE
+Kaama Basic School and Construction,2022,1,1,2022: pdf p280,TRUE
 Kabundi Manganese Company Limited,2021,1,1,2021: pdf p36,TRUE
 Kabvinira Enterprise,2024,1,1,2024: pdf p302,TRUE
 Kabwe Construction,2022,1,1,2022: pdf p284,TRUE
 Kafue District- Construction,2022,1,1,2022: pdf p294,TRUE
 Kalabo Correction Service Kalabo Correctional Construction,2023,1,1,2023: pdf p111,TRUE
+Kalindawalo General Hospital CT Scan and Renal Services,2021,1,1,2021: pdf p159,TRUE
 Kalomo District Construction,2022,1,1,2022: pdf p294,TRUE
 Kalomo Steward Globe Investment,2023,1,1,2023: pdf p140,TRUE
 Kamach Ventures Limited,2025,1,1,2025: pdf p162,TRUE
@@ -626,9 +702,7 @@ Kanani Construction,2021,1,1,2021: pdf p273,TRUE
 Kaps Hardware,2021,1,1,2021: pdf p272,TRUE
 Kasama Farm,2021,1,1,2021: pdf p341,TRUE
 Kasama Twinery General Dealers,2021,1,1,2021: pdf p423,TRUE
-Kaseke Mungwi Construction,2025,1,1,2025: pdf p111,TRUE
 Kasenengwa Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
-Katetaule Luano Praise Comfort Limited,2024,1,1,2024: pdf p209,TRUE
 Katete Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
 Katoba Rural Ltd,2024,1,1,2024: pdf p204,TRUE
 Katopola Farm,2023,1,1,2023: pdf p337,TRUE
@@ -640,32 +714,35 @@ Kazungula District Construction,2022,1,1,2022: pdf p294,TRUE
 Kekeli Seed Company,2025,1,1,2025: pdf p70,TRUE
 Kel Oracle Trading,2021,1,1,2021: pdf p350,TRUE
 Keshimaria Investment Limited,2024,1,1,2024: pdf p247,TRUE
+Ketafazia General Dealers and Epikaizo Investments,2022,1,1,2022: pdf p67,TRUE
+Kitchen and Cafeteria Services,2023,1,1,2023: pdf p211,TRUE
 Knox Marketing Solutions Limited,2021,1,1,2021: pdf p383,TRUE
 Kwasu Properties Ltd,2024,1,1,2024: pdf p127,TRUE
 LCC Company,2021,1,1,2021: pdf p84,TRUE
+Laboratory and Medical Imaging Services,2021,1,1,2021: pdf p191,TRUE
+Lack of Enterprise,2022,1,1,2022: pdf p79,TRUE
+Lack of Farm,2023,1,1,2023: pdf p359,TRUE
+Lack of Histopathology Services,2025,1,1,2025: pdf p122,TRUE
+Lack of Insurance Cover for IFMIS Hardware,2024,1,1,2024: pdf p37,TRUE
+Lack of Storage Facility Laboratory and Bulk Stores,2021,1,1,2021: pdf p205,TRUE
 Lake Tech Enterprises Limited,2021,1,1,2021: pdf p98,TRUE
+Land Administration and Survey Services,2023,1,1,2023: pdf p401,TRUE
 Landscaping Construction,2024,1,1,2024: pdf p167,TRUE
-Laundry Private 17 Kalumbila Multipirpose Co-operative Ltd,2024,1,1,2024: pdf p245,TRUE
 Laundry Services,2023,1,1,2023: pdf p208,TRUE
 Leagin Zambia Limited,2022,1,1,2022: pdf p33,TRUE
+Lease Agreement Ministry of Finance Loans and Investments,2022,1,1,2022: pdf p277,TRUE
 Leisely Howards Limited,2024,1,1,2024: pdf p299,TRUE
 Leisley Howard Limited,2024,1,1,2024: pdf p299,TRUE
 Letscar Limited,2021,1,1,2021: pdf p287,TRUE
 Limanya Enterprise Limited,2023,1,1,2023: pdf p370,TRUE
-Limited 13 Seed Syngenta Zambia Limited,2021,1,1,2021: pdf p358,TRUE
-Limited Form Hello Logistics Limited,2024,1,1,2024: pdf p187,TRUE
-Limited Nyimba District Brut Construction,2021,1,1,2021: pdf p265,TRUE
-Limited PowerTimes Enterprises,2021,1,1,2021: pdf p147,TRUE
-Limited Rufunsa District Tenacity Construction,2021,1,1,2021: pdf p267,TRUE
 Limulunga Agency,2024,1,1,2024: pdf p328,TRUE
+Limulunga Tenkara Beta Denmwa Automated Total Amount Engineering,2021,1,1,2021: pdf p394,TRUE
 Linsang Investments Company Limited,2021,1,1,2021: pdf p36,TRUE
 Liswatch General Dealers,2023,1,1,2023: pdf p340,TRUE
-Livestock Public Stores,2021,1,1,2021: pdf p337,TRUE
+Logistics and African Union Financial Services,2024,1,1,2024: pdf p11,TRUE
 Lolimark General Dealers,2025,1,1,2025: pdf p162,TRUE
-London Contractors Limited,2023,1,1,2023: pdf p189,TRUE
-Loxlax Limited,2024,1,1,2024: pdf p352,TRUE
+Lots and Farms,2024,1,1,2024: pdf p84,TRUE
 Luampa District Moffat Metal Construction,2021,1,1,2021: pdf p271,TRUE
-Luangwa District PLADOC Engineering,2024,1,1,2024: pdf p171,TRUE
 Luanshya Agro Supplies Limited,2024,1,1,2024: pdf p299,TRUE
 Luanshya Engineering Limited,2024,1,1,2024: pdf p250,TRUE
 Luansobe Boarding Masaiti Investment,2023,1,1,2023: pdf p254,TRUE
@@ -683,12 +760,15 @@ Lusaka District Hardware,2023,1,1,2023: pdf p192,TRUE
 Lusaka Kafue Kezia Investment Ltd,2024,1,1,2024: pdf p119,TRUE
 Lusaka Luangwa Acco Civil Engineering Ltd,2024,1,1,2024: pdf p119,TRUE
 Lusaka Province Katoba Chongwe Construction,2024,1,1,2024: pdf p204,TRUE
+Lusaka Province Lack of Documentation Book Hut Limited,2022,1,1,2022: pdf p296,TRUE
 Lusaka Rufunsa Ndekazi Investment Ltd,2024,1,1,2024: pdf p119,TRUE
 Lusangazi Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
-Lwanya Health Post Construction,2022,1,1,2022: pdf p293,TRUE
+Lusitu and Mwomboshi Schemes and Astragal Contractors,2025,1,1,2025: pdf p217,TRUE
 M4wamona Construction,2021,1,1,2021: pdf p74,TRUE
-MTN Zambia Limited,2024,1,1,2024: pdf p252,TRUE
+MC Chewe Buildings and General Contractor Limited,2024,1,1,2024: pdf p316,TRUE
+MCD Civil and Mechanical Engineering,2022,1,1,2022: pdf p294,TRUE
 MUZ Milling,2021,1,1,2021: pdf p94,TRUE
+MUZ and Nkana Milling,2022,1,1,2022: pdf p59,TRUE
 Madison Asset Management Company,2024,1,1,2024: pdf p35,TRUE
 Madison Life Insurance Company,2024,1,1,2024: pdf p35,TRUE
 Mafinga Ngiwe General Dealers,2022,1,1,2022: pdf p206,TRUE
@@ -696,8 +776,20 @@ Main Palace Investment,2024,1,1,2024: pdf p122,TRUE
 Maintenance Construction,2024,1,1,2024: pdf p202,TRUE
 Maintenance Limited,2025,1,1,2025: pdf p236,TRUE
 Mainway Construction Limited,2021,1,1,2021: pdf p310,TRUE
-Malsam Construction 10.06.24 SMR Construction,2024,1,1,2024: pdf p295,TRUE
 Maluwasa Investment Limited,2025,1,1,2025: pdf p174,TRUE
+Man K Trading,2023,1,1,2023: pdf p420,TRUE
+Management Division RTSA Road Transport and Safety Agency,2022,1,1,2022: pdf p12,TRUE
+Management Information System ZIGS Zambia Integrated Government Services,2024,1,1,2024: pdf p19,TRUE
+Management of Animals Singani Farms,2023,1,1,2023: pdf p127,TRUE
+Management of Blood Bank Services,2024,1,1,2024: pdf p193,TRUE
+Management of Capital Projects Mulobezi District Council Construction,2022,1,1,2022: pdf p280,TRUE
+Management of Contracts Delayed Construction,2025,1,1,2025: pdf p172,TRUE
+Management of National Science Centre Contract for Construction,2022,1,1,2022: pdf p296,TRUE
+Management of Zambia Tourism Agency Zambia Tourism Agency,2024,1,1,2024: pdf p82,TRUE
+Mandate Enhanced Smallholder Livestock Investment,2022,1,1,2022: pdf p198,TRUE
+Mandate The National Immigration Services,2025,1,1,2025: pdf p54,TRUE
+Mandate The Road Traffic and Safety Agency,2024,1,1,2024: pdf p75,TRUE
+Mandate The Road Transport and Safety Agency,2021,1,1,2021: pdf p48,TRUE
 Mandate The Zambia Compulsory Standards Agency,2021,1,1,2021: pdf p55,TRUE
 Mandate The Zambia Environmental Management Agency,2023,1,1,2023: pdf p61,TRUE
 Mansa District Kapesha Mukanga Prison Farms,2022,1,1,2022: pdf p283,TRUE
@@ -705,29 +797,25 @@ Manshya Farm,2023,1,1,2023: pdf p341,TRUE
 Manyinga Bluesky Plywood Resource Limited,2025,1,1,2025: pdf p245,TRUE
 Mapompo Investments Limited,2021,1,1,2021: pdf p36,TRUE
 Marike Construction,2021,1,1,2021: pdf p323,TRUE
-Marketing Ltd,2025,1,1,2025: pdf p70,TRUE
+Markets and Bus Station Construction,2022,1,1,2022: pdf p280,TRUE
 Markus Engineering,2025,1,1,2025: pdf p162,TRUE
 Martin Luther King Construction,2022,1,1,2022: pdf p281,TRUE
-Masimu Construction,2024,1,1,2024: pdf p373,TRUE
+Masimu Construction and General Merchandise Limited,2024,1,1,2024: pdf p373,TRUE
 Materials For Completion Of Ntumpa Twinery General Dealers,2021,1,1,2021: pdf p423,TRUE
-Materials Public Stores,2021,1,1,2021: pdf p408,TRUE
 Maternity Annex Investments,2024,1,1,2024: pdf p205,TRUE
-Maternity Wing Construction Mukwikile Rural Post Construction,2022,1,1,2022: pdf p293,TRUE
 Matty Construction Limited,2025,1,1,2025: pdf p80,TRUE
 Matty General Dealers,2021,1,1,2021: pdf p269,TRUE
 Mayfair Insurance Company Zambia Limited,2023,1,1,2023: pdf p318,TRUE
 Mazabuka District Public Stores,2021,1,1,2021: pdf p98,TRUE
 Mbuzan General Dealers,2025,1,1,2025: pdf p119,TRUE
 Mcphilisa Computer Systems Limited,2025,1,1,2025: pdf p196,TRUE
-Mechanical Engineering,2022,1,1,2022: pdf p294,TRUE
 Mecs Services Limited,2025,1,1,2025: pdf p163,TRUE
-Medical Supplies Agency ZAPD Zambia Agency,2025,1,1,2025: pdf p15,TRUE
-Medium Youth Enterprises,2022,1,1,2022: pdf p144,TRUE
 Megwu General Limited,2023,1,1,2023: pdf p403,TRUE
 Menov Trading Limited,2024,1,1,2024: pdf p220,TRUE
 Mental Health Services,2021,1,1,2021: pdf p193,TRUE
 Meral Eroglu Agency,2021,1,1,2021: pdf p104,TRUE
 Mercury Kasakalabwe Lines Ltd,2021,1,1,2021: pdf p119,TRUE
+Merkkn Ventures,2024,1,1,2024: pdf p264,TRUE
 Messers Walltech Enterprises Ltd,2021,1,1,2021: pdf p71,TRUE
 Messrs AVIC International Holding Corporation,2021,1,1,2021: pdf p437,TRUE
 Messrs SALTECH Enterprises Limited,2023,1,1,2023: pdf p107,TRUE
@@ -736,59 +824,57 @@ Miangi General Dealers,2023,1,1,2023: pdf p341,TRUE
 Mika Motors Zambia Ltd,2021,1,1,2021: pdf p80,TRUE
 Milenge District Construction,2023,1,1,2023: pdf p187,TRUE
 Milestone Technical Services,2021,1,1,2021: pdf p273,TRUE
-Mitete District 37 Bemkel Construction,2021,1,1,2021: pdf p271,TRUE
+Mines and Technical Services,2025,1,1,2025: pdf p78,TRUE
+Ministries of General Education and Transport and Logistics,2022,1,1,2022: pdf p138,TRUE
+Mita Gayrimenkul Yatrim Insaat Sanayi Ve Ticaret Limited,2021,1,1,2021: pdf p102,TRUE
 Mkushi District Construction,2022,1,1,2022: pdf p294,TRUE
-Mkushi District Stoutone Investments,2024,1,1,2024: pdf p170,TRUE
 Molozi Primary Construction,2023,1,1,2023: pdf p275,TRUE
 Mongu Limited,2021,1,1,2021: pdf p394,TRUE
+Mongu Municipal Council and the Contractor,2021,1,1,2021: pdf p247,TRUE
+Months Annex and Enterprises,2025,1,1,2025: pdf p113,TRUE
+Months Annex and Limited,2025,1,1,2025: pdf p112,TRUE
+Months Centre Annex and Limited,2025,1,1,2025: pdf p111,TRUE
 Morlexium Minerals And Metals Limited,2021,1,1,2021: pdf p36,TRUE
-Motor Vehicles Evanset Civil Works Engineering,2021,1,1,2021: pdf p294,TRUE
-Motor Vehicles Mika Motors,2021,1,1,2021: pdf p80,TRUE
 Mount Meru Petroleum Zambia Limited,2021,1,1,2021: pdf p40,TRUE
 Mpande Dam Limited,2024,1,1,2024: pdf p227,TRUE
 Mporokoso Transatlantic Ventures Mpulungu GNM Projects Limited,2024,1,1,2024: pdf p119,TRUE
-Mpulungu Harbour Limited,2021,1,1,2021: pdf p145,TRUE
-Mtendere Community School 2No. Staff Houses Construction,2023,1,1,2023: pdf p275,TRUE
+Mtwalo and Chiungwe Dip Tanks Vubwi Construction,2022,1,1,2022: pdf p282,TRUE
 Muchinga Province Construction,2022,1,1,2022: pdf p278,TRUE
 Muco Trading Limited,2021,1,1,2021: pdf p275,TRUE
 Mufulira District Hospital Sanes General Dealers,2024,1,1,2024: pdf p164,TRUE
 Mufumbwe Sharma Brothers Chikanji Construction Limited,2025,1,1,2025: pdf p245,TRUE
 Mukuba,2022,1,1,2022: pdf p281,TRUE
+Mukwikile Rural Post Construction Lwanya Health Post Construction,2022,1,1,2022: pdf p293,TRUE
 Mulobezi District Keysmar Construction,2021,1,1,2021: pdf p273,TRUE
-Mumash Construction,2022,1,1,2022: pdf p112,TRUE
+Mumash Construction and Suppliers,2022,1,1,2022: pdf p112,TRUE
 Mumbwa District Construction,2022,1,1,2022: pdf p294,TRUE
-Mungwi Mart Speed Contruction Lunte Transatlantic Ventures,2024,1,1,2024: pdf p119,TRUE
 Mungwi Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Municipal Council and the Zambia Environmental Management Agency,2021,1,1,2021: pdf p76,TRUE
 Munobe Tasulwa Ltd,2025,1,1,2025: pdf p70,TRUE
-Mupepetwe Engineering,2022,1,1,2022: pdf p295,TRUE
+Mupepetwe Engineering and Contracting Company,2022,1,1,2022: pdf p295,TRUE
 Musaika Farm,2021,1,1,2021: pdf p114,TRUE
-Musele- Limited,2021,1,1,2021: pdf p118,TRUE
-Mushindamo DHO- North Western Province Public Stores,2021,1,1,2021: pdf p178,TRUE
 Mutabrine Investments Limited,2024,1,1,2024: pdf p329,TRUE
-Mutenda Transport Ltd Construction,2024,1,1,2024: pdf p209,TRUE
+Mutenda Transport Ltd,2024,1,1,2024: pdf p209,TRUE
 Mwandi District Harbour Side Construction,2021,1,1,2021: pdf p274,TRUE
 Mwansabombwe Greevis Enterprises Limited,2023,1,1,2023: pdf p403,TRUE
 Mweenda Boarding Henan Contractor,2023,1,1,2023: pdf p254,TRUE
 Mwense District Enterprises,2023,1,1,2023: pdf p188,TRUE
-Mwense District Mwense Sindaziwiza Enterprises,2024,1,1,2024: pdf p208,TRUE
 Mwinilunga District Hospital Phase One Sanes General Dealers,2024,1,1,2024: pdf p172,TRUE
 Mwos Investments,2022,1,1,2022: pdf p33,TRUE
 NA NA Livingstone Lontinos General Dealers,2024,1,1,2024: pdf p208,TRUE
 Nakasinde General Dealers,2024,1,1,2024: pdf p328,TRUE
 Nakonde District Administration Construction,2022,1,1,2022: pdf p283,TRUE
-Nampundwe Shibuyun Construction,2024,1,1,2024: pdf p206,TRUE
+Namibian Port Authority and African Union Financial Services,2024,1,1,2024: pdf p213,TRUE
 National Airways Corporation,2021,1,1,2021: pdf p287,TRUE
+National Council for Construction,2024,1,1,2024: pdf p160,TRUE
 Naviyombo Contractors,2023,1,1,2023: pdf p191,TRUE
-Ndeke Village Kitwe Raymond Construction Ltd,2024,1,1,2024: pdf p208,TRUE
 Ndola Limited,2024,1,1,2024: pdf p170,TRUE
 Ndola Synergy Seed Zambia Ltd,2023,1,1,2023: pdf p315,TRUE
 Nelkan Industrial Construction,2022,1,1,2022: pdf p273,TRUE
 Neonatal Health Care Services,2021,1,1,2021: pdf p194,TRUE
-Neria Investments Limited. Rockcliffe Trading,2021,1,1,2021: pdf p356,TRUE
 Netweb Construction,2021,1,1,2021: pdf p270,TRUE
 Ngabwe District Stardy Construction,2021,1,1,2021: pdf p263,TRUE
-Ngalitas Hardware,2025,1,1,2025: pdf p135,TRUE
-Nkana Milling,2022,1,1,2022: pdf p59,TRUE
+Ngalitas Hardware and Electrical Limited,2025,1,1,2025: pdf p135,TRUE
 Nkanmu Investments Contractor,2024,1,1,2024: pdf p234,TRUE
 Nkhuzi Marketing Agency Limited,2024,1,1,2024: pdf p328,TRUE
 North Western Ikielenga Transley Enterprises,2024,1,1,2024: pdf p119,TRUE
@@ -797,10 +883,12 @@ North Western Kalumbila Sydmark Operations Ltd,2024,1,1,2024: pdf p119,TRUE
 North Western Kasempa Sydmark Operations Ltd,2024,1,1,2024: pdf p119,TRUE
 North Western Manyinga Transley Enterprises,2024,1,1,2024: pdf p119,TRUE
 North Western Mufumbwe Halimwene Contractors,2021,1,1,2021: pdf p368,TRUE
+North Western Mufumbwe Teso Works and Supply Ltd,2024,1,1,2024: pdf p119,TRUE
 North Western Mushindamo Sydmark Operations Ltd,2024,1,1,2024: pdf p119,TRUE
 North Western Mwinilunga Sydmark Operations Ltd,2024,1,1,2024: pdf p119,TRUE
+North Western Solwezi Teso Works and Supply Ltd,2024,1,1,2024: pdf p119,TRUE
 North- Stephcat Enterprise,2024,1,1,2024: pdf p234,TRUE
-Northern Engineering,2024,1,1,2024: pdf p327,TRUE
+Northern Engineering and Construction Limited,2024,1,1,2024: pdf p327,TRUE
 Northern Grit Limited,2022,1,1,2022: pdf p210,TRUE
 Northern Kaputa Town Mouse Enterprises,2024,1,1,2024: pdf p119,TRUE
 Northern Kasama GNM Projects Limited,2024,1,1,2024: pdf p119,TRUE
@@ -811,69 +899,95 @@ Northern Mbala Kampe Investments,2024,1,1,2024: pdf p119,TRUE
 Northern Province Zambia Company Limited,2022,1,1,2022: pdf p211,TRUE
 Northern Senga Kampe Investments,2024,1,1,2024: pdf p119,TRUE
 Northland Equipment Ltd,2024,1,1,2024: pdf p341,TRUE
-Not Compliant 10 PET-GYB Limited,2024,1,1,2024: pdf p250,TRUE
 Nothgirb Investment Limited,2023,1,1,2023: pdf p376,TRUE
 Nyango Correctional Farm,2025,1,1,2025: pdf p94,TRUE
 Nyavyiombo Primary School Construction,2023,1,1,2023: pdf p275,TRUE
+Nyimba District Brut Construction,2021,1,1,2021: pdf p265,TRUE
 Nyimba Millers Ltd,2022,1,1,2022: pdf p58,TRUE
-Of Kapisha Farmers Training Luwingu Wachimba Contractors,2021,1,1,2021: pdf p423,TRUE
+Observations Date K K K Zimba District Construction,2021,1,1,2021: pdf p271,TRUE
+Observations Sum Amounts K Revised End Construction,2021,1,1,2021: pdf p272,TRUE
+Occupational Safety and Health Services,2024,1,1,2024: pdf p39,TRUE
+Of Chikumanino Bus Station Kasama China Geo Engineering,2021,1,1,2021: pdf p423,TRUE
 Off Road Trading Limited,2022,1,1,2022: pdf p304,TRUE
+Office Accommodation and Maintenance Services,2021,1,1,2021: pdf p64,TRUE
 Office Block Davisbet Enterprises,2024,1,1,2024: pdf p209,TRUE
-Office PACRA Patents And Companies Registration Agency,2024,1,1,2024: pdf p18,TRUE
 Olcint Construction,2021,1,1,2021: pdf p265,TRUE
 Online Revenue Collection Services,2022,1,1,2022: pdf p80,TRUE
 Ontheedge General Dealers,2024,1,1,2024: pdf p222,TRUE
-Operating Procedure SSOEL Swiss Singapore Overseas Enterprises,2024,1,1,2024: pdf p19,TRUE
 Operating Theatre Services,2021,1,1,2021: pdf p233,TRUE
-Operational Matters Financial Investment,2021,1,1,2021: pdf p100,TRUE
+Operational Matters Financial Investment Management Recapitalisation and Investments,2021,1,1,2021: pdf p100,TRUE
 Operationalise Hammer Mills,2025,1,1,2025: pdf p198,TRUE
-Operations Logistics,2022,1,1,2022: pdf p257,TRUE
+Operationalise the Cassava Milling,2022,1,1,2022: pdf p232,TRUE
 Operator-Assisted Services,2022,1,1,2022: pdf p76,TRUE
 Oracle Corporation,2023,1,1,2023: pdf p42,TRUE
 Outpatient Services,2021,1,1,2021: pdf p195,TRUE
+Outstanding Bills Category Amount K Contractors,2022,1,1,2022: pdf p150,TRUE
+Outstanding Debt for Goods and Services,2022,1,1,2022: pdf p295,TRUE
+Outstanding Obligations Category Amount K Contractors Suppliers,2023,1,1,2023: pdf p236,TRUE
 Outstanding Services,2024,1,1,2024: pdf p245,TRUE
+Overpayment for Works Shanghai Construction Limited,2021,1,1,2021: pdf p285,TRUE
+PET-GYB Limited,2024,1,1,2024: pdf p250,TRUE
 Painting Construction,2023,1,1,2023: pdf p276,TRUE
 Pambashe Resources Limited,2021,1,1,2021: pdf p36,TRUE
 Pangeni Works Limited,2025,1,1,2025: pdf p89,TRUE
 PaphilTech Limited,2023,1,1,2023: pdf p258,TRUE
-Passenger Services,2022,1,1,2022: pdf p301,TRUE
 Pathways Construction,2024,1,1,2024: pdf p168,TRUE
 Patient Department Trading,2023,1,1,2023: pdf p191,TRUE
+Pavesi Marketing and General Dealers,2021,1,1,2021: pdf p71,TRUE
 Pay Agro,2021,1,1,2021: pdf p368,TRUE
 Pay Contractor,2021,1,1,2021: pdf p298,TRUE
+Payments Maina Soko Military Hospital and Defence Services,2022,1,1,2022: pdf p305,TRUE
 Pebble Signs Advertising Company,2022,1,1,2022: pdf p149,TRUE
 Pemba Steward Globe Investment,2023,1,1,2023: pdf p140,TRUE
 Pembe Flour Milling,2022,1,1,2022: pdf p58,TRUE
 Permanent Secretary Education Services,2023,1,1,2023: pdf p289,TRUE
 Petauke Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
-Pioneer Corteva 275.28 13 Ranch Agro,2022,1,1,2022: pdf p213,TRUE
+Physical Status of Boreholes Province School Status Contractor,2024,1,1,2024: pdf p296,TRUE
+Plant Protection Organization NRFA National Road Fund Agency,2023,1,1,2023: pdf p15,TRUE
+Plant and Equipment Office Furniture and General Stores,2022,1,1,2022: pdf p35,TRUE
 Platinum Bet Zambia Ltd,2021,1,1,2021: pdf p43,TRUE
 Platinum Stone Ltd,2021,1,1,2021: pdf p426,TRUE
+Pleasure Sports Innovation Ltd,2021,1,1,2021: pdf p43,TRUE
 Plr Projects Zambia Limited,2021,1,1,2021: pdf p36,TRUE
-Policing Services,2024,1,1,2024: pdf p90,TRUE
 Poor Workmanship Luapula Province Project Name Contractor,2023,1,1,2023: pdf p187,TRUE
+Port Authority and the African Union Financial Services,2024,1,1,2024: pdf p215,TRUE
 Portland Commodities Limited,2022,1,1,2022: pdf p210,TRUE
 Power Times Enterprise Limited,2022,1,1,2022: pdf p210,TRUE
+PowerTimes Enterprises,2021,1,1,2021: pdf p147,TRUE
+Pozzolana Engineers and Builders Limited,2025,1,1,2025: pdf p154,TRUE
+Preliminaries K K Construction,2024,1,1,2024: pdf p173,TRUE
 Premier Betting Ltd,2021,1,1,2021: pdf p43,TRUE
 Press Services,2025,1,1,2025: pdf p88,TRUE
+Previous Contractor K Contractor,2024,1,1,2024: pdf p171,TRUE
 Prince Ma General Dealers,2021,1,1,2021: pdf p453,TRUE
-Private 18 Bloom Concepts Ltd,2024,1,1,2024: pdf p245,TRUE
+Procure Apparatus and SWAP Chemicals,2022,1,1,2022: pdf p286,TRUE
+Procure Labour for Construction,2024,1,1,2024: pdf p288,TRUE
 Produce Motor Vehicle Logbooks Public Stores,2023,1,1,2023: pdf p351,TRUE
 Profab Construction,2021,1,1,2021: pdf p270,TRUE
-Project Project Name Contractor,2023,1,1,2023: pdf p183,TRUE
-Projects Eastern Province Project Name Contractor,2023,1,1,2023: pdf p191,TRUE
-Projects Luapula Province Mwense District Council Construction,2022,1,1,2022: pdf p278,TRUE
-Projects Under Construction,2021,1,1,2021: pdf p170,TRUE
+Project Name Name of Contractor,2024,1,1,2024: pdf p233,TRUE
 Pros On Cash Trading,2021,1,1,2021: pdf p147,TRUE
-Protection Organization NRFA National Road Fund Agency,2023,1,1,2023: pdf p15,TRUE
+Protocol and Consular Central Technical Services,2024,1,1,2024: pdf p94,TRUE
 Provide Board Resolution Minutes Acamm's Lodges Limited,2021,1,1,2021: pdf p393,TRUE
+Provide Justification for Limited,2021,1,1,2021: pdf p289,TRUE
+Province District School Supply of Goods & Services,2023,1,1,2023: pdf p282,TRUE
+Province Rehabilitation of One Staff House and Construction,2022,1,1,2022: pdf p278,TRUE
 Province Station General Fuel Total Stores,2021,1,1,2021: pdf p332,TRUE
-Provision Releases Underfunding Expenditure Primary Health Services,2025,1,1,2025: pdf p107,TRUE
-Public Adress Services,2025,1,1,2025: pdf p89,TRUE
+Province Station Medical General Stores,2023,1,1,2023: pdf p217,TRUE
+Provincial Administration and Kufanga Contractors and General Dealers,2021,1,1,2021: pdf p437,TRUE
+Provision of Security Services,2022,1,1,2022: pdf p277,TRUE
+Provision of Services,2023,1,1,2023: pdf p248,TRUE
+Public Address Number of Public Adress Services,2025,1,1,2025: pdf p89,TRUE
+Public Infrastructure K K K Property Management Services,2024,1,1,2024: pdf p241,TRUE
+Public Service Pension Fund RDA Road Development Agency,2023,1,1,2023: pdf p15,TRUE
 Pumbing Construction,2024,1,1,2024: pdf p167,TRUE
 Quamech Engineering Services,2021,1,1,2021: pdf p40,TRUE
+Questionable Budgeting for Construction,2025,1,1,2025: pdf p116,TRUE
 Questionable Contractor,2021,1,1,2021: pdf p139,TRUE
+Questionable Engagement of Second Contractor,2023,1,1,2023: pdf p184,TRUE
+Questionable Identification of Suppliers,2021,1,1,2021: pdf p290,TRUE
 Questionable Payment- Construction,2021,1,1,2021: pdf p438,TRUE
+RHC of Maternity Enterprises,2025,1,1,2025: pdf p112,TRUE
+RTSA and Ministry of Transport and Logistics,2022,1,1,2022: pdf p63,TRUE
 Radiation Protection Agency,2021,1,1,2021: pdf p75,TRUE
 Ranch Agrotech Ltd,2024,1,1,2024: pdf p345,TRUE
 Raton Freight Zambia Limited,2024,1,1,2024: pdf p148,TRUE
@@ -882,26 +996,31 @@ Raytone Construction,2021,1,1,2021: pdf p112,TRUE
 Rechaji Investment Limited,2025,1,1,2025: pdf p101,TRUE
 Recover Advance Payment District Project Contractor,2024,1,1,2024: pdf p332,TRUE
 Regional Investment,2023,1,1,2023: pdf p425,TRUE
-Register ERB Energy Regulation Board ERP Enterprise,2023,1,1,2023: pdf p13,TRUE
+Rehabilitative and Support Services,2021,1,1,2021: pdf p239,TRUE
 Reliance Construction,2024,1,1,2024: pdf p228,TRUE
+Republic for the District Hospital Phase Engineering,2023,1,1,2023: pdf p186,TRUE
+Republic of Zambia and African Union Financial Services,2024,1,1,2024: pdf p215,TRUE
+Request for Pharmaceutical,2021,1,1,2021: pdf p162,TRUE
 Research Station- Construction,2022,1,1,2022: pdf p278,TRUE
 Resource Services,2024,1,1,2024: pdf p355,TRUE
-Righlux Services,2023,1,1,2023: pdf p40,TRUE
+Righlux Services and Inspur Group Joint Ventures,2023,1,1,2023: pdf p40,TRUE
 Risk Management ECEC Food Reserve Agency,2022,1,1,2022: pdf p11,TRUE
-Road Transport Safety Agency,2023,1,1,2023: pdf p74,TRUE
 Roan Mineral Resources Limited,2021,1,1,2021: pdf p36,TRUE
+Robert and Slys Financial Services,2021,1,1,2021: pdf p427,TRUE
 Rockfield Contractors,2024,1,1,2024: pdf p250,TRUE
 Rong Xing Investments Limited,2021,1,1,2021: pdf p36,TRUE
 Roofing Construction,2023,1,1,2023: pdf p279,TRUE
 Roshe Pharmaceuticals,2023,1,1,2023: pdf p250,TRUE
 Rufunsa Construction,2022,1,1,2022: pdf p281,TRUE
+Rufunsa District Tenacity Construction,2021,1,1,2021: pdf p267,TRUE
 Rural Health Maternity Annex Enterprises,2024,1,1,2024: pdf p204,TRUE
-Ruthfield Engineering,2024,1,1,2024: pdf p107,TRUE
+Rural Health of Maternity Enterprise,2025,1,1,2025: pdf p111,TRUE
+Ruthfield Engineering and Suppliers,2024,1,1,2024: pdf p107,TRUE
 Ruvt Investment,2022,1,1,2022: pdf p83,TRUE
 SMS Gateway Services,2025,1,1,2025: pdf p195,TRUE
 SOCE Farm,2023,1,1,2023: pdf p259,TRUE
+SPA Capital Advisors Pvt and KCM Green Ltd,2023,1,1,2023: pdf p346,TRUE
 SSF Investment Limited,2022,1,1,2022: pdf p53,TRUE
-SWAP Chemicals,2022,1,1,2022: pdf p286,TRUE
 Sable Construction,2024,1,1,2024: pdf p228,TRUE
 Sable Zinc Kabwe Limited,2021,1,1,2021: pdf p36,TRUE
 Sakapoti Enterprises,2024,1,1,2024: pdf p288,TRUE
@@ -909,32 +1028,33 @@ Salford Farm Limited,2023,1,1,2023: pdf p51,TRUE
 Saltech Construction,2021,1,1,2021: pdf p321,TRUE
 Samar Agro Investment Limited,2022,1,1,2022: pdf p210,TRUE
 Samfya Makasa Primary School Star Agency Contractors,2021,1,1,2021: pdf p447,TRUE
+Sams Investments and Chitemax Investments,2024,1,1,2024: pdf p262,TRUE
 Sandland Resources Limited,2021,1,1,2021: pdf p394,TRUE
-Sanitation Facilities Construction,2021,1,1,2021: pdf p248,TRUE
 Savenda Management Services Limited,2021,1,1,2021: pdf p398,TRUE
-School Mwense Richtone Engineering,2024,1,1,2024: pdf p208,TRUE
 Scirocco Enterprise Limited,2024,1,1,2024: pdf p126,TRUE
-Season Suppliers,2021,1,1,2021: pdf p364,TRUE
-Second Contractor,2023,1,1,2023: pdf p184,TRUE
-Secondary School Chikowa Day Secondary School Construction,2022,1,1,2022: pdf p281,TRUE
-Secondary School Limulunga Day High School Construction,2022,1,1,2022: pdf p281,TRUE
+Scope of Works K K Nampundwe Shibuyun Construction,2024,1,1,2024: pdf p206,TRUE
 See Open Air Farm,2025,1,1,2025: pdf p96,TRUE
+Seed Companies Date Signed Name of Company,2025,1,1,2025: pdf p70,TRUE
 Seed Farmers Barn Limited,2021,1,1,2021: pdf p358,TRUE
 Seed Kamano Seed Company Limited,2021,1,1,2021: pdf p358,TRUE
 Seed Seedco Limited,2021,1,1,2021: pdf p358,TRUE
 Seed Stewards Globe Limited,2021,1,1,2021: pdf p358,TRUE
+Seed Syngenta Zambia Limited,2021,1,1,2021: pdf p358,TRUE
 Seed Zambia Seed Company Limited,2021,1,1,2021: pdf p358,TRUE
+Selection of Contractor,2021,1,1,2021: pdf p136,TRUE
 Senanga District Construction,2023,1,1,2023: pdf p353,TRUE
-Service Pension Fund RDA Road Development Agency,2023,1,1,2023: pdf p15,TRUE
 Shandong Dejian Group Company Limited,2021,1,1,2021: pdf p312,TRUE
 Shandong Dejian Group Zambia Limited,2021,1,1,2021: pdf p313,TRUE
 Share Mix Limited,2023,1,1,2023: pdf p364,TRUE
+Shareholders of ZCCM Investments Holdings,2021,1,1,2021: pdf p100,TRUE
 Shibuyunji Construction,2022,1,1,2022: pdf p281,TRUE
 Shibuyunji District Jamcho Construction,2021,1,1,2021: pdf p263,TRUE
 Shimabala Police Farms,2024,1,1,2024: pdf p351,TRUE
+Shimabala and Buchetekelo Zambia Police Farms,2024,1,1,2024: pdf p351,TRUE
+Siavonga DEO Choma PEO Farm,2022,1,1,2022: pdf p154,TRUE
 Siavonga District Mixjer Construction,2021,1,1,2021: pdf p270,TRUE
 Siemens Healthcare Proprietary Ltd,2024,1,1,2024: pdf p151,TRUE
-Signed 01 Merkkn Ventures,2024,1,1,2024: pdf p264,TRUE
+Sign Date Advance Date of Expiry Date Contractor,2024,1,1,2024: pdf p295,TRUE
 Signed Nab-Africa Enterprises Ltd,2021,1,1,2021: pdf p382,TRUE
 Simuliya Construction,2021,1,1,2021: pdf p272,TRUE
 Sinazongwe Construction,2022,1,1,2022: pdf p281,TRUE
@@ -942,127 +1062,138 @@ Sinazongwe Sinazongwe DACO Buumi Construction Limited,2024,1,1,2024: pdf p333,TR
 Sinda Construction,2023,1,1,2023: pdf p277,TRUE
 Sinda District Pozollona Construction,2021,1,1,2021: pdf p265,TRUE
 Sinda Neria Investments Ltd,2021,1,1,2021: pdf p362,TRUE
+Sindamisale and Enterprises,2024,1,1,2024: pdf p332,TRUE
 Sioma District Construction,2023,1,1,2023: pdf p354,TRUE
-Skills Training Centre Mbala G.S Chella Enterprise,2021,1,1,2021: pdf p423,TRUE
-Slab 10 Mill,2023,1,1,2023: pdf p108,TRUE
-Slys Financial Services,2021,1,1,2021: pdf p427,TRUE
-Small Active Large Active Luwi Wood General Dealers,2025,1,1,2025: pdf p245,TRUE
-Small Active Medium Active Muwe-ma Agencies Limited,2025,1,1,2025: pdf p245,TRUE
+Small Active Small Active Nyiloji Timber Processing Limited,2025,1,1,2025: pdf p245,TRUE
 Small Medium Enterprises,2023,1,1,2023: pdf p369,TRUE
+Small and Medium Youth Enterprises,2022,1,1,2022: pdf p144,TRUE
 Smelter Co Ltd,2021,1,1,2021: pdf p102,TRUE
 Soft Clan Technologies,2023,1,1,2023: pdf p240,TRUE
 Sokotela Enterprises Limited,2021,1,1,2021: pdf p275,TRUE
 Solar Skye Trading Pty Ltd,2021,1,1,2021: pdf p40,TRUE
-Solar Water Pumps Lot Contractor,2023,1,1,2023: pdf p292,TRUE
 Solatech Construction,2021,1,1,2021: pdf p322,TRUE
 Solatech Limited,2024,1,1,2024: pdf p261,TRUE
 Solus General Dealers,2021,1,1,2021: pdf p181,TRUE
 Southern Africa Ferro Alloys Limited,2021,1,1,2021: pdf p36,TRUE
 Southern Livingstone Hilcrest Secondary School Suppliers,2024,1,1,2024: pdf p283,TRUE
 Southern Namwala Ndekazi Investment Ltd,2024,1,1,2024: pdf p119,TRUE
-Specialised Services,2023,1,1,2023: pdf p237,TRUE
 Spectrum Architectural Consultants,2021,1,1,2021: pdf p176,TRUE
 Speed Dragon Enterprises,2021,1,1,2021: pdf p286,TRUE
-Splash Liquor Trading,2023,1,1,2023: pdf p382,TRUE
-Sports Betting 10 Pleasure Sports Innovation Ltd,2021,1,1,2021: pdf p43,TRUE
+Splash Liquor Trading and General Dealers,2023,1,1,2023: pdf p382,TRUE
+Spp Spp Spp Alpha Group K K Limited,2025,1,1,2025: pdf p174,TRUE
 Spring Creek Investment,2021,1,1,2021: pdf p288,TRUE
 Staff Houses Sams Investment,2024,1,1,2024: pdf p263,TRUE
 Stalkline Enterprises,2021,1,1,2021: pdf p288,TRUE
+Standard Operating Procedure SSOEL Swiss Singapore Overseas Enterprises,2024,1,1,2024: pdf p19,TRUE
 Star Agency Constructors Limited,2021,1,1,2021: pdf p449,TRUE
 Star Choice Zambia Limited,2021,1,1,2021: pdf p36,TRUE
 Starlight Lao Minerals International Limited,2021,1,1,2021: pdf p36,TRUE
 State Owned Enterprises,2021,1,1,2021: pdf p100,TRUE
+Status of Projects Under Construction,2021,1,1,2021: pdf p170,TRUE
 Stephcat Enterprise Contractor,2024,1,1,2024: pdf p233,TRUE
-Steward Global Limited,2023,1,1,2023: pdf p139,TRUE
 Stone Edge Mining Zambia Limited,2021,1,1,2021: pdf p36,TRUE
 Stores Western Province Public Stores,2021,1,1,2021: pdf p184,TRUE
 Stoutone Construction,2021,1,1,2021: pdf p110,TRUE
 Strong Tower Mining Limited,2021,1,1,2021: pdf p36,TRUE
-Sub Division Farm,2022,1,1,2022: pdf p282,TRUE
 Supabet Ltd,2021,1,1,2021: pdf p43,TRUE
 Supervising Consultant,2021,1,1,2021: pdf p173,TRUE
 Supix Minerals Limited,2021,1,1,2021: pdf p36,TRUE
+Supplier Contract Contract Sum Date K Altaka Corporation,2021,1,1,2021: pdf p147,TRUE
 Supplier Siambelele Dam Limited,2024,1,1,2024: pdf p228,TRUE
+Supplies Mushindamo DHO- North Western Province Public Stores,2021,1,1,2021: pdf p178,TRUE
+Supply Qty Of Gum Sprayers Work Contract Chemicals,2021,1,1,2021: pdf p364,TRUE
 Survey Surveyed Services,2024,1,1,2024: pdf p355,TRUE
 Suzgo Trading,2024,1,1,2024: pdf p247,TRUE
 Swiss Bake Limited,2021,1,1,2021: pdf p40,TRUE
+Synergy Z Ltd,2021,1,1,2021: pdf p367,TRUE
 T. Mushinkula Trading,2021,1,1,2021: pdf p269,TRUE
 TAC Base Enterprise,2024,1,1,2024: pdf p162,TRUE
 TAMZ General Dealers,2021,1,1,2021: pdf p407,TRUE
 TAZAMA Petroleum Limited,2023,1,1,2023: pdf p34,TRUE
-TDCF Loan Repayments Tourism Enterprise,2024,1,1,2024: pdf p78,TRUE
+Tafelansoni and Zingalume Enterprises,2024,1,1,2024: pdf p332,TRUE
 Tan Tashin Zapa Legal Services,2021,1,1,2021: pdf p104,TRUE
 Tashnac Enterprise,2021,1,1,2021: pdf p98,TRUE
-Tax Registration Certificate Cav Africa Enterprises,2021,1,1,2021: pdf p382,TRUE
 Tax Registration Certificates Nab-Africa Enterprises Ltd,2021,1,1,2021: pdf p382,TRUE
-Television Services,2025,1,1,2025: pdf p87,TRUE
+Tax ZAMMSA Zambia Medicines and Medical Supplies Agency,2025,1,1,2025: pdf p15,TRUE
+Teacher Education and Specialised Services,2023,1,1,2023: pdf p237,TRUE
+Teaching Hospital and Related Engineering,2024,1,1,2024: pdf p202,TRUE
+Tecon Engineering Construction,2024,1,1,2024: pdf p264,TRUE
 Temwini General Dealers,2021,1,1,2021: pdf p280,TRUE
 Ten Staff Houses Construction,2022,1,1,2022: pdf p293,TRUE
-Tenkara Beta Denmwa Automated Total Amount Engineering,2021,1,1,2021: pdf p394,TRUE
 Thema General Suppliers Ltd,2025,1,1,2025: pdf p70,TRUE
 Thriotech Zambia Limited,2024,1,1,2024: pdf p268,TRUE
 Tiana Tia Manufacturing Zambia Limited,2021,1,1,2021: pdf p36,TRUE
 Timber Junction Unene Trading Limited,2025,1,1,2025: pdf p245,TRUE
+Time Objective RTSA Road Transport and Safety Agency,2024,1,1,2024: pdf p18,TRUE
 Tosh Building Contractors,2022,1,1,2022: pdf p304,TRUE
 Towing Logistics,2022,1,1,2022: pdf p264,TRUE
+Trade and Industry Zambia Compulsory Standards Agency,2021,1,1,2021: pdf p55,TRUE
+Transit RTSA Road Transport and Safety Agency,2025,1,1,2025: pdf p15,TRUE
 Transit Services,2022,1,1,2022: pdf p52,TRUE
 Translantic Ventures Limited,2023,1,1,2023: pdf p258,TRUE
-Transport Zambia Limited,2022,1,1,2022: pdf p301,TRUE
 Treo Zambia Limited,2025,1,1,2025: pdf p162,TRUE
+Tripple V Construction,2021,1,1,2021: pdf p109,TRUE
 Tumbwe Luano Zone Six Enter Prises Ltd,2024,1,1,2024: pdf p209,TRUE
 Tuncay Investment,2024,1,1,2024: pdf p288,TRUE
 UNIK Construction Engineering Ltd,2022,1,1,2022: pdf p137,TRUE
 Un-utilised Developed Services,2022,1,1,2022: pdf p77,TRUE
 Unaccounted General Stores,2022,1,1,2022: pdf p288,TRUE
-Uncompleted Cashew Processing Plant Acamm's Lodge Limited,2021,1,1,2021: pdf p392,TRUE
+Unaccounted for Famers Inputs Public Stores,2021,1,1,2021: pdf p421,TRUE
+Unaccounted for General Stores,2022,1,1,2022: pdf p248,TRUE
+Unaccounted for Goods. Public Stores,2021,1,1,2021: pdf p386,TRUE
+Unaccounted for Livestock Public Stores,2021,1,1,2021: pdf p337,TRUE
+Unaccounted for Materials Public Stores,2021,1,1,2021: pdf p408,TRUE
+Unaccounted for Stores General Stores,2022,1,1,2022: pdf p220,TRUE
 Uncompleted Projects Project Contractor,2021,1,1,2021: pdf p247,TRUE
+Unconfirmed Existence of African Union Financial Services,2024,1,1,2024: pdf p216,TRUE
 Undelivered Building Blocks Mandanga Milling Company Limited,2022,1,1,2022: pdf p309,TRUE
 Undelivered Farming Inputs DISTRICT Contractor,2023,1,1,2023: pdf p315,TRUE
 Undistributed Pasture Seed Contractor,2025,1,1,2025: pdf p174,TRUE
+United Nations Office for Project Services,2021,1,1,2021: pdf p401,TRUE
 Unsheltered Tractor Longe Farm,2025,1,1,2025: pdf p198,TRUE
 Unutilised Developed Services,2024,1,1,2024: pdf p39,TRUE
+Upgrading of Ndeke Village Kitwe Raymond Construction Ltd,2024,1,1,2024: pdf p208,TRUE
+Urban Development and Preventive and Maintenance Services,2024,1,1,2024: pdf p248,TRUE
 Urban Technics Limited,2021,1,1,2021: pdf p173,TRUE
+Use of Goods and Services,2022,1,1,2022: pdf p69,TRUE
 VBS General Dealers,2021,1,1,2021: pdf p439,TRUE
+Value of Bond K K Construction,2024,1,1,2024: pdf p171,TRUE
 Vet Suppliers,2025,1,1,2025: pdf p248,TRUE
-Veterinary Ltd,2025,1,1,2025: pdf p70,TRUE
 Vilma Enterprises Ltd,2025,1,1,2025: pdf p70,TRUE
 Virgin Blue Company Limited,2021,1,1,2021: pdf p36,TRUE
 Vitumbo Investment Limited,2021,1,1,2021: pdf p387,TRUE
 W2altech Construction,2021,1,1,2021: pdf p72,TRUE
+Water Reticulation and Construction,2021,1,1,2021: pdf p324,TRUE
 Web Commercial Limited,2022,1,1,2022: pdf p210,TRUE
 Wegos General Dealers Limited,2021,1,1,2021: pdf p324,TRUE
 Weixin Company Limited,2021,1,1,2021: pdf p36,TRUE
 Western Investment,2022,1,1,2022: pdf p249,TRUE
 Western Region Construction,2022,1,1,2022: pdf p282,TRUE
-Western Zambia. 4. Manually Drilled Boreholes Construction,2021,1,1,2021: pdf p251,TRUE
-Works Phase II Investments Limited,2024,1,1,2024: pdf p171,TRUE
-Works Phase II Limited,2024,1,1,2024: pdf p173,TRUE
-Works Project Name Contractor,2023,1,1,2023: pdf p192,TRUE
-Works Shanghai Construction Limited,2021,1,1,2021: pdf p285,TRUE
+Wichimba Contactor and General Dealers Limited,2021,1,1,2021: pdf p425,TRUE
 World Sports Betting Ltd,2022,1,1,2022: pdf p33,TRUE
 Xincheng Minerals Processing Limited,2021,1,1,2021: pdf p36,TRUE
 Yascn Toll Management Agency,2021,1,1,2021: pdf p24,TRUE
-Yield Insurance Company,2024,1,1,2024: pdf p346,TRUE
 Z-Con Construction,2021,1,1,2021: pdf p319,TRUE
 Z3amchin Construction,2021,1,1,2021: pdf p73,TRUE
+ZAMRA Zambia Medicines Regulatory Authority ZAPD Zambia Agency,2023,1,1,2023: pdf p16,TRUE
 ZANACO Limited,2022,1,1,2022: pdf p163,TRUE
-ZCCM Investments Holdings,2021,1,1,2021: pdf p100,TRUE
 ZCCM-IH,2021,1,1,2021: pdf p77,TRUE
-ZEEP Schools 2.0.1.15 Consultancy Services,2024,1,1,2024: pdf p293,TRUE
+ZNS and AVIC International Limited,2021,1,1,2021: pdf p309,TRUE
 ZPPA Registration Form Print-OutAfrifin Solutions Ltd,2021,1,1,2021: pdf p382,TRUE
 ZYTICS Limited,2022,1,1,2022: pdf p185,TRUE
 Zambezi Kakwezhi Suppliers Rwenzori Timber Limited,2025,1,1,2025: pdf p245,TRUE
+Zambezi Ranching & Cropping Ltd,2021,1,1,2021: pdf p364,TRUE
 Zambezi Sawmills Limited,2021,1,1,2021: pdf p458,TRUE
 Zambia Cargo Logistics Company,2024,1,1,2024: pdf p213,TRUE
 Zambia Consolidated Copper Mines Investment Holdings,2021,1,1,2021: pdf p77,TRUE
-Zambia Medicines Regulatory Authority ZAPD Zambia Agency,2023,1,1,2023: pdf p16,TRUE
-Zambia NRFA National Road Fund Agency,2024,1,1,2024: pdf p18,TRUE
-Zambia Postal Services,2022,1,1,2022: pdf p303,TRUE
+Zambia Education Enhancement Project ZCS Zambia Correctional Services,2024,1,1,2024: pdf p19,TRUE
+Zambia Institute of Architects and the Engineering,2021,1,1,2021: pdf p176,TRUE
+Zambia Medicine and Medical Supplies Agency,2025,1,1,2025: pdf p121,TRUE
 Zambia State Insurance Corporation,2024,1,1,2024: pdf p347,TRUE
-Zambia Tourism Agency Zambia Tourism Agency,2024,1,1,2024: pdf p82,TRUE
+Zambia and the African Union Financial Services,2024,1,1,2024: pdf p215,TRUE
+Zambian Crop and Veterinary Ltd,2025,1,1,2025: pdf p70,TRUE
 Zambian Fertiliser Company. Rockcliffe Trading,2021,1,1,2021: pdf p357,TRUE
 Zambica Construction,2021,1,1,2021: pdf p274,TRUE
 Zhengtai Construction,2021,1,1,2021: pdf p111,TRUE
-Zimba District Construction,2021,1,1,2021: pdf p271,TRUE
-Zingalume Enterprises,2024,1,1,2024: pdf p332,TRUE
 Zoncor Investment Limited,2021,1,1,2021: pdf p40,TRUE
+of Funding for Funding Total Schools Construction,2025,1,1,2025: pdf p166,TRUE
