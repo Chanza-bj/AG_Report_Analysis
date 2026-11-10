@@ -29,11 +29,21 @@ A one-page summary of the findings is in docs/key_findings_brief.md. The main po
 3. The same problems recur: 26 of 39 finding categories appear every comparable
    year, nine ministries appear in all five reports, and unpaid bills rose from
    K3.9bn to K5.2bn.
-4. 32 named contracts are flagged and page-verified (e.g. ZTE Safe City US$210m
-   with US$178.5m in loans outstanding; K786m paid to seed suppliers that
-   delivered nothing by the deadline).
+4. 34 named contracts are deep-verified and page-checked (e.g. ZTE Safe City
+   US$210m with US$178.5m in loans outstanding; K786m paid to seed suppliers
+   that delivered nothing by the deadline). These sit inside a master table of
+   206 contracts, each row carrying a single verified / unverified flag: the 34
+   verified rows are citable now; an unverified row is an amount the report
+   names on a page, with the supplier and detail still to be deep-checked.
 5. In-report figures show at least K47.7bn in ministry underfunding over
    2023-2025, which the reports link to activities being dropped.
+
+On reliability: a reproducible sampling QA (`docs/qa_sampling.md`,
+`Rscript R/11_qa_sampling.R`) re-checked random rows from the bulk layers
+against their cited pages - valued amounts 30/30, index names 25/25, supplier
+cases 19/20 landed on the page they cite. So the page citations hold; what is
+not yet established for the unverified rows is whether a named amount is the
+final contract value and whether the supplier detail is complete.
 
 I would be grateful for your view on three questions:
 
@@ -46,6 +56,11 @@ I would be grateful for your view on three questions:
   final budget" without implying a trend?
 - Am I right to treat the 2024 and 2025 category values as not comparable with
   2021-2023 because those reports dropped the trend table?
+- Before I name any supplier or ministry publicly, is the verified / unverified
+  split the right line to hold - naming only the 34 deep-verified contracts, and
+  leaving the unverified amounts as "the report records this on this page"
+  without attaching a supplier in public? A finding is a query to answer, not a
+  proven wrong, and I want the framing to make that plain.
 
 I am keeping everything version-tagged so any correction stays visible. Any
 errors you spot would be very welcome. Thank you for your time.

@@ -4,6 +4,19 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.2.0] - 2026-11-10
+
+Consolidation pass: make the dashboard data-driven and reduce drift risk.
+
+### Added
+- **Single source of truth for counts** (`R/10_dashboard_data.R` -> `site/dashboard_data.js`). The contract table, the delivery donut, the flag breakdown, the delivery-by-year chart and every headline number now generate from the page-cited CSVs, so a count can no longer drift from the rows it describes.
+- **One master contract table** (206 rows) replacing the separate deep-verified (34) and all-valued (182) tables. Each row carries a single verified / unverified flag; one search box and one set of filters (verified, delivery, currency, year).
+- **Sampling QA** (`R/11_qa_sampling.R`, `docs/qa_sampling.md`, `data_clean/qa_sample_checks.csv`): random rows from the bulk layers re-checked against their cited pages - valued 30/30, index 25/25, cases 19/20.
+
+### Changed
+- Contracts deep-verified total is **34** (adds NMS Infrastructure and Zhong Ding / Wah Kong King Salman). Corrected stale figures across the brief, the rendered report and the dashboard (e.g. a hand-kept supplier total of 471 now computes to 479; a "32" caption now reads 34).
+- `docs/review_request.md` updated for external review before any name is published: points to the QA note and asks whether naming only the verified contracts is the right line to hold.
+
 ## [1.1.0] - 2026-11-09
 
 Major analytical expansion and a new interactive dashboard.

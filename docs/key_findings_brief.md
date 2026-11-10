@@ -20,7 +20,7 @@
 
 ## Contracts the auditors questioned (verified sample)
 
-From 32 named contracts checked against their pages, examples:
+From 34 named contracts deep-checked against their pages, examples:
 - **ZTE - Safe City security network, US$210 million**, with **US$178.5 million in loans still outstanding** (2023).
 - **Seed suppliers (FISP), 2022:** only 28% of 33,283 tonnes delivered on time; **K786 million paid to 13 suppliers that had delivered nothing** by the deadline.
 - **AVIC (Cancer Centre Ndola, K306m)** and **Siemens (Cancer Hospital Lusaka, US$30.8m)** - hospital builds delayed; an **irregular US$6.6m advance** paid to Siemens without verifying the guarantee.
@@ -33,7 +33,7 @@ Recurring suppliers (AVIC, ZTE, Jiangsu Gold, Nyiombo) each appear across multip
 - Findings are unresolved questions at the report's cut-off, not proven losses.
 - The budget-execution and single findings-total series do not cover every year.
 - Kwacha and US dollar amounts are never added together.
-- The 32 contracts are a verified sample, not every contract in the reports.
+- The 34 contracts are the deep-verified set; the reports name about 182 priced contracts in all, shown with a verified / unverified flag in the dashboard.
 - Materiality (underfunding) figures are indicative in-report figures, not full appropriations.
 
 ## How to use and cite
