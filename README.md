@@ -1,6 +1,6 @@
 # Zambia's public finances through the Auditor General's reports, 2021 to 2025
 
-A reproducible analysis of the Office of the Auditor General of Zambia's *Reports on the Accounts of the Republic* for the financial years ended 31 December **2021 through 2025**. It covers budget execution and surplus, the value of audit findings, and which ministries recur most often in unresolved findings. Every figure is tied to the report year and the PDF page it came from.
+A reproducible analysis of the Office of the Auditor General of Zambia's *Reports on the Accounts of the Republic* for the financial years ended 31 December **2021 through 2025**. It covers budget execution and surplus, the value of audit findings, and which ministries recur most often in unresolved findings. Contract, supplier and case rows carry the PDF page they came from; budget and findings figures cite the report year and statement. A case study of the method is in [docs/case_study.md](docs/case_study.md).
 
 > **Audit findings are not proof of theft or wrongdoing.** The reports set out what the records show and what explanations are still needed. This project reports what the documents record and separates that from interpretation. Prefer "the report records K3.56 billion in unpaid obligations" over "the ministry lost K3.56 billion."
 

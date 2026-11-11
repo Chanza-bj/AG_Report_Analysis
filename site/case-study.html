@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audit reports to checkable data: a case study</title>
+<meta name="description" content="How Boyd Chanza turned 1,862 pages of Zambian Auditor General reports into a checked, reproducible dataset: the method, the error rates, the mistakes found and fixed, and the limits.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a78d6'/%3E%3Cg stroke='white' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M8 24V15'/%3E%3Cpath d='M16 24V8'/%3E%3Cpath d='M24 24v-6'/%3E%3C/g%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Turning five audit reports into a dataset people can check">
+<meta property="og:description" content="1,862 PDF pages of Zambian Auditor General reports turned into a checked, reproducible dataset. Sampling QA, a coverage audit that caught missing names, and every correction logged.">
+<meta property="og:url" content="https://chanza-bj.github.io/AG_Report_Analysis/case-study.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2a78d6;--blue-d:#1c5cab;--ink:#10151b;--ink2:#495261;--muted:#8a8f98;--bg:#f6f7f9;--card:#fff;--line:#e9ebee;--good:#167a53}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.62;font-size:16px}
+.wrap{max-width:820px;margin:0 auto;padding:40px 22px 70px}
+.top{display:flex;align-items:center;gap:10px;margin-bottom:26px;font-weight:700;font-size:14px;color:var(--ink2);flex-wrap:wrap}
+.top .dot{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#2a78d6,#1baf7a);display:flex;align-items:center;justify-content:center}
+.top nav{margin-left:auto;display:flex;gap:14px}
+.top a{color:var(--blue-d);text-decoration:none;font-weight:600}
+.kicker{font-size:13px;font-weight:700;color:var(--ink2);text-transform:uppercase;letter-spacing:.05em;margin:0 0 6px}
+h1{font-size:32px;font-weight:800;letter-spacing:-.02em;line-height:1.18;margin:0 0 8px}
+.sub{color:var(--ink2);font-size:16px;margin:0 0 22px}
+.sub a{color:var(--blue-d);font-weight:600;text-decoration:none}
+h2{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:38px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+p{margin:0 0 12px}
+a{color:var(--blue-d)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.stat b{display:block;font-size:24px;font-weight:800;letter-spacing:-.01em}
+.stat span{font-size:13px;color:var(--ink2);line-height:1.4;display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;box-shadow:0 1px 2px rgba(16,21,27,.04)}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--ink2);text-transform:uppercase;letter-spacing:.03em}
+td.n{font-weight:700;white-space:nowrap}
+.scroll{overflow-x:auto}
+ul,ol{padding-left:22px;margin:0}
+li{margin:8px 0}
+.fix li{margin:12px 0}
+.fix b{color:var(--ink)}
+.was{color:var(--ink2)}
+.qa{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:12px 0}
+.qa .stat b{color:var(--good)}
+.lim li{color:var(--ink2)}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--ink2);font-size:14px}
+footer a{font-weight:600;text-decoration:none}
+@media(max-width:560px){h1{font-size:25px}.wrap{padding:26px 16px 50px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><span class="dot"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M4 20V10M10 20V5M16 20v-8M22 20H2"/></svg></span> Public Audit &middot; Zambia
+    <nav><a href="index.html">Dashboard</a><a href="https://github.com/Chanza-bj/AG_Report_Analysis" target="_blank" rel="noopener">Code &amp; data</a></nav></div>
+
+  <p class="kicker">Data analysis case study</p>
+  <h1>Turning five audit reports into a dataset people can check</h1>
+  <p class="sub">Boyd Chanza &middot; R, Quarto, GitHub Pages &middot; <a href="index.html">Live dashboard</a> &middot; <a href="https://github.com/Chanza-bj/AG_Report_Analysis" target="_blank" rel="noopener">Repository</a></p>
+
+  <div class="stats">
+    <div class="stat"><b>1,862</b><span>PDF pages across five annual reports</span></div>
+    <div class="stat"><b>74 of 75</b><span>sampled rows matched their cited page</span></div>
+    <div class="stat"><b>94%</b><span>coverage of named companies, up from 73% after a rebuild</span></div>
+    <div class="stat"><b>13</b><span>R scripts rebuild the dataset</span></div>
+  </div>
+
+  <h2>The problem</h2>
+  <p>Zambia's Auditor General publishes a <em>Report on the Accounts of the Republic</em> each year. The five reports for 2021 to 2025 run to 1,862 PDF pages. They are the best public record of how government money was spent and where it went wrong, but almost nobody reads them. The layout changes between years, some tables exist in one year and not the next, and the same supplier or ministry can be named in several different ways.</p>
+  <p>I set out to turn them into a structured dataset where every contract and supplier row carries the PDF page it came from, so that a journalist, a committee clerk or a citizen can check any claim in under a minute.</p>
+
+  <h2>What I built</h2>
+  <div class="card scroll"><table>
+    <thead><tr><th>Layer</th><th>Rows</th><th>How it was built</th></tr></thead>
+    <tbody>
+      <tr><td>Deep-verified contracts</td><td class="n">34</td><td>Supplier, value and delivery status read on the page</td></tr>
+      <tr><td>Master contract table</td><td class="n">206</td><td>182 auto-extracted contract amounts plus 24 deep-verified cases from summary pages, each flagged verified or unverified</td></tr>
+      <tr><td>Goods and services cases</td><td class="n">89</td><td>Supplier, item, amount and delivery status, spot-checked</td></tr>
+      <tr><td>Organisations named</td><td class="n">1,231</td><td>Every supplier, contractor, agency and state firm named in the text</td></tr>
+      <tr><td>Case stories</td><td class="n">6</td><td>Read in full on their pages before being written up</td></tr>
+    </tbody></table></div>
+  <p style="margin-top:12px">Alongside these: budget execution and surplus for 2022 to 2025, findings by category, repeat findings, audit opinions and stated ministry underfunding. Thirteen R scripts rebuild the dataset from the extracted report text and the source CSVs. A <a href="index.html">dashboard</a>, a <a href="brief.html">one-page brief</a> and a <a href="full-report.html">written report</a> sit on top.</p>
+
+  <h2>How I checked it</h2>
+  <p><b>Sampling.</b> I drew a random sample (fixed seed, so anyone can rerun it) from the three bulk layers and re-opened each row's cited page.</p>
+  <div class="qa">
+    <div class="stat"><b>30 / 30</b><span>contract amounts on their cited page</span></div>
+    <div class="stat"><b>25 / 25</b><span>organisation names on a cited page</span></div>
+    <div class="stat"><b>19 / 20</b><span>cases; the miss was a placeholder label, not a wrong page</span></div>
+  </div>
+  <p><b>Coverage, not just accuracy.</b> Sampling only tells you whether the rows you have are right. It cannot tell you what is missing. When I looked for agencies I knew appeared in the reports, the organisation index was missing ZAMMSA, NAPSA, Trade Kings and Zambia Seed Company. I measured coverage against every company name in the text and found it at 73%. The cause was an extraction step that filtered out acronym names, plus a bug that discarded names split across the PDF's column spacing. After rebuilding the extractor, the index grew from 594 to 1,231 names, and coverage rose to 90% matched directly and 94% once extraction artifacts are set aside.</p>
+
+  <p style="margin-top:18px"><b>Errors I found and corrected</b>, each recorded as a new version in the <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/CHANGELOG.md" target="_blank" rel="noopener">changelog</a>:</p>
+  <div class="card"><ul class="fix">
+    <li><b>Overstated wording.</b> <span class="was">The dashboard said K786 million was "paid for nil delivery" to 13 seed suppliers. The report says they had not delivered by the 15 January deadline, and a July 2023 verification found most delivered by March.</span> It now says "paid before delivery".</li>
+    <li><b>Hand-typed counts that drifted.</b> <span class="was">A supplier total read 471 against 479 computed, and a caption said 32 contracts when there were 34.</span> Every count now generates from the data.</li>
+    <li><b>A chart mixing bases.</b> <span class="was">A findings chart included a 2021 bar, but a comparable single findings total is reported only for 2022 and 2023.</span> It now shows those two years only.</li>
+    <li><b>Errors in my own table.</b> <span class="was">Reading the case-story pages showed a contract listing two of its four contractors, and a row citing the wrong page.</span> Both corrected.</li>
+    <li><b>A claim the site could not back.</b> <span class="was">The site said "every figure is page-cited".</span> Contract and supplier rows are; budget and findings figures cite the report year. The claim now says exactly that.</li>
+  </ul></div>
+
+  <h2>Data quality decisions</h2>
+  <ul>
+    <li><b>No estimates.</b> Where a report does not state a value, the cell is empty and the reason is noted.</li>
+    <li><b>Currencies kept apart.</b> Kwacha and US dollar amounts are never added together.</li>
+    <li><b>One outlier shown on its own.</b> Unpaid tax arrears are a stock built up over years and dominate every findings total, so they are reported separately.</li>
+    <li><b>Unnamed suppliers stay unnamed.</b> "Contractor (not named)" is recorded as such, never guessed.</li>
+    <li><b>PDF page, not printed page.</b> The two differ, and only the PDF page lets someone jump straight to the source.</li>
+    <li><b>A finding is a question.</b> Being named in an audit paragraph is not being found at fault, and the site says so wherever names appear.</li>
+  </ul>
+
+  <h2>What the data shows</h2>
+  <ol>
+    <li><b>Budget execution rose but not steadily.</b> Payments reached 76.3% of the final budget in 2022 and 86.3% in 2025, with 87.7% and 81.8% in between. The surplus of receipts over payments fell from K30.2 billion to K2.1 billion.</li>
+    <li><b>Clean accounts, persistent problems.</b> The consolidated accounts received an unqualified opinion every year from 2022 to 2025, while 26 of 39 finding categories recurred in every comparable year (2021 to 2023). Unpaid bills rose from K3.9 billion to K5.2 billion over that period.</li>
+    <li><b>Delivery is the weak point in the cases the auditors chose to highlight.</b> Of 34 contracts checked against their pages, 20 were not fully delivered at the audit cut-off. These are highlighted cases, not a random sample, so they show where problems were found, not how common they are.</li>
+  </ol>
+
+  <h2>What it cannot show</h2>
+  <ul class="lim">
+    <li>The data records each report's position on its audit date, so later deliveries and recoveries are not reflected.</li>
+    <li>Ministries' responses in later reports and before parliamentary committees are not included.</li>
+    <li>2021 has no comparable budget statement, and a single findings total exists only for 2022 and 2023.</li>
+    <li>The organisation index captures about 94% of named companies, not all of them.</li>
+  </ul>
+
+  <h2>Reproduce it</h2>
+  <p>Download the five reports from the Auditor General's website (<a href="https://www.ago.gov.zm" target="_blank" rel="noopener">ago.gov.zm</a>), point the <code>AG_PDF_DIR</code> environment variable at that folder, clone the <a href="https://github.com/Chanza-bj/AG_Report_Analysis" target="_blank" rel="noopener">repository</a>, run the R scripts in <code>R/</code> in numbered order, and render the Quarto report. The data dictionary, methods note, <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/docs/qa_sampling.md" target="_blank" rel="noopener">sampling QA and coverage audit</a> and changelog are in the repository. Errors can be reported through a form on the dashboard.</p>
+
+  <footer>
+    Source: Office of the Auditor General of Zambia, <em>Reports on the Accounts of the Republic</em>, 2021-2025.<br>
+    <a href="index.html">Dashboard</a> &middot; <a href="brief.html">One-page brief</a> &middot; <a href="full-report.html">Written report</a> &middot; <a href="https://github.com/Chanza-bj/AG_Report_Analysis" target="_blank" rel="noopener">Code &amp; data</a>
+  </footer>
+</div>
+</body>
+</html>

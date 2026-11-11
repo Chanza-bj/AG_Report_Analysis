@@ -4,6 +4,18 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.8.0] - 2026-11-11
+
+Portfolio case study, and the brief brought in line with earlier corrections.
+
+### Added
+- **Case study** (`site/case-study.html`, `docs/case_study.md`): the problem, what was built, the sampling QA (74 of 75 rows matched their page), the coverage audit (73% to 94%), the errors found and corrected, data-quality decisions, findings, limits and how to reproduce. Linked from the dashboard footer and the README.
+
+### Fixed
+- The brief (`brief.html`, `key_findings_brief.md`) still gave a 2021-2023 findings series; it now uses the two comparable years, 2022 and 2023.
+- The brief and `contracts_flagged.csv` linked Pozzolana's Kanona hub to "0 of 40 hubs built". The 40 is the programme-wide target on page 154, and Pozzolana's contract covered 20 hubs. Replaced with the Kanona facts: 58.68% paid, site abandoned in 2024.
+- The brief's FISP timing now cites the July 2023 verification (page 215); the page-citation claim in the brief and README narrowed to what is true.
+
 ## [1.7.0] - 2026-11-11
 
 Case stories for readers who will not read the reports.
