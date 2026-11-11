@@ -277,7 +277,7 @@ footer a{color:var(--blue-d);font-weight:600}
     <!-- CONTRACTS -->
     <section class="section" id="contracts">
       <h2>Contracts the auditors questioned</h2>
-      <div class="cap" style="margin:-6px 0 14px;max-width:800px">The reports name about <b><span id="cap_valued">182</span> contracts with a stated amount</b> &mdash; roughly <b>K<span id="cap_valK">57.8</span> billion plus US$<span id="cap_valUSD">1.82</span> billion</b> (full list with amount, ministry and page in the <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_raw/contracts_valued_all.csv" target="_blank" rel="noopener" style="color:#1c5cab;font-weight:600">repository</a>). The <b><span id="cap_verified">34</span> below are deep-verified</b> against their pages &mdash; supplier, value and delivery status checked.</div>
+      <div class="cap" style="margin:-6px 0 14px;max-width:800px">The reports name about <b><span id="cap_valued">182</span> contracts with a stated amount</b>, roughly <b>K<span id="cap_valK">57.8</span> billion plus US$<span id="cap_valUSD">1.82</span> billion</b> (full list with amount, ministry and page in the <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_raw/contracts_valued_all.csv" target="_blank" rel="noopener" style="color:#1c5cab;font-weight:600">repository</a>). The <b><span id="cap_verified">34</span> below are deep-verified</b> against their pages, supplier, value and delivery status checked.</div>
       <div class="grid two">
         <div class="card">
           <div class="hd"><h3>Delivery status of deep-verified contracts</h3><span class="tag" id="tag_status">34 of ~182</span></div>
@@ -291,7 +291,7 @@ footer a{color:var(--blue-d);font-weight:600}
       </div>
       <div class="card tablecard" style="margin-top:16px">
         <div class="hd" style="padding:16px 18px 2px"><h3>All contracts (master table)</h3><span class="tag" id="master_count">206</span></div>
-        <div class="cap" style="padding:0 18px">The contracts the reports name with an amount, in one table: the <b>~182</b> auto-extracted amounts plus <b>24</b> deep-verified cases drawn from summary pages, <b>206</b> rows in all. A <b>verified</b> row was deep-checked against its page &mdash; supplier, value and delivery status confirmed (<span id="master_vcount">34</span> so far). An <b>unverified</b> row is an amount the report names, with the supplier and detail in the context column, not yet page-checked. Search or filter.</div>
+        <div class="cap" style="padding:0 18px">The contracts the reports name with an amount, in one table: the <b>~182</b> auto-extracted amounts plus <b>24</b> deep-verified cases drawn from summary pages, <b>206</b> rows in all. A <b>verified</b> row was deep-checked against its page, supplier, value and delivery status confirmed (<span id="master_vcount">34</span> so far). An <b>unverified</b> row is an amount the report names, with the supplier and detail in the context column, not yet page-checked. Search or filter.</div>
         <div class="toolbar">
           <input id="master_search" class="search" type="search" placeholder="Search supplier, ministry or context... e.g. AVIC, hospital, ZTE, seed">
           <div class="chips">
@@ -371,7 +371,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <h2>Organisations named across the reports</h2>
       <div class="note" style="background:#eef4fd;border-color:#d4e3fa;color:#214a7c">
         <span>&#9432;</span>
-        <div>This is an <b>index of organisations named in the reports</b> &mdash; suppliers, contractors, vendors, agencies and state firms &mdash; built directly from the report text. A coverage check against every company name in the reports puts capture at about <b>90% of named companies</b> directly, and <b>94%</b> once extraction artifacts are set aside (see <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/docs/qa_sampling.md" target="_blank" rel="noopener" style="color:#1c5cab;font-weight:600">the method note</a>); agency names such as ZAMMSA and NAPSA are included, and names joined by "of" or "and" are captured whole. It shows who is named, not verified contract values &mdash; those are in the <a href="#contracts" style="color:#1c5cab;font-weight:600">Contracts</a> section. A small amount of residual extraction noise remains.<br><br><b>Being listed here means a company is named somewhere in an audit paragraph. It is not a finding of fault or wrongdoing.</b> Every name was located in the report text (that is what "named" means here); none is linked to a wrongdoing on this page.</div>
+        <div>This is an <b>index of organisations named in the reports</b>, suppliers, contractors, vendors, agencies and state firms, built directly from the report text. A coverage check against every company name in the reports puts capture at about <b>90% of named companies</b> directly, and <b>94%</b> once extraction artifacts are set aside (see <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/docs/qa_sampling.md" target="_blank" rel="noopener" style="color:#1c5cab;font-weight:600">the method note</a>); agency names such as ZAMMSA and NAPSA are included, and names joined by "of" or "and" are captured whole. It shows who is named, not verified contract values, those are in the <a href="#contracts" style="color:#1c5cab;font-weight:600">Contracts</a> section. A small amount of residual extraction noise remains.<br><br><b>Being listed here means a company is named somewhere in an audit paragraph. It is not a finding of fault or wrongdoing.</b> Every name was located in the report text (that is what "named" means here); none is linked to a wrongdoing on this page.</div>
       </div>
       <div class="grid two">
         <div class="card">
@@ -760,7 +760,7 @@ function renderMaster(){
     else if(mFilter!=='all') okf=r[0]===mFilter;
     return okq&&okf; });
   document.getElementById('master_count').textContent=rows.length+' of '+MASTER.length;
-  const dash='<td class="muted">&mdash;</td>';
+  const dash='<td class="muted">, </td>';
   document.getElementById('t_master').innerHTML=
     '<thead><tr><th>Year</th><th>Ministry</th><th>Supplier</th><th>Amount</th><th>Delivered</th><th>Flagged / context</th><th>Status</th><th>Page</th></tr></thead><tbody>'+
     (rows.length?rows.map(r=>`<tr><td class="num">${r[0]}</td><td>${r[1]}</td>`+
@@ -782,11 +782,11 @@ document.getElementById('t_recurring').innerHTML =
   recurring.map(r=>`<tr><td>${r[0]}</td><td class="muted">${r[1]}</td><td class="num">${r[2]}</td></tr>`).join('')+'</tbody>';
 
 /* searchable "all suppliers" table */
-function fmtAmt(a,c){ if(a==null) return '<span class="muted">&mdash;</span>';
+function fmtAmt(a,c){ if(a==null) return '<span class="muted">, </span>';
   const u=c==='USD'?'US$':'K';
   const v=a>=1e9?(a/1e9).toFixed(2)+'bn':a>=1e6?(a/1e6).toFixed(1)+'m':Math.round(a).toLocaleString();
   return u+v; }
-function sbadge(s){ if(!s) return '<span class="muted">&mdash;</span>';
+function sbadge(s){ if(!s) return '<span class="muted">, </span>';
   const m={'Delivered':'b-yes','Partial':'b-part','Not delivered':'b-no'};
   return `<span class="badge ${m[s]||'b-na'}">${s}</span>`; }
 let supFilter='all', supQuery='';
@@ -838,7 +838,7 @@ document.querySelectorAll('.chip[data-cf]').forEach(c=>c.addEventListener('click
 
 
 /* audit opinion rows */
-const opinions=[['2021','No formal opinion','b-na','p —'],['2022','Unqualified (clean)','b-yes','p21'],
+const opinions=[['2021','No formal opinion','b-na','p, '],['2022','Unqualified (clean)','b-yes','p21'],
  ['2023','Unqualified (clean)','b-yes','p23'],['2024','Unqualified (clean)','b-yes','p25'],
  ['2025','Unqualified (clean)','b-yes','p22']];
 document.getElementById('opinion_rows').innerHTML=opinions.map(o=>

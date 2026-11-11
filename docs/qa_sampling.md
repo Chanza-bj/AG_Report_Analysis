@@ -34,7 +34,7 @@ state-firm names, then measured (`R/12_coverage_audit.R`):
 |---------|--------|-------|
 | Distinct organisations indexed | 594 | 1,231 |
 | Capture of clearly-named companies (ending "Limited"/"Ltd"), direct | 73% | 90% |
-| Effective capture (counting conflations whose real company is captured under a clean name) | — | 94% |
+| Effective capture (counting conflations whose real company is captured under a clean name) | 94% |
 | Agency acronyms (ZAMMSA, NAPSA, ZPPA) captured | no | yes |
 | Names with a connector joined ("Henina Engineering **and** Construction", "Nitrogen Chemicals **of** Zambia") | no | yes |
 
@@ -57,9 +57,9 @@ each sampled row the script re-opens the **cited page** in the
 `pdftotext -layout` text of that year's report and checks that the thing the
 row claims is actually on that page:
 
-- **Valued contracts** — the amount (integer part, comma-grouped) appears on the cited page.
-- **Supplier cases** — the supplier's distinctive name token appears on the cited page.
-- **Supplier index** — the name token appears on at least one of the pages the index lists for it.
+- **Valued contracts**, the amount (integer part, comma-grouped) appears on the cited page.
+- **Supplier cases**, the supplier's distinctive name token appears on the cited page.
+- **Supplier index**, the name token appears on at least one of the pages the index lists for it.
 
 Generic company words (Limited, Company, Construction, International, Zambia…)
 are stripped before picking a name token, so a match is on the distinctive part
@@ -82,7 +82,7 @@ citations in the bulk layers hold up.
 
 One supplier-cases row did not match. Its supplier field is the literal
 placeholder **"Suppliers in Table 13 (not fully extracted)"** on page 394 of the
-2021 report — a marker left where a multi-supplier table was not transcribed in
+2021 report, a marker left where a multi-supplier table was not transcribed in
 full, not a real company name, so there was no name token to find. The page
 citation itself is correct. This is a known gap in that one row, not a wrong
 attribution.
@@ -97,7 +97,7 @@ attribution.
 
 Treat the **verified** layer (the 34, and the supplier cases that have been
 spot-checked) as citable. Treat an **unverified** valued row as "the report
-names this amount on this page" — true to the page, but supplier and detail
+names this amount on this page", true to the page, but supplier and detail
 still need the deep-verify pass before the name is put forward publicly. The
 review note in `docs/review_request.md` asks an outside reader to confirm this
 before the named-supplier material goes out.
