@@ -4,6 +4,18 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.5.1] - 2026-11-11
+
+Second credibility pass: resolve wording conflicts a close reader flagged.
+
+### Changed
+- Master-table caption no longer claims "every contract with a stated amount" (which conflicted with "about 182"); it now states 206 = ~182 named amounts + 24 deep-verified cases, and the "first set" caveat is pinned to the 34.
+- The "Contracts flagged" KPI static text now reads "20 not fully delivered", matching the procurement panel's definition (no single "terminated" count).
+- Budget and surplus charts carry their year range (2022-2025); the unpaid-bills tile and the method example carry years (2021-2023; K5.2bn in 2023).
+- "Suppliers" relabelled to "Organisations" in the nav, section heading, tables and KPI, since the index includes agencies and state firms, not only suppliers.
+- The Health-underfunding tile moved out of the procurement red-flag panel (it is shown in the underfunding chart below).
+- The FISP delivery timing now cites the Office's July 2023 verification and page 215.
+
 ## [1.5.0] - 2026-11-10
 
 Accuracy and credibility pass from a critical read of the dashboard.

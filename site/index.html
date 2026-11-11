@@ -150,7 +150,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <a href="#findings"><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg> Audit findings</a>
       <a href="#contracts"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contracts</a>
       <a href="#delivery"><svg viewBox="0 0 24 24"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg> Delivered?</a>
-      <a href="#suppliers"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V8l6-4 6 4v13M10 21v-4h4v4"/></svg> Suppliers</a>
+      <a href="#suppliers"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V8l6-4 6 4v13M10 21v-4h4v4"/></svg> Organisations</a>
       <a href="#ministries"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg> Ministries</a>
       <a href="#repeat"><svg viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg> Repeat findings</a>
       <a href="#opinion"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Opinion &amp; risk</a>
@@ -185,7 +185,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <div class="kpi"><div class="lbl">Government spending, 2025</div><div class="val">K216.3bn</div><div class="sub">86% of the K250.7bn budget</div></div>
       <div class="kpi"><div class="lbl">Budget surplus, 2025</div><div class="val">K2.1bn</div><div class="sub"><span class="down">&#9660; down</span> from K30.2bn in 2022</div></div>
       <div class="kpi"><div class="lbl">Open audit questions, 2025</div><div class="val">27</div><div class="sub"><span class="up">&#9660; fewer</span> than 40 in 2022</div></div>
-      <div class="kpi"><div class="lbl">Contracts flagged</div><div class="val" id="kpi_contracts">34</div><div class="sub" id="kpi_sub">20 not delivered or terminated</div></div>
+      <div class="kpi"><div class="lbl">Contracts flagged</div><div class="val" id="kpi_contracts">34</div><div class="sub" id="kpi_sub">20 not fully delivered</div></div>
       <div class="kpi"><div class="lbl">Findings value, 2023</div><div class="val">K81.5bn</div><div class="sub">a comparable total exists for 2022 and 2023</div></div>
       <div class="kpi"><div class="lbl">Organisations named</div><div class="val" id="kpi_orgs">1,231</div><div class="sub">distinct names found in the reports' text</div></div>
       <div class="kpi"><div class="lbl">Audit opinion, 2022-2025</div><div class="val" style="color:#167a53">Unqualified</div><div class="sub">clean opinion each year; 2021 none given</div></div>
@@ -196,12 +196,12 @@ footer a{color:var(--blue-d);font-weight:600}
       <h2>Budget &amp; surplus</h2>
       <div class="grid two">
         <div class="card">
-          <div class="hd"><h3>Planned vs actually spent</h3><span class="tag">Kwacha, billions</span></div>
+          <div class="hd"><h3>Planned vs actually spent</h3><span class="tag">2022-2025, K bn</span></div>
           <div class="cap">The final budget compared with actual payments. Hover for exact figures.</div>
           <div id="c_budget" class="chart"></div>
         </div>
         <div class="card">
-          <div class="hd"><h3>Fiscal surplus</h3><span class="tag">Kwacha, billions</span></div>
+          <div class="hd"><h3>Fiscal surplus</h3><span class="tag">2022-2025, K bn</span></div>
           <div class="cap">Money collected minus money spent each year.</div>
           <div id="c_surplus" class="chart"></div>
         </div>
@@ -242,7 +242,7 @@ footer a{color:var(--blue-d);font-weight:600}
       </div>
       <div class="card tablecard" style="margin-top:16px">
         <div class="hd" style="padding:16px 18px 2px"><h3>All contracts (master table)</h3><span class="tag" id="master_count">206</span></div>
-        <div class="cap" style="padding:0 18px">Every contract with a stated amount in the reports, in one table. A <b>verified</b> row was deep-checked against its page &mdash; supplier, value and delivery status confirmed (<span id="master_vcount">34</span> so far). An <b>unverified</b> row is an amount the report names, with the supplier and detail in the context column, not yet page-checked. Search or filter.</div>
+        <div class="cap" style="padding:0 18px">The contracts the reports name with an amount, in one table: the <b>~182</b> auto-extracted amounts plus <b>24</b> deep-verified cases drawn from summary pages, <b>206</b> rows in all. A <b>verified</b> row was deep-checked against its page &mdash; supplier, value and delivery status confirmed (<span id="master_vcount">34</span> so far). An <b>unverified</b> row is an amount the report names, with the supplier and detail in the context column, not yet page-checked. Search or filter.</div>
         <div class="toolbar">
           <input id="master_search" class="search" type="search" placeholder="Search supplier, ministry or context... e.g. AVIC, hospital, ZTE, seed">
           <div class="chips">
@@ -307,7 +307,7 @@ footer a{color:var(--blue-d);font-weight:600}
               <div style="font-size:20px;font-weight:800;color:#b42318">K786m</div>
               <div style="font-size:11.5px;color:var(--muted)">to 13 suppliers yet to deliver at the 15 Jan deadline</div></div>
           </div>
-          <div class="cap" style="margin-top:8px">A later check found most suppliers delivered late, between mid January and end of March 2023, missing the planting window.</div>
+          <div class="cap" style="margin-top:8px">The Office's July 2023 verification found most suppliers delivered late, between mid January and end of March 2023, missing the planting window (2022 report, page 215).</div>
         </div>
       </div>
       <div class="card" style="margin-top:16px">
@@ -319,7 +319,7 @@ footer a{color:var(--blue-d);font-weight:600}
 
     <!-- SUPPLIERS -->
     <section class="section" id="suppliers">
-      <h2>Suppliers named across the reports</h2>
+      <h2>Organisations named across the reports</h2>
       <div class="note" style="background:#eef4fd;border-color:#d4e3fa;color:#214a7c">
         <span>&#9432;</span>
         <div>This is an <b>index of organisations named in the reports</b> &mdash; suppliers, contractors, vendors, agencies and state firms &mdash; built directly from the report text. A coverage check against every company name in the reports puts capture at about <b>90% of named companies</b> directly, and <b>94%</b> once extraction artifacts are set aside (see <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/docs/qa_sampling.md" target="_blank" rel="noopener" style="color:#1c5cab;font-weight:600">the method note</a>); agency names such as ZAMMSA and NAPSA are included, and names joined by "of" or "and" are captured whole. It shows who is named, not verified contract values &mdash; those are in the <a href="#contracts" style="color:#1c5cab;font-weight:600">Contracts</a> section. A small amount of residual extraction noise remains.<br><br><b>Being listed here means a company is named somewhere in an audit paragraph. It is not a finding of fault or wrongdoing.</b> Every name was located in the report text (that is what "named" means here); none is linked to a wrongdoing on this page.</div>
@@ -331,13 +331,13 @@ footer a{color:var(--blue-d);font-weight:600}
           <div id="c_suppliers" class="chart"></div>
         </div>
         <div class="card tablecard">
-          <div class="hd"><h3>Suppliers named in more than one report</h3><span class="tag">recurring</span></div>
+          <div class="hd"><h3>Organisations named in more than one report</h3><span class="tag">recurring</span></div>
           <div class="tbwrap"><table id="t_recurring"></table></div>
         </div>
       </div>
 
       <div class="card tablecard" style="margin-top:16px">
-        <div class="hd" style="padding:16px 18px 2px"><h3>All named suppliers</h3><span class="tag" id="sup_count">471</span></div>
+        <div class="hd" style="padding:16px 18px 2px"><h3>All named organisations</h3><span class="tag" id="sup_count">471</span></div>
         <div class="cap" style="padding:0 18px">Delivery status and amount are shown only where the reports give them (<span id="cap_supbreak">39 suppliers so far: 6 delivered, 12 partial, 21 not delivered</span>). The rest are appearances in the reports.</div>
         <div class="toolbar">
           <input id="sup_search" class="search" type="search" placeholder="Search a supplier, e.g. Zamseed, AVIC, Nyiombo...">
@@ -378,7 +378,7 @@ footer a{color:var(--blue-d);font-weight:600}
             <div class="flagtile"><div class="ft-v">26 of 39</div><div class="ft-l">categories recur every year</div><div class="ft-s">2021 to 2023 (comparable years)</div></div>
             <div class="flagtile"><div class="ft-v">4</div><div class="ft-l">rose every single year</div><div class="ft-s">obligations, unused funds, irregular payments, lost revenue</div></div>
             <div class="flagtile"><div class="ft-v">9</div><div class="ft-l">ministries in all five reports</div><div class="ft-s">same portfolios recur</div></div>
-            <div class="flagtile"><div class="ft-v">K3.9&rarr;5.2bn</div><div class="ft-l">unpaid bills rose yearly</div><div class="ft-s">Failure to settle obligations</div></div>
+            <div class="flagtile"><div class="ft-v">K3.9&rarr;5.2bn</div><div class="ft-l">unpaid bills rose yearly</div><div class="ft-s">Failure to settle obligations, 2021 to 2023</div></div>
           </div>
           <div class="cap" style="margin-top:12px">Green = the amount fell each year (improving); red = rose each year (worsening); grey = mixed. A persistent finding points to a control that has not been fixed.</div>
         </div>
@@ -403,7 +403,6 @@ footer a{color:var(--blue-d);font-weight:600}
             <div class="flagtile"><div class="ft-v" id="ft_single">5</div><div class="ft-l">single-source / uncompetitive contracts</div><div class="ft-s">among the flagged contracts</div></div>
             <div class="flagtile"><div class="ft-v" id="ft_notdel">20 of 34</div><div class="ft-l">contracts not fully delivered</div><div class="ft-s">no or partial delivery at cut-off</div></div>
             <div class="flagtile"><div class="ft-v">K786m</div><div class="ft-l">paid before delivery</div><div class="ft-s">13 seed suppliers, 2022; most delivered late by March 2023</div></div>
-            <div class="flagtile"><div class="ft-v">K3.09bn</div><div class="ft-l">Health underfunding, 2025</div><div class="ft-s">15 budgeted activities dropped (in-report, indicative)</div></div>
           </div>
         </div>
       </div>
@@ -418,13 +417,13 @@ footer a{color:var(--blue-d);font-weight:600}
       <h2>How to read these numbers fairly</h2>
       <div class="card" style="padding:18px 20px">
         <ul style="margin:0;padding-left:18px;color:var(--ink2);line-height:1.75">
-          <li><b>A finding is a question, not a verdict.</b> Say "the report records K3.56bn in unpaid obligations," not "the ministry lost it."</li>
+          <li><b>A finding is a question, not a verdict.</b> Say "the report records K5.2bn in unpaid bills (2023)," not "the ministry lost it."</li>
           <li><b>Being named is not being at fault.</b> A company in the organisation index appears in an audit paragraph, nothing more. Each name was located in the report text; inclusion here is not a finding of wrongdoing against it.</li>
           <li><b>What the counts mean.</b> <b>34</b> contracts are deep-verified against their page. About <b>182</b> is every contract amount the reports name; the master table lists <b>206</b> (those 182 plus 24 deep-verified cases from summary pages). <b>89</b> are flagged goods-and-services cases. <b>1,231</b> is every organisation named across the five reports.</li>
           <li><b>Not every year lines up.</b> The budget table is missing for 2021; a single findings total exists only for 2022 and 2023; 2023 delivery status is only partly recorded; the 2024 and 2025 reports list examples instead of one total.</li>
           <li><b>One huge line (tax arrears) distorts the findings totals</b>, so it is shown on its own.</li>
           <li><b>Kwacha and US dollar amounts are never added together.</b></li>
-          <li><b>The contracts list is a first set</b>, drawn from highlighted cases, not every contract in the reports.</li>
+          <li><b>The 34 deep-verified contracts are a first set</b> of highlighted cases, not every contract in the reports. The wider master table (206) adds every contract amount the reports name.</li>
           <li>These figures come from the published main reports only. Ministries may since have given explanations, recorded in later reports and parliamentary committees.</li>
         </ul>
       </div>
