@@ -152,7 +152,7 @@ fisc |> filter(!is.na(surplus_deficit)) |>
 
 # What the auditors flagged, and how much
 
-When the auditors cannot fully account for money, they record it under a category, such as money not collected, irregular payments, or funds not properly supported by documents. The 2022 and 2023 reports add these into a single table, the only two years with a comparable total.
+When the auditors cannot fully account for money, they record it under a category, such as money not collected, irregular payments, or funds not properly supported by documents. The 2022 and 2023 reports add these up in a trend table that covers three financial years, 2021, 2022 and 2023. The 2024 and 2025 reports print no total, so no later year can be compared.
 
 ```{r findings-chart}
 #| fig-width: 8
@@ -176,7 +176,7 @@ series |> group_by(financial_year) |>
   scale_y_continuous(expand = expansion(mult = c(0, .12))) +
   labs(title = "Value of audit findings each year",
        subtitle = "Kwacha, billions",
-       caption = "Source: Office of the Auditor General trend tables, 2022 and 2023 reports, page ii.") +
+       caption = "Source: Office of the Auditor General trend tables, 2022 report PDF page 8 and 2023 report PDF page 9.") +
   theme_report()
 ```
 
@@ -265,7 +265,7 @@ Nine portfolios appear in **every** report over the five years. Provincial offic
 # How to read these numbers fairly
 
 - **A finding is a question, not a verdict.** Say "the report records K3.56 billion in unpaid obligations," not "the ministry lost K3.56 billion."
-- **Not every year lines up.** The budget table is missing for 2021; the single findings total exists only for 2022 and 2023; the 2024 and 2025 reports list examples instead of one total.
+- **Not every year lines up.** The budget table is missing for 2021; comparable findings totals exist only for 2021 to 2023, printed in the 2022 and 2023 reports; the 2024 and 2025 reports list examples instead of one total.
 - **One huge line (tax arrears) distorts the totals**, so it is shown separately.
 - **US dollar and Kwacha amounts are never added together.**
 - **The contracts list is a first set**, drawn from highlighted cases, not every contract in the reports.

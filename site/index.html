@@ -228,7 +228,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <div class="kpi"><div class="lbl">Budget surplus, 2025</div><div class="val">K2.1bn</div><div class="sub"><span class="down">&#9660; down</span> from K30.2bn in 2022</div></div>
       <div class="kpi"><div class="lbl">Open audit questions, 2025</div><div class="val">27</div><div class="sub"><span class="up">&#9660; fewer</span> than 40 in 2022</div></div>
       <div class="kpi"><div class="lbl">Contracts flagged</div><div class="val" id="kpi_contracts">34</div><div class="sub" id="kpi_sub">20 not fully delivered</div></div>
-      <div class="kpi"><div class="lbl">Findings value, 2023</div><div class="val">K81.5bn</div><div class="sub">a comparable total exists for 2022 and 2023</div></div>
+      <div class="kpi"><div class="lbl">Findings value, 2023</div><div class="val">K81.5bn</div><div class="sub">comparable totals exist for 2021 to 2023 only</div></div>
       <div class="kpi"><div class="lbl">Organisations named</div><div class="val" id="kpi_orgs">1,231</div><div class="sub">distinct names found in the reports' text</div></div>
       <div class="kpi"><div class="lbl">Audit opinion, 2022-2025</div><div class="val" style="color:#167a53">Unqualified</div><div class="sub">clean opinion each year; 2021 none given</div></div>
     </div>
@@ -262,8 +262,8 @@ footer a{color:var(--blue-d);font-weight:600}
       <h2>Audit findings</h2>
       <div class="grid two">
         <div class="card">
-          <div class="hd"><h3>Value of audit findings</h3><span class="tag">2022-2023</span></div>
-          <div class="cap">A single comparable findings total is reported only for 2022 and 2023. One line, unpaid tax arrears, dominates the total, so it is shown separately.</div>
+          <div class="hd"><h3>Value of audit findings</h3><span class="tag">2021-2023</span></div>
+          <div class="cap">Totals as printed in the trend tables of the 2022 report (page 8, covering 2021 and 2022) and the 2023 report (page 9, covering 2022 and 2023). The 2024 and 2025 reports print no total. One line, unpaid tax arrears, dominates the total, so it is shown separately.</div>
           <div id="c_findings" class="chart"></div>
         </div>
         <div class="card">
@@ -489,7 +489,7 @@ footer a{color:var(--blue-d);font-weight:600}
           <li><b>A finding is a question, not a verdict.</b> Say "the report records K5.2bn in unpaid bills (2023)," not "the ministry lost it."</li>
           <li><b>Being named is not being at fault.</b> A company in the organisation index appears in an audit paragraph, nothing more. Each name was located in the report text; inclusion here is not a finding of wrongdoing against it.</li>
           <li><b>What the counts mean.</b> <b>34</b> contracts are deep-verified against their page. About <b>182</b> is every contract amount the reports name; the master table lists <b>206</b> (those 182 plus 24 deep-verified cases from summary pages). <b>89</b> are flagged goods-and-services cases. <b>1,231</b> is every organisation named across the five reports.</li>
-          <li><b>Not every year lines up.</b> The budget table is missing for 2021; a single findings total exists only for 2022 and 2023; 2023 delivery status is only partly recorded; the 2024 and 2025 reports list examples instead of one total.</li>
+          <li><b>Not every year lines up.</b> The budget table is missing for 2021; comparable findings totals exist only for 2021 to 2023, printed in the 2022 and 2023 reports; 2023 delivery status is only partly recorded; the 2024 and 2025 reports list examples instead of one total.</li>
           <li><b>One huge line (tax arrears) distorts the findings totals</b>, so it is shown on its own.</li>
           <li><b>Kwacha and US dollar amounts are never added together.</b></li>
           <li><b>The 34 deep-verified contracts are a first set</b> of highlighted cases, not every contract in the reports. The wider master table (206) adds every contract amount the reports name.</li>
@@ -503,7 +503,7 @@ footer a{color:var(--blue-d);font-weight:600}
         <ul style="margin:0;padding-left:18px;color:var(--ink2);line-height:1.9;font-size:14px">
           <li>Stories from the reports &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/case_stories.csv" target="_blank" rel="noopener">case_stories.csv</a></li>
           <li>Budget, spending and surplus &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/fiscal_outturn.csv" target="_blank" rel="noopener">fiscal_outturn.csv</a></li>
-          <li>Value of audit findings and category trend &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/findings_by_category_tidy.csv" target="_blank" rel="noopener">findings_by_category_tidy.csv</a>, <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/repeat_findings.csv" target="_blank" rel="noopener">repeat_findings.csv</a></li>
+          <li>Value of audit findings and category trend &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/findings_by_category_tidy.csv" target="_blank" rel="noopener">findings_by_category_tidy.csv</a>, <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/findings_totals_printed.csv" target="_blank" rel="noopener">findings_totals_printed.csv</a>, <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/repeat_findings.csv" target="_blank" rel="noopener">repeat_findings.csv</a></li>
           <li>Contracts (deep-verified and master table) &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/contracts_flagged.csv" target="_blank" rel="noopener">contracts_flagged.csv</a>, <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_raw/contracts_valued_all.csv" target="_blank" rel="noopener">contracts_valued_all.csv</a></li>
           <li>Delivery status and 2022 seed table &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/seed_delivery_2022.csv" target="_blank" rel="noopener">seed_delivery_2022.csv</a></li>
           <li>Goods and services cases &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/supplier_cases.csv" target="_blank" rel="noopener">supplier_cases.csv</a></li>
@@ -527,9 +527,9 @@ footer a{color:var(--blue-d);font-weight:600}
 const YRf=['2022','2023','2024','2025'];
 const planned=[175.24,178.45,231.57,250.68], spent=[133.76,156.55,189.35,216.30];
 const surplus=[30.18,19.71,2.67,2.11];
-/* a single comparable findings total is reported only for 2022 and 2023 */
-const YRv=['2022','2023'];
-const findAll=[103.52,81.46], findEx=[5.66,14.47];
+/* printed totals: FY2021 and FY2022 in the 2022 report (p8), FY2022 and FY2023 in the 2023 report (p9); 2024 and 2025 print none */
+const YRv=['2021','2022','2023'];
+const findAll=[133.25,103.52,81.46], findEx=[47.47,5.66,14.47];
 const paras=[['2021',52],['2022',40],['2023',28],['2024',32],['2025',27]];
 const ministries=[['Provincial offices',43],['Finance & National Planning',18],['Agriculture',17],
   ['Home Affairs & Internal Security',15],['Education',12],['Health',11],['Fisheries & Livestock',7],

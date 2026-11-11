@@ -12,7 +12,7 @@
 
 3. **The financial statements got a clean opinion every year.** The Auditor General issued an **unqualified opinion for 2022, 2023, 2024 and 2025** (2021 had no formal opinion section). A clean opinion covers the consolidated accounts overall; it does not certify every transaction, which is why large findings sit alongside it.
 
-4. **The value of flagged findings fell between the two years with a comparable total**, from K103.5bn in 2022 to K81.5bn in 2023, and is dominated by one externally sourced tax-arrears line. The other years publish no comparable single total.
+4. **The value of flagged findings fell over the three years with a comparable total**: K133.3bn (2021), K103.5bn (2022) and K81.5bn (2023), as printed in the trend tables of the 2022 and 2023 reports. One externally sourced tax-arrears line dominates. The 2024 and 2025 reports print no total.
 
 5. **The same problems and ministries recur.** **26 of 39 finding categories appear every comparable year**; four rose every single year, including **unpaid bills (K3.9bn to K5.2bn)**. **Nine ministries appear in all five reports.** Unresolved-findings paragraphs fell from 40 (2022) to 27 (2025).
 

@@ -64,7 +64,7 @@ footer a{font-weight:600;text-decoration:none}
     <div class="stat"><b>1,862</b><span>PDF pages across five annual reports</span></div>
     <div class="stat"><b>74 of 75</b><span>sampled rows matched their cited page</span></div>
     <div class="stat"><b>94%</b><span>coverage of named companies, up from 73% after a rebuild</span></div>
-    <div class="stat"><b>13</b><span>R scripts rebuild the dataset</span></div>
+    <div class="stat"><b>14</b><span>R scripts rebuild and check the dataset</span></div>
   </div>
 
   <h2>The problem</h2>
@@ -81,7 +81,7 @@ footer a{font-weight:600;text-decoration:none}
       <tr><td>Organisations named</td><td class="n">1,231</td><td>Every supplier, contractor, agency and state firm named in the text</td></tr>
       <tr><td>Case stories</td><td class="n">6</td><td>Read in full on their pages before being written up</td></tr>
     </tbody></table></div>
-  <p style="margin-top:12px">Alongside these: budget execution and surplus for 2022 to 2025, findings by category, repeat findings, audit opinions and stated ministry underfunding. Thirteen R scripts rebuild the dataset from the extracted report text and the source CSVs. A <a href="index.html">dashboard</a>, a <a href="brief.html">one-page brief</a> and a <a href="full-report.html">written report</a> sit on top.</p>
+  <p style="margin-top:12px">Alongside these: budget execution and surplus for 2022 to 2025, findings by category, repeat findings, audit opinions and stated ministry underfunding. Fourteen R scripts rebuild and check the dataset from the extracted report text and the source CSVs. A <a href="index.html">dashboard</a>, a <a href="brief.html">one-page brief</a> and a <a href="full-report.html">written report</a> sit on top.</p>
 
   <h2>How I checked it</h2>
   <p><b>Sampling.</b> I drew a random sample (fixed seed, so anyone can rerun it) from the three bulk layers and re-opened each row's cited page.</p>
@@ -96,7 +96,7 @@ footer a{font-weight:600;text-decoration:none}
   <div class="card"><ul class="fix">
     <li><b>Overstated wording.</b> <span class="was">The dashboard said K786 million was "paid for nil delivery" to 13 seed suppliers. The report says they had not delivered by the 15 January deadline, and a July 2023 verification found most delivered by March.</span> It now says "paid before delivery".</li>
     <li><b>Hand-typed counts that drifted.</b> <span class="was">A supplier total read 471 against 479 computed, and a caption said 32 contracts when there were 34.</span> Every count now generates from the data.</li>
-    <li><b>A chart mixing bases.</b> <span class="was">A findings chart included a 2021 bar, but a comparable single findings total is reported only for 2022 and 2023.</span> It now shows those two years only.</li>
+    <li><b>A correction that was itself wrong.</b> <span class="was">I cut the 2021 bar from the findings chart on the belief that no comparable total existed for that year, and later thought the category data totalled K237 billion instead of K103.5 billion. Both came from reading the report year as the financial year: each report prints a two-year comparison table.</span> Reconciling to the printed totals settled it. The 2022 report prints a 2021 total, and the category rows sum to every printed total within one kwacha. The 2021 bar is back, and a check now compares the category rows with the printed totals on every run.</li>
     <li><b>Errors in my own table.</b> <span class="was">Reading the case-story pages showed a contract listing two of its four contractors, and a row citing the wrong page.</span> Both corrected.</li>
     <li><b>A claim the site could not back.</b> <span class="was">The site said "every figure is page-cited".</span> Contract and supplier rows are; budget and findings figures cite the report year. The claim now says exactly that.</li>
   </ul></div>
@@ -122,7 +122,7 @@ footer a{font-weight:600;text-decoration:none}
   <ul class="lim">
     <li>The data records each report's position on its audit date, so later deliveries and recoveries are not reflected.</li>
     <li>Ministries' responses in later reports and before parliamentary committees are not included.</li>
-    <li>2021 has no comparable budget statement, and a single findings total exists only for 2022 and 2023.</li>
+    <li>2021 has no comparable budget statement, and comparable findings totals exist only for 2021 to 2023; the 2024 and 2025 reports print none.</li>
     <li>The organisation index captures about 94% of named companies, not all of them.</li>
   </ul>
 

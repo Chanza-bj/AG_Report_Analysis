@@ -21,7 +21,7 @@ I set out to turn them into a structured dataset where every contract and suppli
 | Organisations named | 1,231 | Every supplier, contractor, agency and state firm named in the text |
 | Case stories | 6 | Read in full on their pages before being written up |
 
-Alongside these: budget execution and surplus for 2022 to 2025, findings by category, repeat findings, audit opinions and stated ministry underfunding. Thirteen R scripts rebuild the dataset from the extracted report text and the source CSVs. A dashboard, a one-page brief and a written report sit on top.
+Alongside these: budget execution and surplus for 2022 to 2025, findings by category, repeat findings, audit opinions and stated ministry underfunding. Fourteen R scripts rebuild and check the dataset from the extracted report text and the source CSVs. A dashboard, a one-page brief and a written report sit on top.
 
 ## How I checked it
 
@@ -33,7 +33,7 @@ Alongside these: budget execution and surplus for 2022 to 2025, findings by cate
 
 - The dashboard said K786 million was "paid for nil delivery" to 13 seed suppliers. The report says they had not delivered by the 15 January deadline, and a July 2023 verification found most delivered by March. The wording now says "paid before delivery".
 - Headline counts were typed by hand and had drifted from the data: a supplier total of 471 against 479 computed, and a "32 contracts" caption when there were 34. Every count now generates from the data.
-- A findings chart included a 2021 bar, but a comparable single findings total is reported only for 2022 and 2023. It now shows those two years only.
+- I cut the 2021 bar from the findings chart on the belief that no comparable total existed for that year, and later thought the category data totalled K237 billion instead of K103.5 billion. Both came from reading the report year as the financial year: each report prints a two-year comparison table. Reconciling to the printed totals settled it. The 2022 report prints a 2021 total, and the category rows sum to every printed total within one kwacha. The 2021 bar is back, and a check now compares the category rows with the printed totals on every run.
 - Reading the case-story pages turned up two errors in my own case table: a contract listed two of its four contractors, and a row cited the wrong page.
 - The site claimed "every figure is page-cited". Contract and supplier rows are; budget and findings figures cite the report year. The claim now says exactly that.
 
@@ -54,7 +54,7 @@ Alongside these: budget execution and surplus for 2022 to 2025, findings by cate
 
 ## What it cannot show
 
-The data records each report's position on its audit date, so later deliveries and recoveries are not reflected. Ministries' responses in later reports and before parliamentary committees are not included. 2021 has no comparable budget statement, and a single findings total exists only for 2022 and 2023. The organisation index captures about 94% of named companies, not all of them.
+The data records each report's position on its audit date, so later deliveries and recoveries are not reflected. Ministries' responses in later reports and before parliamentary committees are not included. 2021 has no comparable budget statement, and comparable findings totals exist only for 2021 to 2023; the 2024 and 2025 reports print none. The organisation index captures about 94% of named companies, not all of them.
 
 ## Reproduce it
 

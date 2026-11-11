@@ -4,6 +4,18 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.9.0] - 2026-11-11
+
+Settle the findings totals against the printed tables. This reverses part of 1.5.0.
+
+### Fixed
+- **The 2021 findings total is restored.** Version 1.5.0 cut the findings chart to 2022-2023 on the belief that no comparable total existed for 2021. That was wrong. The 2022 report's "Trend Analysis of Audit Findings" table (PDF page 8) prints a 2021 total of K133,252,504,208 on the same basis as 2022. Comparable totals exist for financial years 2021 to 2023; the 2024 and 2025 reports print none. Chart, KPI, method note, brief, report and case study corrected.
+- **Root cause.** Each of the 2022 and 2023 reports prints two financial-year columns, so the category rows must be summed by report *and* financial year. Summing by report alone double-counts (K237bn and K185bn), and reading report year as financial year made 2021 look absent. The report text "the only two years with a comparable total" meant the two reports but read as two years; it is reworded. A chart caption citing printed page "ii" now cites PDF pages 8 and 9.
+
+### Added
+- `data_clean/findings_totals_printed.csv`: the four printed totals with their report and PDF page.
+- `R/14_reconcile_findings.R`: checks the category rows against the printed totals (all four match within K1) and stops with an error if they ever differ by more than K2.
+
 ## [1.8.0] - 2026-11-11
 
 Portfolio case study, and the brief brought in line with earlier corrections.

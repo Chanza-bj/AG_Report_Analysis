@@ -219,3 +219,14 @@ Specific goods and services the auditors flagged, as a supplier/item case list (
 | status_as_at | The report's status/date. |
 | pdf_page | PDF page. |
 | note / named / not_delivered | Context and derived flags. |
+
+## data_clean/findings_totals_printed.csv
+The findings totals exactly as printed in the "Trend Analysis of Audit Findings" tables. Each of the 2022 and 2023 reports prints two financial-year columns (prior and current year), so financial year 2022 appears in both. The 2024 and 2025 reports print no such table. `R/14_reconcile_findings.R` checks that `findings_by_category_tidy.csv`, summed by report **and** financial year, matches these totals within K2, and stops with an error if it does not.
+
+| Column | Meaning |
+|---|---|
+| financial_year | Financial year the total covers. |
+| printed_total_kwacha | Total as printed (K). |
+| source_report_year | Report that prints it. |
+| source_pdf_page | PDF page of the table. |
+| note | Which table and column. |
