@@ -4,6 +4,15 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.6.0] - 2026-11-11
+
+Make the dashboard usable for people who will not read the reports.
+
+### Added
+- **Headline answer** on the first screen: "Of 34 contracts checked against the reports, 20 were not fully delivered by the audit cut-off," with the breakdown (9 none or terminated, 11 partial, 3 delivered, 11 not stated) computed from the data, and a plain note that these are highlighted cases, not a random sample.
+- **Glossary** ("What the words mean") defining 14 terms, including audit finding, unqualified opinion, not fully delivered, paid before delivery, fiscal surplus (receipts minus payments, Statement B) and PDF page.
+- **Report an error**: a structured GitHub issue form (`.github/ISSUE_TEMPLATE/data-error.yml`) asking where, what, report year and page, and the correct value; linked from the header and footer.
+
 ## [1.5.1] - 2026-11-11
 
 Second credibility pass: resolve wording conflicts a close reader flagged.

@@ -60,6 +60,23 @@ a{color:inherit;text-decoration:none}
   border-radius:12px;padding:12px 14px;margin:16px 0 22px;font-size:13px}
 .note b{color:#4a3a10}
 
+/* ---- headline answer ---- */
+.answer{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);
+  border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:18px 0 0}
+.answer .q{font-size:13px;font-weight:700;color:var(--ink2);text-transform:uppercase;letter-spacing:.04em}
+.answer .a{font-size:22px;line-height:1.35;font-weight:700;margin:6px 0 8px}
+.answer .a b{color:var(--blue-d)}
+.answer .d{font-size:14px;line-height:1.6;color:var(--ink2)}
+.answer .d a{color:var(--blue-d);font-weight:600}
+@media (max-width:600px){.answer .a{font-size:18px}}
+
+/* ---- glossary ---- */
+.gloss{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.gloss div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13.5px;line-height:1.55;color:var(--ink2)}
+.gloss{margin:0}
+.gloss dt{font-weight:700;color:var(--ink);margin-bottom:3px}
+.gloss dd{margin:0}
+
 /* ---- KPI ---- */
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-bottom:8px}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
@@ -154,6 +171,7 @@ footer a{color:var(--blue-d);font-weight:600}
       <a href="#ministries"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg> Ministries</a>
       <a href="#repeat"><svg viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg> Repeat findings</a>
       <a href="#opinion"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Opinion &amp; risk</a>
+      <a href="#glossary"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5V21h16"/></svg> Glossary</a>
       <a href="#method"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> How to read</a>
     </nav>
     <div class="side-foot">
@@ -170,9 +188,16 @@ footer a{color:var(--blue-d);font-weight:600}
         <p>Office of the Auditor General of Zambia &middot; financial years 2021 to 2025</p>
       </div>
       <div class="actions">
+        <a class="btn" href="https://github.com/Chanza-bj/AG_Report_Analysis/issues/new?template=data-error.yml" target="_blank" rel="noopener">Report an error</a>
         <a class="btn" href="full-report.html">Full written report</a>
         <a class="btn primary" href="https://github.com/Chanza-bj/AG_Report_Analysis" target="_blank" rel="noopener">Data &amp; code</a>
       </div>
+    </div>
+
+    <div class="answer">
+      <div class="q">Were the contracts the auditors checked actually delivered?</div>
+      <div class="a">Of <b id="ans_total">34</b> contracts checked against the reports, <b id="ans_notfull">20</b> were not fully delivered by the audit cut-off.</div>
+      <div class="d"><span id="ans_no">9</span> had no delivery or were terminated, <span id="ans_part">11</span> were partly delivered, <span id="ans_yes">3</span> were delivered, and the reports do not state the status of <span id="ans_na">11</span>. These are cases the auditors chose to highlight, not a random sample of all government contracts, so they show where problems were found, not how common they are. <a href="#contracts">See each contract and its page</a>.</div>
     </div>
 
     <div class="note">
@@ -413,6 +438,26 @@ footer a{color:var(--blue-d);font-weight:600}
       </div>
     </section>
 
+    <section class="section" id="glossary">
+      <h2>What the words mean</h2>
+      <dl class="gloss">
+        <div><dt>Audit finding</dt><dd>Something the auditors could not fully account for, or an explanation still owed when the report was written. A question to answer, not proof of loss or theft.</dd></div>
+        <div><dt>Unqualified (clean) opinion</dt><dd>The auditor's view that the government's overall accounts present fairly. It does not mean every payment was proper; individual findings can sit below the level that would change that opinion.</dd></div>
+        <div><dt>Not fully delivered</dt><dd>At the audit cut-off date, the goods or works were either not delivered at all or only partly delivered. Some were delivered later; the reports record the position at the time of the audit.</dd></div>
+        <div><dt>Partly delivered</dt><dd>Some, but not all, of what was paid for had arrived or been completed at the audit cut-off.</dd></div>
+        <div><dt>Status not stated</dt><dd>The report raises the contract but does not say whether it was delivered. We do not guess.</dd></div>
+        <div><dt>Paid before delivery</dt><dd>Money was paid while the goods were still owed. It is not the same as "never delivered": in the 2022 seed case most suppliers delivered late.</dd></div>
+        <div><dt>Deep-verified / unverified</dt><dd>A deep-verified contract was read on its page: supplier, value and delivery status confirmed. An unverified row is an amount the report names, not yet checked in that detail.</dd></div>
+        <div><dt>Organisation named</dt><dd>A supplier, contractor, agency or state firm whose name appears in an audit paragraph. Being named is not being found at fault.</dd></div>
+        <div><dt>Budget execution</dt><dd>Actual payments as a share of the final (revised) budget. 86% means 86 kwacha of every 100 budgeted was paid out.</dd></div>
+        <div><dt>Fiscal surplus</dt><dd>Actual receipts minus actual payments for the year, from the Statement of Receipts and Payments (Statement B).</dd></div>
+        <div><dt>Tax arrears</dt><dd>Tax owed to the Zambia Revenue Authority but not yet collected. It is a stock built up over years, not money lost in one year, so it is shown apart from other findings.</dd></div>
+        <div><dt>Single-source procurement</dt><dd>A contract given to one supplier without open competition. Allowed in some cases, but it removes the price check that bidding provides.</dd></div>
+        <div><dt>Underfunding</dt><dd>An amount a report paragraph says a ministry or programme fell short of its budget. These are indicative figures stated in the reports, not a full comparison of every budget line. The reports link some gaps to activities being dropped.</dd></div>
+        <div><dt>PDF page</dt><dd>The page number in the PDF file, which can differ from the number printed on the page. Every page reference here is the PDF page.</dd></div>
+      </dl>
+    </section>
+
     <section class="section" id="method">
       <h2>How to read these numbers fairly</h2>
       <div class="card" style="padding:18px 20px">
@@ -446,7 +491,8 @@ footer a{color:var(--blue-d);font-weight:600}
 
     <footer>
       Source: Office of the Auditor General of Zambia, <i>Reports on the Accounts of the Republic</i>, financial years ended 31 December 2021 to 2025. Cite any figure with the report year and page, e.g. <i>Auditor General, 2025 report, page 5</i>.<br>
-      Full data, page references, and the code behind every chart: <a href="https://github.com/Chanza-bj/AG_Report_Analysis" target="_blank" rel="noopener">github.com/Chanza-bj/AG_Report_Analysis</a> &middot; <a href="full-report.html">full written report</a> &middot; <a href="brief.html">key-findings brief</a>.
+      Full data, page references, and the code behind every chart: <a href="https://github.com/Chanza-bj/AG_Report_Analysis" target="_blank" rel="noopener">github.com/Chanza-bj/AG_Report_Analysis</a> &middot; <a href="full-report.html">full written report</a> &middot; <a href="brief.html">key-findings brief</a>.<br>
+      Spotted a wrong figure, name or page? <a href="https://github.com/Chanza-bj/AG_Report_Analysis/issues/new?template=data-error.yml" target="_blank" rel="noopener">Report an error</a> (needs a free GitHub account). Corrections are published as a new version in the changelog.
     </footer>
   </main>
 </div>
@@ -478,6 +524,9 @@ const delYears=DELIVERY.years, delData=DELIVERY.data, delColors=DELIVERY.colors;
   set('ft_single',COUNTS.singleSource);
   set('ft_notdel',COUNTS.notFullyDelivered+' of '+COUNTS.contracts);
   set('master_vcount',COUNTS.masterVerified);
+  set('ans_total',COUNTS.contracts); set('ans_notfull',COUNTS.notFullyDelivered);
+  set('ans_no',COUNTS.notDelivered); set('ans_part',COUNTS.partial);
+  set('ans_yes',COUNTS.delivered); set('ans_na',COUNTS.notStated);
   set('kpi_orgs',SUPPLIERS.length.toLocaleString());
   const sd=SUPPLIERS.filter(r=>r.s==='Delivered').length,
         sp=SUPPLIERS.filter(r=>r.s==='Partial').length,

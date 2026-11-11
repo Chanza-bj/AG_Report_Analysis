@@ -11,7 +11,7 @@ type: dataset
 authors:
   - family-names: Chanza
     given-names: Boyd
-version: "1.5.1"
+version: "1.6.0"
 date-released: "2026-11-10"
 license: MIT
 keywords:

@@ -1,0 +1,36 @@
+name: Report a data error
+description: A figure, name, page reference or wording on the dashboard or in the data looks wrong.
+title: "[Data error] "
+labels: ["data error"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Corrections are logged in the CHANGELOG as a new version, so every change stays visible.
+        The most useful reports name the report year and PDF page so the figure can be checked quickly.
+  - type: input
+    id: where
+    attributes:
+      label: Where did you see it?
+      description: Section of the dashboard (for example "Contracts master table"), or the CSV file and row.
+      placeholder: "Contracts master table, row for NMS Infrastructure"
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What looks wrong?
+      placeholder: "The amount shows US$427.2m but the report gives ..."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Report year and PDF page
+      description: The Auditor General report year and page where the correct figure appears, if you know it.
+      placeholder: "2025 report, page 116"
+  - type: textarea
+    id: correct
+    attributes:
+      label: What should it say?
+      description: The correct figure or wording, if you know it.
