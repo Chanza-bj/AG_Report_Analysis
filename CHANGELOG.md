@@ -4,6 +4,19 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.10.0] - 2026-11-11
+
+Open-source contribution set-up and one wording correction.
+
+### Added
+- CONTRIBUTING.md (ground rules, ways to contribute, pull request steps).
+- CODE_OF_CONDUCT.md, including a right-of-reply route for named organisations and people.
+- GOVERNANCE.md (decision rules, corrections and versioning).
+- Pull request template with a source checklist, and a verification-row issue template.
+
+### Fixed
+- The data dictionary no longer attributes the seed-delivery finding to an unnamed "later check". It cites the Office's July 2023 verification.
+
 ## [1.9.0] - 2026-11-11
 
 Settle the findings totals against the printed tables. This reverses part of 1.5.0.

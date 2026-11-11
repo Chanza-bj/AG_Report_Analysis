@@ -112,7 +112,7 @@ Supplier-level detail of the 2022/2023 FISP seed procurement, from "Table 7: See
 | pct_undelivered_reported | Percentage undelivered, as printed. |
 | source_pdf_page | PDF page (215). |
 
-Verified against the printed totals: 33,283.04 MT contracted, 9,176.89 delivered (27.6%), 24,106.15 undelivered. The 13 suppliers at 100% undelivered were paid K786,008,813 of their K1,199,203,190 contracts. A later check found most delivered late, between mid January and end March 2023. Delivery is "not delivered" only as at the report's cut-off.
+Verified against the printed totals: 33,283.04 MT contracted, 9,176.89 delivered (27.6%), 24,106.15 undelivered. The 13 suppliers at 100% undelivered were paid K786,008,813 of their K1,199,203,190 contracts. The Office's July 2023 verification found most delivered late, between mid January and end March 2023. Delivery is "not delivered" only as at the report's cut-off.
 
 ## data_clean/supplier_index.csv
 A broad index of company names that appear across the reports, produced by `R/04_supplier_index.R` from an auto-extraction (`data_raw/supplier_index_raw.csv`). It is cleaned (parsing artifacts, section headers, place names and seed types removed), near-duplicate names merged, and each name checked against the report text. This is an index of **appearances**, not a verified contract register; the valued, delivery-checked contracts are in `contracts_flagged.csv`. Residual auto-extraction noise may remain.

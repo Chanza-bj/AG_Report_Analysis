@@ -1,0 +1,33 @@
+name: Verify a row
+description: Confirm a supplier or contract row against its report page
+labels: ["verification"]
+body:
+  - type: input
+    id: row
+    attributes:
+      label: Row or case ID
+      description: For example the supplier name and report year.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: PDF page checked
+      description: The page number in the PDF file.
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options:
+        - Confirmed as written
+        - Corrected (see details)
+        - Could not confirm on that page
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Quote the report text that supports your result.
