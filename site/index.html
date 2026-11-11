@@ -17,6 +17,7 @@
 <script src="cases_data.js"></script>
 <script src="valued_data.js"></script>
 <script src="dashboard_data.js"></script>
+<script src="stories_data.js"></script>
 <style>
 :root{
   --blue:#2a78d6; --blue-d:#1c5cab; --blue-l:#86b6ef; --teal:#1baf7a; --orange:#eb6834;
@@ -69,6 +70,21 @@ a{color:inherit;text-decoration:none}
 .answer .d{font-size:14px;line-height:1.6;color:var(--ink2)}
 .answer .d a{color:var(--blue-d);font-weight:600}
 @media (max-width:600px){.answer .a{font-size:18px}}
+
+/* ---- case stories ---- */
+.stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:16px 18px;display:flex;flex-direction:column;gap:8px;scroll-margin-top:16px}
+.story:target{outline:3px solid var(--blue-l)}
+.story .where{font-size:12px;font-weight:700;color:var(--ink2);text-transform:uppercase;letter-spacing:.03em}
+.story h3{margin:0;font-size:17px;line-height:1.3}
+.story p{margin:0;font-size:13.5px;line-height:1.55;color:var(--ink2)}
+.story p.out{color:var(--ink);font-weight:600}
+.story .src{font-size:12px;color:var(--ink2);border-top:1px solid var(--line);padding-top:8px;margin-top:auto}
+.story .share{display:flex;gap:8px;flex-wrap:wrap}
+.story .share a,.story .share button{font:600 12px/1 inherit;font-family:inherit;padding:7px 10px;border-radius:8px;
+  border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;text-decoration:none}
+.story .share a:hover,.story .share button:hover{border-color:var(--blue)}
 
 /* ---- glossary ---- */
 .gloss{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
@@ -163,6 +179,7 @@ footer a{color:var(--blue-d);font-weight:600}
     <div class="navlbl">Report</div>
     <nav class="nav">
       <a href="#overview" class="active"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Overview</a>
+      <a href="#stories"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Stories</a>
       <a href="#budget"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg> Budget &amp; surplus</a>
       <a href="#findings"><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg> Audit findings</a>
       <a href="#contracts"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contracts</a>
@@ -215,6 +232,13 @@ footer a{color:var(--blue-d);font-weight:600}
       <div class="kpi"><div class="lbl">Organisations named</div><div class="val" id="kpi_orgs">1,231</div><div class="sub">distinct names found in the reports' text</div></div>
       <div class="kpi"><div class="lbl">Audit opinion, 2022-2025</div><div class="val" style="color:#167a53">Unqualified</div><div class="sub">clean opinion each year; 2021 none given</div></div>
     </div>
+
+    <!-- CASE STORIES -->
+    <section class="section" id="stories">
+      <h2>Stories from the reports</h2>
+      <div class="cap" style="margin:-6px 0 14px;max-width:780px">Six cases, each read on its page in the Auditor General's report. Each shows the position on the date the auditors checked; goods may have arrived or money been recovered since. These are questions the reports raise, not proof of wrongdoing by any person or company.</div>
+      <div class="stories" id="story_cards"></div>
+    </section>
 
     <!-- BUDGET -->
     <section class="section" id="budget">
@@ -477,6 +501,7 @@ footer a{color:var(--blue-d);font-weight:600}
         <h3 style="margin:0 0 4px">Data behind each chart</h3>
         <div class="cap" style="margin:0 0 10px">Every chart and table is built from one of these CSVs. Each opens on GitHub, where you can read or download it and see the PDF page column.</div>
         <ul style="margin:0;padding-left:18px;color:var(--ink2);line-height:1.9;font-size:14px">
+          <li>Stories from the reports &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/case_stories.csv" target="_blank" rel="noopener">case_stories.csv</a></li>
           <li>Budget, spending and surplus &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/fiscal_outturn.csv" target="_blank" rel="noopener">fiscal_outturn.csv</a></li>
           <li>Value of audit findings and category trend &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/findings_by_category_tidy.csv" target="_blank" rel="noopener">findings_by_category_tidy.csv</a>, <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/repeat_findings.csv" target="_blank" rel="noopener">repeat_findings.csv</a></li>
           <li>Contracts (deep-verified and master table) &rarr; <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_clean/contracts_flagged.csv" target="_blank" rel="noopener">contracts_flagged.csv</a>, <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/data_raw/contracts_valued_all.csv" target="_blank" rel="noopener">contracts_valued_all.csv</a></li>
@@ -509,6 +534,34 @@ const paras=[['2021',52],['2022',40],['2023',28],['2024',32],['2025',27]];
 const ministries=[['Provincial offices',43],['Finance & National Planning',18],['Agriculture',17],
   ['Home Affairs & Internal Security',15],['Education',12],['Health',11],['Fisheries & Livestock',7],
   ['Community Development',6],['Lands & Natural Resources',5]];
+/* ---- case stories (from data_clean/case_stories.csv via R/13) ---- */
+(function renderStories(){
+  const box=document.getElementById('story_cards'); if(!box||typeof STORIES==='undefined')return;
+  const h=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  box.innerHTML=STORIES.map(s=>{
+    const wa='https://wa.me/?text='+encodeURIComponent(s.headline+' ('+s.cite+') '+s.share);
+    const li='https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(s.share);
+    return `<article class="story" id="story-${h(s.id)}">
+      <div class="where">${h(s.place)} &middot; ${h(s.report_year)} report</div>
+      <h3>${h(s.headline)}</h3>
+      <p>${h(s.summary)}</p>
+      <p>${h(s.paid)}</p>
+      <p class="out">${h(s.outcome)}</p>
+      <div class="src">${h(s.ministry)}. Source: ${h(s.cite)}. Position as at ${h(s.as_at)}.</div>
+      <div class="share">
+        <a href="${wa}" target="_blank" rel="noopener">Share on WhatsApp</a>
+        <a href="${li}" target="_blank" rel="noopener">LinkedIn</a>
+        <button type="button" data-link="${h(s.share)}">Copy link</button>
+      </div></article>`;}).join('');
+  box.addEventListener('click',e=>{
+    const b=e.target.closest('button[data-link]'); if(!b)return;
+    const done=()=>{const t=b.textContent;b.textContent='Link copied';setTimeout(()=>b.textContent=t,1600);};
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(b.dataset.link).then(done,()=>prompt('Copy this link:',b.dataset.link));}
+    else prompt('Copy this link:',b.dataset.link);
+  });
+  if(location.hash.startsWith('#story-')){const el=document.getElementById(location.hash.slice(1));if(el)el.scrollIntoView();}
+})();
+
 const contracts=CONTRACTS, contractStatus=CONTRACT_STATUS, flagCounts=FLAG_COUNTS;
 const delYears=DELIVERY.years, delData=DELIVERY.data, delColors=DELIVERY.colors;
 /* ---- fill every headline count straight from the data (no hand-maintained numbers) ---- */

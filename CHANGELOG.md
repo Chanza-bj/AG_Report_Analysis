@@ -4,6 +4,17 @@ All notable changes to this project are recorded here. Versions follow
 [Semantic Versioning](https://semver.org/). Corrections to any published figure
 will appear as a new version so that changes stay visible.
 
+## [1.7.0] - 2026-11-11
+
+Case stories for readers who will not read the reports.
+
+### Added
+- **Six case stories** (`data_clean/case_stories.csv`, `R/13_case_stories.R`): laboratory equipment for 82 schools, schools' laboratory gas paid for in full with items missing, heifers for Kawambwa, bicycles for 116 cash-transfer districts, seed for 62,317 beneficiaries in 25 districts, and the unfinished Kanona early-childhood hub in Serenje. Each was read on its PDF page(s) before being written up, and shows the position on the date the auditors checked.
+- **Share pages** (`site/stories/<id>.html`): each story has its own link with its own preview title and description for WhatsApp and LinkedIn, which opens the dashboard on that story. Cards carry WhatsApp, LinkedIn and copy-link buttons.
+
+### Fixed
+- `supplier_cases`: the 82-schools laboratory row named two contractors and gave the amount paid as "not stated"; the page shows four contractors and K2,169,546.90 in advances. The laboratory gas-cylinder row cited page 165; the case is on pages 163-164.
+
 ## [1.6.0] - 2026-11-11
 
 Make the dashboard usable for people who will not read the reports.
