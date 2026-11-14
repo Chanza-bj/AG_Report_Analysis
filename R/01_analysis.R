@@ -23,11 +23,10 @@ library(forcats)
 library(ggplot2)
 library(scales)
 
-# ---- Paths (relative to project root E:/AG_Report_Analysis) -----------------
-root       <- "E:/AG_Report_Analysis"
-raw_dir    <- file.path(root, "data_raw")
-clean_dir  <- file.path(root, "data_clean")
-out_dir    <- file.path(root, "output")
+# ---- Paths (relative to project root; run from the repo root) ---------------
+raw_dir   <- "data_raw"
+clean_dir <- "data_clean"
+out_dir   <- "output"
 dir.create(out_dir, showWarnings = FALSE)
 
 # A plain, print-friendly theme (no decorative elements)

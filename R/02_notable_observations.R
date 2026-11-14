@@ -15,8 +15,7 @@
 library(readr); library(dplyr); library(tidyr); library(stringr)
 library(forcats); library(ggplot2); library(scales)
 
-root <- "E:/AG_Report_Analysis"
-out_dir <- file.path(root, "output")
+out_dir <- "output"
 
 theme_ag <- theme_minimal(base_size = 12) +
   theme(panel.grid.minor = element_blank(), plot.title.position = "plot",
@@ -24,7 +23,7 @@ theme_ag <- theme_minimal(base_size = 12) +
 wrapcap <- function(x) str_wrap(x, 78)
 SRC <- "Source: Office of the Auditor General, executive-summary notable observations (Zambia)."
 
-obs <- read_csv(file.path(root, "data_clean/notable_observations.csv"),
+obs <- read_csv("data_clean/notable_observations.csv",
                 show_col_types = FALSE) %>%
   mutate(headline_amount = suppressWarnings(as.numeric(headline_amount)))
 
