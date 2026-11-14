@@ -47,7 +47,7 @@ for (yr in names(files)) {
 
   # (a) layout-preserving text of the whole report
   txt <- pdf_text(pdf)  # pdftools uses the same poppler engine as pdftotext -layout
-  writeLines(txt, file.path(OUT, sprintf("AG_%s_text.txt", yr)), useBytes = TRUE)
+  writeLines(txt, file.path(OUT, sprintf("AG_%s_layout.txt", yr)), useBytes = TRUE)
 
   # (b) render the key pages to PNG for visual transcription / verification
   for (kind in names(key_pages[[yr]])) {
