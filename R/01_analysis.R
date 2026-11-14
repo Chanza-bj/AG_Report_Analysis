@@ -119,7 +119,7 @@ printed_totals_long <- totals_printed %>%
 total_check <- computed_totals %>%
   left_join(printed_totals_long, by = c("report_year","financial_year")) %>%
   mutate(difference = computed_total - printed_total,
-         matches = difference == 0)
+         matches = abs(difference) <= 2)   # K2 tolerance, matches 14_reconcile_findings.R
 checks$total_check <- total_check
 
 # (b) Cross-report check of the overlapping FY2022 column (2022 report current
@@ -140,7 +140,7 @@ var_check <- cats_raw %>%
          amt_curr  = as.numeric(amt_current_kwacha),
          printed_var = as.numeric(printed_variance),
          computed_var = coalesce(amt_curr,0) - coalesce(amt_prior,0),
-         var_matches = printed_var == computed_var) %>%
+         var_matches = abs(printed_var - computed_var) <= 2) %>%
   select(report_year, row_no, category_printed, amt_prior, amt_curr,
          printed_var, computed_var, var_matches)
 checks$variance_check <- var_check
@@ -153,7 +153,7 @@ recon_summary <- bind_rows(
                             difference, ok=matches),
   fy2022_recon %>% transmute(check="FY2022_cross_report",
                              key=category_std, value_a=amount_2022rep,
-                             value_b=amount_2023rep, difference=diff, ok=(diff==0))
+                             value_b=amount_2023rep, difference=diff, ok=(abs(diff) <= 2))
 )
 write_csv(recon_summary, file.path(clean_dir, "reconciliation_checks.csv"))
 
