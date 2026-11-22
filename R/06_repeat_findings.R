@@ -5,9 +5,9 @@
 # =============================================================================
 suppressMessages({library(readr);library(dplyr);library(tidyr);library(stringr)})
 
-c <- read_csv("data_clean/findings_by_category_tidy.csv", show_col_types = FALSE)
+cats <- read_csv("data_clean/findings_by_category_tidy.csv", show_col_types = FALSE)
 pick <- tibble(financial_year = c(2021L,2022L,2023L), report_year = c(2022L,2023L,2023L))
-s <- c |> inner_join(pick, by = c("financial_year","report_year"))
+s <- cats |> inner_join(pick, by = c("financial_year","report_year"))
 
 wide <- s |>
   mutate(cat = str_squish(str_to_title(category_std))) |>
