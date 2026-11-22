@@ -13,9 +13,9 @@ cf <- read_csv("data_clean/contracts_flagged.csv", show_col_types = FALSE) |>
 is_verified <- function(y, pg, amt) {
   m <- cf[cf$yr == y & cf$pg == pg, ]
   if (!nrow(m)) return(FALSE)
-  any(abs(m$cv - amt) < 1, na.rm = TRUE) || any(abs(m$ai - amt) < 1, na.rm = TRUE) ||
-    # same page & only one flagged contract there -> treat as verified
-    nrow(m) == 1
+  # Verified only when the amount matches a flagged contract on the same page.
+  # (A page with a single flagged contract is not enough: unrelated rows would pass.)
+  any(abs(m$cv - amt) < 1, na.rm = TRUE) || any(abs(m$ai - amt) < 1, na.rm = TRUE)
 }
 d$verified <- mapply(is_verified, d$financial_year, d$pdf_page, d$amount)
 

@@ -68,7 +68,7 @@ footer a{font-weight:600;text-decoration:none}
   </div>
 
   <h2>The problem</h2>
-  <p>Zambia's Auditor General publishes a <em>Report on the Accounts of the Republic</em> each year. The five reports for 2021 to 2025 run to 1,862 PDF pages. They are the best public record of how government money was spent and where it went wrong, but almost nobody reads them. The layout changes between years, some tables exist in one year and not the next, and the same supplier or ministry can be named in several different ways.</p>
+  <p>Zambia's Auditor General publishes a <em>Report on the Accounts of the Republic</em> each year. The five reports for 2021 to 2025 run to about 1,860 pages (per-report counts are in <code>data_clean/report_metadata.csv</code>). They are the best public record of how government money was spent and where it went wrong, but almost nobody reads them. The layout changes between years, some tables exist in one year and not the next, and the same supplier or ministry can be named in several different ways.</p>
   <p>I set out to turn them into a structured dataset where every contract and supplier row carries the PDF page it came from, so that a journalist, a committee clerk or a citizen can check any claim in under a minute.</p>
 
   <h2>What I built</h2>
@@ -90,7 +90,8 @@ footer a{font-weight:600;text-decoration:none}
     <div class="stat"><b>25 / 25</b><span>organisation names on a cited page</span></div>
     <div class="stat"><b>19 / 20</b><span>cases; the miss was a placeholder label, not a wrong page</span></div>
   </div>
-  <p><b>Coverage, not just accuracy.</b> Sampling only tells you whether the rows you have are right. It cannot tell you what is missing. When I looked for agencies I knew appeared in the reports, the organisation index was missing ZAMMSA, NAPSA, Trade Kings and Zambia Seed Company. I measured coverage against every company name in the text and found it at 73%. The cause was an extraction step that filtered out acronym names, plus a bug that discarded names split across the PDF's column spacing. After rebuilding the extractor, the index grew from 594 to 1,231 names, and coverage rose to 90% matched directly and 94% once extraction artifacts are set aside.</p>
+  <p class="src">Sources: <code>data_clean/qa_sample_checks.csv</code> (the sample) and <code>data_clean/coverage_audit.csv</code> (the coverage check).</p>
+  <p><b>Coverage, not just accuracy.</b> Sampling only tells you whether the rows you have are right. It cannot tell you what is missing. When I looked for agencies I knew appeared in the reports, the organisation index was missing ZAMMSA, NAPSA, Trade Kings and Zambia Seed Company. I measured coverage against every company name in the text and found it at 73%. The cause was an extraction step that filtered out acronym names, plus a bug that discarded names split across the PDF's column spacing. After rebuilding the extractor, the index grew from 594 to 1,231 names, and coverage rose to 90% matched directly and 94% once extraction artifacts (text-extraction errors, such as split or garbled names that are not real organisations) are set aside.</p>
 
   <p style="margin-top:18px"><b>Errors I found and corrected</b>, each recorded as a new version in the <a href="https://github.com/Chanza-bj/AG_Report_Analysis/blob/main/CHANGELOG.md" target="_blank" rel="noopener">changelog</a>:</p>
   <div class="card"><ul class="fix">

@@ -7,7 +7,7 @@ Code and data: https://github.com/Chanza-bj/AG_Report_Analysis
 
 ## The problem
 
-Zambia's Auditor General publishes a *Report on the Accounts of the Republic* each year. The five reports for 2021 to 2025 run to 1,862 PDF pages. They are the best public record of how government money was spent and where it went wrong, but almost nobody reads them. The layout changes between years, some tables exist in one year and not the next, and the same supplier or ministry can be named in several different ways.
+Zambia's Auditor General publishes a *Report on the Accounts of the Republic* each year. The five reports for 2021 to 2025 run to about 1,860 pages (per-report counts are in data_clean/report_metadata.csv). They are the best public record of how government money was spent and where it went wrong, but almost nobody reads them. The layout changes between years, some tables exist in one year and not the next, and the same supplier or ministry can be named in several different ways.
 
 I set out to turn them into a structured dataset where every contract and supplier row carries the PDF page it came from, so that a journalist, a committee clerk or a citizen can check any claim in under a minute.
 
