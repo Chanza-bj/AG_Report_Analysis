@@ -11,14 +11,14 @@
 
 library(readr); library(dplyr); library(ggplot2); library(scales); library(stringr)
 
-root <- "E:/AG_Report_Analysis"; out_dir <- file.path(root, "output")
+out_dir <- "output"
 theme_ag <- theme_minimal(base_size = 12) +
   theme(panel.grid.minor = element_blank(), plot.title.position = "plot",
         plot.caption = element_text(colour = "grey40", hjust = 0))
 wrapcap <- function(x) str_wrap(x, 90)
 SRC <- "Source: Office of the Auditor General, Statement B (Budget Execution), Zambia. 2021: no equivalent statement."
 
-fisc <- read_csv(file.path(root, "data_clean/fiscal_outturn.csv"), show_col_types = FALSE) %>%
+fisc <- read_csv("data_clean/fiscal_outturn.csv", show_col_types = FALSE) %>%
   mutate(budget_execution_pct = 100 * actual_payments / final_budget_payments,
          surplus_bn = surplus_deficit / 1e9)
 write_csv(fisc %>% select(financial_year, final_budget_payments, actual_payments,
